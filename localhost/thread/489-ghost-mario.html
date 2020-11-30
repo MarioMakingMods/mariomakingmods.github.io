@@ -1,0 +1,686 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/thread/489-ghost-mario by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:46:25 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Ghost Mario &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content="This small mod changes SMB1 Mario to a ghost version of himself: Here are the screenshots: Show spoilerMy version of the game is EUR, the mod works for other regions..." />
+        <meta name="keywords" content="ghost mario 3ds wip" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Ghost Mario &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="Ghost Mario &amp;raquo; Mario Making Mods" /><meta property="og:description" content="This small mod changes SMB1 Mario to a ghost version of himself: Here are the screenshots: Show spoilerMy version of the game is EUR, the mod works for other regions..." /> <meta name="og:description" content="This small mod changes SMB1 Mario to a ghost version of himself: Here are the screenshots: Show spoilerMy version of the game is EUR, the mod works for other regions..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Ghost Mario &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="This small mod changes SMB1 Mario to a ghost version of himself: Here are the screenshots: Show spoilerMy version of the game is EUR, the mod works for other regions..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/4-hacking-info.html">Hacking info</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/3-project-releases.html">Project Releases</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="489-ghost-mario.html">Ghost Mario</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="488.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="490.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dGhost%2bMario%26url%3dhttp_/localhost/thread/489/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>	<table class="table table-striped table-bordered">
+		<thead><tr><th colspan=2>Should I continue with it?</th></tr></thead>
+		<tbody>
+							<tr>
+					<td class="cell2" style="width: 20%;">
+						<strong>Yes</strong>
+					</td>
+					<td style="width: 80%">
+						<div class="pollbarContainer">
+															<div class="progress">
+									<div class="progress-bar" role="progressbar" aria-valuenow="100"
+									aria-valuemin="0" aria-valuemax="100" style="background-color: #67FFFF; width: 100%;">
+										&nbsp;2 (100%)
+									</div>
+								</div>
+													</div>
+					</td>
+				</tr>
+							<tr>
+					<td class="cell2" style="width: 20%;">
+						<strong>No</strong>
+					</td>
+					<td style="width: 80%">
+						<div class="pollbarContainer">
+															&nbsp;0 (0%)
+													</div>
+					</td>
+				</tr>
+							<tr>
+					<td class="cell2" style="width: 20%;">
+						<strong>3spooky5me</strong>
+					</td>
+					<td style="width: 80%">
+						<div class="pollbarContainer">
+															&nbsp;0 (0%)
+													</div>
+					</td>
+				</tr>
+						<tr><td colspan=2><small>
+								Multiple voting is not allowed.
+								2 users has voted so far
+							</small></td></tr>
+		</tbody>
+	</table>
+		<table class="table table-striped" id="post3536">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/144008840_1518028195.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/144008840-eros744.html" title=""><span  style="color: #97ACEF;" class="userlink" title="eros744 (144008840) [Normal user]">eros744</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-14-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/144008840-eros744/posts.html" title="List eros744's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/144008840-eros744/threads.html" title="List eros744's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3536">
+				This small mod changes <em>SMB1</em> Mario to a ghost version of himself:<br />
+Here are the screenshots:<br />
+<img class="img-fluid" src="../../i.imgur.com/YEokjn7.png" alt=""/><br />
+<img class="img-fluid" src="../../i.imgur.com/IN53X0o.png" alt=""/><br />
+<div class="spoiler"><button class="spoilerbutton">Show spoiler</button><div class="spoiled hidden">My version of the game is EUR, the mod works for other regions but you have to change the title id in the luma/titles/[yourregion] to your region.<br />
+Also, you just need to extract the luma folder to the SD Root, it contains the file in the correct folders.<br />
+I'll leave all the versions of the mod here in case you don't like the newer versions.</div></div><div class="spoiler"><button class="spoilerbutton">Show spoiler</button><div class="spoiled hidden">                                                              <span style="color: #ffc40c">W</span><span style="color: #ffc40d">O</span><span style="color: #ffc50f">W</span> <span style="color: #ffc612">3</span> <span style="color: #ffc816">R</span><span style="color: #fec817">E</span><span style="color: #fec919">L</span><span style="color: #fec91b">E</span><span style="color: #feca1c">A</span><span style="color: #fecb1e">S</span><span style="color: #fecb20">E</span><span style="color: #fecc21">S</span> <span style="color: #fecd25">A</span><span style="color: #fece26">T</span> <span style="color: #fecf2a">T</span><span style="color: #fed02b">H</span><span style="color: #fed12d">E</span> <span style="color: #fed231">S</span><span style="color: #fed332">A</span><span style="color: #fed334">M</span><span style="color: #fed436">E</span> <span style="color: #fed539">D</span><span style="color: #fed63b">A</span><span style="color: #fed73c">Y</span><span style="color: #fed73e">!</span>                  <br />
+<span style="color: #dfbb21">I</span><span style="color: #deba20">'</span><span style="color: #ddb91e">M</span> <span style="color: #dcb61b">S</span><span style="color: #dbb519">O</span> <span style="color: #d9b316">L</span><span style="color: #d8b214">A</span><span style="color: #d7b112">Z</span><span style="color: #d7af11">Y</span><span style="color: #d6ae0f">,</span> <span style="color: #d4ac0c">I</span><span style="color: #d3ab0a">t</span> <span style="color: #d1a907">w</span><span style="color: #d1a705">a</span><span style="color: #d0a603">s</span><span style="color: #cfa502">n</span><span style="color: #cea400">'</span><span style="color: #cfa400">t</span> <span style="color: #d1a500">t</span><span style="color: #d2a600">h</span><span style="color: #d2a600">a</span><span style="color: #d3a700">t</span> <span style="color: #d5a800">d</span><span style="color: #d6a800">i</span><span style="color: #d7a900">f</span><span style="color: #d8a900">f</span><span style="color: #d9aa00">i</span><span style="color: #daaa00">c</span><span style="color: #daab00">u</span><span style="color: #dbab00">l</span><span style="color: #dcac00">t</span><span style="color: #ddac00">,</span> <span style="color: #dfad00">H</span><span style="color: #e0ae00">e</span><span style="color: #e1ae00">r</span><span style="color: #e2af00">e</span> <span style="color: #e3b000">y</span><span style="color: #e4b000">o</span><span style="color: #e5b100">u</span> <span style="color: #e7b200">g</span><span style="color: #e8b200">o</span><span style="color: #e9b300">!</span> <span style="color: #ebb400">N</span><span style="color: #ebb400">o</span><span style="color: #ecb500">w</span> <span style="color: #eeb600">i</span><span style="color: #efb600">t</span> <span style="color: #f1b700">r</span><span style="color: #f2b800">e</span><span style="color: #f3b800">p</span><span style="color: #f3b900">l</span><span style="color: #f4b900">a</span><span style="color: #f5ba00">c</span><span style="color: #f6ba00">e</span><span style="color: #f7bb00">s</span> <span style="color: #f9bc00">a</span><span style="color: #fabc00">l</span><span style="color: #fbbd00">l</span> <span style="color: #fcbe00">M</span><span style="color: #fdbe00">a</span><span style="color: #febf00">r</span><span style="color: #ffbf00">i</span><span style="color: #ffc002">o</span> <span style="color: #ffc105">v</span><span style="color: #ffc207">e</span><span style="color: #ffc208">r</span><span style="color: #ffc30a">s</span><span style="color: #ffc40c">i</span><span style="color: #ffc40d">o</span><span style="color: #ffc50f">n</span><span style="color: #ffc611">s</span> <span style="color: #ffc714">i</span><span style="color: #ffc816">n</span> <span style="color: #fec919">S</span><span style="color: #fec91b">M</span><span style="color: #feca1c">B</span><span style="color: #fecb1e">,</span> <span style="color: #fecc21">e</span><span style="color: #fecd23">v</span><span style="color: #fecd25">e</span><span style="color: #fece26">n</span> <span style="color: #fecf2a">S</span><span style="color: #fed02b">l</span><span style="color: #fed12d">i</span><span style="color: #fed12f">m</span> <span style="color: #fed332">M</span><span style="color: #fed334">a</span><span style="color: #fed436">r</span><span style="color: #fed537">i</span><span style="color: #fed539">o</span><span style="color: #fed63b">!</span><br />
+</div></div><br><div class="post_attachment"><strong>Attachment: <a href="../Ghost%20Mario%20Mod%20v146de.zip_%3b?id=hWE2aF2dQmPIA6BC">Ghost Mario Mod v1.zip</a></strong><br><div class="smallFonts">9.96&nbsp;KiB &mdash; Downloaded 53 times</div></div><br><div class="post_attachment"><strong>Attachment: <a href="../Super%20Mario%20Ghost%20V2ecb9.zip_%3b?id=QSu28U5rjWDj9QOX">Super Mario Ghost V2.zip</a></strong><br><div class="smallFonts">22.33&nbsp;KiB &mdash; Downloaded 23 times</div></div><br><div class="post_attachment"><strong>Attachment: <a href="../Super%20Mario%20Ghost%20V350fb.zip_%3b?id=yIPJi7nPVnBW5b7f">Super Mario Ghost V3.zip</a></strong><br><div class="smallFonts">13.70&nbsp;KiB &mdash; Downloaded 26 times</div></div><br><div class="post_attachment"><strong>Attachment: <a href="../Super%20Mario%20Ghost%20V4374a.zip_%3b?id=QvhHx0Zabf5T2RTS">Super Mario Ghost V4.zip</a></strong><br><div class="smallFonts">47.14&nbsp;KiB &mdash; Downloaded 31 times</div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3536">
+									Posted on 02-07-18, 06:40 pm
+										 (rev. 3 by <a href="../profile/144008840-eros744.html" title=""><span  style="color: #97ACEF;" class="userlink" title="eros744 (144008840) [Normal user]"><img src="../data/avatars/144008840_1518028195.png" alt="" class="minipic" /> eros744</span></a> on 04-06-18, 04:15 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3536">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="489-ghost-mariofe67.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2beros744)%2bin%2b__%26url%3dhttp_/localhost/post/3536/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3536</button>							</div>
+		</td></tr>
+	</table>    
+
+    	<table class="table table-striped" id="post3537">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/171_1536581823.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/171-samplasion.html" title=""><span  style="color: #97ACEF;" class="userlink" title="samplasion (171) [Normal user]">Samplasion</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Someone</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 11-15-17<br>
+						From: i dont know<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/171-samplasion/posts.html" title="List samplasion's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/171-samplasion/threads.html" title="List samplasion's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar171" id="post_3537">
+				<style>.topbar171_1 {
+    background: #700 url(../themes/glossy/generic_gloss.html);
+    text-align: center;
+    border-radius: 15px 0px 0px 15px;
+}
+.topbar171_2 {
+    background: #700 url(../themes/glossy/generic_gloss.html) !important;
+    border-radius: 0px 15px 15px 0px;
+}
+.mainbar171 .spoilerbutton {
+    background:rgba(0,0,0,0.5) url(../themes/glossy/generic_gloss.html);
+    border:3px solid fireBrick;
+    border-radius:15px;
+    width:100%;
+    color: white !important;
+}
+.mainbar171 .spoiled {
+    background:rgba(0,0,0,0);
+    border-right: 2px solid firebrick;
+    border-bottom: 2px solid firebrick;
+    border-left: 2px solid firebrick;
+    border-radius:15px;
+    width:98%
+}
+.mainbar171 .quoteheader {
+    background:rgba(255,0,0,0.175);
+    border-radius:15px;
+    padding-left: 6px;
+}
+ 
+.mainbar171 .quotecontent {
+    background:rgba(255,0,0,0.175);
+    border-radius:15px;
+}
+.topbar171_2 a, .topbar171_1 a {
+    color: white !important;
+}
+.sidebar171 {
+    background: url(../../cdn.discordapp.com/attachments/400205357726695425/413734147279028264/bgg.png) repeat;
+    text-align: center;
+    border-radius: 15px 0px 0px 15px;
+    color: white !important;
+    border: 1px solid #700;
+}
+.mainbar171 {
+    background: url(../../cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_SuperMarioOdyssey.jpg) fixed !important;
+    padding: 15px;
+    border-radius: 0px 15px 15px 0px;
+    color: white !important;
+    border: 1px solid #700;
+    cursor: url;
+}
+.post171 {
+    background: rgba(30,0,0,.7) !important;
+    border-radius: 12px;
+    padding: 9px 9px 9px 9px !important;
+}
+.sig171 {
+    background: rgba(0,0,0,.7) !important;
+    position: relative !important;
+    bottom: 0px !important;
+    padding: 16px !important;
+    border-radius: 12px !important;
+}
+[rnb] {animation: rainbow 5s infinite;}
+@keyframes rainbow{
+	0%{color: Aquamarine;}
+	20%{color: #f44040;}
+	40%{color: yellow;}
+	60%{color: Chartreuse;}
+	80%{color: MediumSpringGreen;}
+	100%{color: Aquamarine;}
+}
+.mainbar171 a, .sig171 a {
+    color:#f88;
+}
+</style><div class="post171">woah! cool!<br />
+but, where's the download link?<br></div><br />
+<div class="sig171" style = "font-size: 75%;padding:10px;"><a href="https://samplasion.github.io/" target="_blank">My Website</a><br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Some random stuff that'd be better if it is in a spoiler. Oh look, it already is!</button><div class="spoiled hidden"><div><a href="http://internetometer.com/give/46791" target="_blank"><img class="img-fluid" src="../../internetometer.com/image/46791.png" alt=""/></a><br />
+<a href="https://nick-name.ru/nickname/id1437226/"><img class="img-fluid" src="../../nick-name.ru/forum2t9/Samplasion.gif" alt=""/></a><br />
+<img class="img-fluid" src="https://mariomods.net/gfx/rpgstatus.php?u=171" alt=""/><br />
+</div></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3537">
+									Posted on 02-07-18, 06:56 pm
+										 (rev. 1 by <a href="../profile/171-samplasion.html" title=""><span  style="color: #97ACEF;" class="userlink" title="samplasion (171) [Normal user]"><img src="../data/avatars/171_1536581823.png" alt="" class="minipic" /> Samplasion</span></a> on 02-07-18, 06:57 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3537">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="489-ghost-mario9320.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bSamplasion)%2bin%2b__%26url%3dhttp_/localhost/post/3537/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3537</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3558">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/144008840_1518028195.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/144008840-eros744.html" title=""><span  style="color: #97ACEF;" class="userlink" title="eros744 (144008840) [Normal user]">eros744</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-14-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/144008840-eros744/posts.html" title="List eros744's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/144008840-eros744/threads.html" title="List eros744's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3558">
+				<div class="quote"> woah! cool!<br />
+but, where's the download link? <div class="quote-footer"><a href="489-ghost-mario9320.html">Posted by samplasion</a></div></div>The attachment to the post ;)<br />
+
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3558">
+									Posted on 02-10-18, 11:28 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3558">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="489-ghost-mario47bd.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2beros744)%2bin%2b__%26url%3dhttp_/localhost/post/3558/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3558</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3734">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar1" id="post_3734">
+				<style>td.topbar1_1 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+text-align: center;
+border-top-left-radius: 25px;
+}td.topbar1_1 > a > span {
+     color:white !important;
+}td.topbar1_2 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+border-top-right-radius: 25px;
+}td.topbar1_2 a {
+color: #fff !important;
+}.mainbar1 {
+  background: url('../../i.imgur.com/1K5VeC8.png') no-repeat !important;
+  background=color: #090909;
+  padding: 0 !important;
+  background-color: #000 !important;
+  font-family: 'Arial', sans-serif;
+  border-bottom-right-radius: 25px;
+}.sidebar1 {
+  background-color: #090909 !important;
+  text-align: center !important;
+  color: #E6E6E6 !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  border-bottom-left-radius: 25px;
+}.sidebar1 div.smallFonts > img:nth-child(4):hover {
+border-radius: 2%;
+box-shadow: 7px 7px 30px #000000 !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4) { 
+box-shadow: 5px 5px 40px #000000 !important;
+border-radius: 50%;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4):active {
+border-radius: 0%;
+box-shadow: 0px 0px 5px #FFFFFF !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+.mainbar1 a:link {color: gray;}
+.mainbar1 a:visited {color: gray;}
+.mainbar1 a:active {color: gray;}
+.mainbar1 a:hover {color: gray;} 
+.mainbar1 > div.post {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+} .mainbar1 > div.sig {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+}
+</style><div class="post">Will you do SMW and SMB3?<br></div><div class="sig">Old 3DS XL info:<br />
+I used to have a 3DSafe A9LH V11.3.0-36U with Luma in my CTRNAND. Since ReiNAND Reibooted and Re-Reileased, I "switch"ed back.<br />
+Right now, I have boot9strap with Luma 8.0 as my CFW. Though, I'd like to see other CFW's for B9S.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3734">
+									Posted on 02-19-18, 05:33 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3734">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="489-ghost-mario46f9.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/3734/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3734</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-bordered" id="post4178">
+		<tr>
+			<td class="side userlink" id="4178">
+				<a href="../profile/144008840-eros744.html" title=""><span  style="color: #97ACEF;" class="userlink" title="eros744 (144008840) [Normal user]">eros744</span></a>
+			</td>
+			<td class="smallFonts meta right">
+				<div style="float:left">
+					Posted on 04-06-18, 02:44 pm, deleted by <a href="../profile/144008840-eros744.html" title=""><span  style="color: #97ACEF;" class="userlink" title="eros744 (144008840) [Normal user]"><img src="../data/avatars/144008840_1518028195.png" alt="" class="minipic" /> eros744</span></a>				</div>
+															#4178
+								</td>
+		</tr>
+	</table>
+	<table class="table table-striped" id="post4193">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/144008840_1518028195.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/144008840-eros744.html" title=""><span  style="color: #97ACEF;" class="userlink" title="eros744 (144008840) [Normal user]">eros744</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-14-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/144008840-eros744/posts.html" title="List eros744's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/144008840-eros744/threads.html" title="List eros744's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4193">
+				<div class="quote"> Will you do SMW and SMB3? <div class="quote-footer"><a href="489-ghost-mario46f9.html">Posted by NightYoshi370</a></div></div>Yes! I will
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4193">
+									Posted on 04-08-18, 01:42 pm
+										 (rev. 1 by <a href="../profile/144008840-eros744.html" title=""><span  style="color: #97ACEF;" class="userlink" title="eros744 (144008840) [Normal user]"><img src="../data/avatars/144008840_1518028195.png" alt="" class="minipic" /> eros744</span></a> on 04-08-18, 01:43 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4193">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="489-ghost-mario37ff.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2beros744)%2bin%2b__%26url%3dhttp_/localhost/post/4193/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4193</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4456">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/144008840_1518028195.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/144008840-eros744.html" title=""><span  style="color: #97ACEF;" class="userlink" title="eros744 (144008840) [Normal user]">eros744</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-14-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/144008840-eros744/posts.html" title="List eros744's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/144008840-eros744/threads.html" title="List eros744's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4456">
+				Ok, this is getting time-consuming, and sadly, I don't have too much time for personal things. So, I will still try to continue this, but if anyone of you wants to continue and make his own version of the next Ghost Marios, you have my permission (anyways you didn't need it, you could still do whatever you want). Anyway I am making now the SMB3 Ghost Mario, if everything goes as expected, you should have it for download later.<br />
+<br />
+Edit- My computer doesn't want to work correctly and doesnt open the image editor, sorry i'll try to fix it.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4456">
+									Posted on 06-01-18, 03:47 pm
+										 (rev. 1 by <a href="../profile/144008840-eros744.html" title=""><span  style="color: #97ACEF;" class="userlink" title="eros744 (144008840) [Normal user]"><img src="../data/avatars/144008840_1518028195.png" alt="" class="minipic" /> eros744</span></a> on 06-01-18, 04:08 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4456">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="489-ghost-mario609e.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2beros744)%2bin%2b__%26url%3dhttp_/localhost/post/4456/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4456</button>							</div>
+		</td></tr>
+	</table>	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/4-hacking-info.html">Hacking info</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/3-project-releases.html">Project Releases</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="489-ghost-mario.html">Ghost Mario</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="488.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="490.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dGhost%2bMario%26url%3dhttp_/localhost/thread/489/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/thread/489-ghost-mario by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:46:26 GMT -->
+</html>

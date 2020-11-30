@@ -1,0 +1,581 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/depot/hacks/385-nsmbu-flower-garden by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 08:21:46 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>NSMBU flower garden &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../../css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/mdb.css">
+		<script src="../../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+        <link rel="manifest" href="../../API/manifest.php" />
+        <meta name="description" content="So for the fans of New Super Luigi U out there I made this texture mod replacing the NSMBU overworld theme. This is what it looks like on CEMU but..." />
+        <meta name="keywords" content="nsmbu flower garden" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="NSMBU flower garden &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="NSMBU flower garden &amp;raquo; Mario Making Mods" /><meta property="og:description" content="So for the fans of New Super Luigi U out there I made this texture mod replacing the NSMBU overworld theme. This is what it looks like on CEMU but..." /> <meta name="og:description" content="So for the fans of New Super Luigi U out there I made this texture mod replacing the NSMBU overworld theme. This is what it looks like on CEMU but..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="NSMBU flower garden &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="So for the fans of New Super Luigi U out there I made this texture mod replacing the NSMBU overworld theme. This is what it looks like on CEMU but..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../../css/common.css" />
+        <link rel="stylesheet" href="../../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../../js/jquery-ui.js"></script>
+        <script src="../../js/tricks.js"></script>
+        <script src="../../js/jscolor.js" async></script>
+        <script src="../../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../../index.html">
+				<img id="theme_banner" src="../../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../depot.html">Depot</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../hacks.html">Super Mario Maker Mods</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="385-NSMBU%20flower%20garden.html">NSMBU flower garden</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="http://www.mediafire.com/file/j6f275w3yhftnuf/WU_Field_plain.szs"									class="nav-link"
+									>
+									Download WiiU Theme
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="384-Vinny460%20mystery%20costume.html"									class="nav-link"
+									>
+									Previous Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="386-Xwater%20mystery%20mushroom%20costume.html"									class="nav-link"
+									>
+									Next Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="http://twitter.com/share?text=NSMBU%20flower%20garden&amp;url=http://localhost/depot/hacks/385-/&amp;via=MarioMakingMods"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+							<div class="col-lg-2 col-md-3 col-sm-4 sidenav">
+					
+                    <table class="table table-bordered table-striped table-sm">
+                        <thead><tr><th>Depot Selections</th></tr></thead>
+                        <tbody>
+                            <tr><td><a href="../hacks.html" title="">Theme Projects</a></td></tr>
+                            <tr><td><a href="../level.html" title="">Level Depot</a></td></tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table class="table table-bordered table-striped table-sm">
+                        <tr class="header0"><th>Filter</th></tr>
+                            <form action="http://localhost/depot/hacks">
+                                <tr class="header1"><th>Sort by</th></tr>
+                                <tr class="cell0"><td><input type="radio" name="sort" checked value="lastdate"> Last Post Date</td></tr>
+                                <tr class="cell1"><td><input type="radio" name="sort"  value="date"> Date Published</td></tr>
+                                <tr class="cell0"><td><input type="radio" name="sort"  value="name"> Name (alphabetical)</td></tr>
+                                <tr class="header1"><th>Name of Hack</th></tr>
+                                <tr class="cell0"><td><input class="form-control" type="text" name="hackname" value=""></td></tr>
+                                <tr class="header1"><th><input type="submit" value="Submit"></th></tr>
+                            </form>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+				</div>
+						<div class="col-lg-10 col-md-9 col-sm-8 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>	<table class="table table-bordered table-striped" id="post2686">
+		<tr class="cell0">
+			<td>
+				<small>
+					<span id="meta_2686">
+											Posted on 12-17-17, 08:37 pm by <a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a>
+						 (rev. 2 by <a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]"><img src="../../data/avatars/194_1512740157.jpg" alt="" class="minipic" /> Lakifume</span></a> on 12-24-17, 03:07 pm)										</span>
+					<span style="text-align:left; display: none;" id="dyna_2686">
+						blarg
+					</span>
+				</small>
+			</td>
+		</tr>
+		<tr class="cell1">
+			<td id="post_2686">
+				So for the fans of New Super Luigi U out there I made this texture mod replacing the NSMBU overworld theme.<br />
+<br />
+This is what it looks like on CEMU but I also tested it on Wii U and it works great:<br />
+<img class="img-fluid" src="../../../oi66.tinypic.com/20pbwr7.jpg" alt=""/><br />
+<br />
+This is my first mod and I put a lot of effort into it so I hope you'll all enjoy it.<br />
+It also perfectly goes with the original background of the game so that's good.<br />
+<br />
+Features:<br />
+-new ground tileset<br />
+-one new semi-solid<br />
+-new bridge<br />
+-invisible tracks (I just think they're cool)<br />
+<br />
+Download Wii U (updated):<br />
+<a href="http://www.mediafire.com/file/7vb86idu4788vqf/WU_Field_plain.szs" target="_blank">http://www.mediafire.com/file/7vb86idu4788vqf/WU_Field_plain.szs</a><br />
+Put this file in your content&gt;model folder of the game.<br />
+<br />
+Issues:<br />
+-None that I know of<br />
+<br />
+Credits to:<br />
+-AboodXD for the Miyamoto object folder<br />
+-Zachabossaloler for his custom theme tutorial 
+			</td>
+		</tr>
+				<tr class="cell0">
+			<td class="right">
+				<div class="btn-group btn-group-sm">
+															<a class="btn btn-primary" role="button"  href="../../thread/385-nsmbu-flower-gardenb074.html" title="Link this post">
+								<i class="fa fa-link"></i>														</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+														<button class="btn btn-primary">#2686</button>									</div>
+			</td>
+		</tr>
+			</table>    
+
+    <table class="table table-bordered table-striped">
+	<thead><tr><th>Comments</th></tr></thead>
+	<tbody>
+					<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 12-17-17, 08:39 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-garden300f.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2687</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Nice tileset! But quick question: What CEMU version do you have? And what's your Graphics card?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a> Posted on 12-17-17, 08:43 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-gardenfa80.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2689</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Mine says CEMU 1.11.1. What do you mean by a Graphics Card ?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 12-17-17, 08:46 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-garden4bca.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2690</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">By graphics card, I mean either "Intel" "NVIDIA" or "AMD"<br />
+<br />
+Try 1.11.2. on your current screenshot, I notice a lighting issue.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a> Posted on 12-17-17, 08:49 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-garden275a.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2693</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Okay, it's Intel GPU I think. There is a 1.11.2 version ? I thought I had the most recent one.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 12-17-17, 08:50 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-garden60fc.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2694</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Intel GPU works? Wow. I better tell Tarnadas (owner of SMMDB) about this.<br />
+<br />
+Yes, there is a 1.11.2 released last week.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]">Buntendo</span></a> Posted on 12-18-17, 01:59 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-garden1ac5.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2709</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">i like</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 12-18-17, 02:03 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-gardenf8fe.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2710</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Oh, and BTW, some critisizm on the actual theme:<br />
+<br />
+I think you should try to atleast make a semi-solid that doesn't look almost identical to the ground.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a> Posted on 12-18-17, 03:00 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-garden6234.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2713</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Yeah, I know. I left it like that because it reminded me of those huge flowery bushes in NSLU:<br />
+<img class="img-fluid" src="../../../tinypic.com/images/goodbye.jpg" alt=""/></div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/9-granimated.html" title=""><span  style="color: #97ACEF;" class="userlink" title="GRAnimated (9) [Normal user]">GRAnimated</span></a> Posted on 12-18-17, 03:06 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-gardenf7fb.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2714</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">This is one of the few NSMBU mods, and it's one of the only good ones! Great job on porting the tileset, looks better than the original!</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a> Posted on 12-18-17, 03:17 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-gardenee73.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2715</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Thank you. I'm thinking of making more NSMBU mods but smaller ones like recoloring pipes, change semi-solids and platforms to make it look more like the actual game.<br />
+It's also hard to make good mods for this style since we can't really change the backgrounds.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/9-granimated.html" title=""><span  style="color: #97ACEF;" class="userlink" title="GRAnimated (9) [Normal user]">GRAnimated</span></a> Posted on 12-18-17, 03:20 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-garden56f9.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2716</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">can't wait to see how they'll look if you do that!</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/100-evrules5.html" title=""><span  style="color: #97ACEF;" class="userlink" title="evrules5 (100) [Normal user]">evrules5</span></a> Posted on 12-18-17, 03:26 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-garden285d.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2717</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Woah, this is awesome! It's rare to see a good NSMBU mod for SMM, so I'm glad that this theme is.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a> Posted on 12-18-17, 06:29 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-gardenfa07.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2719</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">If you are willing to make NSMBU theme mods, I can happily publish my tools which can make and remove padding for you.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a> Posted on 12-18-17, 01:32 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-garden2103.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2721</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">What do you mean by make and remove padding ?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 12-18-17, 06:14 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-garden4f7a.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2731</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">In the WiiU SMM, the NSMBU theme blocks is actually 60x60. With padding (meaning empty space just to give a tile border), it turns into 64x64 per block.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a> Posted on 12-18-17, 07:32 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-gardenb753.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2741</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Oh yeah, I noticed that when I edited the tileset. So when I imported the NSMBU tiles in SMM I stretched them by 2 pixels on each side to make sure they wouldn't get cut in the game.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a> Posted on 12-19-17, 02:00 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-gardene0ac.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2752</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote"> Oh yeah, I noticed that when I edited the tileset. So when I imported the NSMBU tiles in SMM I stretched them by 2 pixels on each side to make sure they wouldn't get cut in the game. <div class="quote-footer"><a href="../../thread/385-nsmbu-flower-gardenb753.html">Posted by Lakifume</a></div></div>That's what "adding padding" is.<br />
+I found it too bothersome to do by hand so I wrote a script to add padding automatically if I give it a 960x1020 image. (Same as original image (1024x1088) but with padding removed)</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a> Posted on 12-19-17, 02:18 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-garden8a54.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2755</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Sounds awesome! Yeah, it would definetly make it easier.<br />
+BTW, do you know where I could find NSMBU sprites? I can't find a sprite sheet on the Internet.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a> Posted on 12-19-17, 02:19 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-gardene2ba.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2756</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">NSMBU uses 3D models for enemies.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a> Posted on 12-19-17, 02:32 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-garden20aa.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2757</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Oh I forgot about that. It's also one of the reasons why Miyamoto level editor is better than SMM.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 12-24-17, 03:18 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-garden5b77.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2833</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Uh, don't you mean "NSMBU" is better than SMM? Miiyamoto can't control how the sprites look in game, whether their 2d images or 3D models.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a> Posted on 12-24-17, 03:38 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/385-nsmbu-flower-garden8d21.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2834</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Yeah, that's what I meant, the real NSMBU editor.</div>
+		</td></tr>	</tbody>
+</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../depot.html">Depot</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../hacks.html">Super Mario Maker Mods</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="385-NSMBU%20flower%20garden.html">NSMBU flower garden</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="http://www.mediafire.com/file/j6f275w3yhftnuf/WU_Field_plain.szs"									class="nav-link"
+									>
+									Download WiiU Theme
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="384-Vinny460%20mystery%20costume.html"									class="nav-link"
+									>
+									Previous Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="386-Xwater%20mystery%20mushroom%20costume.html"									class="nav-link"
+									>
+									Next Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="http://twitter.com/share?text=NSMBU%20flower%20garden&amp;url=http://localhost/depot/hacks/385-/&amp;via=MarioMakingMods"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../../online.html" class="btn btn-link">Online Users</a>
+		<a href="../../records.html" class="btn btn-link">Records</a>
+		<a href="../../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../../js/timeago.js"></script>
+		<script src="../../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+        <script src="../../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/depot/hacks/385-nsmbu-flower-garden by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 08:21:46 GMT -->
+</html>

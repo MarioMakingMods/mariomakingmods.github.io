@@ -1,0 +1,837 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/thread/26-blalmboard?from=20 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 08:14:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Blalmboard &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content=" Blalmboard · Blargboard, more Acmlmified. (sorry, I had to make that good presentation and stuff xD) Just have been making things because I wanna have a Blargboard with its..." />
+        <meta name="keywords" content="blalmboard" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Blalmboard &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="Blalmboard &amp;raquo; Mario Making Mods" /><meta property="og:description" content=" Blalmboard · Blargboard, more Acmlmified. (sorry, I had to make that good presentation and stuff xD) Just have been making things because I wanna have a Blargboard with its..." /> <meta name="og:description" content=" Blalmboard · Blargboard, more Acmlmified. (sorry, I had to make that good presentation and stuff xD) Just have been making things because I wanna have a Blargboard with its..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Blalmboard &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content=" Blalmboard · Blargboard, more Acmlmified. (sorry, I had to make that good presentation and stuff xD) Just have been making things because I wanna have a Blargboard with its..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/6-general-chat.html">General Chat</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="26-blalmboard.html">Blalmboard</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="25.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="47.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dBlalmboard%26url%3dhttp_/localhost/thread/26/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>			
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			
+			<li class="page-item first">
+				<a class="page-link" href="26-blalmboard.html" aria-label="First">
+					<span aria-hidden="true">&#x00AB;</span>
+					<span class="sr-only">First</span>
+				</a>
+			</li>
+			<li class="page-item previous">
+				<a class="page-link" href="26-blalmboard.html" aria-label="Previous">
+					<span aria-hidden="true">&#x2039;</span>
+					<span class="sr-only">Previous</span>
+				</a>
+			</li><li class="page-item"><a class="page-link" href="26-blalmboard.html">1</a></li><li class="page-item active"><span class="page-link">2 <span class="sr-only">(current)</span></span></li>
+		</ul>
+	</nav>
+	    
+
+    	<table class="table table-striped" id="post814">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/47_1496949701.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/47-theninja1000.html" title=""><span  style="color: #888888;" class="userlink" title="theninja1000 (47) [Banned]">theninja1000</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Check bio for ban reason</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 06-06-17<br>
+						From: UK<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/47-theninja1000/posts.html" title="List theninja1000's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/47-theninja1000/threads.html" title="List theninja1000's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_814">
+				They were also using the proxy protection in stupid ways as well.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_814">
+									Posted on 06-08-17, 09:14 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_814">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="26-blalmboardd8d8.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2btheninja1000)%2bin%2b__%26url%3dhttp_/localhost/post/814/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#814</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post818">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar1" id="post_818">
+				<style>td.topbar1_1 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+text-align: center;
+border-top-left-radius: 25px;
+}td.topbar1_1 > a > span {
+     color:white !important;
+}td.topbar1_2 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+border-top-right-radius: 25px;
+}td.topbar1_2 a {
+color: #fff !important;
+}.mainbar1 {
+  background: url('../../i.imgur.com/1K5VeC8.png') no-repeat !important;
+  background=color: #090909;
+  padding: 0 !important;
+  background-color: #000 !important;
+  font-family: 'Arial', sans-serif;
+  border-bottom-right-radius: 25px;
+}.sidebar1 {
+  background-color: #090909 !important;
+  text-align: center !important;
+  color: #E6E6E6 !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  border-bottom-left-radius: 25px;
+}.sidebar1 div.smallFonts > img:nth-child(4):hover {
+border-radius: 2%;
+box-shadow: 7px 7px 30px #000000 !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4) { 
+box-shadow: 5px 5px 40px #000000 !important;
+border-radius: 50%;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4):active {
+border-radius: 0%;
+box-shadow: 0px 0px 5px #FFFFFF !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+.mainbar1 a:link {color: gray;}
+.mainbar1 a:visited {color: gray;}
+.mainbar1 a:active {color: gray;}
+.mainbar1 a:hover {color: gray;} 
+.mainbar1 > div.post {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+} .mainbar1 > div.sig {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+}
+</style><div class="post">Ah, but that was way later.<br />
+<br />
+Anyways, back on topic.<br />
+<br />
+So um, JeDa, if we don't do the switch to LunarBoard, can we use your software?<br></div><div class="sig">Old 3DS XL info:<br />
+I used to have a 3DSafe A9LH V11.3.0-36U with Luma in my CTRNAND. Since ReiNAND Reibooted and Re-Reileased, I "switch"ed back.<br />
+Right now, I have boot9strap with Luma 8.0 as my CFW. Though, I'd like to see other CFW's for B9S.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_818">
+									Posted on 06-08-17, 09:27 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_818">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="26-blalmboard434e.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/818/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#818</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post820">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/47_1496949701.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/47-theninja1000.html" title=""><span  style="color: #888888;" class="userlink" title="theninja1000 (47) [Banned]">theninja1000</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Check bio for ban reason</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 06-06-17<br>
+						From: UK<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/47-theninja1000/posts.html" title="List theninja1000's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/47-theninja1000/threads.html" title="List theninja1000's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_820">
+				I think Blalm is actually quite good because users like me prefer the Acmlmboard look and feel along with having some Blarg features here.<br />
+<br />
+If Lunarboard actually works and it looks cool, we can use that. A Acmlmboard layout would be nice for LB too.<br />
+
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_820">
+									Posted on 06-08-17, 09:32 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_820">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="26-blalmboardaf69.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2btheninja1000)%2bin%2b__%26url%3dhttp_/localhost/post/820/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#820</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post884">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Banned permanently: Jamie Rereg</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 05-19-17<br>
+						From: England<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/11-icefairyamy/posts.html" title="List IceFairyAmy's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/11-icefairyamy/threads.html" title="List IceFairyAmy's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_884">
+				Lunarboard is supposed to be professional, there probably won't be an AcmlmBoard layout as Aileen doesn't consider it professional. :P
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_884">
+									Posted on 06-10-17, 09:28 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_884">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="26-blalmboardee64.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bIceFairyAmy)%2bin%2b__%26url%3dhttp_/localhost/post/884/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#884</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post889">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/47_1496949701.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/47-theninja1000.html" title=""><span  style="color: #888888;" class="userlink" title="theninja1000 (47) [Banned]">theninja1000</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Check bio for ban reason</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 06-06-17<br>
+						From: UK<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/47-theninja1000/posts.html" title="List theninja1000's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/47-theninja1000/threads.html" title="List theninja1000's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_889">
+				I consider AcmlmBoard professional! All the AB lovers will be with me!<br />
+<br />
+I don't consider PHPBB or MYBB professional though.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_889">
+									Posted on 06-10-17, 09:44 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_889">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="26-blalmboardbdf8.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2btheninja1000)%2bin%2b__%26url%3dhttp_/localhost/post/889/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#889</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post893">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/3_1581352635.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/3-jedayoshi.html" title=""><span  style="color: #97ACEF;" class="userlink" title="JeDaYoshi (3) [Normal user]">JeDaYoshi</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+						From: Venezuela<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/3-jedayoshi/posts-2.html" title="List JeDaYoshi's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/3-jedayoshi/threads.html" title="List JeDaYoshi's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_893">
+				<div class="quote"> So um, JeDa, if we don't do the switch to LunarBoard, can we use your software? <div class="quote-footer"><a href="26-blalmboard434e.html">Posted by Maorninja3ds</a></div></div><br />
+Although Lunarboard seems going well and is looking nice/professional, it can work - I'm also planning to do some modifications to make it more "today's websites"-alike or that, making fixes and making it more modern etc. while still keeping the good old Acmlm feel.<br><div class="signature">~<a href="../profile/3-jedayoshi.html" title=""><span  style="color: #97ACEF;" class="userlink" title="JeDaYoshi (3) [Normal user]"><img src="../data/avatars/3_1581352635.png" alt="" class="minipic" /> JeDaYoshi</span></a> aka. Naydire</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_893">
+									Posted on 06-10-17, 09:57 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_893">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="26-blalmboarda98a.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bJeDaYoshi)%2bin%2b__%26url%3dhttp_/localhost/post/893/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#893</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post894">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/17_1495563222.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/17-aileen-lumina.html" title=""><span  style="color: #E91E63" class="userlink" title="Aileen Lumina (17) [Normal user]">Aileen Lumina</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-20-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/17-aileen-lumina/posts.html" title="List Aileen Lumina's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/17-aileen-lumina/threads.html" title="List Aileen Lumina's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_894">
+				An Acmlm-like layout will be totally possible with Lunarboard, you could just replace the template files, no problem there. It probably won't be in the official version of Lunarboard tho.<br />
+<br />
+Nice to see what you're planning for your board software, even tho I'd love if you'd help me with Lunarboard, but really do what you think is best. ^^
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_894">
+									Posted on 06-10-17, 10:04 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_894">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="26-blalmboard2111.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bAileen%2bLumina)%2bin%2b__%26url%3dhttp_/localhost/post/894/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#894</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post899">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/47_1496949701.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/47-theninja1000.html" title=""><span  style="color: #888888;" class="userlink" title="theninja1000 (47) [Banned]">theninja1000</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Check bio for ban reason</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 06-06-17<br>
+						From: UK<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/47-theninja1000/posts.html" title="List theninja1000's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/47-theninja1000/threads.html" title="List theninja1000's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_899">
+				I'll try and help with LB if you want.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_899">
+									Posted on 06-11-17, 07:59 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_899">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="26-blalmboard77e1.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2btheninja1000)%2bin%2b__%26url%3dhttp_/localhost/post/899/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#899</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1917">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/104_11.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/104-wordedpuppet.html" title=""><span  style="color: #97ACEF;" class="userlink" title="WordedPuppet (104) [Normal user]">WordedPuppet</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 09-10-17<br>
+						From: Probably frozen in time<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/104-wordedpuppet/posts-2.html" title="List WordedPuppet's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/104-wordedpuppet/threads.html" title="List WordedPuppet's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post haslayout" id="post_1917">
+				<style>.rainbow {
+    color: gray;
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+    text-shadow: 0px 1px white
+}
+
+@-webkit-keyframes hue {
+    from {
+      -webkit-filter: hue-rotate(180deg);
+    }
+
+    to {
+      -webkit-filter: hue-rotate(480deg);
+    }
+}
+
+
+</style><div class="center"><div style="background: url(../../media.discordapp.net/attachments/344630818444017664/356818847799574539/PurpleScroll.png) right no-repeat #112; height:100%; color: #ef9643; padding: 10px; background-attachment: fixed; padding-right: 0px;"><div style="background: rgba(64, 68, 74, 0.5); border: 3px #ffffff solid; border-radius: 25px;padding: 10px; margin-right: 200px; box-shadow: 5px 5px 0px rgba(10,10,10,0.5);"><div class="rainbow"><div class="quote"> Which is another reason why the pipe should be blue. ( ͡° ͜ʖ ͡°) <div class="quote-footer"><a href="26-blalmboard8a69.html">Posted by Danster</a></div></div>Blue lives matter.<br></div><div style="background:
+url(../../media.discordapp.net/attachments/344630818444017664/356834289591123969/RoughArea.png) right no-repeat #112; padding: 35px;"></div></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1917">
+									Posted on 09-29-17, 11:54 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1917">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="26-blalmboard95ad.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bWordedPuppet)%2bin%2b__%26url%3dhttp_/localhost/post/1917/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1917</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1934">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar1" id="post_1934">
+				<style>td.topbar1_1 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+text-align: center;
+border-top-left-radius: 25px;
+}td.topbar1_1 > a > span {
+     color:white !important;
+}td.topbar1_2 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+border-top-right-radius: 25px;
+}td.topbar1_2 a {
+color: #fff !important;
+}.mainbar1 {
+  background: url('../../i.imgur.com/1K5VeC8.png') no-repeat !important;
+  background=color: #090909;
+  padding: 0 !important;
+  background-color: #000 !important;
+  font-family: 'Arial', sans-serif;
+  border-bottom-right-radius: 25px;
+}.sidebar1 {
+  background-color: #090909 !important;
+  text-align: center !important;
+  color: #E6E6E6 !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  border-bottom-left-radius: 25px;
+}.sidebar1 div.smallFonts > img:nth-child(4):hover {
+border-radius: 2%;
+box-shadow: 7px 7px 30px #000000 !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4) { 
+box-shadow: 5px 5px 40px #000000 !important;
+border-radius: 50%;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4):active {
+border-radius: 0%;
+box-shadow: 0px 0px 5px #FFFFFF !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+.mainbar1 a:link {color: gray;}
+.mainbar1 a:visited {color: gray;}
+.mainbar1 a:active {color: gray;}
+.mainbar1 a:hover {color: gray;} 
+.mainbar1 > div.post {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+} .mainbar1 > div.sig {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+}
+</style><div class="post">Please don't make unnecessary posts like that. <br></div><div class="sig">Old 3DS XL info:<br />
+I used to have a 3DSafe A9LH V11.3.0-36U with Luma in my CTRNAND. Since ReiNAND Reibooted and Re-Reileased, I "switch"ed back.<br />
+Right now, I have boot9strap with Luma 8.0 as my CFW. Though, I'd like to see other CFW's for B9S.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1934">
+									Posted on 10-02-17, 06:12 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1934">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="26-blalmboard1d76.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/1934/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1934</button>							</div>
+		</td></tr>
+	</table>			
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			
+			<li class="page-item first">
+				<a class="page-link" href="26-blalmboard.html" aria-label="First">
+					<span aria-hidden="true">&#x00AB;</span>
+					<span class="sr-only">First</span>
+				</a>
+			</li>
+			<li class="page-item previous">
+				<a class="page-link" href="26-blalmboard.html" aria-label="Previous">
+					<span aria-hidden="true">&#x2039;</span>
+					<span class="sr-only">Previous</span>
+				</a>
+			</li><li class="page-item"><a class="page-link" href="26-blalmboard.html">1</a></li><li class="page-item active"><span class="page-link">2 <span class="sr-only">(current)</span></span></li>
+		</ul>
+	</nav>
+	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/6-general-chat.html">General Chat</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="26-blalmboard.html">Blalmboard</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="25.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="47.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dBlalmboard%26url%3dhttp_/localhost/thread/26/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/thread/26-blalmboard?from=20 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 08:14:45 GMT -->
+</html>

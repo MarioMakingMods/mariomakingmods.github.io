@@ -1,0 +1,1107 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/thread/515 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:58:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Editing the enemy sprites in the 3DS version of Mario Maker. &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content="First, use the script provided in the link below open the script inside a text editor of choice like notepad or notepad++ change the following line to the bin file..." />
+        <meta name="keywords" content="editing enemy sprites 3ds version mario maker tutorial" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Editing the enemy sprites in the 3DS version of Mario Maker. &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="Editing the enemy sprites in the 3DS version of Mario Maker. &amp;raquo; Mario Making Mods" /><meta property="og:description" content="First, use the script provided in the link below open the script inside a text editor of choice like notepad or notepad++ change the following line to the bin file..." /> <meta name="og:description" content="First, use the script provided in the link below open the script inside a text editor of choice like notepad or notepad++ change the following line to the bin file..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Editing the enemy sprites in the 3DS version of Mario Maker. &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="First, use the script provided in the link below open the script inside a text editor of choice like notepad or notepad++ change the following line to the bin file..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/4-hacking-info.html">Hacking info</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-maker.html">Editing the enemy sprites in the 3DS version of Mario Maker.</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="503.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="580.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dEditing%2bthe%2benemy%2bsprites%2bin%2bthe%2b3DS%2bversion%2bof%2bMario%2bMaker.%26url%3dhttp_/localhost/thread/515/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>		<table class="table table-striped" id="post3796">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1191706936_1514882173.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1191706936-ayanamirei0.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AyanamiRei0 (1191706936) [Normal user]">AyanamiRei0</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle"><img src="../../cdn.discordapp.com/attachments/400992670056579072/409829847817519107/Braixen.png"><br>Braixen</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-02-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1191706936-ayanamirei0/posts.html" title="List AyanamiRei0's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1191706936-ayanamirei0/threads.html" title="List AyanamiRei0's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3796">
+				First, use the script provided in the link below open the script inside a text editor of choice like notepad or notepad++ change the following line to the bin file you want to extract <br />
+with open("bin file of choice", "rb") as inf: for example, if I wanted to extract the Mario 3 enemy sprites I would change that to with open("actorsM3A2Ddata.bin", "rb") as inf:.<br />
+<br />
+<br />
+<img class="img-fluid" src="../../i.imgur.com/J6wnepD.png" alt=""/><br />
+<br />
+once edited you should be able to extract CTPK’s from the bin file you wish to edit once you’ve found the CTPK file you wish to edit open it with <a href="https://github.com/smb123w64gb/Ohana3DS-Rebirth/releases">Ohana3DS Rebirth</a>, for example, Mario World the Goomba would be file21.ctpk once opened in Ohana3DS Rebirth you should see the sprites of what you want to edit extract those and edit them in any photo editing program like Paint.net or Photoshop once done save the edits and import them into the CTPK you’ve opened in Ohana3DS Rebirth once imported save.<br />
+<br />
+<img class="img-fluid" src="../../i.imgur.com/InJ5Aom.png" alt=""/><br />
+<br />
+After all that open both the bin file you extracted the CTPK from and the edited CTPK inside a hex editor once opened in a hex editor start with the edited one and select from the words CTPK and continue selecting until you see a new CTPK like this for example<br />
+<img class="img-fluid" src="../../i.imgur.com/tWmhL0G.png" alt=""/><br />
+<br />
+The met_model would be the end of the Goomba model once you selected all the bytes until you see something like that copy and paste that into a new document once you’ve pasted the bytes into a new document find the start of the model listing like this for example.<br />
+<img class="img-fluid" src="../../i.imgur.com/h0xQUIH.png" alt=""/><br />
+<br />
+Copy that and find that inside the bin file inside the hex editor CTRL+F also works for finding stuff once found find the CTPK that should be above it copy all the bytes starting from the CTPK part until you see something like the met_model I mentioned earlier once done go back to the new document you made earlier and select all then copy all those bytes into the bin and save.<br />
+<br />
+Congrats you should have successfully edited the sprite you wanted to edit.  <br />
+<br />
+<a href="https://drive.google.com/open?id=1l2wdVDSgdmgSed7Z7L92az14PoFhoak3">Link to script</a><br />
+Credit goes to Abood for creating the script.<br />
+<br />
+<br />
+
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3796">
+									Posted on 02-23-18, 11:53 pm
+										 (rev. 4 by <a href="../profile/1191706936-ayanamirei0.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AyanamiRei0 (1191706936) [Normal user]"><img src="../data/avatars/1191706936_1514882173.png" alt="" class="minipic" /> AyanamiRei0</span></a> on 02-26-18, 12:03 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3796">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-makerdb52.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bAyanamiRei0)%2bin%2b__%26url%3dhttp_/localhost/post/3796/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3796</button>							</div>
+		</td></tr>
+	</table>    
+
+    	<table class="table table-striped" id="post3802">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1093721157_1516902360.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1093721157-xxxkreasxxx.html" title=""><span  style="color: #97ACEF;" class="userlink" title="XxxkreasxxX (1093721157) [Normal user]">Kreas</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-24-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1093721157-xxxkreasxxx/posts-2.html" title="List XxxkreasxxX's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1093721157-xxxkreasxxx/threads.html" title="List XxxkreasxxX's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3802">
+				i have to say one thing only.<br />
+I LOVE YOU!!!!<br />
+You are awsome my friend.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3802">
+									Posted on 02-25-18, 12:46 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3802">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-maker464e.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bKreas)%2bin%2b__%26url%3dhttp_/localhost/post/3802/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3802</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3805">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1093721157_1516902360.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1093721157-xxxkreasxxx.html" title=""><span  style="color: #97ACEF;" class="userlink" title="XxxkreasxxX (1093721157) [Normal user]">Kreas</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-24-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1093721157-xxxkreasxxx/posts-2.html" title="List XxxkreasxxX's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1093721157-xxxkreasxxx/threads.html" title="List XxxkreasxxX's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3805">
+				um i ran into some problems...<br />
+I used the script and edited what i wanted to change but when i go do hex editor and open the edited ctpk file i don't find another ctpk in to stop selecting.<br />
+Do you mean to start with bin file or with ctpk?<br />
+<img class="img-fluid" src="../that.html" alt=""/><br><div class="post_attachment"><a href="../that5493.png?id=2zmcrsL0gLNIl1OF"><img src="../that5493.png?id=2zmcrsL0gLNIl1OF" alt="that.png &mdash; 208.40&nbsp;KiB, viewed 156 times" title="that.png &mdash; 208.40&nbsp;KiB, viewed 156 times" style="max-width:300px; max-height:300px;"></a></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3805">
+									Posted on 02-26-18, 05:04 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3805">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-makere86b.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bKreas)%2bin%2b__%26url%3dhttp_/localhost/post/3805/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3805</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3807">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1191706936_1514882173.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1191706936-ayanamirei0.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AyanamiRei0 (1191706936) [Normal user]">AyanamiRei0</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle"><img src="../../cdn.discordapp.com/attachments/400992670056579072/409829847817519107/Braixen.png"><br>Braixen</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-02-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1191706936-ayanamirei0/posts.html" title="List AyanamiRei0's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1191706936-ayanamirei0/threads.html" title="List AyanamiRei0's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post haslayout" id="post_3807">
+				<div style="background:url(../../i.imgur.com/ZUwQk6H.png) center top !important; background-width:100% !important; color:white; font-family:Tahoma,sans-serif; border: 3px solid #066; text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 2px black, -1px 0px black;"><div style="  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;">Start the script with the bin.<br>_________________________<br></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3807">
+									Posted on 02-27-18, 01:32 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3807">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-maker7459.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bAyanamiRei0)%2bin%2b__%26url%3dhttp_/localhost/post/3807/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3807</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3822">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1093721157_1516902360.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1093721157-xxxkreasxxx.html" title=""><span  style="color: #97ACEF;" class="userlink" title="XxxkreasxxX (1093721157) [Normal user]">Kreas</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-24-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1093721157-xxxkreasxxx/posts-2.html" title="List XxxkreasxxX's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1093721157-xxxkreasxxx/threads.html" title="List XxxkreasxxX's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3822">
+				Mmm no matter how many times i try i get an error when i try to start a game with a goomba i edited. <br />
+I did exactly what you said but i just can't make it work...<br />
+Maybe is something else that doesn't let me make it.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3822">
+									Posted on 02-28-18, 01:26 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3822">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-maker12f3.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bKreas)%2bin%2b__%26url%3dhttp_/localhost/post/3822/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3822</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3823">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar1" id="post_3823">
+				<style>td.topbar1_1 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+text-align: center;
+border-top-left-radius: 25px;
+}td.topbar1_1 > a > span {
+     color:white !important;
+}td.topbar1_2 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+border-top-right-radius: 25px;
+}td.topbar1_2 a {
+color: #fff !important;
+}.mainbar1 {
+  background: url('../../i.imgur.com/1K5VeC8.png') no-repeat !important;
+  background=color: #090909;
+  padding: 0 !important;
+  background-color: #000 !important;
+  font-family: 'Arial', sans-serif;
+  border-bottom-right-radius: 25px;
+}.sidebar1 {
+  background-color: #090909 !important;
+  text-align: center !important;
+  color: #E6E6E6 !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  border-bottom-left-radius: 25px;
+}.sidebar1 div.smallFonts > img:nth-child(4):hover {
+border-radius: 2%;
+box-shadow: 7px 7px 30px #000000 !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4) { 
+box-shadow: 5px 5px 40px #000000 !important;
+border-radius: 50%;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4):active {
+border-radius: 0%;
+box-shadow: 0px 0px 5px #FFFFFF !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+.mainbar1 a:link {color: gray;}
+.mainbar1 a:visited {color: gray;}
+.mainbar1 a:active {color: gray;}
+.mainbar1 a:hover {color: gray;} 
+.mainbar1 > div.post {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+} .mainbar1 > div.sig {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+}
+</style><div class="post">What tool did you use to edit the Goomba?<br></div><div class="sig">Old 3DS XL info:<br />
+I used to have a 3DSafe A9LH V11.3.0-36U with Luma in my CTRNAND. Since ReiNAND Reibooted and Re-Reileased, I "switch"ed back.<br />
+Right now, I have boot9strap with Luma 8.0 as my CFW. Though, I'd like to see other CFW's for B9S.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3823">
+									Posted on 02-28-18, 01:28 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3823">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-maker4167.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/3823/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3823</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3825">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1093721157_1516902360.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1093721157-xxxkreasxxx.html" title=""><span  style="color: #97ACEF;" class="userlink" title="XxxkreasxxX (1093721157) [Normal user]">Kreas</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-24-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1093721157-xxxkreasxxx/posts-2.html" title="List XxxkreasxxX's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1093721157-xxxkreasxxx/threads.html" title="List XxxkreasxxX's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3825">
+				The same to create my metroid mod Paint 3d
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3825">
+									Posted on 02-28-18, 06:57 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3825">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-maker8bab.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bKreas)%2bin%2b__%26url%3dhttp_/localhost/post/3825/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3825</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3826">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar1" id="post_3826">
+				<style>td.topbar1_1 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+text-align: center;
+border-top-left-radius: 25px;
+}td.topbar1_1 > a > span {
+     color:white !important;
+}td.topbar1_2 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+border-top-right-radius: 25px;
+}td.topbar1_2 a {
+color: #fff !important;
+}.mainbar1 {
+  background: url('../../i.imgur.com/1K5VeC8.png') no-repeat !important;
+  background=color: #090909;
+  padding: 0 !important;
+  background-color: #000 !important;
+  font-family: 'Arial', sans-serif;
+  border-bottom-right-radius: 25px;
+}.sidebar1 {
+  background-color: #090909 !important;
+  text-align: center !important;
+  color: #E6E6E6 !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  border-bottom-left-radius: 25px;
+}.sidebar1 div.smallFonts > img:nth-child(4):hover {
+border-radius: 2%;
+box-shadow: 7px 7px 30px #000000 !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4) { 
+box-shadow: 5px 5px 40px #000000 !important;
+border-radius: 50%;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4):active {
+border-radius: 0%;
+box-shadow: 0px 0px 5px #FFFFFF !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+.mainbar1 a:link {color: gray;}
+.mainbar1 a:visited {color: gray;}
+.mainbar1 a:active {color: gray;}
+.mainbar1 a:hover {color: gray;} 
+.mainbar1 > div.post {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+} .mainbar1 > div.sig {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+}
+</style><div class="post">Do you use CTPKTool by any chance?<br></div><div class="sig">Old 3DS XL info:<br />
+I used to have a 3DSafe A9LH V11.3.0-36U with Luma in my CTRNAND. Since ReiNAND Reibooted and Re-Reileased, I "switch"ed back.<br />
+Right now, I have boot9strap with Luma 8.0 as my CFW. Though, I'd like to see other CFW's for B9S.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3826">
+									Posted on 03-01-18, 04:00 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3826">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-makerce0b.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/3826/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3826</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3829">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1093721157_1516902360.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1093721157-xxxkreasxxx.html" title=""><span  style="color: #97ACEF;" class="userlink" title="XxxkreasxxX (1093721157) [Normal user]">Kreas</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-24-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1093721157-xxxkreasxxx/posts-2.html" title="List XxxkreasxxX's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1093721157-xxxkreasxxx/threads.html" title="List XxxkreasxxX's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3829">
+				Yes
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3829">
+									Posted on 03-01-18, 12:46 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3829">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-maker3c21.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bKreas)%2bin%2b__%26url%3dhttp_/localhost/post/3829/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3829</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3830">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/20_1530098269.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/20-h%c3%bcseyin-der-m%c3%a4chtige.html" title=""><span  style="color: #97ACEF;" class="userlink" title="H&uuml;seyin der M&auml;chtige (20) [Normal user]">Hüseyin the Mighty</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-21-17<br>
+						From: Final Destination<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/20-h%c3%bcseyin-der-m%c3%a4chtige/posts.html" title="List H&uuml;seyin der M&auml;chtige's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/20-h%c3%bcseyin-der-m%c3%a4chtige/threads.html" title="List H&uuml;seyin der M&auml;chtige's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar20" id="post_3830">
+				<style>.mainbar20 { 
+background: url(../../i.imgur.com/iCCQdat.png) !important;
+color: #ffffff !important; 
+font-family: Helvetica !important;
+border: 3px solid #ffffff !important;
+border-top: 3px solid #ffffff !important;
+border-left: 3px solid #ffffff !important;
+}
+
+.topbar20_1 {
+background: #7F0000 !important;
+color: #ffffff !important; 
+border: 3px solid #ffffff !important;
+border-bottom: 0px solid #ffffff !important;
+border-right: 0px solid #ffffff !important;
+}
+
+.topbar20_2 {
+background: #7F0000 !important;
+color: #ffffff !important; 
+border: 3px solid #ffffff !important;
+border-bottom: 0px solid #ffffff !important;
+border-left: 3px solid #ffffff !important;
+}
+
+.sidebar20 {
+background: #7F0000 !important;
+color: #ffffff !important; 
+border: 3px solid #ffffff !important;
+border-right: 0px solid #ffffff!important;
+border-top: 0px solid #ffffff !important;
+}
+
+.mainbar20 .spoilerbutton
+{
+color: #ffffff !important;
+background:rgba(90, 0, 0, 1.0) !important;
+border: 3px solid #ffffff !important;
+}
+
+.mainbar20 .spoilercontents
+{
+color: #ffffff !important;
+background:rgba(76, 0, 0, 0.8) !important;
+border: 3px solid #ffffff !important;
+}
+
+.mainbar20 .codeblock {
+background:rgba(76, 0, 0, 0.8) !important;
+border: 3px solid #ffffff !important;
+}
+
+.mainbar20 .quote {
+background:rgba(76, 0, 0, 0.8) !important;
+border: 3px solid #ffffff !important;
+}
+
+.mainbar20 .quotecontent {
+  border-bottom: none !important;
+  border-top: none !important;
+}
+</style>ctpktool changes the length of the ctpk file, use ohana3ds rebirth to import the sprites.<br>_________________________<br><a href="https://www.youtube.com/channel/UCROjh4jG2rsZ0PD0gn2A79w">YouTube</a>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3830">
+									Posted on 03-01-18, 06:26 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3830">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-maker4a38.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bH%c3%bcseyin%2bthe%2bMighty)%2bin%2b__%26url%3dhttp_/localhost/post/3830/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3830</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3832">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1093721157_1516902360.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1093721157-xxxkreasxxx.html" title=""><span  style="color: #97ACEF;" class="userlink" title="XxxkreasxxX (1093721157) [Normal user]">Kreas</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-24-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1093721157-xxxkreasxxx/posts-2.html" title="List XxxkreasxxX's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1093721157-xxxkreasxxx/threads.html" title="List XxxkreasxxX's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3832">
+				ok thanks
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3832">
+									Posted on 03-01-18, 07:02 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3832">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-maker6b87.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bKreas)%2bin%2b__%26url%3dhttp_/localhost/post/3832/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3832</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3860">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1093721157_1516902360.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1093721157-xxxkreasxxx.html" title=""><span  style="color: #97ACEF;" class="userlink" title="XxxkreasxxX (1093721157) [Normal user]">Kreas</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-24-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1093721157-xxxkreasxxx/posts-2.html" title="List XxxkreasxxX's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1093721157-xxxkreasxxx/threads.html" title="List XxxkreasxxX's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3860">
+				I made it work finally.<br />
+May i ask a favor? <br />
+Can you please make a video so more people can see how it's done.<br />
+I would make it myself but i am not good with this. :(
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3860">
+									Posted on 03-03-18, 02:59 pm
+										 (rev. 1 by <a href="../profile/1093721157-xxxkreasxxx.html" title=""><span  style="color: #97ACEF;" class="userlink" title="XxxkreasxxX (1093721157) [Normal user]"><img src="../data/avatars/1093721157_1516902360.jpg" alt="" class="minipic" /> Kreas</span></a> on 03-03-18, 02:59 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3860">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-maker8711.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bKreas)%2bin%2b__%26url%3dhttp_/localhost/post/3860/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3860</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3865">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar1" id="post_3865">
+				<style>td.topbar1_1 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+text-align: center;
+border-top-left-radius: 25px;
+}td.topbar1_1 > a > span {
+     color:white !important;
+}td.topbar1_2 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+border-top-right-radius: 25px;
+}td.topbar1_2 a {
+color: #fff !important;
+}.mainbar1 {
+  background: url('../../i.imgur.com/1K5VeC8.png') no-repeat !important;
+  background=color: #090909;
+  padding: 0 !important;
+  background-color: #000 !important;
+  font-family: 'Arial', sans-serif;
+  border-bottom-right-radius: 25px;
+}.sidebar1 {
+  background-color: #090909 !important;
+  text-align: center !important;
+  color: #E6E6E6 !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  border-bottom-left-radius: 25px;
+}.sidebar1 div.smallFonts > img:nth-child(4):hover {
+border-radius: 2%;
+box-shadow: 7px 7px 30px #000000 !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4) { 
+box-shadow: 5px 5px 40px #000000 !important;
+border-radius: 50%;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4):active {
+border-radius: 0%;
+box-shadow: 0px 0px 5px #FFFFFF !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+.mainbar1 a:link {color: gray;}
+.mainbar1 a:visited {color: gray;}
+.mainbar1 a:active {color: gray;}
+.mainbar1 a:hover {color: gray;} 
+.mainbar1 > div.post {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+} .mainbar1 > div.sig {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+}
+</style><div class="post">I can make one once I get Citra up and running...<br />
+<br />
+...or if anyone here has a CFW'd N3DS, they can help me.<br></div><div class="sig">Old 3DS XL info:<br />
+I used to have a 3DSafe A9LH V11.3.0-36U with Luma in my CTRNAND. Since ReiNAND Reibooted and Re-Reileased, I "switch"ed back.<br />
+Right now, I have boot9strap with Luma 8.0 as my CFW. Though, I'd like to see other CFW's for B9S.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3865">
+									Posted on 03-04-18, 02:47 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3865">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-makerfb77.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/3865/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3865</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3871">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1093721157_1516902360.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1093721157-xxxkreasxxx.html" title=""><span  style="color: #97ACEF;" class="userlink" title="XxxkreasxxX (1093721157) [Normal user]">Kreas</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-24-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1093721157-xxxkreasxxx/posts-2.html" title="List XxxkreasxxX's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1093721157-xxxkreasxxx/threads.html" title="List XxxkreasxxX's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3871">
+				Ok thank you.<br />
+It will help a lot of people. <br />
+Keep up the good work!! ;)
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3871">
+									Posted on 03-04-18, 07:27 pm
+										 (rev. 1 by <a href="../profile/1093721157-xxxkreasxxx.html" title=""><span  style="color: #97ACEF;" class="userlink" title="XxxkreasxxX (1093721157) [Normal user]"><img src="../data/avatars/1093721157_1516902360.jpg" alt="" class="minipic" /> Kreas</span></a> on 03-04-18, 07:28 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3871">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-maker2bb5.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bKreas)%2bin%2b__%26url%3dhttp_/localhost/post/3871/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3871</button>							</div>
+		</td></tr>
+	</table>	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/4-hacking-info.html">Hacking info</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="515-editing-the-enemy-sprites-in-the-3ds-version-of-mario-maker.html">Editing the enemy sprites in the 3DS version of Mario Maker.</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="503.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="580.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dEditing%2bthe%2benemy%2bsprites%2bin%2bthe%2b3DS%2bversion%2bof%2bMario%2bMaker.%26url%3dhttp_/localhost/thread/515/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/thread/515 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:58:50 GMT -->
+</html>

@@ -1,0 +1,1319 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/thread/503 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:49:23 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Bameta edit &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content="How to modify Super Mario Maker's Sound.pack to normalize Fanfare Boss Music Bonus Music 1 Unpack Sound.pack in your preferred way (SARCExtract, etc.) 2 Unpack CourseScene.bars and CourseSceneBGM_XX.bars (M1 M3..." />
+        <meta name="keywords" content="bameta edit wii" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Bameta edit &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="Bameta edit &amp;raquo; Mario Making Mods" /><meta property="og:description" content="How to modify Super Mario Maker's Sound.pack to normalize Fanfare Boss Music Bonus Music 1 Unpack Sound.pack in your preferred way (SARCExtract, etc.) 2 Unpack CourseScene.bars and CourseSceneBGM_XX.bars (M1 M3..." /> <meta name="og:description" content="How to modify Super Mario Maker's Sound.pack to normalize Fanfare Boss Music Bonus Music 1 Unpack Sound.pack in your preferred way (SARCExtract, etc.) 2 Unpack CourseScene.bars and CourseSceneBGM_XX.bars (M1 M3..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Bameta edit &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="How to modify Super Mario Maker's Sound.pack to normalize Fanfare Boss Music Bonus Music 1 Unpack Sound.pack in your preferred way (SARCExtract, etc.) 2 Unpack CourseScene.bars and CourseSceneBGM_XX.bars (M1 M3..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/4-hacking-info.html">Hacking info</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="503-bameta-edit.html">Bameta edit</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="484.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="515.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dBameta%2bedit%26url%3dhttp_/localhost/thread/503/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>			
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			<li class="page-item active"><span class="page-link">1 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="503-bameta-edit704a.html?from=20">2</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="503-bameta-edit704a.html?from=20" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="503-bameta-edit704a.html?from=20" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+		<table class="table table-striped" id="post3663">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1377596684_1562219666.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1377596684-otomo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="otomo (1377596684) [Normal user]">princess ripblue</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 02-07-18<br>
+						From: Japan<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1377596684-otomo/posts.html" title="List otomo's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1377596684-otomo/threads.html" title="List otomo's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3663">
+				How to modify Super Mario Maker's Sound.pack to normalize Fanfare Boss Music Bonus Music<br />
+1 Unpack Sound.pack in your preferred way (SARCExtract, etc.)<br />
+2 Unpack CourseScene.bars and CourseSceneBGM_XX.bars (M1 M3 MW WU)<br />
+3 Open bameta of BGM file with barFolder's bamata and bfstp in Haxeditor<br />
+Move to 0x2B of 4 offset and rewrite it to 05<br />
+5 Save and pack with SARCPacker<br />
+6 Please enjoy!<br />
+<br />
+Notes<br />
+Please do not use Wexos Toolbox<br />
+Also, the wav file to convert to bfwav should be 32000 kHz<br />
+<br />
+CourseScene's WU_DOWNFANFARE MW_BGM_PlayerDown M3_PlayerDown M1_DownFanfare<br />
+M1_CastleClearFanfare Do not edit M1_CourseClearFanfare<br />
+Soft lock will be done after course clearance or mistake!<br />
+<br />
+Screen shot<br />
+<img class="img-fluid" src="../../i.imgur.com/lB5P1S3.png" alt=""/><br />
+<br>_________________________<br><div class="signature"><a href="../../i.imgur.com/HUxWNd6.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../i.imgur.com/HUxWNd6.png" alt=""/></a></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3663">
+									Posted on 02-15-18, 12:16 pm
+										 (rev. 1 by <a href="../profile/1377596684-otomo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="otomo (1377596684) [Normal user]"><img src="../data/avatars/1377596684_1562219666.png" alt="" class="minipic" /> princess ripblue</span></a> on 02-24-18, 11:09 am)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3663">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-editff47.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bprincess%2bripblue)%2bin%2b__%26url%3dhttp_/localhost/post/3663/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3663</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3664">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/109_1572859516.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]">Buntendo</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">cool dude</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Administrator</li></ul>
+					<div class="card-body">
+						Since: 09-23-17<br>
+						From: mars<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/109-buntendo/posts.html" title="List Buntendo's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/109-buntendo/threads.html" title="List Buntendo's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3664">
+				Holy shit, thank you! I've been modifiying sound.pack to only have weird side effects but this actually works! I seriously can't thank you enough.<br>_________________________<br><div class="signature">Discord -  Buntendo#4069<br />
+Twitter - @buntendoswitch<br />
+Switch -  SW-7334-1776-1312</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3664">
+									Posted on 02-15-18, 12:34 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3664">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-edit98d8.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bBuntendo)%2bin%2b__%26url%3dhttp_/localhost/post/3664/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3664</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3689">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/194_1512740157.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-08-17<br>
+						From: Canada<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/194-lakifume/posts.html" title="List Lakifume's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/194-lakifume/threads.html" title="List Lakifume's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3689">
+				Thank you for the tutorial ! Also how do you replace sound effects ?
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3689">
+									Posted on 02-17-18, 11:58 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3689">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-edit5dbd.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bLakifume)%2bin%2b__%26url%3dhttp_/localhost/post/3689/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3689</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3690">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1377596684_1562219666.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1377596684-otomo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="otomo (1377596684) [Normal user]">princess ripblue</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 02-07-18<br>
+						From: Japan<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1377596684-otomo/posts.html" title="List otomo's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1377596684-otomo/threads.html" title="List otomo's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3690">
+				There is also a way to replace bfwav to replace sound effects<br />
+It requires NW4F_WaveConverter<br />
+Please download from <a href="https://github.com/ziggyhacks/MK8-Voice-Tools">https://github.com/ziggyhacks/MK8-Voice-Tools</a><br />
+If you change the bameta file of sound effect to 0x2B to 05, you can also play it with bfstm<br />
+In that case, create bfstm with the same name as bameta's file name and put it in the stream folder<br>_________________________<br><div class="signature"><a href="../../i.imgur.com/HUxWNd6.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../i.imgur.com/HUxWNd6.png" alt=""/></a></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3690">
+									Posted on 02-18-18, 02:33 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3690">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-edita6c1.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bprincess%2bripblue)%2bin%2b__%26url%3dhttp_/localhost/post/3690/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3690</button>							</div>
+		</td></tr>
+	</table>    
+
+    	<table class="table table-striped" id="post3691">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/9_1507994313.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/9-granimated.html" title=""><span  style="color: #97ACEF;" class="userlink" title="GRAnimated (9) [Normal user]">GRAnimated</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/9-granimated/posts-2.html" title="List GRAnimated's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/9-granimated/threads.html" title="List GRAnimated's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post haslayout" id="post_3691">
+				<style>/* unvisited link */
+#linkchange a:link {
+    color: white;
+}
+
+/* visited link */
+#linkchange a:visited {
+    color: white;
+}
+
+/* mouse over link */
+#linkchange a:hover {
+    color: white;
+}
+
+/* selected link */
+#linkchange a:active {
+    color: white;
+}</style><div style="background:#ffffff url(../../mariomods.net/img/layout/granimated/bg_character.png) center top !important;
+color:#FFFFFF;
+background-repeat: repeat;
+margin-left: auto;
+height: 100%;
+background-size:100%;"><br />
+<div style='border: 12px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;
+padding:10px;
+margin: 24px;
+border-radius: 2px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-size: 14px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;'>is there a way of adding sound effects? for the mod i'm making for MayroSMM, i enabled wall jumping and ground pounding and spin jumping, but only when you start to ground pound has a sound right now.<br><div style='border: 6px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;padding:10px;
+border-radius: 2px;
+font-size: 14px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-family: "Trebuchet MS", Helvetica, sans-serif;' id="linkchange">YouTube: <a href="https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ">https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ</a><br />
+Twitter: <a href="https://www.twitter.com/granimated">https://www.twitter.com/granimated</a><br />
+Discord: GRAnimated ✓ᵛᵉʳᶦᶠᶦᵉᵈ#4979</div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3691">
+									Posted on 02-18-18, 02:35 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3691">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-edit7f92.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bGRAnimated)%2bin%2b__%26url%3dhttp_/localhost/post/3691/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3691</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3693">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1377596684_1562219666.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1377596684-otomo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="otomo (1377596684) [Normal user]">princess ripblue</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 02-07-18<br>
+						From: Japan<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1377596684-otomo/posts.html" title="List otomo's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1377596684-otomo/threads.html" title="List otomo's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3693">
+				Well, it's impossible to add a sound effect<br />
+Excuse me...<br>_________________________<br><div class="signature"><a href="../../i.imgur.com/HUxWNd6.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../i.imgur.com/HUxWNd6.png" alt=""/></a></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3693">
+									Posted on 02-18-18, 02:42 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3693">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-editb445.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bprincess%2bripblue)%2bin%2b__%26url%3dhttp_/localhost/post/3693/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3693</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3694">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/194_1512740157.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-08-17<br>
+						From: Canada<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/194-lakifume/posts.html" title="List Lakifume's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/194-lakifume/threads.html" title="List Lakifume's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3694">
+				But... you did it in your SMB3 SMAS mod, right ?
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3694">
+									Posted on 02-18-18, 02:43 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3694">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-edit2715.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bLakifume)%2bin%2b__%26url%3dhttp_/localhost/post/3694/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3694</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3695">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1377596684_1562219666.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1377596684-otomo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="otomo (1377596684) [Normal user]">princess ripblue</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 02-07-18<br>
+						From: Japan<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1377596684-otomo/posts.html" title="List otomo's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1377596684-otomo/threads.html" title="List otomo's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3695">
+				You replaced it.<br>_________________________<br><div class="signature"><a href="../../i.imgur.com/HUxWNd6.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../i.imgur.com/HUxWNd6.png" alt=""/></a></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3695">
+									Posted on 02-18-18, 02:48 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3695">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-editaba4.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bprincess%2bripblue)%2bin%2b__%26url%3dhttp_/localhost/post/3695/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3695</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3696">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/351361358-jabwax.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Jabwax (351361358) [Normal user]">Just a Bloke</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-11-18<br>
+						From: Australia<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/351361358-jabwax/posts.html" title="List Jabwax's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/351361358-jabwax/threads.html" title="List Jabwax's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3696">
+				<div class="quote"> is there a way of adding sound effects? for the mod i'm making for MayroSMM, i enabled wall jumping and ground pounding and spin jumping, but only when you start to ground pound has a sound right now. <div class="quote-footer"><a href="503-bameta-edit7f92.html">Posted by GRAnimated</a></div></div>You could try adding the sound effect from the SMW or NSMBU theme to the M1_Player .bars file in Sound.pack. The SMW sound for a spin jump is MW_KurukuruJump.bfwav, so try adding that and the bameta to the M1_Player bars file and rename both to M1_KurukuruJump.bfwav or something. I don't know if this method will work, but it's worth a shot.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3696">
+									Posted on 02-18-18, 02:58 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3696">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-edit7db7.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bJust%2ba%2bBloke)%2bin%2b__%26url%3dhttp_/localhost/post/3696/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3696</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3697">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/9_1507994313.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/9-granimated.html" title=""><span  style="color: #97ACEF;" class="userlink" title="GRAnimated (9) [Normal user]">GRAnimated</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/9-granimated/posts-2.html" title="List GRAnimated's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/9-granimated/threads.html" title="List GRAnimated's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post haslayout" id="post_3697">
+				<style>/* unvisited link */
+#linkchange a:link {
+    color: white;
+}
+
+/* visited link */
+#linkchange a:visited {
+    color: white;
+}
+
+/* mouse over link */
+#linkchange a:hover {
+    color: white;
+}
+
+/* selected link */
+#linkchange a:active {
+    color: white;
+}</style><div style="background:#ffffff url(../../mariomods.net/img/layout/granimated/bg_character.png) center top !important;
+color:#FFFFFF;
+background-repeat: repeat;
+margin-left: auto;
+height: 100%;
+background-size:100%;"><br />
+<div style='border: 12px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;
+padding:10px;
+margin: 24px;
+border-radius: 2px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-size: 14px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;'>M3* and i'll try it!<br><div style='border: 6px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;padding:10px;
+border-radius: 2px;
+font-size: 14px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-family: "Trebuchet MS", Helvetica, sans-serif;' id="linkchange">YouTube: <a href="https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ">https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ</a><br />
+Twitter: <a href="https://www.twitter.com/granimated">https://www.twitter.com/granimated</a><br />
+Discord: GRAnimated ✓ᵛᵉʳᶦᶠᶦᵉᵈ#4979</div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3697">
+									Posted on 02-18-18, 03:08 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3697">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-edit47c7.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bGRAnimated)%2bin%2b__%26url%3dhttp_/localhost/post/3697/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3697</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3698">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1377596684_1562219666.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1377596684-otomo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="otomo (1377596684) [Normal user]">princess ripblue</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 02-07-18<br>
+						From: Japan<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1377596684-otomo/posts.html" title="List otomo's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1377596684-otomo/threads.html" title="List otomo's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3698">
+				<div class="quote"> M3* and i'll try it! <div class="quote-footer"><a href="503-bameta-edit47c7.html">Posted by GRAnimated</a></div></div>Unfortunately the sound effect was not played in that way<br>_________________________<br><div class="signature"><a href="../../i.imgur.com/HUxWNd6.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../i.imgur.com/HUxWNd6.png" alt=""/></a></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3698">
+									Posted on 02-18-18, 03:20 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3698">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-editf610.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bprincess%2bripblue)%2bin%2b__%26url%3dhttp_/localhost/post/3698/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3698</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3699">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/9_1507994313.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/9-granimated.html" title=""><span  style="color: #97ACEF;" class="userlink" title="GRAnimated (9) [Normal user]">GRAnimated</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/9-granimated/posts-2.html" title="List GRAnimated's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/9-granimated/threads.html" title="List GRAnimated's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post haslayout" id="post_3699">
+				<style>/* unvisited link */
+#linkchange a:link {
+    color: white;
+}
+
+/* visited link */
+#linkchange a:visited {
+    color: white;
+}
+
+/* mouse over link */
+#linkchange a:hover {
+    color: white;
+}
+
+/* selected link */
+#linkchange a:active {
+    color: white;
+}</style><div style="background:#ffffff url(../../mariomods.net/img/layout/granimated/bg_character.png) center top !important;
+color:#FFFFFF;
+background-repeat: repeat;
+margin-left: auto;
+height: 100%;
+background-size:100%;"><br />
+<div style='border: 12px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;
+padding:10px;
+margin: 24px;
+border-radius: 2px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-size: 14px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;'>o rip<br><div style='border: 6px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;padding:10px;
+border-radius: 2px;
+font-size: 14px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-family: "Trebuchet MS", Helvetica, sans-serif;' id="linkchange">YouTube: <a href="https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ">https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ</a><br />
+Twitter: <a href="https://www.twitter.com/granimated">https://www.twitter.com/granimated</a><br />
+Discord: GRAnimated ✓ᵛᵉʳᶦᶠᶦᵉᵈ#4979</div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3699">
+									Posted on 02-18-18, 03:20 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3699">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-edit85d8.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bGRAnimated)%2bin%2b__%26url%3dhttp_/localhost/post/3699/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3699</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3700">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/194_1512740157.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-08-17<br>
+						From: Canada<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/194-lakifume/posts.html" title="List Lakifume's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/194-lakifume/threads.html" title="List Lakifume's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3700">
+				Do you know how to change sprite effects ? (like bomb explosions, lava splash...)
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3700">
+									Posted on 02-18-18, 03:26 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3700">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-edit931f.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bLakifume)%2bin%2b__%26url%3dhttp_/localhost/post/3700/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3700</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3701">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/9_1507994313.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/9-granimated.html" title=""><span  style="color: #97ACEF;" class="userlink" title="GRAnimated (9) [Normal user]">GRAnimated</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/9-granimated/posts-2.html" title="List GRAnimated's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/9-granimated/threads.html" title="List GRAnimated's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post haslayout" id="post_3701">
+				<style>/* unvisited link */
+#linkchange a:link {
+    color: white;
+}
+
+/* visited link */
+#linkchange a:visited {
+    color: white;
+}
+
+/* mouse over link */
+#linkchange a:hover {
+    color: white;
+}
+
+/* selected link */
+#linkchange a:active {
+    color: white;
+}</style><div style="background:#ffffff url(../../mariomods.net/img/layout/granimated/bg_character.png) center top !important;
+color:#FFFFFF;
+background-repeat: repeat;
+margin-left: auto;
+height: 100%;
+background-size:100%;"><br />
+<div style='border: 12px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;
+padding:10px;
+margin: 24px;
+border-radius: 2px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-size: 14px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;'>the particle? it's uneditable right now unless your fine with just changing color<br><div style='border: 6px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;padding:10px;
+border-radius: 2px;
+font-size: 14px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-family: "Trebuchet MS", Helvetica, sans-serif;' id="linkchange">YouTube: <a href="https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ">https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ</a><br />
+Twitter: <a href="https://www.twitter.com/granimated">https://www.twitter.com/granimated</a><br />
+Discord: GRAnimated ✓ᵛᵉʳᶦᶠᶦᵉᵈ#4979</div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3701">
+									Posted on 02-18-18, 03:28 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3701">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-editf30a.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bGRAnimated)%2bin%2b__%26url%3dhttp_/localhost/post/3701/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3701</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3702">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/194_1512740157.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-08-17<br>
+						From: Canada<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/194-lakifume/posts.html" title="List Lakifume's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/194-lakifume/threads.html" title="List Lakifume's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3702">
+				Changing the SMW lava splash and fire around fish to blue ? Is that possible ?
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3702">
+									Posted on 02-18-18, 03:30 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3702">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-editccfb.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bLakifume)%2bin%2b__%26url%3dhttp_/localhost/post/3702/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3702</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3703">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/9_1507994313.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/9-granimated.html" title=""><span  style="color: #97ACEF;" class="userlink" title="GRAnimated (9) [Normal user]">GRAnimated</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/9-granimated/posts-2.html" title="List GRAnimated's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/9-granimated/threads.html" title="List GRAnimated's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post haslayout" id="post_3703">
+				<style>/* unvisited link */
+#linkchange a:link {
+    color: white;
+}
+
+/* visited link */
+#linkchange a:visited {
+    color: white;
+}
+
+/* mouse over link */
+#linkchange a:hover {
+    color: white;
+}
+
+/* selected link */
+#linkchange a:active {
+    color: white;
+}</style><div style="background:#ffffff url(../../mariomods.net/img/layout/granimated/bg_character.png) center top !important;
+color:#FFFFFF;
+background-repeat: repeat;
+margin-left: auto;
+height: 100%;
+background-size:100%;"><br />
+<div style='border: 12px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;
+padding:10px;
+margin: 24px;
+border-radius: 2px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-size: 14px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;'><a href="https://gamebanana.com/tools/6284">https://gamebanana.com/tools/6284</a> this should work for changing colors in the PTCL in System.pack<br><div style='border: 6px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;padding:10px;
+border-radius: 2px;
+font-size: 14px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-family: "Trebuchet MS", Helvetica, sans-serif;' id="linkchange">YouTube: <a href="https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ">https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ</a><br />
+Twitter: <a href="https://www.twitter.com/granimated">https://www.twitter.com/granimated</a><br />
+Discord: GRAnimated ✓ᵛᵉʳᶦᶠᶦᵉᵈ#4979</div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3703">
+									Posted on 02-18-18, 03:32 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3703">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-editd10d.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bGRAnimated)%2bin%2b__%26url%3dhttp_/localhost/post/3703/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3703</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3704">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/109_1572859516.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]">Buntendo</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">cool dude</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Administrator</li></ul>
+					<div class="card-body">
+						Since: 09-23-17<br>
+						From: mars<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/109-buntendo/posts.html" title="List Buntendo's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/109-buntendo/threads.html" title="List Buntendo's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3704">
+				i tried that and the program crashed when i opened the ptcl file<br>_________________________<br><div class="signature">Discord -  Buntendo#4069<br />
+Twitter - @buntendoswitch<br />
+Switch -  SW-7334-1776-1312</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3704">
+									Posted on 02-18-18, 03:35 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3704">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-editc5db.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bBuntendo)%2bin%2b__%26url%3dhttp_/localhost/post/3704/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3704</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3816">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/194_1512740157.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-08-17<br>
+						From: Canada<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/194-lakifume/posts.html" title="List Lakifume's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/194-lakifume/threads.html" title="List Lakifume's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3816">
+				It's weird, I only changed MW_course_clear_fanfare and MW_castle_clear_fanfare and the game still softlocks in SMB1.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3816">
+									Posted on 02-28-18, 12:59 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3816">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-edit1e50.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bLakifume)%2bin%2b__%26url%3dhttp_/localhost/post/3816/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3816</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3817">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1377596684_1562219666.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1377596684-otomo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="otomo (1377596684) [Normal user]">princess ripblue</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 02-07-18<br>
+						From: Japan<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1377596684-otomo/posts.html" title="List otomo's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1377596684-otomo/threads.html" title="List otomo's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3817">
+				Well ... It is inexplicable that only the fanfare of SMB skin is soft locked, but no countermeasure exists<br />
+Only the costume Mario with the exclusive fanfare is not locked<br />
+Or you only have to disable M1 skin<br>_________________________<br><div class="signature"><a href="../../i.imgur.com/HUxWNd6.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../i.imgur.com/HUxWNd6.png" alt=""/></a></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3817">
+									Posted on 02-28-18, 05:52 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3817">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-edit4030.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bprincess%2bripblue)%2bin%2b__%26url%3dhttp_/localhost/post/3817/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3817</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3936">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/194_1512740157.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-08-17<br>
+						From: Canada<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/194-lakifume/posts.html" title="List Lakifume's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/194-lakifume/threads.html" title="List Lakifume's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3936">
+				Could you post a Sound.pack that normalizes bonus and boss musics for all styles ? Because we're having a big issue with it right now.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3936">
+									Posted on 03-10-18, 11:33 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3936">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="503-bameta-edit6c23.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bLakifume)%2bin%2b__%26url%3dhttp_/localhost/post/3936/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3936</button>							</div>
+		</td></tr>
+	</table>			
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			<li class="page-item active"><span class="page-link">1 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="503-bameta-edit704a.html?from=20">2</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="503-bameta-edit704a.html?from=20" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="503-bameta-edit704a.html?from=20" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/4-hacking-info.html">Hacking info</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="503-bameta-edit.html">Bameta edit</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="484.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="515.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dBameta%2bedit%26url%3dhttp_/localhost/thread/503/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/thread/503 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:49:23 GMT -->
+</html>

@@ -1,0 +1,416 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 05:48:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/mdb.css">
+		<script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/minicon.png" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="manifest" href="API/manifest.php" />
+        <meta name="description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" />
+        <meta name="keywords" content="Mario, Super Mario, Super Mario Maker, Super Mario Maker 2, Super Mario Maker Mod, Super Mario Maker Modding, SMM Mod, SMM Modding, Super Mario Maker 2 Mod, Super Mario Maker 2 Modding, SMM2 Mod, SMM2 Modding, Super Mario Maker for Nintendo 3DS Mod, Super Mario Maker for Nintendo 3DS modding, SMM3DS Mod, SMM3DS Modding" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Mario Making Mods" /> <meta name="og:title" content="Mario Making Mods" /><meta property="og:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" /> <meta name="og:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/tricks.js"></script>
+        <script src="js/jscolor.js" async></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="index.html">
+				<img id="theme_banner" src="img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item active">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="API/rss.php"									class="nav-link"
+									>
+									RSS feed
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+					<div class="row">
+		<div class="col-md-6 col-lg-8">
+			<table class="table table-striped table-bordered" style="text-align: center;">
+				<tr class="cell1">
+					<td>
+						<h1>Welcome to Mario Making Mods</h1>	We are a community dedicated to bringing you a home for the hacking of Super Mario Maker (Wii U & 3DS).<br />
+	Our community is a place for everyone to post their projects, get help and support, and find tutorials.<br />
+	Join us to share your very own creations, or feel free to just browse the site and check out some of the awesome projects and tutorials found here.<br />
+<h3>Super Mario Maker Mods</h3><div id="demo" class="carousel slide carousel-fade" data-ride="carousel" style="max-width:700px; margin: 0 auto;">  <ul class="carousel-indicators">    <li data-target="#demo" data-slide-to="0" class="active"></li>    <li data-target="#demo" data-slide-to="1"></li>    <li data-target="#demo" data-slide-to="2"></li>    <li data-target="#demo" data-slide-to="3"></li>  </ul>	<div class="carousel-inner">		<div class="carousel-item active">			<img class="d-block w-100" src="img/slider/smmvr.png" alt="Super Mario Maker: Vanilla Revamped"><br />
+		</div>		<div class="carousel-item">			<img class="d-block w-100" src="img/slider/terrariamaker.jpg" alt="Terraria Maker"><br />
+		</div>		<div class="carousel-item">			<img class="d-block w-100" src="img/slider/bismaker.png" alt="Bowser's Inside Story in Super Mario Maker"><br />
+		</div>		<div class="carousel-item">			<img class="d-block w-100" src="img/slider/smassmb3.jpg" alt="Super Mario Advance 4 in Super Mario Maker"><br />
+		</div>	</div><a class="carousel-control-prev" href="#demo" data-slide="prev"><br />
+    <span class="carousel-control-prev-icon"></span><br />
+  </a><a class="carousel-control-next" href="#demo" data-slide="next"><br />
+    <span class="carousel-control-next-icon"></span><br />
+  </a></div>	We have all sorts of crazy mods for Super Mario Maker, ranging from Super Mario Odyssey in 8-bit style, to Super Mario Maker: Vanilla Revamped.<br />
+	Whatever you are interested in, you might find it in our Depot. <br />
+	Over at the Depot, we have links to download the best mods out there for Super Mario Maker & tutorials for newcomers.<br />
+<h3>Wiki</h3>	At the Mario Making Mods Wiki, you'll find lots of up-to-date information about all the technical parts of Super Mario Maker. You can submit your own findings there, too!<br />
+<h3>Social</h3>We have a Discord Server you could join: <a href="https://invite.gg/MarioMakingMods">https://invite.gg/MarioMakingMods</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-md-6 col-lg-4">
+			<table class="table table-striped table-bordered">
+				<thead><tr><th>Recent Content</th></tr></thead>
+				<tbody>
+											<tr><td>
+							<b> <span class="threadTag" style="background-color: hsl(327, 70%, 40%);">mario maker</span><span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(36, 70%, 40%);">v.1</span><span class="threadTag" style="background-color: hsl(6, 70%, 40%);">e3 2014</span> <a href="thread/723-mario-maker-e3-2014-moda079.html" title="">Mario Maker E3 2014 Mod</a></b><br>
+							<span class="smallFonts"><a href="profile/400210131-a-kramer-randomness.html" title=""><span  style="color: #7C60B0;" class="userlink" title="A Kramer Randomness (400210131) [Normal user]">A Kramer Randomness</span></a> - <time class="timeago" datetime="2020-03-08T19:29:18+00:00">03-08-20, 07:29 pm</time> in <a href="forum/3-project-releases.html">Project Releases</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <a href="thread/2029232988-does-anyone-have-a-collection-of-super-mario-wii-hack-levelcec0.html" title="">Does anyone have a collection of Super Mario Wii hack level?</a></b><br>
+							<span class="smallFonts"><a href="profile/233365761-veals.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Veals (233365761) [Normal user]">Veals</span></a> - <time class="timeago" datetime="2020-02-25T19:17:12+00:00">02-25-20, 07:17 pm</time> in <a href="forum/2-mario-making-mods-talk.html">Mario Making Mods Talk</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <span class="threadTag" style="background-color: hsl(177, 70%, 40%);">3ds</span> <a href="thread/1241148923-super-mario-maker-2ds-mario-maker-2-3ds-mod3642.html" title="">Super Mario Maker 2DS (Mario Maker 2 3DS mod)</a></b><br>
+							<span class="smallFonts"><a href="profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><img src="data/avatars/996211172_1551296122.jpg" alt="" class="minipic" /> <span style="color:hsl(157,100%,80.4%);">S</span><span style="color:hsl(188,100%,80.4%);">m</span><span style="color:hsl(219,100%,80.4%);">-</span><span style="color:hsl(250,100%,80.4%);">A</span><span style="color:hsl(281,100%,80.4%);">r</span><span style="color:hsl(312,100%,80.4%);">t</span><span style="color:hsl(343,100%,80.4%);">T</span><span style="color:hsl(14,100%,80.4%);">h</span><span style="color:hsl(45,100%,80.4%);">i</span><span style="color:hsl(76,100%,80.4%);">n</span><span style="color:hsl(107,100%,80.4%);">g</span><span style="color:hsl(138,100%,80.4%);">s</span></span></a> - <time class="timeago" datetime="2020-02-25T03:09:26+00:00">02-25-20, 03:09 am</time> in <a href="forum/3-project-releases.html">Project Releases</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <a href="thread/476610072-content-pack-29d50.html" title="">Content_Pack_2</a></b><br>
+							<span class="smallFonts"><a href="profile/1425533397-mariopossamato.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MarioPossamato (1425533397) [Normal user]"><img src="data/avatars/1425533397_1557510517.png" alt="" class="minipic" /> MarioPossamato</span></a> - <time class="timeago" datetime="2020-02-24T05:25:42+00:00">02-24-20, 05:25 am</time> in <a href="forum/3-project-releases.html">Project Releases</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <a href="thread/2043253947-some-questionsba57.html" title="">Some questions</a></b><br>
+							<span class="smallFonts"><a href="profile/1867606187-net.html" title=""><span  style="color: #97ACEF;" class="userlink" title=".NET (1867606187) [Normal user]"><img src="data/avatars/1867606187_1566503629.png" alt="" class="minipic" /> .NET</span></a> - <time class="timeago" datetime="2020-02-02T19:25:43+00:00">02-02-20, 07:25 pm</time> in <a href="forum/6-general-chat.html">General Chat</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <a href="thread/541068215-modded-nso-filesa12f.html" title="">Modded Nso Files</a></b><br>
+							<span class="smallFonts"><a href="profile/1425533397-mariopossamato.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MarioPossamato (1425533397) [Normal user]"><img src="data/avatars/1425533397_1557510517.png" alt="" class="minipic" /> MarioPossamato</span></a> - <time class="timeago" datetime="2020-02-01T06:20:42+00:00">02-01-20, 06:20 am</time> in <a href="forum/3-project-releases.html">Project Releases</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <span class="threadTag" style="background-color: hsl(6, 70%, 40%);">smm2</span><span class="threadTag" style="background-color: hsl(246, 70%, 40%);">smw</span> <a href="thread/1029194991-super-mario-world-fall-enemies8c39.html" title="">Super Mario World - Fall Enemies</a></b><br>
+							<span class="smallFonts"><a href="profile/241020055-kirbyluigiwithiggy.html" title=""><span  style="color: #97ACEF;" class="userlink" title="kirbyluigiwithIggy (241020055) [Normal user]">kirbyluigiwithIggy</span></a> - <time class="timeago" datetime="2020-01-31T06:18:11+00:00">01-31-20, 06:18 am</time> in <a href="forum/3-project-releases.html">Project Releases</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span> <a href="thread/390-mario-maker-halloween-theme23ad.html" title="">Mario Maker Halloween theme</a></b><br>
+							<span class="smallFonts"><a href="profile/241020055-kirbyluigiwithiggy.html" title=""><span  style="color: #97ACEF;" class="userlink" title="kirbyluigiwithIggy (241020055) [Normal user]">kirbyluigiwithIggy</span></a> - <time class="timeago" datetime="2020-01-30T06:25:14+00:00">01-30-20, 06:25 am</time> in <a href="forum/3-project-releases.html">Project Releases</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <a href="thread/809-why-i-dislike-discord2612.html" title="">Why I dislike Discord</a></b><br>
+							<span class="smallFonts"><a href="profile/2063600240-jeyneko.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Jeyneko (2063600240) [Normal user]">Jeyneko</span></a> - <time class="timeago" datetime="2020-01-26T01:58:53+00:00">01-26-20, 01:58 am</time> in <a href="forum/6-general-chat.html">General Chat</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <a href="thread/183269610-smm-theme-tsunami-coming-when-i-have-a-working-pcb7e7.html" title="">SMM theme tsunami, coming when I have a working pc</a></b><br>
+							<span class="smallFonts"><a href="profile/134-ironfoxgaming.html" title=""><span  style="color: #97ACEF;" class="userlink" title="IronFoxGaming (134) [Normal user]">IronFoxGaming</span></a> - <time class="timeago" datetime="2020-01-15T12:35:38+00:00">01-15-20, 12:35 pm</time> in <a href="forum/4-hacking-info.html">Hacking info</a></span>
+						</td></tr>
+									</tbody>
+			</table>
+		</div>
+	</div>
+
+	
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			<li class="page-item active"><span class="page-link">1 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="index4d96.html?from=5">2</a></li><li class="page-item"><a class="page-link" href="index00fd.html?from=10">3</a></li><li class="page-item"><a class="page-link" href="indexeff5.html?from=15">4</a></li><li class="page-item"><a class="page-link" href="index704a.html?from=20">5</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="index4d96.html?from=5" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="index677b.html?from=25" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav>			<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th style="text-align:left!important;">
+												<h3>Trouble in the Desert | Super Mario Unimaker Custom Stage</h3>
+						<span style="font-weight:normal;">Posted on 05-10-19, 11:12 pm by <a href="profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a></span>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td><iframe width="560" height="315" src="http://www.youtube.com/embed/rBOg0G8VjtA" frameborder="0" allowfullscreen></iframe><br />
+<br />
+Hey guys, sorry for the long break we've had. But now we're back and we're ready to showcase again. Today, we're playing the short level called Trouble in the Desert by DesertedZ for Super Mario Unimaker. We hope you enjoy!<br />
+Link to level:  <a href="thread/1896482429-trouble-in-the-desert.html">Trouble in the Desert</a></td></tr>
+				<tr><td><a href="thread/238265131-trouble-in-the-desert-super-mario-unimaker-custom-stageb42c.html">3 comments</a> (last by <a href="profile/592096892-dom-mods.html" title=""><span  style="color: #97ACEF;" class="userlink" title="dom mods (592096892) [Normal user]">dom mods</span></a>). <a href="login.html">Log in</a> to post a comment.</td></tr>
+			</tbody>
+		</table>
+			<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th style="text-align:left!important;">
+												<h3>Welcome to Unimaker! Mario Making Mods Fangame Friday</h3>
+						<span style="font-weight:normal;">Posted on 03-23-19, 12:58 am by <a href="profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a></span>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td><iframe width="560" height="315" src="http://www.youtube.com/embed/7y8vhrsaYO0" frameborder="0" allowfullscreen></iframe><br />
+<br />
+Hello everyone, and welcome back to yet another Fangame Fridays showcase. NightYoshi370 here, and today, we're going to look at an introductory level MarioMario369 made on our forums.<br />
+<br />
+Link to thread:  <a href="thread/963649425-block-hills.html">Block Hills</a></td></tr>
+				<tr><td><a href="thread/960132136-welcome-to-unimaker-mario-making-mods-fangame-friday8379.html">2 comments</a> (last by <a href="profile/1467199586-hu-hu.html" title=""><span  style="color: #7C60B0;" class="userlink" title="hu hu (1467199586) [Normal user]"><img src="data/avatars/1467199586_1552003331.png" alt="" class="minipic" /> falling upwards</span></a>). <a href="login.html">Log in</a> to post a comment.</td></tr>
+			</tbody>
+		</table>
+			<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th style="text-align:left!important;">
+												<h3>Windows 98 in Super Mario Maker Youtube Showcase</h3>
+						<span style="font-weight:normal;">Posted on 03-19-19, 03:07 am by <a href="profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a></span>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td><iframe width="560" height="315" src="http://www.youtube.com/embed/rHDXPBSxQ4Y" frameborder="0" allowfullscreen></iframe><br />
+<br />
+Hello there everyone, and welcome to yet another episode of Mod Mondays. NightYoshi370 here and today, we're taking a look at the Windows 98 theme made by Buntendo.<br />
+<br />
+Link to mod:  <span class="threadTag" style="background-color: hsl(246, 70%, 40%);">smw</span><span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span> <a href="thread/350-windows-98-in-super-mario-maker.html">Windows 98 in Super Mario Maker</a></td></tr>
+				<tr><td><a href="thread/669713509-windows-98-in-super-mario-maker-youtube-showcasefb58.html">3 comments</a> (last by <a href="profile/817714264-supermarioland07.html" title=""><span  style="color: #97ACEF;" class="userlink" title="SuperMarioLand07 (817714264) [Normal user]">SuperMarioLand07</span></a>). <a href="login.html">Log in</a> to post a comment.</td></tr>
+			</tbody>
+		</table>
+			<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th style="text-align:left!important;">
+												<h3>The future of Mario Making Mods - Evening out our media</h3>
+						<span style="font-weight:normal;">Posted on 03-15-19, 04:29 am by <a href="profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a></span>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td>In a conversation I have had on Discord with Buntendo, we were talking about the future of Mario Making Mods.<br />
+We took a look at the numbers. We took a look at our "competitors". We took a look at other modding scenes. We've decided to pull inspiration from them, and do some changes.<br />
+<br />
+Basically, there are three types of chatting-media types out there: Forums, mainstream media and chat platforms.<br />
+<br />
+- A forum is a place for archival work. It's more chilled out and often slow paced. Typically, it isn't the first post that's the main focus. This type of format is typically used during development of things, as it's only the latest post that matters.<br />
+- Mainstream is what we'd defined places like Twitter, Youtube & Reddit, where you just say what ever is on your mind, and all the replies are subject to that first main post. This type of chat format is typically used when something is finished as it's kind of hard to alert people of new updates (Especially in the case of Youtube).<br />
+- Chat platforms are places where you can work together with other members. Typically, messages here consist of few words and this goes at a high speed so anything important is quickly lost.<br />
+<br />
+In Mario Making Mods's history, we've combined all aspects of above. However, about a month ago, an issue with Discord came about which caused me to unaffiliate Mario Making Mods and everything related to me from Discord. Buntendo was placed as the owner and Huseyin the Mighty was placed as an administrator of the unofficial Mario Making Mods Discord Server.<br />
+<br />
+In it's place, I planned to host a Rocket.Chat server in which users can pick and choose their own channels to join. Unfortunately, it couldn't have been hosted by Oman Computar due to his VPS being shared. I tried to use Heroku and use the TWL-Mode Hacking Rocket.Chat server (which was then hosted on Heroku) as a test for how well Heroku would perform. I shouldn't have expected too much of a free hosting though, as the moment it started becoming active, there were memory issues, causing me to abandon the whole idea of a Rocket.Chat server.<br />
+I then tried to code my own chat platform for MakerBoard which started out fairly well (even got the Database running smoothly) but then came the issue of Bandwidth and the Real Time aspect of it. It was way too much for me to do so I decided to can the idea and just not have a chat platform.<br />
+<br />
+However, as quickly as that decision was made, it was met with a ton of confusion and backlash, with it causing the Forum to become even less active. People want to be able to first join a Real-Time Chat system to get a glimpse of the community and then dive into the community roots (which lie here on mariomods.net).<br />
+To solve that issue, I tried bringing back the idea of a Rocket.Chat server hosted on Epicpkmn11 Raspberry Pi. However, not only would that have been rude to do ("Hey! Can you host this community you know nothing about and know no one in it because I am too poor to pay for it myself?") but why not just use the chat platform we currently already have which still has the title Mario Making Mods title under it?<br />
+<br />
+Sure, discord still has their issues such as banning people unfairly (RocketRobz got banned two weeks ago with no explanation from the Discord Trust and Safety team), trying to take control over everything that happens on their platform (and it's even more apparent now that you cannot talk about cheats that give you an unfair advantage on an online game) and allthefoxes is still working at the Discord Trust and Safety team. In fact, the only thing changed was that cub porn is now banned on their platform. However, I've decided to not let that affect the actual chat platform itself, and when you look at it like that, it's actually a really decent platform. Of course, I would still much rather use Rocket.Chat as my main chat platform. However, based off of the experiences I've had on the DS Homebrew Rocket.Chat server, I've noticed that people would much rather have all their chatting needs in one place than having to join a server individually.<br />
+<br />
+I was hesitant on making this decision, due to my past experiencing with going the Discord + Forum route, generally one ends up engulfing the activity of the other platform. However, while that is a correct fact, what's also important is acknowledging how correct it is. To make more sense of it, if there is a section on Discord for a topic, then that means that the forum part of that section will end up being inactive. Though, rather than completely shutting down the chat platform equivalent, we'll be taking a look at how we can organize the multiple types of medias.<br />
+<br />
+- General Chatter is completely dead. No one would go and make threads to talk about a random topic when they can do so much easier on the Discord Server.<br />
+- No one would make memes on forums either, so the end-of-forum is gone too.<br />
+- The Youtubers Development forum will also be shutting down, as that fits much more in a chat area.<br />
+- Super Mario Maker Modding Channels is something that is completely worthless. Why have one channel to talk about ONE mod? They would fit much more on the Database like structure on the forum, where you can pick and choose individual mods to speak about. Sure, if a Rocket.Chat/IRC-like feature comes along, where you can pick and choose which channel you'd like, then I'd be more than glad to allow Project Channels to be a thing. I just don't want them to be an official part of the Mario Making Mods discord server.<br />
+- Instead of porting over DMs, Real Time Chat and other features over to the Mario Making Mods forum, they will be staying on Discord. They are Chat-Platform functions, not Forum Functions<br />
+- Leaderboard-esc functions make sense on forums, but make even more sense on Discord. As such, if the lead developer of Yammamura (Samplasion) either lets me do the edit or give me back the bot, I will be porting over the Rankset & Syndrone features to Yammamura (not as if they're even noticed by anyone that doesn't use the acmlmboard theme).<br />
+- Tutorials aren't exactly a place for discussion; they're more of a documentary. As a result, I've decided to repurpose the wiki similar to how the Custom Mario Kart 8 Wiki works, and have it as an all-in-one place for Super Mario Maker modding basics.<br />
+- We'll be adding a link to the Discord Server in the header of the website. Youtube and Twitter will still be found on the Bottom because they aren't as important as a chat platform; They're media places, and we already have the media here.<br />
+- Finally, we'll be organizing the modding community as such:<br />
+<br />
+For general modding discussion, they'll be talked about in the discord server in the  channel<br />
+For mods that are a Work In Progress & General Tutorials, they will be using the thread structure.<br />
+For mod releases, they will be using the Mainstream structure, similar to GameBanana.<br />
+<br />
+<strong><u>Questions</u></strong><br />
+<br />
+<strong>Wait, why did you come back to discord?</strong><br />
+It's all because of EpicPkmn11's Raspberry pie crashed and as such, I couldn't access the DS Homebrew Rocket.Chat server. Once I told <a href="profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]"><img src="data/avatars/109_1572859516.png" alt="" class="minipic" /> Buntendo</span></a> the news, he told me that I should come back to Discord. Just the fact that one of my best online buddies told me that, and my other two buddies (Mario Silva & WillyMaker) missed me, I've decided to stay. Of course, I've been used to logging onto Discord for a while now, as Mario Multiverse doesn't let you play the game when the Discord client wasn't opened. All I needed to do is just switch my avatar back to the lively one, reinstall Quarrel (a UWP (Universal Windows Platform) Discord Client clone), join the servers back and actually read my Direct Messages. (as all I would do was just log on, play mario multiverse, close Mario Multiverse, immediately close discord).<br />
+<br />
+<strong>Will you be discontinuing development on MakerBoard?</strong><br />
+Not at all. Just because Discord is taking precedent doesn't mean that this place will go to rot. In fact, I already have my next wave of updates planned out, and am currently working on a Super Mario World theme (with a really cool CSS effect I'm working on)<br />
+<br />
+<strong>Why do fan games get their own channel but Super Mario Maker mods can't? Isn't the whole point of Mario Making <em>Mods</em> to mod Super Mario Maker?</strong><br />
+It isn't necessarily "each creation gets their own channel". Rather, we go by "each game gets their own channel", and by that means, each game has their own channel. Super Mario Maker has its own channel, Gatete's Mario Engine has its own channel, Super Mario Unimaker has it's own channel and so does Remaker...for now.<br />
+<br />
+<strong>Wait, for now? What do you mean by that?</strong><br />
+Well, I've decided that it's time we take off our nostalgia glasses and move on from the past. Super Mario REMaker has not seen activity in a long time, and does not have nearly as much features as Super Mario Unimaker. There is nothing to differentiate it from its competitors and the only purpose I see keeping Super Mario REMaker as part of Mario Making Mods is for all the old mods we've put, which isn't exactly a thing for the discord. It is, however, a thing for the forum, so I'll still keep the Super Mario REMaker forum. However, the Super Mario REMaker channel will officially be removed. The keyword is official, as the same rule applies with Project channels; If the Rocket.Chat/IRC feature where you can pick and choose your own channel gets ported over to Discord, I will allow someone to create a Super Mario REMaker channel. We just no longer want to make it an official part of Mario Making Mods, due to its dead nature.</td></tr>
+				<tr><td><a href="thread/1220092949-the-future-of-mario-making-mods-evening-out-our-media32b7.html">1 comment</a> (by <a href="profile/1467199586-hu-hu.html" title=""><span  style="color: #7C60B0;" class="userlink" title="hu hu (1467199586) [Normal user]"><img src="data/avatars/1467199586_1552003331.png" alt="" class="minipic" /> falling upwards</span></a>). <a href="login.html">Log in</a> to post a comment.</td></tr>
+			</tbody>
+		</table>
+			<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th style="text-align:left!important;">
+												<h3>Super Mario Land 2 in Super Mario Maker - MMM Mod Mondays</h3>
+						<span style="font-weight:normal;">Posted on 03-05-19, 03:58 am by <a href="profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a></span>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td><iframe width="560" height="315" src="http://www.youtube.com/embed/P8Ed-CzMqvM" frameborder="0" allowfullscreen></iframe><br />
+<br />
+Hello everyone, and welcome to yet another exciting episode of Mod Mondays with Mario Making Mods. I'm NightYoshi370, and here, joined with WillyMaker is our showcase of the Super Mario Land 2 mod for Super Mario Maker, made by Louiskovski.<br />
+<br />
+Link to discussion thread:  <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(102, 70%, 40%);">smm2 wip</span> <a href="thread/130-super-mario-land-2-six-golden-coins.html">Super Mario Land 2: Six Golden Coins</a></td></tr>
+				<tr><td><a href="thread/570502974-super-mario-land-2-in-super-mario-maker-mmm-mod-mondays21d6.html">1 comment</a> (by <a href="profile/1467199586-hu-hu.html" title=""><span  style="color: #7C60B0;" class="userlink" title="hu hu (1467199586) [Normal user]"><img src="data/avatars/1467199586_1552003331.png" alt="" class="minipic" /> falling upwards</span></a>). <a href="login.html">Log in</a> to post a comment.</td></tr>
+			</tbody>
+		</table>
+		
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			<li class="page-item active"><span class="page-link">1 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="index4d96.html?from=5">2</a></li><li class="page-item"><a class="page-link" href="index00fd.html?from=10">3</a></li><li class="page-item"><a class="page-link" href="indexeff5.html?from=15">4</a></li><li class="page-item"><a class="page-link" href="index704a.html?from=20">5</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="index4d96.html?from=5" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="index677b.html?from=25" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="API/rss.php"									class="nav-link"
+									>
+									RSS feed
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="memberlist.html" class="btn btn-link">Member List</a>
+		<a href="online.html" class="btn btn-link">Online Users</a>
+		<a href="records.html" class="btn btn-link">Records</a>
+		<a href="calendar.html" class="btn btn-link">Calendar</a>
+		<a href="privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="js/timeago.js"></script>
+		<script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 05:50:20 GMT -->
+</html>

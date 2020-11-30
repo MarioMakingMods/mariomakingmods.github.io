@@ -1,0 +1,73 @@
+body {
+	background: black url('background.png');
+	color: #fff;
+}
+
+small { color: white; }
+select {color: black;}
+
+a:not(.dropdown-link):not(.page-link):not(.alert-link):not(.nav-link):not(.dropdown-item) { color: white; }
+a i.fa { color: white; }
+a:active, a:hover { text-decoration: underline; }
+
+.btn-breadcrumb a { color:black; }
+.btn-breadcrumb a:active, .btn-breadcrumb a:hover { color:black; text-decoration:underline; }
+
+.navbar-right a { color:black; }
+.navbar-right a:active, .navbar-right a:hover { color:black; text-decoration:underline; }
+
+input { color:black; }
+
+
+th, .card-header
+{
+	/* fallback for lame browsers that don't support gradients */
+	background: #FF0000;
+	/* Firefox */
+	background: #FF0000 -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.35) 100%);
+	/* Webkit */
+	background: #FF0000 -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.35)));
+	background: #FF0000 -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.35) 100%);
+	/* Opera */
+	background: #FF0000 -o-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.35) 100%);
+	/* IE10 and up */
+	background: #FF0000 -ms-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.35) 100%);
+	/* standards compliant */
+	background: #FF0000 linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.35) 100%);
+	
+	padding: 4px 6px;
+	
+	text-shadow: 1px 1px 2px #000;
+}
+
+.table-bordered
+{
+	border: 1px solid #a51212;
+	border-radius: 10px;
+}
+
+td, #onlineUserBar, .list-group-item, .card-body, .card-footer, .cell, .footer {
+	background: rgba(30,0,0, 0.75);
+}
+
+
+button, input[type="button"], input[type="submit"]
+{
+	border: 2px solid #1eceb7;
+	border-radius: 5px;
+	background: #222c28;
+	color: #fff;
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover
+{
+	background: #1eceb7;
+}
+
+input[type="text"], input[type="password"], input[type="file"], input[type="email"], select, textarea
+{
+	border: 1px solid #1eceb7;
+	border-radius: 5px;
+	background: black;
+	color: white;
+}

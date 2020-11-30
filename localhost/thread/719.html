@@ -1,0 +1,640 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/thread/719 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:58:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>How To: SMM (StaticSkin) Texture Expansion Tool v1.2 Delta &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content="Introducing SMM Texture Expansion Tool v1.2Δ!! With this, you can increase the resolution of your StaticSkin.pack stuff! This means that you can pack a *lot* more detail into tiny little..." />
+        <meta name="keywords" content="how smm staticskin texture expansion tool v12 delta tutorial wii" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="How To: SMM (StaticSkin) Texture Expansion Tool v1.2 Delta &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="How To: SMM (StaticSkin) Texture Expansion Tool v1.2 Delta &amp;raquo; Mario Making Mods" /><meta property="og:description" content="Introducing SMM Texture Expansion Tool v1.2Δ!! With this, you can increase the resolution of your StaticSkin.pack stuff! This means that you can pack a *lot* more detail into tiny little..." /> <meta name="og:description" content="Introducing SMM Texture Expansion Tool v1.2Δ!! With this, you can increase the resolution of your StaticSkin.pack stuff! This means that you can pack a *lot* more detail into tiny little..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="How To: SMM (StaticSkin) Texture Expansion Tool v1.2 Delta &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="Introducing SMM Texture Expansion Tool v1.2Δ!! With this, you can increase the resolution of your StaticSkin.pack stuff! This means that you can pack a *lot* more detail into tiny little..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/4-hacking-info.html">Hacking info</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="719-how-to-smm-staticskin-texture-expansion-tool-v1-2-delta.html">How To: SMM (StaticSkin) Texture Expansion Tool v1.2 Delta</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="711.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="722.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dHow%2bTo_%2bSMM%2b(StaticSkin)%2bTexture%2bExpansion%2bTool%2bv1.2%2bDelta%26url%3dhttp_/localhost/thread/719/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>		<table class="table table-striped" id="post5045">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/784807142_1520282110.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]">Unsavory Maggot</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 03-05-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/784807142-unsavory/posts-2.html" title="List Unsavory's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/784807142-unsavory/threads.html" title="List Unsavory's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_5045">
+				Introducing <a href="https://www.dropbox.com/s/pre6h1hyyp0zgur/SMM Texture Expansion Tool v1.12Δ.exe?dl=0">SMM Texture Expansion Tool v1.2Δ</a>!!<br />
+<br />
+With this, you can increase the resolution of your StaticSkin.pack stuff! This means that you can pack a *lot* more detail into tiny little characters. Let's get started!<br />
+<br />
+<img class="img-fluid" src="https://mariomods.net/get.php?id=DRT8JTNporUfYKRS" alt=""/><br />
+<br />
+1. Extract your .bfres with <a href="https://github.com/aboood40091/BFRES-Tool/releases">bfres_tool_inject.exe</a> (This is important! Don't use the other one!) and make them PNGs. Resize them to 32x32 or 64x64.<br />
+2. Pick the 32x32 or 64x64 sprites that you want to use; edit your PNGs.<br />
+3. Open the SMM Texture Expansion Tool and click on "Import". Select a .PNG you haven't imported yet.<br />
+4. Copy Image to Clipboard.<br />
+5. Paste the image into your .DDS, delete the background, and overwrite it. Repeat steps 3-5 until you've changed all of the .DDS files in your directory!<br />
+6. Inject the new .DDS files into your .bfres with bfres_tool_inject.exe, pack the .bfres into your .SZS, pack the .SZS into your StaticSkin.pack, and test it out in Mario Maker!<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Any problems?</button><div class="spoiled hidden">If your tile 2 appears corrupt (misc. scrambled colors), you probably used bfres_tool.exe<br />
+- DON'T use bfres_tool.exe or Wexos' Toolbox.<br />
+<br />
+- DON'T scramble/overwrite your .PNGs! You'll want to keep them in a format that is easier for you to modify and compatible with the Next Cycle button!<br />
+<br />
+	Take heed of the red tile -- the first image (sorted alphabetically) will always be blank there! This won't be a problem for the rest of the images, however.<br />
+- You can effectively "shrink" and avoid the red tile area for most 32x32 images by upscaling them to 64x64 images!<br />
+- If your tile 2 is blank in-game, you're viewing the first image of your bfres. Nothing can be done.<br />
+<br />
+	If your image still has a background, you didn't delete it.<br />
+- If you're using GIMP, paste the image, anchor the image, use the color replacer tool (Shift+O), click on the background, and press delete.<br />
+- If you're using Paint.net, paste the image, use the magic wand, deplete Tolerance to 0%, turn on flood fill, disable selection clipping, click on the background, and press delete.<br />
+<br />
+	If your image is still scrambled, I made a "Next Cycle" button just for this occasion!<br />
+- Load your offending image into the SMM Texture Expansion Tool, click that "Next Cycle" button, and repeat steps 4-6!<br />
+<br />
+	If SMM isn't working now, you probably used Wexos' Toolbox or altered the base game, rather than the update data.<br />
+- DON'T use bfres_tool.exe or Wexos' Toolbox.</div></div><div class="spoiler"><button class="spoilerbutton named">How to expand StaticSkin textures manually!</button><div class="spoiled hidden">This is still a WIP; the first image in your Output.bfres will have a blank tile.<br />
+To fix this, I propose adding an unused frame to the top of the image list.<br />
+The only question is... how? Find out next time...<br />
+<br />
+The following tutorial explains how to increase the enemy texture resolution from<br />
+16x16 to 32x32. Other image sizes have not yet been explored, but I encourage you<br />
+to experiment for yourself! You may be surprised by what you can do!<br />
+<br />
+Extract 16x16 images by opening Output.bfres with bfres_tool.exe<br />
+Resize images to 32x32 images<br />
+In GIMP, Image -&gt; Configure Grid<br />
+<img class="img-fluid" src="https://mariomods.net/get.php?id=itL4CqPOOKkeUbeW" alt=""/><br />
+Break the chain icon in Spacing, changing Width to 8 and Height to 16<br />
+<img class="img-fluid" src="https://mariomods.net/get.php?id=RD68T4deKvlyMhBm" alt=""/><br />
+View -&gt; Show Grid<br />
+<img class="img-fluid" src="https://mariomods.net/get.php?id=ta8nHAOTqPRQZWOY" alt=""/><br />
+<br />
+The tiles appear in the following (old) order:<br />
+	1234<br />
+	5678<br />
+<img class="img-fluid" src="https://mariomods.net/get.php?id=ZRyqpKX9aqmDM0FW" alt=""/><br />
+<br />
+Cut and paste (as new layer) the tiles to appear in this (new) order:<br />
+	1438<br />
+	5276<br />
+<img class="img-fluid" src="https://mariomods.net/get.php?id=tI9KnNbc7O3ZJQqZ" alt=""/><br />
+<br />
+<div class="spoiler"><button class="spoilerbutton">Show spoiler</button><div class="spoiled hidden">The (new) order will be different if you have 1 blank tile, but ignore this rule<br />
+completely if the next images in the sequence will use all 8 tiles:<br />
+	1836<br />
+	5472<br />
+<br />
+Note how the following numbers rotated counter-clockwise,<br />
+*possibly for each blank tile in the previous image*:<br />
+	48<br />
+	26</div></div><br />
+The new 2 will automatically become old 2 for the *next* image in the entire bfres;<br />
+for example:<br />
+	fly.0.dds will have a blank tile from a non-existing image, because it's the first image<br />
+<img class="img-fluid" src="https://mariomods.net/get.php?id=SGxN3ZVuApp6l6Tx" alt=""/> (I made its old 2 blank intentionally as a work-around for this particular case.)<br />
+	fly.1.dds will have the new 2 from fly.0.dds<br />
+	walk.0.dds will have the new 2 from fly.1.dds<br />
+<img class="img-fluid" src="https://mariomods.net/get.php?id=7HmFRlVhuAAtRhKv" alt=""/> (See the claw?)<br />
+	walk.1.dds will have the new 2 from walk.0.dds<br />
+So start from the end, copy the new 2, paste to the previous image's new 2 --<br />
+usually the old 6, and repeat until you've reached the beginning.<br />
+<br />
+Right-click the layer toolbar -&gt; Merge Visible Layers<br />
+File -&gt; Overwrite name.#.dds<br />
+<br />
+Inject 32x32 images by opening Output.bfres with bfres_tool_inject.exe<br />
+Click each file in the list, replace each file one by one.<br />
+<br />
+Replace Output.bfres in your M#_type_name.szs, and save it.<br />
+Replace the M#_type_name.szs in your StaticSkin.pack, and save it.<br />
+<br />
+???<br />
+<br />
+Profit!</div></div><div class="spoiler"><button class="spoilerbutton named"> </button><div class="spoiled hidden"><br><div class="post_attachment"><a href="../Grid1abe7.png?id=itL4CqPOOKkeUbeW"><img src="../Grid1abe7.png?id=itL4CqPOOKkeUbeW" alt="Grid1.png &mdash; 54.98&nbsp;KiB, viewed 104 times" title="Grid1.png &mdash; 54.98&nbsp;KiB, viewed 104 times" style="max-width:300px; max-height:300px;"></a></div><br><div class="post_attachment"><a href="../Grid27b80.png?id=RD68T4deKvlyMhBm"><img src="../Grid27b80.png?id=RD68T4deKvlyMhBm" alt="Grid2.png &mdash; 18.67&nbsp;KiB, viewed 104 times" title="Grid2.png &mdash; 18.67&nbsp;KiB, viewed 104 times" style="max-width:300px; max-height:300px;"></a></div><br><div class="post_attachment"><a href="../Grid39b10.png?id=ZRyqpKX9aqmDM0FW"><img src="../Grid39b10.png?id=ZRyqpKX9aqmDM0FW" alt="Grid3.png &mdash; 4.44&nbsp;KiB, viewed 104 times" title="Grid3.png &mdash; 4.44&nbsp;KiB, viewed 104 times" style="max-width:300px; max-height:300px;"></a></div><br><div class="post_attachment"><a href="../Grid4377b.png?id=tI9KnNbc7O3ZJQqZ"><img src="../Grid4377b.png?id=tI9KnNbc7O3ZJQqZ" alt="Grid4.png &mdash; 33.67&nbsp;KiB, viewed 104 times" title="Grid4.png &mdash; 33.67&nbsp;KiB, viewed 104 times" style="max-width:300px; max-height:300px;"></a></div><br><div class="post_attachment"><a href="../Grid57b94.png?id=ta8nHAOTqPRQZWOY"><img src="../Grid57b94.png?id=ta8nHAOTqPRQZWOY" alt="Grid5.png &mdash; 39.23&nbsp;KiB, viewed 104 times" title="Grid5.png &mdash; 39.23&nbsp;KiB, viewed 104 times" style="max-width:300px; max-height:300px;"></a></div><br><div class="post_attachment"><a href="../Grid6f3d0.png?id=7HmFRlVhuAAtRhKv"><img src="../Grid6f3d0.png?id=7HmFRlVhuAAtRhKv" alt="Grid6.png &mdash; 5.03&nbsp;KiB, viewed 104 times" title="Grid6.png &mdash; 5.03&nbsp;KiB, viewed 104 times" style="max-width:300px; max-height:300px;"></a></div><br><div class="post_attachment"><a href="../Grid73f5c.png?id=SGxN3ZVuApp6l6Tx"><img src="../Grid73f5c.png?id=SGxN3ZVuApp6l6Tx" alt="Grid7.png &mdash; 6.78&nbsp;KiB, viewed 100 times" title="Grid7.png &mdash; 6.78&nbsp;KiB, viewed 100 times" style="max-width:300px; max-height:300px;"></a></div><br><div class="post_attachment"><a href="../SMMTEf7cc.png?id=DRT8JTNporUfYKRS"><img src="../SMMTEf7cc.png?id=DRT8JTNporUfYKRS" alt="SMMTE.png &mdash; 12.90&nbsp;KiB, viewed 61 times" title="SMMTE.png &mdash; 12.90&nbsp;KiB, viewed 61 times" style="max-width:300px; max-height:300px;"></a></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_5045">
+									Posted on 08-21-18, 02:34 pm
+										 (rev. 22 by <a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]"><img src="../data/avatars/784807142_1520282110.png" alt="" class="minipic" /> Unsavory Maggot</span></a> on 10-21-18, 03:03 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_5045">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="719-how-to-smm-staticskin-texture-expansion-tool-v1-2-deltad6ad.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bUnsavory%2bMaggot)%2bin%2b__%26url%3dhttp_/localhost/post/5045/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#5045</button>							</div>
+		</td></tr>
+	</table>    
+
+    	<table class="table table-striped" id="post5046">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/9_1507994313.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/9-granimated.html" title=""><span  style="color: #97ACEF;" class="userlink" title="GRAnimated (9) [Normal user]">GRAnimated</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/9-granimated/posts-2.html" title="List GRAnimated's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/9-granimated/threads.html" title="List GRAnimated's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post haslayout" id="post_5046">
+				<style>/* unvisited link */
+#linkchange a:link {
+    color: white;
+}
+
+/* visited link */
+#linkchange a:visited {
+    color: white;
+}
+
+/* mouse over link */
+#linkchange a:hover {
+    color: white;
+}
+
+/* selected link */
+#linkchange a:active {
+    color: white;
+}</style><div style="background:#ffffff url(../../mariomods.net/img/layout/granimated/bg_character.png) center top !important;
+color:#FFFFFF;
+background-repeat: repeat;
+margin-left: auto;
+height: 100%;
+background-size:100%;"><br />
+<div style='border: 12px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;
+padding:10px;
+margin: 24px;
+border-radius: 2px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-size: 14px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;'>Very complicated, I might be able to shrink the steps down with a bit of <strong><em><u>Hex Editing</u></em></strong>, but overall this is pretty cool!<br><div style='border: 6px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;padding:10px;
+border-radius: 2px;
+font-size: 14px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-family: "Trebuchet MS", Helvetica, sans-serif;' id="linkchange">YouTube: <a href="https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ">https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ</a><br />
+Twitter: <a href="https://www.twitter.com/granimated">https://www.twitter.com/granimated</a><br />
+Discord: GRAnimated ✓ᵛᵉʳᶦᶠᶦᵉᵈ#4979</div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_5046">
+									Posted on 08-21-18, 02:38 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_5046">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="719-how-to-smm-staticskin-texture-expansion-tool-v1-2-delta90df.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bGRAnimated)%2bin%2b__%26url%3dhttp_/localhost/post/5046/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 1</button>
+													<button class="btn btn-primary">#5046</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post5047">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/784807142_1520282110.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]">Unsavory Maggot</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 03-05-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/784807142-unsavory/posts-2.html" title="List Unsavory's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/784807142-unsavory/threads.html" title="List Unsavory's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_5047">
+				Thanks, GRA! I can't wait to see what you can do!
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_5047">
+									Posted on 08-21-18, 02:39 pm
+										 (rev. 2 by <a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]"><img src="../data/avatars/784807142_1520282110.png" alt="" class="minipic" /> Unsavory Maggot</span></a> on 08-22-18, 11:28 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_5047">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="719-how-to-smm-staticskin-texture-expansion-tool-v1-2-deltafc29.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bUnsavory%2bMaggot)%2bin%2b__%26url%3dhttp_/localhost/post/5047/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#5047</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post5190">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/171_1536581823.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/171-samplasion.html" title=""><span  style="color: #97ACEF;" class="userlink" title="samplasion (171) [Normal user]">Samplasion</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Someone</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 11-15-17<br>
+						From: i dont know<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/171-samplasion/posts.html" title="List samplasion's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/171-samplasion/threads.html" title="List samplasion's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar171" id="post_5190">
+				<style>.topbar171_1 {
+    background: #700 url(../themes/glossy/generic_gloss.html);
+    text-align: center;
+    border-radius: 15px 0px 0px 15px;
+}
+.topbar171_2 {
+    background: #700 url(../themes/glossy/generic_gloss.html) !important;
+    border-radius: 0px 15px 15px 0px;
+}
+.mainbar171 .spoilerbutton {
+    background:rgba(0,0,0,0.5) url(../themes/glossy/generic_gloss.html);
+    border:3px solid fireBrick;
+    border-radius:15px;
+    width:100%;
+    color: white !important;
+}
+.mainbar171 .spoiled {
+    background:rgba(0,0,0,0);
+    border-right: 2px solid firebrick;
+    border-bottom: 2px solid firebrick;
+    border-left: 2px solid firebrick;
+    border-radius:15px;
+    width:98%
+}
+.mainbar171 .quoteheader {
+    background:rgba(255,0,0,0.175);
+    border-radius:15px;
+    padding-left: 6px;
+}
+ 
+.mainbar171 .quotecontent {
+    background:rgba(255,0,0,0.175);
+    border-radius:15px;
+}
+.topbar171_2 a, .topbar171_1 a {
+    color: white !important;
+}
+.sidebar171 {
+    background: url(../../cdn.discordapp.com/attachments/400205357726695425/413734147279028264/bgg.png) repeat;
+    text-align: center;
+    border-radius: 15px 0px 0px 15px;
+    color: white !important;
+    border: 1px solid #700;
+}
+.mainbar171 {
+    background: url(../../cdn02.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_4/H2x1_NSwitch_SuperMarioOdyssey.jpg) fixed !important;
+    padding: 15px;
+    border-radius: 0px 15px 15px 0px;
+    color: white !important;
+    border: 1px solid #700;
+    cursor: url;
+}
+.post171 {
+    background: rgba(30,0,0,.7) !important;
+    border-radius: 12px;
+    padding: 9px 9px 9px 9px !important;
+}
+.sig171 {
+    background: rgba(0,0,0,.7) !important;
+    position: relative !important;
+    bottom: 0px !important;
+    padding: 16px !important;
+    border-radius: 12px !important;
+}
+[rnb] {animation: rainbow 5s infinite;}
+@keyframes rainbow{
+	0%{color: Aquamarine;}
+	20%{color: #f44040;}
+	40%{color: yellow;}
+	60%{color: Chartreuse;}
+	80%{color: MediumSpringGreen;}
+	100%{color: Aquamarine;}
+}
+.mainbar171 a, .sig171 a {
+    color:#f88;
+}
+</style><div class="post171">For anyone asking, GRA was referring to the manual method<br></div><br />
+<div class="sig171" style = "font-size: 75%;padding:10px;"><a href="https://samplasion.github.io/" target="_blank">My Website</a><br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Some random stuff that'd be better if it is in a spoiler. Oh look, it already is!</button><div class="spoiled hidden"><div><a href="http://internetometer.com/give/46791" target="_blank"><img class="img-fluid" src="../../internetometer.com/image/46791.png" alt=""/></a><br />
+<a href="https://nick-name.ru/nickname/id1437226/"><img class="img-fluid" src="../../nick-name.ru/forum2t9/Samplasion.gif" alt=""/></a><br />
+<img class="img-fluid" src="https://mariomods.net/gfx/rpgstatus.php?u=171" alt=""/><br />
+</div></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_5190">
+									Posted on 09-07-18, 09:32 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_5190">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="719-how-to-smm-staticskin-texture-expansion-tool-v1-2-delta0e98.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bSamplasion)%2bin%2b__%26url%3dhttp_/localhost/post/5190/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#5190</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post5350">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/784807142_1520282110.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]">Unsavory Maggot</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 03-05-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/784807142-unsavory/posts-2.html" title="List Unsavory's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/784807142-unsavory/threads.html" title="List Unsavory's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_5350">
+				Updated to a private build (1.12Δ). New Features include:<br />
+<br />
+- Auto Next. Check the box to automatically move to the next image after copying the image to the clipboard / saving the image.<br />
+- Left and Right arrow buttons to select the previous / next image in your set.<br />
+- Bug fixes to (hopefully) make the program accessible to more users.<br />
+<br />
+Let me know if there are any further issues with the program, and I will do my best to fix them. There are more features I'd like to add in the future. I did roll back some features for a future update, because I wanted a functional program first and foremost.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_5350">
+									Posted on 10-21-18, 03:10 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_5350">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="719-how-to-smm-staticskin-texture-expansion-tool-v1-2-delta5bf9.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bUnsavory%2bMaggot)%2bin%2b__%26url%3dhttp_/localhost/post/5350/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#5350</button>							</div>
+		</td></tr>
+	</table>	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/4-hacking-info.html">Hacking info</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="719-how-to-smm-staticskin-texture-expansion-tool-v1-2-delta.html">How To: SMM (StaticSkin) Texture Expansion Tool v1.2 Delta</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="711.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="722.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dHow%2bTo_%2bSMM%2b(StaticSkin)%2bTexture%2bExpansion%2bTool%2bv1.2%2bDelta%26url%3dhttp_/localhost/thread/719/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/thread/719 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:58:51 GMT -->
+</html>

@@ -1,0 +1,2045 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/thread/18-miyamoto by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:52:01 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Miyamoto! &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content="Introducing Miyamoto! A level editor for NSMBU. It is centered around new features, friendly sprite images, and Japanese stereotypes. Miyamoto! can also edit tilesets, and change Backgrounds! It can also..." />
+        <meta name="keywords" content="miyamoto nsmbu" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Miyamoto! &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="Miyamoto! &amp;raquo; Mario Making Mods" /><meta property="og:description" content="Introducing Miyamoto! A level editor for NSMBU. It is centered around new features, friendly sprite images, and Japanese stereotypes. Miyamoto! can also edit tilesets, and change Backgrounds! It can also..." /> <meta name="og:description" content="Introducing Miyamoto! A level editor for NSMBU. It is centered around new features, friendly sprite images, and Japanese stereotypes. Miyamoto! can also edit tilesets, and change Backgrounds! It can also..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Miyamoto! &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="Introducing Miyamoto! A level editor for NSMBU. It is centered around new features, friendly sprite images, and Japanese stereotypes. Miyamoto! can also edit tilesets, and change Backgrounds! It can also..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/9-general-modding.html">General Modding</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="18-miyamoto.html">Miyamoto!</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="14.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="20.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dMiyamoto%21%26url%3dhttp_/localhost/thread/18/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>			
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			<li class="page-item active"><span class="page-link">1 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="18-miyamoto704a.html?from=20">2</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="18-miyamoto704a.html?from=20" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="18-miyamoto704a.html?from=20" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	    
+
+    	<table class="table table-striped" id="post136">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/21_1495377995.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/21-gota7.html" title=""><span  style="color: #7C60B0;" class="userlink" title="Gota7 (21) [Normal user]">Star Wolf</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-21-17<br>
+						From: Same as above. ^<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/21-gota7/posts.html" title="List Gota7's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/21-gota7/threads.html" title="List Gota7's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar21" id="post_136">
+				<style>.mainbar21 {
+background:url(../../a1star.com/images/star--background-seamless-repeating9.html) center top !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+img: src(https://i.imgur.com/uddaCHU.png);
+padding: 30px;
+border-top: 3px solid #8228a3;
+border-right: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius:24px;
+font-weight:bold;
+}
+
+.sidebar21 {
+background:url(../../a1star.com/images/star--background-seamless-repeating9.html) repeat !important;
+color:white;
+border-top: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius: 24px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 115%;
+font-style: italic; text-align:center;
+}
+
+.topbar21_1,.topbar21_2 {
+background:gray url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-radius:20px;
+}
+
+.mainbar21 a,.topbar21_2 a {
+color: #8228a3;
+text-size: 110%;
+}
+
+.mainbar21 .quoteheader {
+background:rgba(197,32,212,0.175);
+border-radius:24px;
+}
+
+.mainbar21 .quotecontent {
+background:rgba(147,12,152,0.175);
+border-radius:24px;
+}
+
+.mainbar21 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+
+.mainbar21 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:3px solid #8228a3;
+border-radius:24px;
+width:100%;
+}
+
+.mainbar21 .spoiled {
+background:rgba(0,0,0,0.5);
+border-right: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius:24px;
+left: 50%;
+margin-right: -50%;
+width:100%;
+}
+
+.postbox21 {
+margin:20px;
+border:3px solid #066;
+background: url(../../i.imgur.com/7d000se.png);border:3px solid #8228a3;border-radius: 24px;padding:24px;max-width:800px;
+}
+</style><div class="postbox21">Introducing Miyamoto! A level editor for NSMBU.<br />
+<br />
+It is centered around new features, friendly sprite images, and Japanese stereotypes.<br />
+<br />
+Miyamoto! can also edit tilesets, and change Backgrounds!<br />
+It can also decompress and compress/save SZS!<br />
+<br />
+We're adding tons of sprite images, features, plus spritedata we come across to make it all work how it should in game.<br />
+<br />
+Here are some screenshots (kinda outdated):<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton">Show spoiler</button><div class="spoiled hidden"><a href="../../i.imgur.com/FBwVnrd.png" target="_blank"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../i.imgur.com/FBwVnrd.png" alt=""/></a><br />
+<a href="../../i.imgur.com/BzGB5t1.png" target="_blank"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../i.imgur.com/BzGB5t1.png" alt=""/></a><br />
+<a href="../../i.imgur.com/5bOgYzf.png" target="_blank"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../i.imgur.com/5bOgYzf.png" alt=""/></a><br />
+<a href="../../i.imgur.com/CFXIdCz.png" target="_blank"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../i.imgur.com/CFXIdCz.png" alt=""/></a><br />
+<a href="../../i.imgur.com/A85p9M2.png" target="_blank"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../i.imgur.com/A85p9M2.png" alt=""/></a><br />
+<a href="../../i.imgur.com/vzoOlGr.png" target="_blank"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../i.imgur.com/vzoOlGr.png" alt=""/></a><br />
+<a href="../../i.imgur.com/5tcKd0X.png" target="_blank"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../i.imgur.com/5tcKd0X.png" alt=""/></a><br />
+<a href="../../i.imgur.com/g0Ob1Ch.png" target="_blank"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../i.imgur.com/g0Ob1Ch.png" alt=""/></a><br />
+</div></div><br />
+Even a youtube video!<br />
+<a href="https://www.youtube.com/watch?v=JB1yuRkZG_s">https://www.youtube.com/watch?v=JB1yuRkZG_s</a><br />
+<br />
+(The video is a bit outdated...)<br />
+<br />
+You can always find the latest releases here:<br />
+<a href="https://github.com/Gota7/Miyamoto/releases">https://github.com/Gota7/Miyamoto/releases</a><br />
+<br />
+<br />
+Supported Platforms:<br />
+* Windows x86 or x64<br />
+* Linux amd64<br />
+* Mac OS X 64-bit<br />
+<br />
+<br />
+Special Thanks to:<br />
+* RoadrunnerWMC<br />
+* MrRean<br />
+* Grop<br />
+* AboodXD<br />
+* Gota7 (Star Wolf)<br />
+* Sierra<br />
+* Wiimm<br />
+* And others who worked on the original Reggie Next/made hacking the Wii U possible.<br />
+<br />
+<br />
+For Noobs: I made a crappy tutorial. Enjoy.<br />
+<a href="https://www.youtube.com/watch?v=iGAh161pbS8">https://www.youtube.com/watch?v=iGAh161pbS8</a><br></div><div class="postbox21" style = "font-size: 69%;font-style: italic; text-align:center;padding:24px;color:white;">Nella carne io sono uno, ma nello spirito, che sono e per sempre saranno sette.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_136">
+									Posted on 05-21-17, 02:56 pm
+										 (rev. 3 by <a href="../profile/21-gota7.html" title=""><span  style="color: #7C60B0;" class="userlink" title="Gota7 (21) [Normal user]"><img src="../data/avatars/21_1495377995.png" alt="" class="minipic" /> Star Wolf</span></a> on 05-22-17, 11:11 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_136">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamotoeb3f.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bStar%2bWolf)%2bin%2b__%26url%3dhttp_/localhost/post/136/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#136</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post137">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Banned permanently: Jamie Rereg</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 05-19-17<br>
+						From: England<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/11-icefairyamy/posts.html" title="List IceFairyAmy's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/11-icefairyamy/threads.html" title="List IceFairyAmy's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_137">
+				You might want to change the spoiler image to an imgs tag.<br />
+<br />
+That said, this is a nice project. ^^
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_137">
+									Posted on 05-21-17, 02:57 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_137">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamoto7331.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bIceFairyAmy)%2bin%2b__%26url%3dhttp_/localhost/post/137/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#137</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-bordered" id="post138">
+		<tr>
+			<td class="side userlink" id="138">
+				<a href="../profile/6-destroyerxl44.html" title=""><span  style="color: #97ACEF;" class="userlink" title="DestroyerXL44 (6) [Normal user]">DestroyerXL44</span></a>
+			</td>
+			<td class="smallFonts meta right">
+				<div style="float:left">
+					Posted on 05-21-17, 03:01 pm, deleted by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a>: Use the +1 button				</div>
+															#138
+								</td>
+		</tr>
+	</table>
+	<table class="table table-striped" id="post141">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/5_1517641935.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Dat weeb NSMBU hacker though :3</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+						From: Not under a rock! :3<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/5-aboood40091/posts.html" title="List aboood40091's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/5-aboood40091/threads.html" title="List aboood40091's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar5" id="post_141">
+				<style>.mainbar5 {
+background:url(../../i.imgur.com/7OWI9MX.jpg) top center fixed !important;
+background-width:100% !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-right: 2px solid black !important;
+border-bottom-right-radius: 20px !important;
+border-top-right-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+padding: 20px !important;
+}
+
+.sidebar5 {
+background:url(../../upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2000px-Solid_white.svg.png) !important;
+background-size: 80px 60px !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-left: 2px solid black !important;
+border-bottom-left-radius: 20px !important;
+border-top-left-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+font-style: oblique !important;
+font-weight: bold !important;
+padding: 10px !important;
+text-align:center !important;
+}
+
+.topbar5_1 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+text-indent: 10px;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+}
+
+.topbar5_2 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.mainbar5 a,.topbar5_2 a {
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+color: rgb(233,30,99) !important;
+text-align:center !important;
+padding: 1px;
+text-size: 101%;
+}
+
+.mainbar5 .quotecontent {
+background:rgba(0, 0, 0 ,0.175);
+border-radius:15px;
+}
+
+.mainbar5 div.codeblock {
+background:rgb(233,30,99);
+border-radius:15px;
+}
+
+.mainbar5 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:100% !important;
+}
+
+.mainbar5 .spoiled {
+background:rgba(0,0,0,0.675) !important;
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:97.3% !important;
+}
+ 
+.postbox5 {
+margin:20px;
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+padding:10px;
+}
+</style><div class="postbox5"><div class="quote"> You might want to change the spoiler image to an imgs tag.<br />
+<br />
+That said, this is a nice project. ^^ <div class="quote-footer"><a href="18-miyamoto7331.html">Posted by Vanilla Lumina</a></div></div>Fixed.<br></div><div class="postbox5" style = "padding:10px;color:white;text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;">Stella is best waifu. :3<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Things I hate about Stella</button><div class="spoiled hidden"><sub>She's just a balloon of fanservice...</sub></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_141">
+									Posted on 05-21-17, 03:06 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_141">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamoto0e82.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMasterVermilli0n)%2bin%2b__%26url%3dhttp_/localhost/post/141/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#141</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-bordered" id="post326">
+		<tr>
+			<td class="side userlink" id="326">
+				<a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a>
+			</td>
+			<td class="smallFonts meta right">
+				<div style="float:left">
+					Posted on 05-25-17, 06:41 pm, deleted by <a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]"><img src="../data/avatars/5_1517641935.png" alt="" class="minipic" /> MasterVermilli0n</span></a>				</div>
+															#326
+								</td>
+		</tr>
+	</table>
+	<table class="table table-striped" id="post1036">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/5_2.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Dat weeb NSMBU hacker though :3</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+						From: Not under a rock! :3<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/5-aboood40091/posts.html" title="List aboood40091's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/5-aboood40091/threads.html" title="List aboood40091's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar5" id="post_1036">
+				<style>.mainbar5 {
+background:url(../../i.imgur.com/7OWI9MX.jpg) top center fixed !important;
+background-width:100% !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-right: 2px solid black !important;
+border-bottom-right-radius: 20px !important;
+border-top-right-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+padding: 20px !important;
+}
+
+.sidebar5 {
+background:url(../../upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2000px-Solid_white.svg.png) !important;
+background-size: 80px 60px !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-left: 2px solid black !important;
+border-bottom-left-radius: 20px !important;
+border-top-left-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+font-style: oblique !important;
+font-weight: bold !important;
+padding: 10px !important;
+text-align:center !important;
+}
+
+.topbar5_1 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+text-indent: 10px;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+}
+
+.topbar5_2 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.mainbar5 a,.topbar5_2 a {
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+color: rgb(233,30,99) !important;
+text-align:center !important;
+padding: 1px;
+text-size: 101%;
+}
+
+.mainbar5 .quotecontent {
+background:rgba(0, 0, 0 ,0.175);
+border-radius:15px;
+}
+
+.mainbar5 div.codeblock {
+background:rgb(233,30,99);
+border-radius:15px;
+}
+
+.mainbar5 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:100% !important;
+}
+
+.mainbar5 .spoiled {
+background:rgba(0,0,0,0.675) !important;
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:97.3% !important;
+}
+ 
+.postbox5 {
+margin:20px;
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+padding:10px;
+}
+</style><div class="postbox5"><iframe width="560" height="315" src="http://www.youtube.com/embed/CZWLHctrCh8" frameborder="0" allowfullscreen></iframe><br></div><div class="postbox5" style = "padding:10px;color:white;text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;">Stella is best waifu. :3<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Things I hate about Stella</button><div class="spoiled hidden"><sub>She's just a balloon of fanservice...</sub></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1036">
+									Posted on 06-18-17, 11:28 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1036">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamoto8d8c.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMasterVermilli0n)%2bin%2b__%26url%3dhttp_/localhost/post/1036/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 2</button>
+													<button class="btn btn-primary">#1036</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1057">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/5_1517641935.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Dat weeb NSMBU hacker though :3</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+						From: Not under a rock! :3<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/5-aboood40091/posts.html" title="List aboood40091's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/5-aboood40091/threads.html" title="List aboood40091's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar5" id="post_1057">
+				<style>.mainbar5 {
+background:url(../../i.imgur.com/7OWI9MX.jpg) top center fixed !important;
+background-width:100% !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-right: 2px solid black !important;
+border-bottom-right-radius: 20px !important;
+border-top-right-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+padding: 20px !important;
+}
+
+.sidebar5 {
+background:url(../../upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2000px-Solid_white.svg.png) !important;
+background-size: 80px 60px !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-left: 2px solid black !important;
+border-bottom-left-radius: 20px !important;
+border-top-left-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+font-style: oblique !important;
+font-weight: bold !important;
+padding: 10px !important;
+text-align:center !important;
+}
+
+.topbar5_1 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+text-indent: 10px;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+}
+
+.topbar5_2 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.mainbar5 a,.topbar5_2 a {
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+color: rgb(233,30,99) !important;
+text-align:center !important;
+padding: 1px;
+text-size: 101%;
+}
+
+.mainbar5 .quotecontent {
+background:rgba(0, 0, 0 ,0.175);
+border-radius:15px;
+}
+
+.mainbar5 div.codeblock {
+background:rgb(233,30,99);
+border-radius:15px;
+}
+
+.mainbar5 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:100% !important;
+}
+
+.mainbar5 .spoiled {
+background:rgba(0,0,0,0.675) !important;
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:97.3% !important;
+}
+ 
+.postbox5 {
+margin:20px;
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+padding:10px;
+}
+</style><div class="postbox5">Version 15 has been released!<br />
+<a href="https://github.com/Gota7/Miyamoto/releases/tag/v15">https://github.com/Gota7/Miyamoto/releases/tag/v15</a><br />
+<br />
+Changelog:<br />
+<sub>* Added item containing blocks to the palette.<br />
+* New Overrides and coins.<br />
+* New BG Options Dialog.<br />
+* Added more sprite images.<br />
+* Few minor changes and bug fixes.</sub><br></div><div class="postbox5" style = "padding:10px;color:white;text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;">Stella is best waifu. :3<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Things I hate about Stella</button><div class="spoiled hidden"><sub>She's just a balloon of fanservice...</sub></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1057">
+									Posted on 06-20-17, 11:14 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1057">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamoto0c66.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMasterVermilli0n)%2bin%2b__%26url%3dhttp_/localhost/post/1057/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 1</button>
+													<button class="btn btn-primary">#1057</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-bordered" id="post1087">
+		<tr>
+			<td class="side userlink" id="1087">
+				<a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a>
+			</td>
+			<td class="smallFonts meta right">
+				<div style="float:left">
+					Posted on 06-22-17, 01:35 pm, deleted by <a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]"><img src="../data/avatars/5_1517641935.png" alt="" class="minipic" /> MasterVermilli0n</span></a>				</div>
+															#1087
+								</td>
+		</tr>
+	</table>
+	<table class="table table-striped" id="post1101">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Banned permanently: Jamie Rereg</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 05-19-17<br>
+						From: England<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/11-icefairyamy/posts.html" title="List IceFairyAmy's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/11-icefairyamy/threads.html" title="List IceFairyAmy's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1101">
+				I'm going to become the MacOS tester, because apparently there isn't one, and I own a MacBook so...
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1101">
+									Posted on 06-23-17, 06:26 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1101">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamoto3977.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bIceFairyAmy)%2bin%2b__%26url%3dhttp_/localhost/post/1101/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1101</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1104">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/5_2.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Dat weeb NSMBU hacker though :3</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+						From: Not under a rock! :3<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/5-aboood40091/posts.html" title="List aboood40091's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/5-aboood40091/threads.html" title="List aboood40091's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar5" id="post_1104">
+				<style>.mainbar5 {
+background:url(../../i.imgur.com/7OWI9MX.jpg) top center fixed !important;
+background-width:100% !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-right: 2px solid black !important;
+border-bottom-right-radius: 20px !important;
+border-top-right-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+padding: 20px !important;
+}
+
+.sidebar5 {
+background:url(../../upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2000px-Solid_white.svg.png) !important;
+background-size: 80px 60px !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-left: 2px solid black !important;
+border-bottom-left-radius: 20px !important;
+border-top-left-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+font-style: oblique !important;
+font-weight: bold !important;
+padding: 10px !important;
+text-align:center !important;
+}
+
+.topbar5_1 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+text-indent: 10px;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+}
+
+.topbar5_2 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.mainbar5 a,.topbar5_2 a {
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+color: rgb(233,30,99) !important;
+text-align:center !important;
+padding: 1px;
+text-size: 101%;
+}
+
+.mainbar5 .quotecontent {
+background:rgba(0, 0, 0 ,0.175);
+border-radius:15px;
+}
+
+.mainbar5 div.codeblock {
+background:rgb(233,30,99);
+border-radius:15px;
+}
+
+.mainbar5 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:100% !important;
+}
+
+.mainbar5 .spoiled {
+background:rgba(0,0,0,0.675) !important;
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:97.3% !important;
+}
+ 
+.postbox5 {
+margin:20px;
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+padding:10px;
+}
+</style><div class="postbox5">Welcome to the team! :D<br />
+<br />
+Edit: OH, and BTW:<br />
+<iframe width="560" height="315" src="http://www.youtube.com/embed/U1_-eb-RRLY" frameborder="0" allowfullscreen></iframe><br />
+<br />
+I uploaded this video about 4 times yesterday and it used to have <strong><em>infinite buffering</em></strong> . Finally got it to upload and play, LOL.﻿ XD<br></div><div class="postbox5" style = "padding:10px;color:white;text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;">Stella is best waifu. :3<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Things I hate about Stella</button><div class="spoiled hidden"><sub>She's just a balloon of fanservice...</sub></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1104">
+									Posted on 06-23-17, 07:19 am
+										 (rev. 2 by <a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]"><img src="../data/avatars/5_1517641935.png" alt="" class="minipic" /> MasterVermilli0n</span></a> on 06-23-17, 09:51 am)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1104">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamoto7a16.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMasterVermilli0n)%2bin%2b__%26url%3dhttp_/localhost/post/1104/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1104</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-bordered" id="post1114">
+		<tr>
+			<td class="side userlink" id="1114">
+				<a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a>
+			</td>
+			<td class="smallFonts meta right">
+				<div style="float:left">
+					Posted on 06-23-17, 03:43 pm, deleted by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a>: Responce to troll				</div>
+															#1114
+								</td>
+		</tr>
+	</table>
+	<table class="table table-striped" id="post1428">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/5_6.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Dat weeb NSMBU hacker though :3</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+						From: Not under a rock! :3<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/5-aboood40091/posts.html" title="List aboood40091's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/5-aboood40091/threads.html" title="List aboood40091's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar5" id="post_1428">
+				<style>.mainbar5 {
+background:url(../../i.imgur.com/7OWI9MX.jpg) top center fixed !important;
+background-width:100% !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-right: 2px solid black !important;
+border-bottom-right-radius: 20px !important;
+border-top-right-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+padding: 20px !important;
+}
+
+.sidebar5 {
+background:url(../../upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2000px-Solid_white.svg.png) !important;
+background-size: 80px 60px !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-left: 2px solid black !important;
+border-bottom-left-radius: 20px !important;
+border-top-left-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+font-style: oblique !important;
+font-weight: bold !important;
+padding: 10px !important;
+text-align:center !important;
+}
+
+.topbar5_1 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+text-indent: 10px;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+}
+
+.topbar5_2 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.mainbar5 a,.topbar5_2 a {
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+color: rgb(233,30,99) !important;
+text-align:center !important;
+padding: 1px;
+text-size: 101%;
+}
+
+.mainbar5 .quotecontent {
+background:rgba(0, 0, 0 ,0.175);
+border-radius:15px;
+}
+
+.mainbar5 div.codeblock {
+background:rgb(233,30,99);
+border-radius:15px;
+}
+
+.mainbar5 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:100% !important;
+}
+
+.mainbar5 .spoiled {
+background:rgba(0,0,0,0.675) !important;
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:97.3% !important;
+}
+ 
+.postbox5 {
+margin:20px;
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+padding:10px;
+}
+</style><div class="postbox5">Version 16 has been released a while ago.<br />
+<a href="https://github.com/Gota7/Miyamoto/releases/tag/v16">https://github.com/Gota7/Miyamoto/releases/tag/v16</a><br />
+<br />
+Changelog:<br />
+<sub>* Added importing and exporting objects in Puzzle.<br />
+* Fixed a few bugs in Puzzle.<br />
+* Added new Icons for Puzzle.<br />
+* Added more sprite images.<br />
+* Updated the sprite data.<br />
+* Cleaned up the code.</sub><br></div><div class="postbox5" style = "padding:10px;color:white;text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;">Stella is best waifu. :3<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Things I hate about Stella</button><div class="spoiled hidden"><sub>She's just a balloon of fanservice...</sub></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1428">
+									Posted on 08-04-17, 03:46 pm
+										 (rev. 1 by <a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]"><img src="../data/avatars/5_1517641935.png" alt="" class="minipic" /> MasterVermilli0n</span></a> on 08-04-17, 03:47 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1428">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamoto3fe9.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMasterVermilli0n)%2bin%2b__%26url%3dhttp_/localhost/post/1428/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1428</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1429">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/82-ricbent.html" title=""><span  style="color: #97ACEF;" class="userlink" title="RicBent (82) [Normal user]">RicBent</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 08-04-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/82-ricbent/posts-2.html" title="List RicBent's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/82-ricbent/threads.html" title="List RicBent's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1429">
+				<div class="quote"> * Added more sprite images.<br />
+ <div class="quote-footer"><a href="18-miyamoto3fe9.html">Posted by aboood40091</a></div></div><br />
+Of which almost all are stolen. I gave you the chance to remove all stolen things. You denied the pull request. You also did not bother removing all of the stolen assets. And you lie about it:<br />
+<br />
+<a href="https://github.com/aboood40091/Miyamoto/pull/58">https://github.com/aboood40091/Miyamoto/pull/58</a><br />
+<br />
+"I also would like to inform you that the signboards, piranha plants, and thwomp are all mine."<br />
+<br />
+<a href="../../cdn.discordapp.com/attachments/339493389449822218/343069167273902082/unknown.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../cdn.discordapp.com/attachments/339493389449822218/343069167273902082/unknown.png" alt=""/></a><br />
+<br />
+And oh, your thwomp is really different. But wait! You simply cropped the one made by me:<br />
+<br />
+<a href="../../cdn.discordapp.com/attachments/339493389449822218/343076375235788811/unknown.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../cdn.discordapp.com/attachments/339493389449822218/343076375235788811/unknown.png" alt=""/></a><br />
+<br />
+<br />
+We would have been fine if you simply removed the sprites taken from ProjectRed. But you rather think you get away by pretending you removed all the stuff.<br />
+I find it disgusting that you locked comments on the pull request making me look like I raise false claims.<br />
+<br />
+You are not only a theif (you would call it "I forgot giving credit" and "I didn't ask for permission because I was too lazy to contact the original authors.") but are also a liar.<br />
+<br />
+Disgusting.<br />
+<br />
+<br />
+Edit: Also before you mention this again: this does not belong into DM. You stole and lied publically so you also deserve to be flagged for that.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1429">
+									Posted on 08-04-17, 05:13 pm
+										 (rev. 2 by <a href="../profile/82-ricbent.html" title=""><span  style="color: #97ACEF;" class="userlink" title="RicBent (82) [Normal user]">RicBent</span></a> on 08-04-17, 05:15 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1429">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamoto215a.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bRicBent)%2bin%2b__%26url%3dhttp_/localhost/post/1429/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1429</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1430">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/5_4.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Dat weeb NSMBU hacker though :3</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+						From: Not under a rock! :3<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/5-aboood40091/posts.html" title="List aboood40091's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/5-aboood40091/threads.html" title="List aboood40091's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar5" id="post_1430">
+				<style>.mainbar5 {
+background:url(../../i.imgur.com/7OWI9MX.jpg) top center fixed !important;
+background-width:100% !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-right: 2px solid black !important;
+border-bottom-right-radius: 20px !important;
+border-top-right-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+padding: 20px !important;
+}
+
+.sidebar5 {
+background:url(../../upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2000px-Solid_white.svg.png) !important;
+background-size: 80px 60px !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-left: 2px solid black !important;
+border-bottom-left-radius: 20px !important;
+border-top-left-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+font-style: oblique !important;
+font-weight: bold !important;
+padding: 10px !important;
+text-align:center !important;
+}
+
+.topbar5_1 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+text-indent: 10px;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+}
+
+.topbar5_2 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.mainbar5 a,.topbar5_2 a {
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+color: rgb(233,30,99) !important;
+text-align:center !important;
+padding: 1px;
+text-size: 101%;
+}
+
+.mainbar5 .quotecontent {
+background:rgba(0, 0, 0 ,0.175);
+border-radius:15px;
+}
+
+.mainbar5 div.codeblock {
+background:rgb(233,30,99);
+border-radius:15px;
+}
+
+.mainbar5 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:100% !important;
+}
+
+.mainbar5 .spoiled {
+background:rgba(0,0,0,0.675) !important;
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:97.3% !important;
+}
+ 
+.postbox5 {
+margin:20px;
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+padding:10px;
+}
+</style><div class="postbox5">Joke's on you, I made signboards for ProjectRed.<br />
+You could ask Explos and shibs for confirmation. They were made by me and I'm free to do what I want with them.<br />
+<br />
+Fun fact, it's those signboards which lead to me getting kicked from NSMBUHax discord server in the first place.<br />
+<br />
+And if you are really claiming that I cropped your thwomp, why would I crop it in the first place?<br />
+Why wouldn't I just use it like I used the others?<br />
+<br />
+But fine, you are getting butthurt on a single sprite image, and I'm willing to record myself remaking it just to shut you up.<br />
+<br />
+--------------------------------------------------------------------------------------------<br />
+<br />
+<div class="quote">I find it disgusting that you locked comments on the pull request making me look like I raise false claims</div>If that was the case, I wouldn't have taken action in the first place.<br />
+<br />
+I already told you why I rejected your pull request; you didn't make changes to sprites.py.<br />
+So, stop acting dense about it.<br />
+<br />
+--------------------------------------------------------------------------------------------<br />
+<br />
+<em>Talk about lying publicly. Also, you registering just to say this is what is <strong>disgusting</strong> here.<br />
+You registered on a site you don't even care about, just to make me look way worse than I truley am.</em><br />
+<br />
+And are we really going to talk about the "I'm a thief" thing again? Bitch please, haven't you learnt <strong><em>anything</em></strong> from the Reggie U whatever incident?<br />
+<br />
+--------------------------------------------------------------------------------------------<br />
+<br />
+I'm not afraid of the public knowing about what happened.<br />
+It's the exact opposite, I want the public to be fully aware of what's currently happening.<br />
+But it's completely different when the subject could trigger a huuuuge amount of drama.<br />
+<br />
+--------------------------------------------------------------------------------------------<br />
+<br />
+I have no motivation to continue in this subject.<br />
+As for the thwomp, if you want me to record myself remaking it, then so be it.<br />
+<br />
+And for the 3rd time, don't drag the drama here.<br />
+Respect the owner of the board who left for a few days.<br />
+<br />
+Sorry for too many edits, I wanted to organize this post.<br></div><div class="postbox5" style = "padding:10px;color:white;text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;">Stella is best waifu. :3<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Things I hate about Stella</button><div class="spoiled hidden"><sub>She's just a balloon of fanservice...</sub></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1430">
+									Posted on 08-04-17, 05:56 pm
+										 (rev. 7 by <a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]"><img src="../data/avatars/5_1517641935.png" alt="" class="minipic" /> MasterVermilli0n</span></a> on 08-04-17, 07:44 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1430">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamoto6fcd.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMasterVermilli0n)%2bin%2b__%26url%3dhttp_/localhost/post/1430/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1430</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1434">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/82-ricbent.html" title=""><span  style="color: #97ACEF;" class="userlink" title="RicBent (82) [Normal user]">RicBent</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 08-04-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/82-ricbent/posts-2.html" title="List RicBent's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/82-ricbent/threads.html" title="List RicBent's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1434">
+				Firstly if you really did those signboards i apologize for that point.<br />
+Still for example the thwomp is exactly the same as the one I did.<br />
+<br />
+I see nothing wrong with registering here to express my opinion.<br />
+You don't close comments on a pull requests without a reason.<br />
+And finally I have absolutly no idea what Reggie U thing you are talking about.<br />
+<br />
+And yes, I react unfriendly when people take stuff without permission.<br />
+<br />
+I'm not feeling like arguing about this anymore as well as it won't get anywhere anyways.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1434">
+									Posted on 08-04-17, 07:46 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1434">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamoto9a1b.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bRicBent)%2bin%2b__%26url%3dhttp_/localhost/post/1434/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1434</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1435">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/5_4.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Dat weeb NSMBU hacker though :3</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+						From: Not under a rock! :3<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/5-aboood40091/posts.html" title="List aboood40091's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/5-aboood40091/threads.html" title="List aboood40091's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar5" id="post_1435">
+				<style>.mainbar5 {
+background:url(../../i.imgur.com/7OWI9MX.jpg) top center fixed !important;
+background-width:100% !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-right: 2px solid black !important;
+border-bottom-right-radius: 20px !important;
+border-top-right-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+padding: 20px !important;
+}
+
+.sidebar5 {
+background:url(../../upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2000px-Solid_white.svg.png) !important;
+background-size: 80px 60px !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-left: 2px solid black !important;
+border-bottom-left-radius: 20px !important;
+border-top-left-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+font-style: oblique !important;
+font-weight: bold !important;
+padding: 10px !important;
+text-align:center !important;
+}
+
+.topbar5_1 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+text-indent: 10px;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+}
+
+.topbar5_2 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.mainbar5 a,.topbar5_2 a {
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+color: rgb(233,30,99) !important;
+text-align:center !important;
+padding: 1px;
+text-size: 101%;
+}
+
+.mainbar5 .quotecontent {
+background:rgba(0, 0, 0 ,0.175);
+border-radius:15px;
+}
+
+.mainbar5 div.codeblock {
+background:rgb(233,30,99);
+border-radius:15px;
+}
+
+.mainbar5 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:100% !important;
+}
+
+.mainbar5 .spoiled {
+background:rgba(0,0,0,0.675) !important;
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:97.3% !important;
+}
+ 
+.postbox5 {
+margin:20px;
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+padding:10px;
+}
+</style><div class="postbox5"><div class="quote"> I'm not feeling like arguing about this anymore as well as it won't get anywhere anyways. <div class="quote-footer"><a href="18-miyamoto9a1b.html">Posted by RicBent</a></div></div>Exactly! You were arguing over an "image", for f*** sake.<br />
+<br />
+Sigh... I'll redo that thwomp and record myself so you won't be able to say that it's yours anymore.<br />
+<br />
+With that, we can finally end this pointless argument that.. if you actually think about it, it's very pointless, I mean, a f***ing <strong><em>image</em></strong> of all things, ffs.<br></div><div class="postbox5" style = "padding:10px;color:white;text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;">Stella is best waifu. :3<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Things I hate about Stella</button><div class="spoiled hidden"><sub>She's just a balloon of fanservice...</sub></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1435">
+									Posted on 08-04-17, 08:01 pm
+										 (rev. 1 by <a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]"><img src="../data/avatars/5_1517641935.png" alt="" class="minipic" /> MasterVermilli0n</span></a> on 08-04-17, 08:01 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1435">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamotod57b.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMasterVermilli0n)%2bin%2b__%26url%3dhttp_/localhost/post/1435/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1435</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1436">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/82-ricbent.html" title=""><span  style="color: #97ACEF;" class="userlink" title="RicBent (82) [Normal user]">RicBent</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 08-04-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/82-ricbent/posts-2.html" title="List RicBent's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/82-ricbent/threads.html" title="List RicBent's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1436">
+				Well, considering that a lot effort goes into good sprite images it's not pointless. I don't feel like arguing because in the end we both won't get to the same point anyways.<br />
+<br />
+And you don't have to record yourself doing that Thwomp. From the results you can clearly see that things are different.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1436">
+									Posted on 08-04-17, 08:05 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1436">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamoto892f.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bRicBent)%2bin%2b__%26url%3dhttp_/localhost/post/1436/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1436</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1437">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/5_2.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Dat weeb NSMBU hacker though :3</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+						From: Not under a rock! :3<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/5-aboood40091/posts.html" title="List aboood40091's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/5-aboood40091/threads.html" title="List aboood40091's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar5" id="post_1437">
+				<style>.mainbar5 {
+background:url(../../i.imgur.com/7OWI9MX.jpg) top center fixed !important;
+background-width:100% !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-right: 2px solid black !important;
+border-bottom-right-radius: 20px !important;
+border-top-right-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+padding: 20px !important;
+}
+
+.sidebar5 {
+background:url(../../upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2000px-Solid_white.svg.png) !important;
+background-size: 80px 60px !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-left: 2px solid black !important;
+border-bottom-left-radius: 20px !important;
+border-top-left-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+font-style: oblique !important;
+font-weight: bold !important;
+padding: 10px !important;
+text-align:center !important;
+}
+
+.topbar5_1 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+text-indent: 10px;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+}
+
+.topbar5_2 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.mainbar5 a,.topbar5_2 a {
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+color: rgb(233,30,99) !important;
+text-align:center !important;
+padding: 1px;
+text-size: 101%;
+}
+
+.mainbar5 .quotecontent {
+background:rgba(0, 0, 0 ,0.175);
+border-radius:15px;
+}
+
+.mainbar5 div.codeblock {
+background:rgb(233,30,99);
+border-radius:15px;
+}
+
+.mainbar5 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:100% !important;
+}
+
+.mainbar5 .spoiled {
+background:rgba(0,0,0,0.675) !important;
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:97.3% !important;
+}
+ 
+.postbox5 {
+margin:20px;
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+padding:10px;
+}
+</style><div class="postbox5"><div class="quote"> Well, considering that a lot effort goes into good sprite images it's not pointless. I don't feel like arguing because in the end we both won't get to the same point anyways. <div class="quote-footer"><a href="18-miyamoto892f.html">Posted by RicBent</a></div></div>Well, not when the images I "stole" don't even need effort to make. A proof is how I was easily able to remake every sprite image I "stole"<br />
+ in under 5 minutes.<br />
+<div class="quote"> And you don't have to record yourself doing that Thwomp. From the results you can clearly see that things are different. <div class="quote-footer"><a href="18-miyamoto892f.html">Posted by RicBent</a></div></div>Nah, will do it anyway. :P<br />
+<br />
+When I get the time though, I'm currently making a SARC packer for a SMM mod me and a group of people are working on.<br></div><div class="postbox5" style = "padding:10px;color:white;text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;">Stella is best waifu. :3<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Things I hate about Stella</button><div class="spoiled hidden"><sub>She's just a balloon of fanservice...</sub></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1437">
+									Posted on 08-04-17, 08:12 pm
+										 (rev. 1 by <a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]"><img src="../data/avatars/5_1517641935.png" alt="" class="minipic" /> MasterVermilli0n</span></a> on 08-04-17, 08:13 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1437">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamoto6d04.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMasterVermilli0n)%2bin%2b__%26url%3dhttp_/localhost/post/1437/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1437</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1438">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/2_1499603862.html" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/2-mayrosmm.html" title=""><span  style="color: #7C60B0;" class="userlink" title="MayroSMM (2) [Normal user]">MayroSMM</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Box<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/2-mayrosmm/posts.html" title="List MayroSMM's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/2-mayrosmm/threads.html" title="List MayroSMM's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1438">
+				"Do not bring outside drama onto this board."<br />
+<br />
+You signed up just to start drama here. PMs exist for a reason. 
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1438">
+									Posted on 08-04-17, 11:56 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1438">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamoto42a8.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMayroSMM)%2bin%2b__%26url%3dhttp_/localhost/post/1438/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 1</button>
+													<button class="btn btn-primary">#1438</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1442">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/17_1495563222.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/17-aileen-lumina.html" title=""><span  style="color: #E91E63" class="userlink" title="Aileen Lumina (17) [Normal user]">Aileen Lumina</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-20-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/17-aileen-lumina/posts.html" title="List Aileen Lumina's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/17-aileen-lumina/threads.html" title="List Aileen Lumina's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1442">
+				I am currently cleaning up / partly rewriting Miyamoto. As soon as that's done, I will start writing a feature that will allow you to use any number of tilesets in a level. More features are already planned. More interesting things will be revealed soon.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1442">
+									Posted on 08-07-17, 09:42 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1442">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="18-miyamoto1c2c.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bAileen%2bLumina)%2bin%2b__%26url%3dhttp_/localhost/post/1442/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 2</button>
+													<button class="btn btn-primary">#1442</button>							</div>
+		</td></tr>
+	</table>			
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			<li class="page-item active"><span class="page-link">1 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="18-miyamoto704a.html?from=20">2</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="18-miyamoto704a.html?from=20" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="18-miyamoto704a.html?from=20" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/9-general-modding.html">General Modding</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="18-miyamoto.html">Miyamoto!</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="14.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="20.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dMiyamoto%21%26url%3dhttp_/localhost/thread/18/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/thread/18-miyamoto by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:52:11 GMT -->
+</html>

@@ -1,0 +1,507 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/?from=15 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:03:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/mdb.css">
+		<script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/minicon.png" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="manifest" href="API/manifest.php" />
+        <meta name="description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" />
+        <meta name="keywords" content="Mario, Super Mario, Super Mario Maker, Super Mario Maker 2, Super Mario Maker Mod, Super Mario Maker Modding, SMM Mod, SMM Modding, Super Mario Maker 2 Mod, Super Mario Maker 2 Modding, SMM2 Mod, SMM2 Modding, Super Mario Maker for Nintendo 3DS Mod, Super Mario Maker for Nintendo 3DS modding, SMM3DS Mod, SMM3DS Modding" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Mario Making Mods" /> <meta name="og:title" content="Mario Making Mods" /><meta property="og:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" /> <meta name="og:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/tricks.js"></script>
+        <script src="js/jscolor.js" async></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="index.html">
+				<img id="theme_banner" src="img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item active">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="API/rss.php"									class="nav-link"
+									>
+									RSS feed
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+					<div class="row">
+		<div class="col-md-6 col-lg-8">
+			<table class="table table-striped table-bordered" style="text-align: center;">
+				<tr class="cell1">
+					<td>
+						<h1>Welcome to Mario Making Mods</h1>	We are a community dedicated to bringing you a home for the hacking of Super Mario Maker (Wii U & 3DS).<br />
+	Our community is a place for everyone to post their projects, get help and support, and find tutorials.<br />
+	Join us to share your very own creations, or feel free to just browse the site and check out some of the awesome projects and tutorials found here.<br />
+<h3>Super Mario Maker Mods</h3><div id="demo" class="carousel slide carousel-fade" data-ride="carousel" style="max-width:700px; margin: 0 auto;">  <ul class="carousel-indicators">    <li data-target="#demo" data-slide-to="0" class="active"></li>    <li data-target="#demo" data-slide-to="1"></li>    <li data-target="#demo" data-slide-to="2"></li>    <li data-target="#demo" data-slide-to="3"></li>  </ul>	<div class="carousel-inner">		<div class="carousel-item active">			<img class="d-block w-100" src="img/slider/smmvr.png" alt="Super Mario Maker: Vanilla Revamped"><br />
+		</div>		<div class="carousel-item">			<img class="d-block w-100" src="img/slider/terrariamaker.jpg" alt="Terraria Maker"><br />
+		</div>		<div class="carousel-item">			<img class="d-block w-100" src="img/slider/bismaker.png" alt="Bowser's Inside Story in Super Mario Maker"><br />
+		</div>		<div class="carousel-item">			<img class="d-block w-100" src="img/slider/smassmb3.jpg" alt="Super Mario Advance 4 in Super Mario Maker"><br />
+		</div>	</div><a class="carousel-control-prev" href="#demo" data-slide="prev"><br />
+    <span class="carousel-control-prev-icon"></span><br />
+  </a><a class="carousel-control-next" href="#demo" data-slide="next"><br />
+    <span class="carousel-control-next-icon"></span><br />
+  </a></div>	We have all sorts of crazy mods for Super Mario Maker, ranging from Super Mario Odyssey in 8-bit style, to Super Mario Maker: Vanilla Revamped.<br />
+	Whatever you are interested in, you might find it in our Depot. <br />
+	Over at the Depot, we have links to download the best mods out there for Super Mario Maker & tutorials for newcomers.<br />
+<h3>Wiki</h3>	At the Mario Making Mods Wiki, you'll find lots of up-to-date information about all the technical parts of Super Mario Maker. You can submit your own findings there, too!<br />
+<h3>Social</h3>We have a Discord Server you could join: <a href="https://invite.gg/MarioMakingMods">https://invite.gg/MarioMakingMods</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div class="col-md-6 col-lg-4">
+			<table class="table table-striped table-bordered">
+				<thead><tr><th>Recent Content</th></tr></thead>
+				<tbody>
+											<tr><td>
+							<b> <span class="threadTag" style="background-color: hsl(327, 70%, 40%);">mario maker</span><span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(36, 70%, 40%);">v.1</span><span class="threadTag" style="background-color: hsl(6, 70%, 40%);">e3 2014</span> <a href="thread/723-mario-maker-e3-2014-moda079.html" title="">Mario Maker E3 2014 Mod</a></b><br>
+							<span class="smallFonts"><a href="profile/400210131-a-kramer-randomness.html" title=""><span  style="color: #7C60B0;" class="userlink" title="A Kramer Randomness (400210131) [Normal user]">A Kramer Randomness</span></a> - <time class="timeago" datetime="2020-03-08T19:29:18+00:00">03-08-20, 07:29 pm</time> in <a href="forum/3-project-releases.html">Project Releases</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <a href="thread/2029232988-does-anyone-have-a-collection-of-super-mario-wii-hack-levelcec0.html" title="">Does anyone have a collection of Super Mario Wii hack level?</a></b><br>
+							<span class="smallFonts"><a href="profile/233365761-veals.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Veals (233365761) [Normal user]">Veals</span></a> - <time class="timeago" datetime="2020-02-25T19:17:12+00:00">02-25-20, 07:17 pm</time> in <a href="forum/2-mario-making-mods-talk.html">Mario Making Mods Talk</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <span class="threadTag" style="background-color: hsl(177, 70%, 40%);">3ds</span> <a href="thread/1241148923-super-mario-maker-2ds-mario-maker-2-3ds-mod3642.html" title="">Super Mario Maker 2DS (Mario Maker 2 3DS mod)</a></b><br>
+							<span class="smallFonts"><a href="profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><img src="data/avatars/996211172_1551296122.jpg" alt="" class="minipic" /> <span style="color:hsl(94,100%,80.4%);">S</span><span style="color:hsl(125,100%,80.4%);">m</span><span style="color:hsl(156,100%,80.4%);">-</span><span style="color:hsl(187,100%,80.4%);">A</span><span style="color:hsl(218,100%,80.4%);">r</span><span style="color:hsl(249,100%,80.4%);">t</span><span style="color:hsl(280,100%,80.4%);">T</span><span style="color:hsl(311,100%,80.4%);">h</span><span style="color:hsl(342,100%,80.4%);">i</span><span style="color:hsl(13,100%,80.4%);">n</span><span style="color:hsl(44,100%,80.4%);">g</span><span style="color:hsl(75,100%,80.4%);">s</span></span></a> - <time class="timeago" datetime="2020-02-25T03:09:26+00:00">02-25-20, 03:09 am</time> in <a href="forum/3-project-releases.html">Project Releases</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <a href="thread/476610072-content-pack-29d50.html" title="">Content_Pack_2</a></b><br>
+							<span class="smallFonts"><a href="profile/1425533397-mariopossamato.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MarioPossamato (1425533397) [Normal user]"><img src="data/avatars/1425533397_1557510517.png" alt="" class="minipic" /> MarioPossamato</span></a> - <time class="timeago" datetime="2020-02-24T05:25:42+00:00">02-24-20, 05:25 am</time> in <a href="forum/3-project-releases.html">Project Releases</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <a href="thread/2043253947-some-questionsba57.html" title="">Some questions</a></b><br>
+							<span class="smallFonts"><a href="profile/1867606187-net.html" title=""><span  style="color: #97ACEF;" class="userlink" title=".NET (1867606187) [Normal user]"><img src="data/avatars/1867606187_1566503629.png" alt="" class="minipic" /> .NET</span></a> - <time class="timeago" datetime="2020-02-02T19:25:43+00:00">02-02-20, 07:25 pm</time> in <a href="forum/6-general-chat.html">General Chat</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <a href="thread/541068215-modded-nso-filesa12f.html" title="">Modded Nso Files</a></b><br>
+							<span class="smallFonts"><a href="profile/1425533397-mariopossamato.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MarioPossamato (1425533397) [Normal user]"><img src="data/avatars/1425533397_1557510517.png" alt="" class="minipic" /> MarioPossamato</span></a> - <time class="timeago" datetime="2020-02-01T06:20:42+00:00">02-01-20, 06:20 am</time> in <a href="forum/3-project-releases.html">Project Releases</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <span class="threadTag" style="background-color: hsl(6, 70%, 40%);">smm2</span><span class="threadTag" style="background-color: hsl(246, 70%, 40%);">smw</span> <a href="thread/1029194991-super-mario-world-fall-enemies8c39.html" title="">Super Mario World - Fall Enemies</a></b><br>
+							<span class="smallFonts"><a href="profile/241020055-kirbyluigiwithiggy.html" title=""><span  style="color: #97ACEF;" class="userlink" title="kirbyluigiwithIggy (241020055) [Normal user]">kirbyluigiwithIggy</span></a> - <time class="timeago" datetime="2020-01-31T06:18:11+00:00">01-31-20, 06:18 am</time> in <a href="forum/3-project-releases.html">Project Releases</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span> <a href="thread/390-mario-maker-halloween-theme23ad.html" title="">Mario Maker Halloween theme</a></b><br>
+							<span class="smallFonts"><a href="profile/241020055-kirbyluigiwithiggy.html" title=""><span  style="color: #97ACEF;" class="userlink" title="kirbyluigiwithIggy (241020055) [Normal user]">kirbyluigiwithIggy</span></a> - <time class="timeago" datetime="2020-01-30T06:25:14+00:00">01-30-20, 06:25 am</time> in <a href="forum/3-project-releases.html">Project Releases</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <a href="thread/809-why-i-dislike-discord2612.html" title="">Why I dislike Discord</a></b><br>
+							<span class="smallFonts"><a href="profile/2063600240-jeyneko.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Jeyneko (2063600240) [Normal user]">Jeyneko</span></a> - <time class="timeago" datetime="2020-01-26T01:58:53+00:00">01-26-20, 01:58 am</time> in <a href="forum/6-general-chat.html">General Chat</a></span>
+						</td></tr>
+											<tr><td>
+							<b> <a href="thread/183269610-smm-theme-tsunami-coming-when-i-have-a-working-pcb7e7.html" title="">SMM theme tsunami, coming when I have a working pc</a></b><br>
+							<span class="smallFonts"><a href="profile/134-ironfoxgaming.html" title=""><span  style="color: #97ACEF;" class="userlink" title="IronFoxGaming (134) [Normal user]">IronFoxGaming</span></a> - <time class="timeago" datetime="2020-01-15T12:35:38+00:00">01-15-20, 12:35 pm</time> in <a href="forum/4-hacking-info.html">Hacking info</a></span>
+						</td></tr>
+									</tbody>
+			</table>
+		</div>
+	</div>
+
+	
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			
+			<li class="page-item first">
+				<a class="page-link" href="index.html" aria-label="First">
+					<span aria-hidden="true">&#x00AB;</span>
+					<span class="sr-only">First</span>
+				</a>
+			</li>
+			<li class="page-item previous">
+				<a class="page-link" href="index00fd.html?from=10" aria-label="Previous">
+					<span aria-hidden="true">&#x2039;</span>
+					<span class="sr-only">Previous</span>
+				</a>
+			</li><li class="page-item"><a class="page-link" href="index.html">1</a></li><li class="page-item"><a class="page-link" href="index4d96.html?from=5">2</a></li><li class="page-item"><a class="page-link" href="index00fd.html?from=10">3</a></li><li class="page-item active"><span class="page-link">4 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="index704a.html?from=20">5</a></li><li class="page-item"><a class="page-link" href="index677b.html?from=25">6</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="index704a.html?from=20" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="index677b.html?from=25" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav>			<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th style="text-align:left!important;">
+												<h3>What's up? December 23rd, 2017</h3>
+						<span style="font-weight:normal;">Posted on 12-24-17, 03:54 am by <a href="profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a></span>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td>Hello Everyone! Before giving up the latest news, I'd like to share a message from the staff and everyone here.<br />
+<br />
+We wish you a merry holiday, for those of you that celebrate either Christmas or "Hanekah". We hope you enjoy the festival, and that you like the news that we'll be giving.<br />
+<br />
+<strong>Super Mario Maker Hacking News</strong><br />
+<br />
+-We have gotten the SUPER MARIO MAKER KIOSK DEMO! Showcase will be uploaded on sunday on our Youtube Channel.<br />
+-New SM64 Theme:  <span class="threadTag" style="background-color: hsl(246, 70%, 40%);">smw</span><span class="threadTag" style="background-color: hsl(177, 70%, 40%);">3ds</span> <a href="thread/343-dire-dire-docks-theme.html">Dire Dire Docks theme</a><br />
+-New Sonic Theme:  <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(246, 70%, 40%);">smw</span> <a href="thread/331-green-hill-zone-super-mario-in-sonic-the-hedgehog.html">Green Hill Zone - Super Mario in Sonic the Hedgehog</a><br />
+-New Theme:  <span class="threadTag" style="background-color: hsl(246, 70%, 40%);">smw</span><span class="threadTag" style="background-color: hsl(357, 70%, 40%);">wiiu</span> <a href="thread/315-cool-mountain-theme.html">cool mountain theme</a><br />
+-New Theme:  <span class="threadTag" style="background-color: hsl(42, 70%, 40%);">smb1</span><span class="threadTag" style="background-color: hsl(357, 70%, 40%);">wiiu</span> <a href="thread/313-desert-theme.html">Desert theme</a><br />
+-New Costume:  <a href="thread/401-paco-mystery-costume.html">PACO mystery costume</a><br />
+-New Costume:  <a href="thread/400-sandy-cheeks-mystery-costume.html">Sandy Cheeks mystery costume</a><br />
+-New Theme:  <span class="threadTag" style="background-color: hsl(6, 70%, 40%);">smm2</span><span class="threadTag" style="background-color: hsl(96, 70%, 40%);">nintendo switch</span> <a href="thread/397-super-mario-maker-vanilla-revamped.html">Super Mario Maker: Vanilla Revamped</a><br />
+-New "Music" Mod:  <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span> <a href="thread/383-remove-the-music.html">Remove the Music!</a><br />
+-New Theme:  <a href="thread/389-smb3-tank-theme.html">SMB3 tank theme</a><br />
+-"New" Theme:  <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(42, 70%, 40%);">smb1</span> <a href="thread/396-bonneton-cap-kingdom-v1.html">Bonneton / Cap Kingdom (V1)</a><br />
+-New Super Mario Oddysey Theme:  <span class="threadTag" style="background-color: hsl(351, 70%, 40%);">smo spoilers</span><span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(42, 70%, 40%);">smb1</span> <a href="thread/393-nimbus-arena-cloud-kingdom.html">Nimbus Arena / Cloud Kingdom</a><br />
+-New Theme:  <a href="thread/395-slice-night-smw-theme.html">slice night smw theme</a><br />
+-New Theme:  <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span> <a href="thread/390-mario-maker-halloween-theme.html">Mario Maker Halloween theme</a><br />
+-New NSLU Ported Theme:  <a href="thread/385-nsmbu-flower-garden.html">NSMBU flower garden</a><br />
+-New Super Mario World Styled Theme:  <span class="threadTag" style="background-color: hsl(246, 70%, 40%);">smw</span><span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(177, 70%, 40%);">3ds</span><span class="threadTag" style="background-color: hsl(201, 70%, 40%);">switch</span> <a href="thread/363-casino-theme.html">Casino theme</a><br />
+-New Theme:  <span class="threadTag" style="background-color: hsl(246, 70%, 40%);">smw</span><span class="threadTag" style="background-color: hsl(357, 70%, 40%);">wiiu</span> <a href="thread/316-red-mountain.html">red mountain</a><br />
+-New Windows Theme:  <span class="threadTag" style="background-color: hsl(246, 70%, 40%);">smw</span><span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span> <a href="thread/350-windows-98-in-super-mario-maker.html">Windows 98 in Super Mario Maker</a><br />
+-New Costume:  <a href="thread/386-xwater-mystery-mushroom-costume.html">Xwater mystery mushroom costume</a><br />
+-New Costume:  <a href="thread/384-vinny460-mystery-costume.html">Vinny460 mystery costume</a><br />
+-New Theme:  <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(108, 70%, 40%);">nsmbu</span> <a href="thread/382-long-grass.html">Long grass</a><br />
+-New Costume:  <a href="thread/379-carlsagan42-mystery-mushroom-costume.html">Carlsagan42 mystery mushroom costume</a><br />
+-New Costume:  <a href="thread/377-spacekatuniverse-as-a-mystery-costume.html">SpaceKatUniverse as a mystery costume</a><br />
+-New Costume:  <a href="thread/371-thedragonfeeny-mystery-costume.html">TheDragonFeeny mystery costume</a><br />
+-New Costume:  <a href="thread/373-sir-hedging-spiky-hiss-mystery-mushroom-costume.html">Sir Hedging spiky hiss mystery mushroom costume</a><br />
+-New Costume:  <span class="threadTag" style="background-color: hsl(351, 70%, 40%);">costume</span> <a href="thread/307-nightyoshi370-in-super-mario-maker.html">NightYoshi370 in Super Mario Maker</a><br />
+-New Costume:  <a href="thread/369-grandkeys-mystery-mushroom-costume.html">GrandKeys mystery mushroom costume</a><br />
+-New Costume:  <a href="thread/368-jaku-as-a-mystery-mushroom-costume.html">Jaku as a mystery mushroom costume</a><br />
+-New Costume:  <span class="threadTag" style="background-color: hsl(207, 70%, 40%);">characters</span> <a href="thread/362-sonic-cd-mini-sonic-mystery-mushroom.html">Sonic CD Mini Sonic Mystery Mushroom</a><br />
+-New SMAS Theme:  <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(27, 70%, 40%);">castle</span><span class="threadTag" style="background-color: hsl(42, 70%, 40%);">smb1</span> <a href="thread/361-a-tileset-ripped-from-mario-bros-all-stars.html">A tileset ripped from Mario Bros All Stars</a><br />
+-New Chinese SMW Theme:  <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(246, 70%, 40%);">smw</span><span class="threadTag" style="background-color: hsl(27, 70%, 40%);">castle</span> <a href="thread/354-chinese-smw-castle.html">Chinese SMW Castle</a><br />
+-New Text Edit:  <a href="thread/357-damn-it-text-edit.html">DAMN IT! - Text Edit</a><br />
+-New Emerald Hill Zone Theme:  <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(246, 70%, 40%);">smw</span> <a href="thread/352-sonic-the-hedgehog-theme.html">Sonic the Hedgehog Theme</a><br />
+-New NSMBU Costume:  <a href="thread/349-new-super-mario-bros-u-wario-for-nintendo-3ds.html">New Super Mario Bros. U: Wario for Nintendo 3DS</a><br />
+-New Chinese SMW Theme:  <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(246, 70%, 40%);">smw</span><span class="threadTag" style="background-color: hsl(324, 70%, 40%);">underground</span> <a href="thread/355-chinese-smw-underground.html">Chinese SMW Underground</a><br />
+-New Chinese SMW Theme:  <span class="threadTag" style="background-color: hsl(246, 70%, 40%);">smw</span><span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(27, 70%, 40%);">field</span> <a href="thread/348-chinese-super-mario-world.html">chinese super mario world</a><br />
+-New Costume:  <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(42, 70%, 40%);">smb1</span> <a href="thread/344-replace-weird-mario-with-luigi.html">Replace Weird Mario with Luigi!</a><br />
+-New Theme:  <a href="thread/347-smb3-snowy.html">Smb3 snowy</a><br />
+...and Many More. If you want, check in the depot.<br />
+<br />
+<strong>Mario Making Mods News</strong><br />
+<br />
+- MakerBoard 1.0 is now in official developement. Will officially be released by next MMM What's up post.<br />
+- Most votes are closing in 2 days. You better finish up your votes.</td></tr>
+				<tr><td><a href="thread/403-what-s-up-december-23rd-2017c377.html">2 comments</a> (last by <a href="profile/14-moonlightcapital.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MoonlightCapital (14) [Normal user]"><img src="data/avatars/14_1517928889.png" alt="" class="minipic" /> MoonlightCapital</span></a>). <a href="login.html">Log in</a> to post a comment.</td></tr>
+			</tbody>
+		</table>
+			<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th style="text-align:left!important;">
+												<h3>What's Up? -November 14, 2017</h3>
+						<span style="font-weight:normal;">Posted on 11-15-17, 03:34 am by <a href="profile/9-granimated.html" title=""><span  style="color: #97ACEF;" class="userlink" title="GRAnimated (9) [Normal user]"><img src="data/avatars/9_1507994313.jpg" alt="" class="minipic" /> GRAnimated</span></a></span>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td><p>NightYoshi370 wanted me to do this one, so lets-a-go!</p><br />
+<p>We now have a Minecraft server, one for the Java edition, and one for Bedrock/PE/Win10. You guys can thank FruitSmasher for the idea of having a Minecraft server!<br /><br />
+You can ask at <a href="http://horizonwii.net/?page=thread&amp;id=190" target="_blank">Horizons thread</a> or the <a href="http://mariomods.net/thread/305-minecraft" target="_blank">MMM thread</a>.<br /><br />
+The Java one runs on 1.8.8, and is whitelisted. The Bedrock one is not whitelisted, and the IP is in the MMM thread.</p><br />
+<p>Lots of new themes and costumes! Thanks to evrules5, we have many custom mystery mushroom sprites, including Spacehampster, Ryu, and Roy.<br /><br />
+Theres also been a Pateron only mod, which will be released to the public on the 28th. (Hint, it has something to do with NightYoshi370.)</p><br />
+<p><a href="http://mariomods.net/thread/309" target="_blank">Buntendo has also released his Sand Kingdom mod, based on Super Mario Odyssey.</a></p><br />
+<p>As you may have heard, Miiverse has ended, which is pretty sad, but it was expected for a dead console.</p></td></tr>
+				<tr><td><a href="thread/310-what-s-up-november-14-201715aa.html">10 comments</a> (last by <a href="profile/515890276-nintega21.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Nintega21 (515890276) [Normal user]"><img src="data/avatars/515890276_1521377610.png" alt="" class="minipic" /> Nintega Yoshistan</span></a>). <a href="login.html">Log in</a> to post a comment.</td></tr>
+			</tbody>
+		</table>
+			<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th style="text-align:left!important;">
+												<h3>What's up? - October 22nd 2017</h3>
+						<span style="font-weight:normal;">Posted on 10-22-17, 05:39 pm by <a href="profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a></span>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td>Well, today is my birthday, so I got some very exciting stuff to share with all of you! This will be a combination of the mini What's up entry from a while ago with some new things!<br />
+<br />
+<strong>Super Mario Maker Hacking News</strong><br />
+<br />
+We have new Super Mario Odyssey themes from GRAnimated, <a href="profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]"><img src="data/avatars/109_1572859516.png" alt="" class="minipic" /> Buntendo</span></a> & <a href="profile/20-h%c3%bcseyin-der-m%c3%a4chtige.html" title=""><span  style="color: #97ACEF;" class="userlink" title="H&uuml;seyin der M&auml;chtige (20) [Normal user]"><img src="data/avatars/20_1530098269.jpg" alt="" class="minipic" /> Hüseyin the Mighty</span></a>. We also now have a Wooden Airship theme.<br />
+<br />
+<strong>Mario Making Mods News</strong><br />
+<br />
+-Yoshi Gone Missing has unfortunately got cancelled.<br />
+-We are now celebrating Halloween on the forum with a theme made by Gota7 <del>which I totally did not steal from Horizon without permission.</del><br />
+-We now have a new forum feature: Thread search! This can help you easily find threads on a forum page, but unfortunately, it doesn't look through all the pages, and you'll need to have JavaScript enabled for this.<br />
+-We made a newer version of the [ thread ] BBCode which doesn't display the tags.<br />
+-Sadly, IRC is gone from the forum, due to drama.<br />
+-We now have a Patreon! It'll give you some neat benefits on the forums, and will help pay for the forums new hosting.<br />
+-We have made <a href="https://www.youtube.com/watch?v=nEvwMpq9bps">a new Youtube video</a>, showcasing all of our past mods.</td></tr>
+				<tr><td>No comments yet. <a href="login.html">Log in</a> to post a comment.</td></tr>
+			</tbody>
+		</table>
+			<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th style="text-align:left!important;">
+												<h3>Mini What's up? October 4th, 2017</h3>
+						<span style="font-weight:normal;">Posted on 10-04-17, 10:09 pm by <a href="profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a></span>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td>AKA I need somewhere to announce that the forum is back and I'm too lazy to hit the announcements!<br />
+<br />
+Welcome back everyone to Mario Making Mods! Hopefully, this is the last user-caused downtime that will happen!<br />
+<br />
+Anyways, like the title said, this will be a mini "What's up?" blog post. Why is that? Because unfortunately, we don't have many Super Mario Hacks to show off! In fact, all of the mods put in today's blog is made by one man, which goes by <a href="profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]"><img src="data/avatars/109_1572859516.png" alt="" class="minipic" /> Buntendo</span></a> A proper blog post should come later on, but for now, this will suffice.<br />
+<br />
+New themes in SMM include <a href="thread/249-the-seaside-kingdom.html">The Seaside Kingdom</a> & <a href="thread/252-mount-volbano-luncheon-kingdom.html">Mount Volbano / Luncheon Kingdom</a>.<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Mario Making Mods News (too long, so I'll be putting it in a spoiler)</button><div class="spoiled hidden"><em>Mario Making Mods News</em><br />
+<br />
+-"Super Mario Maker: Yoshi Gone missing" will, unfortunately, be delayed for a while.<br />
+<br />
+-We now have a new forum feature: Thread search! This can help you easily find threads on a forum page, but unfortunately, it doesn't look through all the pages, and you'll need to have JavaScript enabled for this.<br />
+<br />
+-If you quote this post and look at the sentence "New themes include", you'll see that they a) don't have tags & b) have an added s to the end. While this may get confusing after a while, we have made a version of the thread BBCode which removes the tags.<br />
+<br />
+-We now have a Patreon Page! The link for it should be in the Navigation bar in a short while! There are many advantages of becoming an MMM Patron, including:<br />
+<br />
+~Access to early patron-only content on the page, the forum and the discord server! (well, I can't force everyone to go through that, as I'll only do it for the content that either I release, or people volunteer. Keep in mind that the time difference between the mods release date & the public release is 14 days. Never will I put a mod out for being "Patreon-only")<br />
+~Sneak peek photos of upcoming releases<br />
+~Patron-only polls<br />
+~Have a special Rank on the forum.<br />
+<br />
+-We have now affiliated with 2 amazing websites which are called "Horizon" and "SMMDB". You can find a link to Horizon in the "NSMBW forum" and a link to SMMDB at the top bar!<br />
+<br />
+~Due to inactivity, I have demoted "MayroSMM" from main admin and replaced him with "Huseyin".<br />
+<br />
+~I am in the middle of making a Halloween theme for the forum...<br />
+<br />
+~We have officially gotten rid of IRC, in favor of discord, as the IRC relay thing is dumb and no one really liked it...<br />
+<br />
+-We now have moved to a newer host, due to some issues with the old one. I will not go into details here, but if you really want to know, just talk to me about it in private. Anyways, this host is one that I'll be paying, and while it is twice the price of the old one, the quality is great. and even though they provide a VPS for the same price as the old one, its way better! The old host used OVH while the new one uses <a href="https://www.vpscheap.net/pricing.aspx">VPSCheap</a>! While this server has the same amount of RAM, it has 4 cores (the old one had one slow and shitty core) & a 50GB SSD. A huge shoutout to Repflez who helped me out with moving this site and Horizon.</div></div><br />
+<strong>Why do we need a patron?</strong><br />
+<br />
+Basically, for this host, I'm paying for it myself, and unfortunately, I can not do this alone, so I need a bit of support. Also, if you are wondering where the money is going, it's going into a PayPal account where the host will take the money from. And just in case you were wondering what the card is, it's an unreloadable prepaid master card that originally had 50$ inside of it, I put it on a PayPal account (which means it can merge credit card money together), had 7$ taken off of for initial purchase and has 40$ taken off as well for "prepaid service" (basically, you pay for the VPS in advance, which should pay off 5 months)). This is only for the hosting because the domain is paid off by Aileen Lumina!<br />
+<br />
+I hope you guys enjoy the mini What's up article! Honestly, its a bit rushed because I wanted to get the news out as soon as possible!</td></tr>
+				<tr><td><a href="thread/258-mini-what-s-up-october-4th-2017e2a5.html">17 comments</a> (last by <a href="profile/274807330-koopa309.html" title=""><span  style="color: #97ACEF;" class="userlink" title="koopa309 (274807330) [Normal user]">koopa309</span></a>). <a href="login.html">Log in</a> to post a comment.</td></tr>
+			</tbody>
+		</table>
+			<table class="table table-striped table-bordered">
+			<thead>
+				<tr>
+					<th style="text-align:left!important;">
+												<h3>What's up? - September 26th, 2017</h3>
+						<span style="font-weight:normal;">Posted on 09-27-17, 06:34 am by <a href="profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a></span>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr><td>AKA: We're late to SMM's birthday.<br />
+<br />
+<strong>SM(Re)M News</strong><br />
+<br />
+- A bunch of new themes were made, including:<br />
+<br />
+~Minecraft V2<br />
+~Sunset Airship<br />
+~The Seaside Kingdom<br />
+~Marble Zone<br />
+<br />
+- The first SMM 3DS byaml edit was done: <a href="http://mariomods.net/thread/222-super-mario-man-look-out-below" target="_blank">http://mariomods.net/thread/222-super-mario-man-look-out-below</a><br />
+<br />
+<strong>MMM News</strong><br />
+<br />
+- We are going to be removing the downloads page in favor of the Depot<br />
+- The Wiki might get a return.<br />
+- A couple of New Themes have been arrived from RVLution. (Well, I didn't exactly ask if I could use them... Treeki, if you are reading this, and tell me that you want the Slatebit themes removed, please tell me and I'll happily remove them)<br />
+- The forum might get a name change.<br />
+- We are celebrating an early Halloween. Well, we were already, ever since sunday.<br />
+<br />
+<strong>Riddles</strong><br />
+<br />
+I'll let last weeks one still running. The reason why this isn't getting solved is because you guys haven't been asking around for hints...</td></tr>
+				<tr><td><a href="thread/251-what-s-up-september-26th-2017301b.html">2 comments</a> (last by <a href="profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a>). <a href="login.html">Log in</a> to post a comment.</td></tr>
+			</tbody>
+		</table>
+		
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			
+			<li class="page-item first">
+				<a class="page-link" href="index.html" aria-label="First">
+					<span aria-hidden="true">&#x00AB;</span>
+					<span class="sr-only">First</span>
+				</a>
+			</li>
+			<li class="page-item previous">
+				<a class="page-link" href="index00fd.html?from=10" aria-label="Previous">
+					<span aria-hidden="true">&#x2039;</span>
+					<span class="sr-only">Previous</span>
+				</a>
+			</li><li class="page-item"><a class="page-link" href="index.html">1</a></li><li class="page-item"><a class="page-link" href="index4d96.html?from=5">2</a></li><li class="page-item"><a class="page-link" href="index00fd.html?from=10">3</a></li><li class="page-item active"><span class="page-link">4 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="index704a.html?from=20">5</a></li><li class="page-item"><a class="page-link" href="index677b.html?from=25">6</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="index704a.html?from=20" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="index677b.html?from=25" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="API/rss.php"									class="nav-link"
+									>
+									RSS feed
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="memberlist.html" class="btn btn-link">Member List</a>
+		<a href="online.html" class="btn btn-link">Online Users</a>
+		<a href="records.html" class="btn btn-link">Records</a>
+		<a href="calendar.html" class="btn btn-link">Calendar</a>
+		<a href="privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="js/timeago.js"></script>
+		<script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/?from=15 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:03:44 GMT -->
+</html>

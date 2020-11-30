@@ -1,0 +1,69 @@
+table, td, tr, th, div { border-color:#228; }
+body {
+    background: black url("background.png");
+    background-repeat: repeat-x;
+    background-attachment:fixed;
+    background-position:left bottom;
+    color: white;
+}
+
+small { color: white !important; }
+select {color: black;}
+
+a:not(.dropdown-link):not(.alert-link):not(.nav-link):not(.dropdown-item) { color: white; }
+a:active, a:hover { text-decoration: underline; }
+
+.btn-breadcrumb a { color:black; }
+.btn-breadcrumb a:active, .btn-breadcrumb a:hover { color:black; text-decoration:underline; }
+
+.navbar-right a { color:black; }
+.navbar-right a:active, .navbar-right a:hover { color:black; text-decoration:underline; }
+
+.footer a:active, .footer a:hover { color:black; text-decoration:underline; }
+
+input { color:black; }
+
+th, .card-header {
+    background: rgb(0,114,201); /* Old browsers */
+
+    color: white;
+    text-shadow: 1px 1px 2px #000;
+}
+
+#breadBar {
+    background: rgb(0,114,201); /* Old browsers */
+    border: 0px solid transparent;
+
+    color: white;
+}
+
+td, #onlineUserBar, .footer, .list-group-item, .card-body, .card-footer, .cell, .footer {
+    background: rgba(128, 0, 128, 0.9);
+    text-shadow: #000 1px 1px 1px;
+}
+
+
+
+button, input[type="submit"]
+{
+    border: 1px solid #224;
+    background: rgba(75, 157, 205, 0.9);
+    color: black;
+}
+
+input[type="text"], input[type="password"], input[type="file"], input[type="email"], select, textarea, input[type="checkbox"], input[type="radio"]
+{
+    background: rgba(75, 157, 205, 0.9);
+    border: 1px solid #224;
+    color: black;
+}
+
+input[type="radio"]
+{
+    border-radius: 8px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus, input[type="email"]:focus, select:focus, textarea:focus
+{
+    background: rgba(75, 157, 205, 0.9);
+}

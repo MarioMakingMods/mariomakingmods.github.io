@@ -1,0 +1,1 @@
+{"name":"Mario Making Mods","description":"Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!","icon":{"src":"C:\\xampp_MMM\\htdocs\/apple-touch-icon.png","type":"image\/png","size":"1024x1024"},"serviceworker":{"src":"C:\\xampp_MMM\\htdocs\/serverworker.js"},"display":"standalone","start_url":"\/"}

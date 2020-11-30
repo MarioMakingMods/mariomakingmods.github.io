@@ -1,0 +1,832 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/depot/hacks/654-new-super-mario-bros-ds by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:19:53 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>New Super Mario Bros DS &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../../css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/mdb.css">
+		<script src="../../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+        <link rel="manifest" href="../../API/manifest.php" />
+        <meta name="description" content="New Super Mario Bros This pack replaces the NSMBU theme with a New Super Mario Bros DS theme! Travel back to the good old times of the classic DS and..." />
+        <meta name="keywords" content="new super mario bros wii smm2 wip" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="New Super Mario Bros DS &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="New Super Mario Bros DS &amp;raquo; Mario Making Mods" /><meta property="og:description" content="New Super Mario Bros This pack replaces the NSMBU theme with a New Super Mario Bros DS theme! Travel back to the good old times of the classic DS and..." /> <meta name="og:description" content="New Super Mario Bros This pack replaces the NSMBU theme with a New Super Mario Bros DS theme! Travel back to the good old times of the classic DS and..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="New Super Mario Bros DS &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="New Super Mario Bros This pack replaces the NSMBU theme with a New Super Mario Bros DS theme! Travel back to the good old times of the classic DS and..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../../css/common.css" />
+        <link rel="stylesheet" href="../../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../../js/jquery-ui.js"></script>
+        <script src="../../js/tricks.js"></script>
+        <script src="../../js/jscolor.js" async></script>
+        <script src="../../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../../index.html">
+				<img id="theme_banner" src="../../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../depot.html">Depot</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../hacks.html">Super Mario Maker Mods</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="654-New%20Super%20Mario%20Bros%20DS.html">New Super Mario Bros DS</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="https://www.dshack.org/assets/store/545/NSMBDS_forSuperMarioMaker_v1.1.zip"									class="nav-link"
+									>
+									Download WiiU Theme
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="649-SCP_CB/SL%20Mod.html"									class="nav-link"
+									>
+									Previous Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="656-Athlethic%20BG%20%5bFor%20SMM%5d%20%5bSMW%20BG%5d.html"									class="nav-link"
+									>
+									Next Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="http://twitter.com/share?text=New%20Super%20Mario%20Bros%20DS&amp;url=http://localhost/depot/hacks/654-/&amp;via=MarioMakingMods"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+							<div class="col-lg-2 col-md-3 col-sm-4 sidenav">
+					
+                    <table class="table table-bordered table-striped table-sm">
+                        <thead><tr><th>Depot Selections</th></tr></thead>
+                        <tbody>
+                            <tr><td><a href="../hacks.html" title="">Theme Projects</a></td></tr>
+                            <tr><td><a href="../level.html" title="">Level Depot</a></td></tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table class="table table-bordered table-striped table-sm">
+                        <tr class="header0"><th>Filter</th></tr>
+                            <form action="http://localhost/depot/hacks">
+                                <tr class="header1"><th>Sort by</th></tr>
+                                <tr class="cell0"><td><input type="radio" name="sort" checked value="lastdate"> Last Post Date</td></tr>
+                                <tr class="cell1"><td><input type="radio" name="sort"  value="date"> Date Published</td></tr>
+                                <tr class="cell0"><td><input type="radio" name="sort"  value="name"> Name (alphabetical)</td></tr>
+                                <tr class="header1"><th>Name of Hack</th></tr>
+                                <tr class="cell0"><td><input class="form-control" type="text" name="hackname" value=""></td></tr>
+                                <tr class="header1"><th><input type="submit" value="Submit"></th></tr>
+                            </form>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+				</div>
+						<div class="col-lg-10 col-md-9 col-sm-8 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>	<table class="table table-bordered table-striped" id="post4631">
+		<tr class="cell0">
+			<td>
+				<small>
+					<span id="meta_4631">
+											Posted on 07-04-18, 08:21 pm by <a href="../../profile/66-louiskovskie.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Louiskovskie (66) [Normal user]">Louis Miles</span></a>
+						 (rev. 6 by <a href="../../profile/66-louiskovskie.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Louiskovskie (66) [Normal user]"><img src="../../data/avatars/66_1514581103.png" alt="" class="minipic" /> Louis Miles</span></a> on 07-14-19, 02:36 pm)										</span>
+					<span style="text-align:left; display: none;" id="dyna_4631">
+						blarg
+					</span>
+				</small>
+			</td>
+		</tr>
+		<tr class="cell1">
+			<td id="post_4631">
+				<strong><u>New Super Mario Bros</u></strong><br />
+<br />
+This pack replaces the NSMBU theme with a New Super Mario Bros DS theme!<br />
+Travel back to the good old times of the classic DS and enjoy ;D<br />
+<br />
+*A port of this mod to Super Mario Maker 2 with new and improved stuff is work-in-progress, but not only by me, actually by a full team!*<br />
+<a href="https://mariomods.net/thread/1438958131-new-super-mario-bros-ds-style-in-super-mario-maker-2-mod"><strong>Check here for more info</strong></a> ;)<br />
+<br />
+<a href="http://www.mediafire.com/file/1dnm8zk8k6vc3no/NSMBDS_forSuperMarioMaker_v1.1.zip/file" target="_blank">DOWNLOAD</a><br />
+<br />
+<strong><u>Screenshots:</u></strong><br />
+<br />
+<img class="img-fluid" src="../../../i.imgur.com/TkUoQJ1.jpg" alt=""/> <img class="img-fluid" src="../../../i.imgur.com/rPlScj0.jpg" alt=""/> <img class="img-fluid" src="../../../i.imgur.com/0YT0NCs.jpg" alt=""/> <img class="img-fluid" src="../../../i.imgur.com/U0BY6oV.jpg" alt=""/> <img class="img-fluid" src="../../../i.imgur.com/fFoBsnq.jpg" alt=""/> <img class="img-fluid" src="../../../i.imgur.com/xAgCjSr.jpg" alt=""/><br />
+<br />
+<br />
+<u>Old Screenshots:</u><br />
+<div class="spoiler"><button class="spoilerbutton">Show spoiler</button><div class="spoiled hidden"><a href="../../../i.imgur.com/gcnn5D8.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/gcnn5D8.png" alt=""/></a> <a href="../../../i.imgur.com/lVA0zcz.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/lVA0zcz.png" alt=""/></a> <a href="../../../i.imgur.com/Nl0PsHM.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/Nl0PsHM.png" alt=""/></a> <a href="../../../i.imgur.com/YXdiMvH.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/YXdiMvH.png" alt=""/></a> <a href="../../../i.imgur.com/qopehkW.jpg"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/qopehkW.jpg" alt=""/></a> <a href="../../../i.imgur.com/qOOIxEJ.jpg"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/qOOIxEJ.jpg" alt=""/></a> <a href="../../../i.imgur.com/eemmSCA.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/eemmSCA.png" alt=""/></a></div></div>
+			</td>
+		</tr>
+				<tr class="cell0">
+			<td class="right">
+				<div class="btn-group btn-group-sm">
+															<a class="btn btn-primary" role="button"  href="../../thread/654-new-super-mario-bros-dsab39.html" title="Link this post">
+								<i class="fa fa-link"></i>														</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 2</button>
+														<button class="btn btn-primary">#4631</button>									</div>
+			</td>
+		</tr>
+			</table>    
+
+    <table class="table table-bordered table-striped">
+	<thead><tr><th>Comments</th></tr></thead>
+	<tbody>
+					<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/972774686-danthecreator.html" title=""><span  style="color: #97ACEF;" class="userlink" title="DanTheCreator (972774686) [Normal user]">Asikie</span></a> Posted on 07-04-18, 08:28 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds6598.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4632</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">You should ask about that in the Mario Making Mods discord server, someone may be able to help. I wish I was able to help but don't know about this kind of stuff.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1149747913-mudkip97.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Mudkip97 (1149747913) [Normal user]">Mudkip97</span></a> Posted on 07-06-18, 01:38 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds31da.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4635</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Wow this looks great </div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1075784069-the-mario-modder.html" title=""><span  style="color: #97ACEF;" class="userlink" title="The Mario Modder (1075784069) [Normal user]">The Mario Modder</span></a> Posted on 07-06-18, 06:17 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds2ed6.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4639</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">How did you make the custom background?<br />
+</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a> Posted on 07-20-18, 01:04 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds5fea.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4697</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">How did you successfully replace NSMBU tileset by 16 bit ones ? I tried and it looks weird for some reason.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/66-louiskovskie.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Louiskovskie (66) [Normal user]">Louis Miles</span></a> Posted on 07-23-18, 02:59 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds5039.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4723</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><strong>Alright, the mod is nearing completion!:</strong><br />
+Tilesets: 90%<br />
+Backgrounds: 100%<br />
+StaticSkin: 80%<br />
+Music: 0%<br />
+Soundeffects: 0%<br />
+<br />
+<strong>Here are some new screenshots:</strong><br />
+<a href="../../../i.imgur.com/qopehkW.jpg"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/qopehkW.jpg" alt=""/></a><br />
+<a href="../../../i.imgur.com/qOOIxEJ.jpg"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/qOOIxEJ.jpg" alt=""/></a><br />
+<br />
+<br />
+I currently have <a href="https://mariomods.net/thread/73-ask-your-smm-hacking-questions-here?from=140?post=4722#post4722">two small issues</a>, but i'm sure they can be solved somehow :) <br />
+<br />
+<br />
+<br />
+<div class="quote"> How did you make the custom background?<br />
+ <div class="quote-footer"><a href="../../thread/654-new-super-mario-bros-ds2ed6.html">Posted by The Mario Modder</a></div></div>By editing the Static.pack. <a href="https://mariomods.net/thread/481-how-to-add-backgrounds">Here is a tutorial</a> ;)<br />
+<br />
+<div class="quote"> How did you successfully replace NSMBU tileset by 16 bit ones ? I tried and it looks weird for some reason. <div class="quote-footer"><a href="../../thread/654-new-super-mario-bros-ds5fea.html">Posted by Lakifume</a></div></div>Does it look like this?:<br />
+<a href="../../../i.imgur.com/ncuJIOP.jpg"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/ncuJIOP.jpg" alt=""/></a><br />
+This is the filter used by NSBMU tilesets, which goes out of control if it has a lower resolution. I just scaled the tilesets x4 to get it work.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/400210131-a-kramer-randomness.html" title=""><span  style="color: #7C60B0;" class="userlink" title="A Kramer Randomness (400210131) [Normal user]">A Kramer Randomness</span></a> Posted on 07-23-18, 11:59 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds2ba1.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4726</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">why not realese a beta of this mod???</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 07-26-18, 03:02 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds30ed.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4768</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">What's the point of a demo if the full version will be releasing soon<sup>TM</sup>?<br />
+Why not just wait for that?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/400210131-a-kramer-randomness.html" title=""><span  style="color: #7C60B0;" class="userlink" title="A Kramer Randomness (400210131) [Normal user]">A Kramer Randomness</span></a> Posted on 07-26-18, 06:14 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds2d42.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4770</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">The Background Looks Stunning!</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/66-louiskovskie.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Louiskovskie (66) [Normal user]">Louis Miles</span></a> Posted on 07-29-18, 01:36 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-dsbbec.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4795</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Ok, mod is finished. <del>Download is on it's way ;D</del><br />
+DONE! Find the download in the main post ;D<br />
+<a href="../../../i.imgur.com/TkUoQJ1.jpg"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/TkUoQJ1.jpg" alt=""/></a> <a href="../../../i.imgur.com/rPlScj0.jpg"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/rPlScj0.jpg" alt=""/></a> <a href="../../../i.imgur.com/0YT0NCs.jpg"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/0YT0NCs.jpg" alt=""/></a> <a href="../../../i.imgur.com/U0BY6oV.jpg"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/U0BY6oV.jpg" alt=""/></a> <a href="../../../i.imgur.com/fFoBsnq.jpg"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/fFoBsnq.jpg" alt=""/></a> <a href="../../../i.imgur.com/xAgCjSr.jpg"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/xAgCjSr.jpg" alt=""/></a></div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 07-29-18, 05:57 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-dsda28.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4798</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Honestly, this mod looks great! Good job.<br />
+<br />
+But why not replace the airship theme with the sky theme? The sky theme makes more sense considering the original NSMB used sky and didn't even have an airship. Still, I like the replica you made.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/85-thenawab.html" title=""><span  style="color: #97ACEF;" class="userlink" title="TheNawab (85) [Normal user]">TheNawab</span></a> Posted on 07-29-18, 08:06 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds02fa.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4800</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Is the weird blue filter issue fixed in this release ? Also, this is looking awesome ! </div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a> Posted on 07-30-18, 12:10 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds3a7d.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4803</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">So... how did you fix the strange small filter on some edges ?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/66-louiskovskie.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Louiskovskie (66) [Normal user]">Louis Miles</span></a> Posted on 07-31-18, 02:26 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds71e5.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4811</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><strong><u>I spent the mod a small update!:</u></strong><br />
+-Added 100-Mario Challenge Ending with Peach and/or Toad<br />
+-Improved Clown Cars<br />
+-Improved Magikoopa<br />
+<br />
+<a href="https://www.dshack.org/assets/store/545/NSMBDS_forSuperMarioMaker_v1.1.zip">DOWNLOAD</a><br />
+<br />
+Some enemies are still uneditable (Buzzy Beetle and Bob-Omp) and will be replaced in another update ;D<br />
+<br />
+<br />
+<div class="quote"> So... how did you fix the strange small filter on some edges ? <div class="quote-footer"><a href="../../thread/654-new-super-mario-bros-ds3a7d.html">Posted by Lakifume</a></div></div>I just followed the old video tutorial by Zachabossaloler Plays, and this worked for some reason :)<br />
+<br />
+<div class="quote"> Is the weird blue filter issue fixed in this release ? Also, this is looking awesome !  <div class="quote-footer"><a href="../../thread/654-new-super-mario-bros-ds02fa.html">Posted by TheNawab</a></div></div>Jep ;D. And thank you!<br />
+<br />
+<div class="quote"> Honestly, this mod looks great! Good job.<br />
+<br />
+But why not replace the airship theme with the sky theme? The sky theme makes more sense considering the original NSMB used sky and didn't even have an airship. Still, I like the replica you made. <div class="quote-footer"><a href="../../thread/654-new-super-mario-bros-dsda28.html">Posted by NightYoshi370</a></div></div><br />
+Thank you :)<br />
+Hmm, yeah i made lots of thoughts about the airship theme and used the Bob-Omb theme from the minigames. But i'm planning to add some music-themes as an Add-On, where you can download additional music tracks for the mod :) </div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/400210131-a-kramer-randomness.html" title=""><span  style="color: #7C60B0;" class="userlink" title="A Kramer Randomness (400210131) [Normal user]">A Kramer Randomness</span></a> Posted on 08-01-18, 06:35 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds2de8.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4813</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Problem: How Do You Add The Background?<br />
+When I Put The Static.pack In My Folder It Crashes</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 08-01-18, 04:15 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds5dda.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4837</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">You should just be able to drop and play on your SD card. No need to open the entire static.pack thingy.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/400210131-a-kramer-randomness.html" title=""><span  style="color: #7C60B0;" class="userlink" title="A Kramer Randomness (400210131) [Normal user]">A Kramer Randomness</span></a> Posted on 08-03-18, 10:09 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-dsbd60.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4883</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">ok, but what about cemu?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 08-08-18, 03:08 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-dsfc54.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4917</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">....you just replace the files<br />
+<br />
+Also, <a href="../../profile/66-louiskovskie.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Louiskovskie (66) [Normal user]"><img src="../../data/avatars/66_1514581103.png" alt="" class="minipic" /> Louis Miles</span></a>, have you tried editing the item selector stuff?<br />
+In case you don't know what I'm talking about, I'm talking about this: <img class="img-fluid" src="../../../cdn.discordapp.com/attachments/463809347353444412/476768488212529164/unknown.png" alt=""/></div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/400210131-a-kramer-randomness.html" title=""><span  style="color: #7C60B0;" class="userlink" title="A Kramer Randomness (400210131) [Normal user]">A Kramer Randomness</span></a> Posted on 08-09-18, 03:38 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-dsd24c.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4933</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">I Can Do That!<br />
+Leave It To Me!</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 08-09-18, 03:39 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds02e5.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4934</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Drag and drop?<br />
+Or the palette editor changing thingy?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/400210131-a-kramer-randomness.html" title=""><span  style="color: #7C60B0;" class="userlink" title="A Kramer Randomness (400210131) [Normal user]">A Kramer Randomness</span></a> Posted on 08-09-18, 03:44 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds2a98.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4935</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Editing The Pallete!</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/400210131-a-kramer-randomness.html" title=""><span  style="color: #7C60B0;" class="userlink" title="A Kramer Randomness (400210131) [Normal user]">A Kramer Randomness</span></a> Posted on 08-21-18, 12:32 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds5d7a.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5033</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">is there ever going to be a 3ds version???</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 08-21-18, 12:33 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-dscebc.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5034</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Not by the man himself, but there can be fan ports</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/400210131-a-kramer-randomness.html" title=""><span  style="color: #7C60B0;" class="userlink" title="A Kramer Randomness (400210131) [Normal user]">A Kramer Randomness</span></a> Posted on 08-21-18, 12:34 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-dscd90.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5035</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">how about you, can you port it to the 3ds</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 08-21-18, 12:39 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-dsb11e.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5036</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">In texas right now, but I can try to take a look.<br />
+I'll first have to see what I need to do about the backgrounds, if that's possible. Most likely not, but who knows</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/400210131-a-kramer-randomness.html" title=""><span  style="color: #7C60B0;" class="userlink" title="A Kramer Randomness (400210131) [Normal user]">A Kramer Randomness</span></a> Posted on 08-21-18, 01:20 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-dsf08f.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5037</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">i just want the overworld background to change as well as the entire underground, underwater, ghost house, airship, and castle theme to have the same tilesets and backgrounds in this mod too.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 08-21-18, 01:22 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds7953.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5038</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">backgrounds are most likely not gonna happen, since the way they were done in this mod isn't possible in SMM 3DS afaik<br />
+Tilesets are easy and can be done in a day.<br />
+Enemies will just involve me not being so lazy</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/400210131-a-kramer-randomness.html" title=""><span  style="color: #7C60B0;" class="userlink" title="A Kramer Randomness (400210131) [Normal user]">A Kramer Randomness</span></a> Posted on 08-21-18, 03:24 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds2915.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5039</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">oh! no no, since the nsmbu backgrounds are not 3d models and instead 2d images in the 3ds version it's possible for it to be changed<br />
+EDIT: almost forgot! the nsmbu style's edit and create music should change too and no need to do the tilesets and edit/create music for the overworld since aboodxd already did it<br />
+EDIT 2: mabye if it's possible for you, you can change the editor pallet, style logo, and the theme lettering on the top left from 'New Super Mario Bros. U' to 'New Super Mario Bros. DS'</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 08-21-18, 04:12 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-dsfffe.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5040</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote"> oh! no no, since the nsmbu backgrounds are not 3d models and instead 2d images in the 3ds version it's possible for it to be changed <div class="quote-footer"><a href="../../thread/654-new-super-mario-bros-ds2915.html">Posted by A Kramer Randomness</a></div></div>Yes, it's possible. But if nintendo was smart, it would be hard to.<br />
+<br />
+<div class="quote"> no need to do the tilesets and edit/create music for the overworld since aboodxd already did it <div class="quote-footer"><a href="../../thread/654-new-super-mario-bros-ds2915.html">Posted by A Kramer Randomness</a></div></div>I will need to port it myself, since I'll otherwise need to ask abood for permission and he will most likely say no, considering the past we've had.<br />
+Plus, we're porting this specific mod, not abood's.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/400210131-a-kramer-randomness.html" title=""><span  style="color: #7C60B0;" class="userlink" title="A Kramer Randomness (400210131) [Normal user]">A Kramer Randomness</span></a> Posted on 08-21-18, 04:33 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds46cb.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5041</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">1. great!<br />
+2. i meant link abood's nsmbds mod since it already has the tilesets and musics changed and you can only make the overworld background! (including the other 5 backdrop themes)</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1410401535-kingofboos57.html" title=""><span  style="color: #97ACEF;" class="userlink" title="KingofBoos57 (1410401535) [Normal user]">KingofBoos57</span></a> Posted on 08-30-18, 09:54 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-dsb1b0.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5123</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">The mod looks awesome!</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/689075959-trussive.html" title=""><span  style="color: #97ACEF;" class="userlink" title="trussive (689075959) [Normal user]">trussive</span></a> Posted on 09-04-18, 07:09 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-dsfbfa.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5182</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">For some reason, the download link is just a file containing a empty txt file that's named "ReadMe".</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1410401535-kingofboos57.html" title=""><span  style="color: #97ACEF;" class="userlink" title="KingofBoos57 (1410401535) [Normal user]">KingofBoos57</span></a> Posted on 09-08-18, 11:42 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds644a.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5194</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">This is awesome!<br />
+</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/171-samplasion.html" title=""><span  style="color: #97ACEF;" class="userlink" title="samplasion (171) [Normal user]">Samplasion</span></a> Posted on 09-08-18, 01:53 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds6927.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5199</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">the download's not there<br />
+Can i have a link to a mirror please?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/400210131-a-kramer-randomness.html" title=""><span  style="color: #7C60B0;" class="userlink" title="A Kramer Randomness (400210131) [Normal user]">A Kramer Randomness</span></a> Posted on 09-11-18, 10:14 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds0fe9.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5211</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">May I Please Use The Background From This Mod For My Own?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/775221115-toastyasbread.html" title=""><span  style="color: #97ACEF;" class="userlink" title="ToastyAsBread (775221115) [Normal user]">ToastyAsBread</span></a> Posted on 09-29-18, 06:31 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds4fa6.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5277</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">the link doesn't work for me, is it possible for me to receive the file directly?<br />
+(404 error)</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1688899581-pacopapa02.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Pacopapa02 (1688899581) [Normal user]">Pacopapa02</span></a> Posted on 10-09-18, 05:23 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-dsc36f.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5311</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">download link isn't working for me</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/23781974-funmaker.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Funmaker (23781974) [Normal user]">Funmaker</span></a> Posted on 10-12-18, 08:15 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-dse84d.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5324</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">yep, file not found 404 pops up for me too, guess I have to wait to use this awesome mod<br />
+</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1963697677-ds-mod-pls.html" title=""><span  style="color: #7C60B0;" class="userlink" title="ds mod pls (1963697677) [Normal user]">ds mod pls</span></a> Posted on 11-24-18, 12:48 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds28ed.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#5420</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Will there ever be another way to download it? I would love to have this mod as seeing it on YouTube got me into Super Mario Maker mods.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/138261192-flamekat53.html" title=""><span  style="color: #97ACEF;" class="userlink" title="FlameKat53 (138261192) [Normal user]">FlameKat53</span></a> Posted on 01-11-19, 11:58 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/654-new-super-mario-bros-ds6555.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#860525217</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">This is my childhood on the big screen </div>
+		</td></tr>	</tbody>
+</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../depot.html">Depot</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../hacks.html">Super Mario Maker Mods</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="654-New%20Super%20Mario%20Bros%20DS.html">New Super Mario Bros DS</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="https://www.dshack.org/assets/store/545/NSMBDS_forSuperMarioMaker_v1.1.zip"									class="nav-link"
+									>
+									Download WiiU Theme
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="649-SCP_CB/SL%20Mod.html"									class="nav-link"
+									>
+									Previous Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="656-Athlethic%20BG%20%5bFor%20SMM%5d%20%5bSMW%20BG%5d.html"									class="nav-link"
+									>
+									Next Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="http://twitter.com/share?text=New%20Super%20Mario%20Bros%20DS&amp;url=http://localhost/depot/hacks/654-/&amp;via=MarioMakingMods"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../../online.html" class="btn btn-link">Online Users</a>
+		<a href="../../records.html" class="btn btn-link">Records</a>
+		<a href="../../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../../js/timeago.js"></script>
+		<script src="../../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+        <script src="../../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/depot/hacks/654-new-super-mario-bros-ds by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:20:10 GMT -->
+</html>

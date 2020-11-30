@@ -1,0 +1,68 @@
+table, td, tr, th, div {
+	border-color:#228;
+}
+
+a:link { color: #0065bb; }
+a:visited { color: #0065bb; }
+a:active { color: #0065bb; }
+a:hover { color:#007; }
+
+body {
+	background: #63C8FE url("background.png");
+	background-repeat: repeat-x;
+	background-attachment:fixed;
+	background-position:left bottom; 
+}
+
+th, .card-header {
+	background: rgba(146, 239, 183, 0.8);
+}
+
+.header0 th {
+	background: rgba(255, 112, 73, 0.85);
+	color: #EEEEEE;
+}
+
+td, .list-group-item, .card-body, .card-footer, .cell, .footer {
+	background: rgba(141, 213, 255, 0.85);
+}
+
+.cell2 {
+	background: rgba(211, 239, 255, 0.85);
+}
+
+.errort {
+	background: rgba(211, 239, 255, 0.85);
+	border: 1px solid #224;
+}
+
+.errorc
+{
+	background: rgba(141, 213, 255, 0.85);
+	border: 1px solid #224;
+	border-top: 0px;
+}
+
+button, input[type="submit"]
+{
+	border: 1px solid #224;
+	background: rgba(218, 255, 171, 0.85);
+	color: #000;
+}
+
+input[type="text"], input[type="password"], input[type="file"], input[type="email"], select, textarea, input[type="checkbox"], input[type="radio"]
+{
+	background: rgba(218, 255, 171, 0.90);
+	border: 1px solid #224;
+	color: #000;
+}
+
+input[type="radio"]
+{
+	border-radius: 8px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus, input[type="email"]:focus, select:focus, textarea:focus
+{
+	border-color: rgba(218, 255, 171FOCUS, 0.85);
+}

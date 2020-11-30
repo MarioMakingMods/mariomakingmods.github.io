@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/thread/1270097355 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:58:28 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>How to edit the Boot Screen (Textures + Sounds) &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content="This tutorial (like it says in the title) will teach you how to edit the Boot Screen for Super Mario Maker. Tools you'll need. - WinSCP : Download - Wav2BTSND..." />
+        <meta name="keywords" content="how edit boot screen textures sounds" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="How to edit the Boot Screen (Textures + Sounds) &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="How to edit the Boot Screen (Textures + Sounds) &amp;raquo; Mario Making Mods" /><meta property="og:description" content="This tutorial (like it says in the title) will teach you how to edit the Boot Screen for Super Mario Maker. Tools you'll need. - WinSCP : Download - Wav2BTSND..." /> <meta name="og:description" content="This tutorial (like it says in the title) will teach you how to edit the Boot Screen for Super Mario Maker. Tools you'll need. - WinSCP : Download - Wav2BTSND..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="How to edit the Boot Screen (Textures + Sounds) &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="This tutorial (like it says in the title) will teach you how to edit the Boot Screen for Super Mario Maker. Tools you'll need. - WinSCP : Download - Wav2BTSND..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/4-hacking-info.html">Hacking info</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="1270097355-how-to-edit-the-boot-screen-textures-sounds.html">How to edit the Boot Screen (Textures + Sounds)</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="827293788.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="183269610.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dHow%2bto%2bedit%2bthe%2bBoot%2bScreen%2b(Textures%2b%2b%2bSounds)%26url%3dhttp_/localhost/thread/1270097355/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>	    
+
+    	<table class="table table-striped" id="post1596150618">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1075784069_1528410686.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1075784069-the-mario-modder.html" title=""><span  style="color: #97ACEF;" class="userlink" title="The Mario Modder (1075784069) [Normal user]">The Mario Modder</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-08-18<br>
+						From: Planet Earth<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1075784069-the-mario-modder/posts.html" title="List The Mario Modder's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1075784069-the-mario-modder/threads.html" title="List The Mario Modder's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1596150618">
+				This tutorial (like it says in the title) will teach you how to edit the Boot Screen for Super Mario Maker.<br />
+<br />
+<u>Tools you'll need.</u><br />
+<br />
+- WinSCP : <a href="https://winscp.net/eng/index.php">Download</a><br />
+- Wav2BTSND : <a href="https://gbatemp.net/threads/wav2btsnd-simple-tool-to-create-btsnd-files.447896/">Download</a><br />
+- Paint.NET : <a href="https://www.getpaint.net/">Download</a><br />
+- TGAVerify : <a href="https://gbatemp.net/threads/tgaverifiy-a-tga-verifier.450997/">Download</a><br />
+-Wii U (with CFW and Homebrew) <br />
+- FTPiiU_Everywhere (Download on Homebrew App Store)<br />
+-WUP Installer GX2 (Download on Homebrew App Store)<br />
+- Mocha CFW + FSHax (Download on Homebrew App Store)<br />
+- Super Mario Maker Dump ( <a href="http://mariomods.net/post/4470" target="_blank">SMM Dumping Guide</a> )<br />
+- Computer with Python 2.7 and Java Installed<br />
+- Audacity : <a href="https://www.audacityteam.org/"> Download </a><br />
+<br />
+<br />
+<strong>Additional Information.</strong><br />
+<br />
+<strong><u>File Meanings</u></strong><br />
+bootDrcTex.tga = Boot image for Gamepad<br />
+bootLogoTex.tga = Nintendo Logo (Presumably Unused)<br />
+bootTvTex.tga = Boot image for TV<br />
+iconTex.tga = Game Icon (for Home and Pause Menu)<br />
+bootSound.btsnd = Boot Sound<br />
+<br />
+It is recommended that you have a unpacked version of Super Mario Maker on your computer. (The one that has the Code, Content, and Meta folder's)<br />
+<br />
+<strong>This guide will permanently replace the files in your Wii U's NAND. To prevent your Wii U from bricking if your file is corrupted, it is highly recommended to Backup your original files before you inject the edited ones into the NAND. </strong><br />
+<br />
+You cannot use a Disk Version of Super Mario Maker. If you do, follow the following steps. If  you downloaded SMM from the eshop, skip the following instructions. <br />
+<ol>	1. Load The Homebrew Channel using your preferred method. <br />
+	2. Download disk2app for Homebrew using the Homebrew App Store. <br />
+	3. Remove your Super Mario Maker Disk and launch disk2app<br />
+	4. Follow the onscreen instructions.  <br />
+        5. When the program has dumped SMM, open WUP Installer and proceed to install SMM to the NAND of your Wii U. <br />
+</ol>With that out of the way, lets get started!<br />
+<br />
+<ol><li>Navigate to the "meta" folder of your unpacked Super Mario Maker dump. <br />
+<li>Copy all the TGA's and the BTSND as a Backup and add "Orig" to the back of their name. <br />
+<li>Edit the files without "Orig" at the end of them. <br />
+<br />
+<strong><u>For TGA's</u></strong><br />
+<ul><li>Open Paint.NET and edit the files however you like. </ul><ul><li> When you export. Find the combination of settings that will make the file size match up to the original files. </ul><img class="img-fluid" src="../../i.imgur.com/cLel07g.png" alt=""/><br />
+(bootDrcTex.tga's file size)<br />
+<ul><li>Drag TGAVerify to the folder with your Edited TGA's and double-click it. </ul><ul><li>If it says "All TGA's verified" then it worked. </ul><br />
+<br />
+<strong><u>For BTSND</u></strong><br />
+<ul><li>Duplicate the BTSND and add "Copy" to the end of it (If you havent done so already) and Open Audacity</ul><ul><li>Open the clip that you want to replace the Boot Sound with and at the bottom of your window change the Project Rate to 48000</ul><ul><li>Export the clip as a WAV signed 16 bit PCM with Stereo Sound (2 Sound Channels)</ul><ul><li>Open a command window and instert the following command : java -jar [wav2btsnd.jar] -in [insert file name here.wav] -out bootSound2.btsnd -loopPoint [insert loop point sample number here] </ul><ul><li>If you dont know what to put for the Loop Point Sample Number, just put 0</ul><ul><li>The program should spit out a file called "bootSound2.btsnd", remove the 2 from the name and overwrite any file with the same name (We have the backups, remember) </ul><br />
+Now for the Fun Part<br />
+<br />
+<strong><u>Injecting</u></strong><br />
+1. Open the Homebrew Launcher and load Mocha CFW + FSHax and press A<br />
+<ul><li>If it worked, the Gamepad should show the Mocha CFW Logo and spit you back to the Home Menu</ul>2. Re-open the Homebrew Launcher and load FTPiiU_Everywhere<br />
+<ul><li>You should see a listing number  on the bottom of the screen. </ul>Ex.  123.456.789.00:21<br />
+3. Open WinSCP and for the host name, type in the first 11 numbers along with the periods. <br />
+4. For the Port number, it should be the last two numbers of your listing. <br />
+Ex. 21<br />
+5. Check-Mark "Anonymous Login" and Login. <br />
+6. On the right box, go to: "storage_mlc/usr/title/0005000e/1018dc00/meta"<br />
+7. On the left box go to where you have your edited files and drag them into the right box. Overwrite them. <br />
+8. Close out WinSCP and press the Home button on the Wii U.<br />
+9. Return to the Home Menu<br />
+10. Boot Super Mario Maker and the boot screen has been edited. <br />
+<br />
+Yay! End of the tutorial, if you have any questions or things aren't working out as I say, feel free to tell me in the Quick Reply section down below. <br />
+<br />
+<br />
+</ol><br />
+<br />
+
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1596150618">
+									Posted on 06-10-19, 02:28 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1596150618">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="1270097355-how-to-edit-the-boot-screen-textures-soundse65c.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bThe%2bMario%2bModder)%2bin%2b__%26url%3dhttp_/localhost/post/1596150618/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1596150618</button>							</div>
+		</td></tr>
+	</table>	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/4-hacking-info.html">Hacking info</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="1270097355-how-to-edit-the-boot-screen-textures-sounds.html">How to edit the Boot Screen (Textures + Sounds)</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="827293788.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="183269610.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dHow%2bto%2bedit%2bthe%2bBoot%2bScreen%2b(Textures%2b%2b%2bSounds)%26url%3dhttp_/localhost/thread/1270097355/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/thread/1270097355 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:58:28 GMT -->
+</html>

@@ -1,0 +1,1842 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/forum/9-General Modding?from=50 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:25:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>General Modding &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content="Basically for other ROM hacks, console mods, and others" />
+        <meta name="keywords" content="general modding" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="General Modding &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="General Modding &amp;raquo; Mario Making Mods" /><meta property="og:description" content="Basically for other ROM hacks, console mods, and others" /> <meta name="og:description" content="Basically for other ROM hacks, console mods, and others" /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="General Modding &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="Basically for other ROM hacks, console mods, and others" />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="9-general-modding.html">General Modding</a></li>
+											</ol>
+								</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+							<div class="col-lg-2 col-md-3 col-sm-4 sidenav">
+					<table class="table table-bordered table-striped table-sm">
+						<thead><tr><th class="center">Super Mario Maker</th></tr></thead>
+						<tbody><tr><td class="center"><a href="7-level-showcase.html">Level showcase</a></td></tr><tr><td class="center"><a href="8-tips-tricks-and-glitches.html">Tips, Tricks and Glitches</a></td></tr><tr><td class="center"><a href="4-hacking-info.html">Hacking info</a></td></tr></tbody>
+    </table><table class="table table-bordered table-striped table-sm">
+						<thead><tr><th class="center">Fan Games</th></tr></thead>
+						<tbody><tr><td class="center"><a href="12-gatete-s-engine.html">Gatete's Engine</a></td></tr><tr><td class="center"><a href="13-super-mario-remaker.html">Super Mario ReMaker</a></td></tr><tr><td class="center"><a href="16-super-mario-unimaker.html">Super Mario Unimaker</a></td></tr><tr><td class="center"><a href="19-other-fangames.html">Other fangames</a></td></tr></tbody>
+    </table><table class="table table-bordered table-striped table-sm">
+						<thead><tr><th class="center">Super Forum Maker</th></tr></thead>
+						<tbody><tr><td class="center"><a href="1-latest-news.html">Latest News</a></td></tr><tr><td class="center"><a href="6-general-chat.html">General Chat</a></td></tr><tr><td class="center"><a href="9-general-modding.html">General Modding</a></td></tr><tr><td class="center"><a href="2-mario-making-mods-talk.html">Mario Making Mods Talk</a></td></tr></tbody>
+    </table><table class="table table-bordered table-striped table-sm">
+						<thead><tr><th class="center">SMB3 Underwater Theme</th></tr></thead>
+						<tbody><tr><td class="center"><a href="25-the-hall-of-fame.html">The Hall of Fame</a></td></tr><tr><td class="center"><a href="10-forgotten-depths.html">Forgotten Depths</a></td></tr></tbody>
+    </table>
+				</div>
+						<div class="col-lg-10 col-md-9 col-sm-8 text-left">
+					<table class="table table-bordered">
+		<tr style="overflow: auto;">
+			<td>
+				<div class="row">
+					<div class="col-sm-4"></div>
+					<div class="col-sm-4" style="text-align: center;">
+						126 threads and 561 posts total<br>
+						0 posts today, 0 last hour, and 0 for the past week<br>
+						0 active threads today, 0 last hour, and 0 for the past week
+					</div>
+					<div class="col-sm-4" style="text-align: right;">
+													867 registered users, 0 active (0%)<br>
+							Newest user: <a href="../profile/802029998-mkahfi29.html" title=""><span  style="color: #97ACEF;" class="userlink" title="mkahfi29 (802029998) [Normal user]">mkahfi29</span></a>
+											</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	<div class="alert alert-info alert-dismissible fade show" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+		 <a href="../thread/238265131-trouble-in-the-desert-super-mario-unimaker-custom-stage.html" class="alert-link">Trouble in the Desert | Super Mario Unimaker Custom Stage</a> &mdash; Posted by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 05-10-19, 11:12 pm
+	</div>	<div class="smallFonts pages">
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			
+			<li class="page-item first">
+				<a class="page-link" href="9-General%20Modding.html" aria-label="First">
+					<span aria-hidden="true">&#x00AB;</span>
+					<span class="sr-only">First</span>
+				</a>
+			</li>
+			<li class="page-item previous">
+				<a class="page-link" href="9-General%20Modding.html" aria-label="Previous">
+					<span aria-hidden="true">&#x2039;</span>
+					<span class="sr-only">Previous</span>
+				</a>
+			</li><li class="page-item"><a class="page-link" href="9-General%20Modding.html">1</a></li><li class="page-item active"><span class="page-link">2 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="9-General%20Modding627d.html?from=100">3</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="9-General%20Modding627d.html?from=100" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="9-General%20Modding627d.html?from=100" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav></div>	
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/665-nsmbu-bg-error.html">NSMBU BG Error</a>
+									</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/665/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 07-22-18, 01:34 pm by <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> <br>
+							Last Post: <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> on 07-22-18, 01:34 pm <a href="../thread/665-nsmbu-bg-error55f4.html">&raquo;</a><br>
+							Thread ID: 665
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 0 replies
+					<i class="fa fa-eye"></i> 577 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/651-the-junglerous-jungle.html">The "Junglerous" Jungle</a>
+					 <span class="threadTag" style="background-color: hsl(108, 70%, 40%);">nsmbu</span><span class="threadTag" style="background-color: hsl(330, 70%, 40%);">custom level</span><span class="threadTag" style="background-color: hsl(126, 70%, 40%);">now with video</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/651/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 06-29-18, 04:26 pm by <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> <br>
+							Last Post: <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> on 06-29-18, 04:26 pm <a href="../thread/651-the-junglerous-jungle7294.html">&raquo;</a><br>
+							Thread ID: 651
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 0 replies
+					<i class="fa fa-eye"></i> 815 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/648-smg4-and-red-luigi-in-sm3dl.html">SMG4 and Red Luigi in SM3DL</a>
+									</th></tr>
+									<tr><th >
+						Change green Mario to red Luigi(Bad joke detected)
+					</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/648/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 06-27-18, 03:54 pm by <a href="../profile/144008840-eros744.html" title=""><span  style="color: #97ACEF;" class="userlink" title="eros744 (144008840) [Normal user]"><img src="../data/avatars/144008840_1518028195.png" alt="" class="minipic" /> eros744</span></a> <br>
+							Last Post: <a href="../profile/144008840-eros744.html" title=""><span  style="color: #97ACEF;" class="userlink" title="eros744 (144008840) [Normal user]"><img src="../data/avatars/144008840_1518028195.png" alt="" class="minipic" /> eros744</span></a> on 06-29-18, 09:27 am <a href="../thread/648-smg4-and-red-luigi-in-sm3dlcbad.html">&raquo;</a><br>
+							Thread ID: 648
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 4 replies
+					<i class="fa fa-eye"></i> 1863 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+															<img src="../img/icons/icon1.html" alt="" class="smiley" style="max-width:32px; max-height:32px;">					<a href="../thread/18-miyamoto.html">Miyamoto!</a>
+					 <span class="threadTag" style="background-color: hsl(108, 70%, 40%);">nsmbu</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/18/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 05-21-17, 02:56 pm by <a href="../profile/21-gota7.html" title=""><span  style="color: #7C60B0;" class="userlink" title="Gota7 (21) [Normal user]"><img src="../data/avatars/21_1495377995.png" alt="" class="minipic" /> Star Wolf</span></a> <br>
+							Last Post: <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> on 06-28-18, 02:39 pm <a href="../thread/18-miyamoto6f28.html">&raquo;</a><br>
+							Thread ID: 18
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 29 replies
+					<i class="fa fa-eye"></i> 6973 views
+				</span>
+				<span style="float: right;">
+					<ul class="pagination pagination-sm justify-content-end" style="margin-bottom: 0;"><li class="page-item"><a class="page-link" href="../thread/18.html">1</a></li><li class="page-item ">
+								<a class="page-link" href="../thread/18704a.html?from=20">
+									2
+								</a>
+								</li></ul>
+				</span>			</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/642-nsmbu-question.html">NSMBU Question</a>
+									</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/642/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 06-23-18, 04:14 pm by <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> <br>
+							Last Post: <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> on 06-23-18, 04:14 pm <a href="../thread/642-nsmbu-question4813.html">&raquo;</a><br>
+							Thread ID: 642
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 0 replies
+					<i class="fa fa-eye"></i> 706 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/638-freezeflame-volcano.html">Freezeflame Volcano</a>
+					 <span class="threadTag" style="background-color: hsl(108, 70%, 40%);">nsmbu</span><span class="threadTag" style="background-color: hsl(330, 70%, 40%);">custom level</span><span class="threadTag" style="background-color: hsl(123, 70%, 40%);">custom music</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/638/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 06-21-18, 05:06 pm by <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> <br>
+							Last Post: <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> on 06-22-18, 07:26 pm <a href="../thread/638-freezeflame-volcanoe744.html">&raquo;</a><br>
+							Thread ID: 638
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 4 replies
+					<i class="fa fa-eye"></i> 1777 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/240-how-to-make-custom-music-in-nsmbu.html">How to make custom music in NSMBU</a>
+					 <span class="threadTag" style="background-color: hsl(123, 70%, 40%);">tutorial</span><span class="threadTag" style="background-color: hsl(108, 70%, 40%);">nsmbu</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/240/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 09-22-17, 04:09 am by <a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]"><img src="../data/avatars/5_1517641935.png" alt="" class="minipic" /> MasterVermilli0n</span></a> <br>
+							Last Post: <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> on 06-21-18, 04:45 pm <a href="../thread/240-how-to-make-custom-music-in-nsmbud05f.html">&raquo;</a><br>
+							Thread ID: 240
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 15 replies
+					<i class="fa fa-eye"></i> 3033 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/634-granimated-s-super-mario-odyssey-mods.html">GRAnimated's Super Mario Odyssey Mods</a>
+									</th></tr>
+									<tr><th >
+						Starbits, Sonic Rings, and more!
+					</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/634/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 06-19-18, 11:23 pm by <a href="../profile/9-granimated.html" title=""><span  style="color: #97ACEF;" class="userlink" title="GRAnimated (9) [Normal user]"><img src="../data/avatars/9_1507994313.jpg" alt="" class="minipic" /> GRAnimated</span></a> <br>
+							Last Post: <a href="../profile/1093721157-xxxkreasxxx.html" title=""><span  style="color: #97ACEF;" class="userlink" title="XxxkreasxxX (1093721157) [Normal user]"><img src="../data/avatars/1093721157_1516902360.jpg" alt="" class="minipic" /> Kreas</span></a> on 06-20-18, 02:04 pm <a href="../thread/634-granimated-s-super-mario-odyssey-modsb19e.html">&raquo;</a><br>
+							Thread ID: 634
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 1 reply
+					<i class="fa fa-eye"></i> 1629 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/633-would-perfect-if.html">Would perfect if...</a>
+									</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/633/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 06-17-18, 05:19 pm by <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> <br>
+							Last Post: <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> on 06-19-18, 04:37 pm <a href="../thread/633-would-perfect-ifab6b.html">&raquo;</a><br>
+							Thread ID: 633
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 2 replies
+					<i class="fa fa-eye"></i> 871 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/632-roy-s-toxic-castle.html">Roy's toxic castle</a>
+					 <span class="threadTag" style="background-color: hsl(108, 70%, 40%);">nsmbu</span><span class="threadTag" style="background-color: hsl(330, 70%, 40%);">custom level</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/632/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 06-17-18, 03:39 pm by <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> <br>
+							Last Post: <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> on 06-17-18, 03:39 pm <a href="../thread/632-roy-s-toxic-castled2fe.html">&raquo;</a><br>
+							Thread ID: 632
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 0 replies
+					<i class="fa fa-eye"></i> 764 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/628-new-super-mario-bros-modern.html">New Super Mario Bros. Modern</a>
+									</th></tr>
+									<tr><th >
+						Awesome improvement of original NSMBDS...
+					</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/628/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 06-11-18, 01:03 pm by <a href="../profile/2117477215-noknokshell.html" title=""><span  style="color: #97ACEF;" class="userlink" title="NokNokShell (2117477215) [Normal user]"><img src="../data/avatars/2117477215_1528721018.png" alt="" class="minipic" /> NokNokShell</span></a> <br>
+							Last Post: <a href="../profile/2117477215-noknokshell.html" title=""><span  style="color: #97ACEF;" class="userlink" title="NokNokShell (2117477215) [Normal user]"><img src="../data/avatars/2117477215_1528721018.png" alt="" class="minipic" /> NokNokShell</span></a> on 06-12-18, 01:55 pm <a href="../thread/628-new-super-mario-bros-modern12e0.html">&raquo;</a><br>
+							Thread ID: 628
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 4 replies
+					<i class="fa fa-eye"></i> 1646 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/629-heading-to-the-mountain.html">Heading to the mountain!</a>
+					 <span class="threadTag" style="background-color: hsl(108, 70%, 40%);">nsmbu</span><span class="threadTag" style="background-color: hsl(330, 70%, 40%);">custom level</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/629/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 06-11-18, 02:18 pm by <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> <br>
+							Last Post: <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> on 06-11-18, 02:18 pm <a href="../thread/629-heading-to-the-mountain0ae1.html">&raquo;</a><br>
+							Thread ID: 629
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 0 replies
+					<i class="fa fa-eye"></i> 649 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/622-adventure-in-the-clouds.html">Adventure in the clouds</a>
+					 <span class="threadTag" style="background-color: hsl(108, 70%, 40%);">nsmbu</span><span class="threadTag" style="background-color: hsl(330, 70%, 40%);">custom level</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/622/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 06-07-18, 01:50 pm by <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> <br>
+							Last Post: <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> on 06-07-18, 01:50 pm <a href="../thread/622-adventure-in-the-clouds232a.html">&raquo;</a><br>
+							Thread ID: 622
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 0 replies
+					<i class="fa fa-eye"></i> 675 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/621-how-to-dump-an-installed-3ds-title.html">How to dump an installed 3DS title</a>
+					 <span class="threadTag" style="background-color: hsl(15, 70%, 40%);">cfw</span>				</th></tr>
+									<tr><th >
+						Requires ARM9 access & GodMode9
+					</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/621/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 06-04-18, 03:06 am by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> <br>
+							Last Post: <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 06-04-18, 03:06 am <a href="../thread/621-how-to-dump-an-installed-3ds-titlea533.html">&raquo;</a><br>
+							Thread ID: 621
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 0 replies
+					<i class="fa fa-eye"></i> 827 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/620-dump-a-wii-u-game-s-assets-using-ddd.html">Dump a Wii U game's assets using DDD</a>
+									</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/620/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 06-04-18, 12:57 am by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> <br>
+							Last Post: <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 06-04-18, 12:57 am <a href="../thread/620-dump-a-wii-u-game-s-assets-using-ddd6fc7.html">&raquo;</a><br>
+							Thread ID: 620
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 0 replies
+					<i class="fa fa-eye"></i> 2076 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/619-question-about-nsmbu.html">Question about NSMBU.</a>
+									</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/619/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 06-03-18, 08:10 pm by <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> <br>
+							Last Post: <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> on 06-03-18, 09:16 pm <a href="../thread/619-question-about-nsmbu85c0.html">&raquo;</a><br>
+							Thread ID: 619
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 2 replies
+					<i class="fa fa-eye"></i> 1011 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/617-the-blue-castle.html">The Blue Castle</a>
+					 <span class="threadTag" style="background-color: hsl(108, 70%, 40%);">nsmbu</span><span class="threadTag" style="background-color: hsl(330, 70%, 40%);">custom level</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/617/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 06-02-18, 12:28 pm by <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> <br>
+							Last Post: <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> on 06-03-18, 07:55 am <a href="../thread/617-the-blue-castleb4c4.html">&raquo;</a><br>
+							Thread ID: 617
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 2 replies
+					<i class="fa fa-eye"></i> 792 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+										<div class="statusIcon hot"></div>										<a href="../thread/145-newer-super-luigi-wii-dark-moon.html">Newer Super Luigi Wii: Dark Moon</a>
+					 <span class="threadTag" style="background-color: hsl(222, 70%, 40%);">nsmbw</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/145/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 07-28-17, 06:56 pm by <a href="../profile/81-mullkaw.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Mullkaw (81) [Normal user]">Mullkaw</span></a> <br>
+							Last Post: <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 05-22-18, 03:11 am <a href="../thread/145-newer-super-luigi-wii-dark-moon8e40.html">&raquo;</a><br>
+							Thread ID: 145
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 42 replies
+					<i class="fa fa-eye"></i> 12577 views
+				</span>
+				<span style="float: right;">
+					<ul class="pagination pagination-sm justify-content-end" style="margin-bottom: 0;"><li class="page-item"><a class="page-link" href="../thread/145.html">1</a></li><li class="page-item ">
+								<a class="page-link" href="../thread/145704a.html?from=20">
+									2
+								</a>
+								</li><li class="page-item ">
+								<a class="page-link" href="../thread/145f05b.html?from=40">
+									3
+								</a>
+								</li></ul>
+				</span>			</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/603-overworld-mix.html">Overworld Mix</a>
+					 <span class="threadTag" style="background-color: hsl(108, 70%, 40%);">nsmbu</span><span class="threadTag" style="background-color: hsl(330, 70%, 40%);">custom level</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/603/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 05-15-18, 07:57 pm by <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> <br>
+							Last Post: <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> on 05-15-18, 07:57 pm <a href="../thread/603-overworld-mix3e52.html">&raquo;</a><br>
+							Thread ID: 603
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 0 replies
+					<i class="fa fa-eye"></i> 764 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/601-the-falling-lava.html">The falling lava</a>
+					 <span class="threadTag" style="background-color: hsl(108, 70%, 40%);">nsmbu</span><span class="threadTag" style="background-color: hsl(330, 70%, 40%);">custom level</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/601/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 05-13-18, 01:47 pm by <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> <br>
+							Last Post: <a href="../profile/270337816-anmakerfan.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AnMakerFan (270337816) [Normal user]"><img src="../data/avatars/270337816_1552057849.png" alt="" class="minipic" /> WillyMaker</span></a> on 05-13-18, 02:49 pm <a href="../thread/601-the-falling-lavacb68.html">&raquo;</a><br>
+							Thread ID: 601
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 2 replies
+					<i class="fa fa-eye"></i> 980 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/596-juxtaposition-a-miiverse-replacement.html">juxtaposition - a miiverse replacement</a>
+					 <span class="threadTag" style="background-color: hsl(291, 70%, 40%);">miiverse</span><span class="threadTag" style="background-color: hsl(120, 70%, 40%);">pretendo</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/596/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 05-08-18, 01:26 am by <a href="../profile/-1-superwhiskers.html" title=""><span  style="color: #FF55FF;" class="userlink" title="superwhiskers (-1) [Owner]"><img src="../data/avatars/-1_1533108801.png" alt="" class="minipic" /> superwhiskers</span></a> <br>
+							Last Post: <a href="../profile/-1-superwhiskers.html" title=""><span  style="color: #FF55FF;" class="userlink" title="superwhiskers (-1) [Owner]"><img src="../data/avatars/-1_1533108801.png" alt="" class="minipic" /> superwhiskers</span></a> on 05-08-18, 01:31 am <a href="../thread/596-juxtaposition-a-miiverse-replacementd2a7.html">&raquo;</a><br>
+							Thread ID: 596
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 2 replies
+					<i class="fa fa-eye"></i> 1101 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th colspan=2>
+
+																				<a href="../thread/565-newer-mario-wii-review.html">Newer Mario Wii Review</a>
+									</th></tr>
+							</thead>
+			<tbody><tr>
+									<td class="cell2" style="width:40px;">
+												<img src="../img/poll.png" alt="[poll]">					</td>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/565/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 03-30-18, 08:22 pm by <a href="../profile/1645699670-tee.html" title=""><span  style="color: #97ACEF;" class="userlink" title="tee (1645699670) [Normal user]"><img src="../data/avatars/1645699670_1532349041.png" alt="" class="minipic" /> tee</span></a> <br>
+							Last Post: <a href="../profile/24-customlevelfan78.html" title=""><span  style="color: #7C60B0;" class="userlink" title="customlevelfan78 (24) [Normal user]">customlevelfan78</span></a> on 04-04-18, 10:20 am <a href="../thread/565-newer-mario-wii-review9c50.html">&raquo;</a><br>
+							Thread ID: 565
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td colspan=2>
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 4 replies
+					<i class="fa fa-eye"></i> 1665 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/562-new-super-mario-all-stars-hd-my-criticism.html">New Super Mario All Stars HD: My criticism</a>
+									</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/562/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 03-25-18, 04:30 am by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> <br>
+							Last Post: <a href="../profile/24-customlevelfan78.html" title=""><span  style="color: #7C60B0;" class="userlink" title="customlevelfan78 (24) [Normal user]">customlevelfan78</span></a> on 03-28-18, 07:45 am <a href="../thread/562-new-super-mario-all-stars-hd-my-criticism2cc7.html">&raquo;</a><br>
+							Thread ID: 562
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 5 replies
+					<i class="fa fa-eye"></i> 19491 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/558-nx-python-create-switch-homebrew-software-in-python.html">nx-python: Create Switch homebrew software in Python!</a>
+									</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/558/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 03-20-18, 11:56 pm by <a href="../profile/17-aileen-lumina.html" title=""><span  style="color: #E91E63" class="userlink" title="Aileen Lumina (17) [Normal user]"><img src="../data/avatars/17_1495563222.jpg" alt="" class="minipic" /> Aileen Lumina</span></a> <br>
+							Last Post: <a href="../profile/17-aileen-lumina.html" title=""><span  style="color: #E91E63" class="userlink" title="Aileen Lumina (17) [Normal user]"><img src="../data/avatars/17_1495563222.jpg" alt="" class="minipic" /> Aileen Lumina</span></a> on 03-20-18, 11:56 pm <a href="../thread/558-nx-python-create-switch-homebrew-software-in-pythonc299.html">&raquo;</a><br>
+							Thread ID: 558
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 0 replies
+					<i class="fa fa-eye"></i> 868 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/550-yay-mk8-mods.html">Yay! MK8 Mods!</a>
+									</th></tr>
+									<tr><th >
+						Modding
+					</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/550/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 03-15-18, 08:12 pm by <a href="../profile/515890276-nintega21.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Nintega21 (515890276) [Normal user]"><img src="../data/avatars/515890276_1521377610.png" alt="" class="minipic" /> Nintega Yoshistan</span></a> <br>
+							Last Post: <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 03-18-18, 06:38 am <a href="../thread/550-yay-mk8-mods5a91.html">&raquo;</a><br>
+							Thread ID: 550
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 3 replies
+					<i class="fa fa-eye"></i> 1121 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/511-custom-nintendo-3ds-themes.html">Custom Nintendo 3DS Themes</a>
+					 <span class="threadTag" style="background-color: hsl(126, 70%, 40%);">off-topic</span><span class="threadTag" style="background-color: hsl(303, 70%, 40%);">3ds themes</span>				</th></tr>
+									<tr><th >
+						Post your custom 3DS themes here!
+					</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/511/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 02-20-18, 12:55 am by <a href="../profile/69-sks316.html" title=""><span  style="color: #F185C9;" class="userlink" title="sks316 (69) [Normal user]"><img src="../data/avatars/69_1540181718.png" alt="" class="minipic" /> sks316</span></a> <br>
+							Last Post: <a href="../profile/1191706936-ayanamirei0.html" title=""><span  style="color: #97ACEF;" class="userlink" title="AyanamiRei0 (1191706936) [Normal user]"><img src="../data/avatars/1191706936_1514882173.png" alt="" class="minipic" /> AyanamiRei0</span></a> on 02-23-18, 12:08 am <a href="../thread/511-custom-nintendo-3ds-themesd0fe.html">&raquo;</a><br>
+							Thread ID: 511
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 7 replies
+					<i class="fa fa-eye"></i> 2443 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/433-nintendo-switch-future-proof-exploit-announced.html">Nintendo Switch Future-Proof Exploit announced</a>
+									</th></tr>
+									<tr><th >
+						By Team-Xecuter
+					</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/433/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 01-03-18, 02:59 am by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> <br>
+							Last Post: <a href="../profile/6-destroyerxl44.html" title=""><span  style="color: #97ACEF;" class="userlink" title="DestroyerXL44 (6) [Normal user]"><img src="../data/avatars/6_1524146725.png" alt="" class="minipic" /> DestroyerXL44</span></a> on 01-03-18, 09:56 pm <a href="../thread/433-nintendo-switch-future-proof-exploit-announceddead.html">&raquo;</a><br>
+							Thread ID: 433
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 1 reply
+					<i class="fa fa-eye"></i> 1009 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/381-luigi-saves-christmas.html">Luigi Saves Christmas</a>
+									</th></tr>
+									<tr><th >
+						A Christmas-themed NSMBU hack that's released now!
+					</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/381/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 12-17-17, 12:18 am by <a href="../profile/105-koopaartist.html" title=""><span  style="color: #97ACEF;" class="userlink" title="KoopaArtist (105) [Normal user]"><img src="../data/avatars/105_1540143739.png" alt="" class="minipic" /> Koopa</span></a> <br>
+							Last Post: <a href="../profile/105-koopaartist.html" title=""><span  style="color: #97ACEF;" class="userlink" title="KoopaArtist (105) [Normal user]"><img src="../data/avatars/105_1540143739.png" alt="" class="minipic" /> Koopa</span></a> on 12-23-17, 04:09 am <a href="../thread/381-luigi-saves-christmasf95b.html">&raquo;</a><br>
+							Thread ID: 381
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 6 replies
+					<i class="fa fa-eye"></i> 2258 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/29-gtx-extractor.html">GTX Extractor</a>
+					 <span class="threadTag" style="background-color: hsl(12, 70%, 40%);">cython</span><span class="threadTag" style="background-color: hsl(357, 70%, 40%);">tool</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/29/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 05-22-17, 10:25 am by <a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]"><img src="../data/avatars/5_1517641935.png" alt="" class="minipic" /> MasterVermilli0n</span></a> <br>
+							Last Post: <a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]"><img src="../data/avatars/5_1517641935.png" alt="" class="minipic" /> MasterVermilli0n</span></a> on 12-22-17, 09:09 am <a href="../thread/29-gtx-extractor5bbf.html">&raquo;</a><br>
+							Thread ID: 29
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 13 replies
+					<i class="fa fa-eye"></i> 3247 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/30-gtx-extractor.html">GTX Extractor</a>
+					 <span class="threadTag" style="background-color: hsl(240, 70%, 40%);">c++</span><span class="threadTag" style="background-color: hsl(72, 70%, 40%);">tools</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/30/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 05-22-17, 10:34 am by <a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]"><img src="../data/avatars/5_1517641935.png" alt="" class="minipic" /> MasterVermilli0n</span></a> <br>
+							Last Post: <a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]"><img src="../data/avatars/5_1517641935.png" alt="" class="minipic" /> MasterVermilli0n</span></a> on 12-22-17, 09:07 am <a href="../thread/30-gtx-extractor34d3.html">&raquo;</a><br>
+							Thread ID: 30
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 6 replies
+					<i class="fa fa-eye"></i> 3110 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/49-nsmbw-tileset-pack-over-700-tilesets.html">NSMBW Tileset Pack (over 700 tilesets!)</a>
+									</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/49/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 05-27-17, 02:15 pm by <a href="../profile/24-customlevelfan78.html" title=""><span  style="color: #7C60B0;" class="userlink" title="customlevelfan78 (24) [Normal user]">customlevelfan78</span></a> <br>
+							Last Post: <a href="../profile/57-isaac.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Isaac (57) [Normal user]">Isaac</span></a> on 12-21-17, 06:08 am <a href="../thread/49-nsmbw-tileset-pack-over-700-tilesetsa005.html">&raquo;</a><br>
+							Thread ID: 49
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 15 replies
+					<i class="fa fa-eye"></i> 4058 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+										<div class="statusIcon off"></div>					<img src="../../b.catgirlsare.sexy/sboK.png" alt="" class="smiley" style="max-width:32px; max-height:32px;">					<a href="../thread/121-dragoneel-u.html">Dragoneel U</a>
+					 <span class="threadTag" style="background-color: hsl(108, 70%, 40%);">nsmbu</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/121/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 06-21-17, 07:12 am by <a href="../profile/17-aileen-lumina.html" title=""><span  style="color: #E91E63" class="userlink" title="Aileen Lumina (17) [Normal user]"><img src="../data/avatars/17_1495563222.jpg" alt="" class="minipic" /> Aileen Lumina</span></a> <br>
+							Last Post: <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 12-21-17, 03:49 am <a href="../thread/121-dragoneel-u0630.html">&raquo;</a><br>
+							Thread ID: 121
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 19 replies
+					<i class="fa fa-eye"></i> 4047 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/366-smb-physics-hack.html">SMB Physics Hack!</a>
+									</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/366/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 12-10-17, 06:59 pm by <a href="../profile/78-smm-level-tester.html" title=""><span  style="color: #97ACEF;" class="userlink" title="SMM Level Tester (78) [Normal user]"><img src="../data/avatars/78_1536890959.jpg" alt="" class="minipic" /> ModMaker</span></a> <br>
+							Last Post: <a href="../profile/78-smm-level-tester.html" title=""><span  style="color: #97ACEF;" class="userlink" title="SMM Level Tester (78) [Normal user]"><img src="../data/avatars/78_1536890959.jpg" alt="" class="minipic" /> ModMaker</span></a> on 12-11-17, 07:36 pm <a href="../thread/366-smb-physics-hack1789.html">&raquo;</a><br>
+							Thread ID: 366
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 4 replies
+					<i class="fa fa-eye"></i> 1320 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/364-super-mario-bros-glitch-portal-desktop-version.html">Super Mario Bros Glitch Portal! (Desktop Version)</a>
+					 <span class="threadTag" style="background-color: hsl(90, 70%, 40%);">smb nses</span><span class="threadTag" style="background-color: hsl(78, 70%, 40%);">7 cheats</span><span class="threadTag" style="background-color: hsl(84, 70%, 40%);">desktops</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/364/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 12-10-17, 01:48 am by <a href="../profile/78-smm-level-tester.html" title=""><span  style="color: #97ACEF;" class="userlink" title="SMM Level Tester (78) [Normal user]"><img src="../data/avatars/78_1536890959.jpg" alt="" class="minipic" /> ModMaker</span></a> <br>
+							Last Post: <a href="../profile/78-smm-level-tester.html" title=""><span  style="color: #97ACEF;" class="userlink" title="SMM Level Tester (78) [Normal user]"><img src="../data/avatars/78_1536890959.jpg" alt="" class="minipic" /> ModMaker</span></a> on 12-10-17, 03:48 am <a href="../thread/364-super-mario-bros-glitch-portal-desktop-version2ff0.html">&raquo;</a><br>
+							Thread ID: 364
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 2 replies
+					<i class="fa fa-eye"></i> 1131 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/327-nsmbw-rush-hour.html">NSMBW Rush Hour</a>
+									</th></tr>
+									<tr><th >
+						hack project.
+					</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/327/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 11-21-17, 05:33 am by <a href="../profile/58-fiver.html" title=""><span  style="color: #7C60B0;" class="userlink" title="fiver (58) [Normal user]">fiver</span></a> <br>
+							Last Post: <a href="../profile/36-danster.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Danster (36) [Normal user]"><img src="../data/avatars/36_1495674934.gif" alt="" class="minipic" /> Danster64</span></a> on 11-24-17, 11:53 am <a href="../thread/327-nsmbw-rush-hour4c1e.html">&raquo;</a><br>
+							Thread ID: 327
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 5 replies
+					<i class="fa fa-eye"></i> 1751 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/324-mario-kart-8-meme-track-retexture.html">Mario kart 8: meme track retexture</a>
+									</th></tr>
+									<tr><th >
+						what am i doing with my life
+					</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/324/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 11-19-17, 10:08 pm by <a href="../profile/23-dankmemeitthefrog.html" title=""><span  style="color: #7C60B0;" class="userlink" title="DankMemeitTheFrog (23) [Normal user]"><img src="../data/avatars/23_1497550914.jpg" alt="" class="minipic" /> FROG</span></a> <br>
+							Last Post: <a href="../profile/23-dankmemeitthefrog.html" title=""><span  style="color: #7C60B0;" class="userlink" title="DankMemeitTheFrog (23) [Normal user]"><img src="../data/avatars/23_1497550914.jpg" alt="" class="minipic" /> FROG</span></a> on 11-20-17, 01:32 pm <a href="../thread/324-mario-kart-8-meme-track-retexture51dc.html">&raquo;</a><br>
+							Thread ID: 324
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 8 replies
+					<i class="fa fa-eye"></i> 2358 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/172-koopa-country-wii.html">Koopa Country Wii</a>
+					 <span class="threadTag" style="background-color: hsl(222, 70%, 40%);">nsmbw</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/172/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 08-16-17, 04:06 am by <a href="../profile/36-danster.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Danster (36) [Normal user]"><img src="../data/avatars/36_1495674934.gif" alt="" class="minipic" /> Danster64</span></a> <br>
+							Last Post: <a href="../profile/118-marioburger71.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MarioBurger71 (118) [Normal user]"><img src="../data/avatars/118_1508383665.png" alt="" class="minipic" /> god</span></a> on 11-13-17, 04:18 am <a href="../thread/172-koopa-country-wii6c5d.html">&raquo;</a><br>
+							Thread ID: 172
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 3 replies
+					<i class="fa fa-eye"></i> 2868 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+															<img src="../img/icons/icon1.html" alt="" class="smiley" style="max-width:32px; max-height:32px;">					<a href="../thread/46-how-to-run-game-modifications-off-of-your-sd-card.html">How to run game modifications off of your SD Card</a>
+					 <span class="threadTag" style="background-color: hsl(93, 70%, 40%);">sdcafiine</span><span class="threadTag" style="background-color: hsl(357, 70%, 40%);">wiiu</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/46/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 05-26-17, 08:46 pm by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> <br>
+							Last Post: <a href="../profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]"><img src="../data/avatars/109_1572859516.png" alt="" class="minipic" /> Buntendo</span></a> on 11-10-17, 10:41 pm <a href="../thread/46-how-to-run-game-modifications-off-of-your-sd-card8095.html">&raquo;</a><br>
+							Thread ID: 46
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 10 replies
+					<i class="fa fa-eye"></i> 5289 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/262-how-to-rebuild-a-sarc-with-padding.html">How to rebuild a SARC with Padding</a>
+					 <span class="threadTag" style="background-color: hsl(357, 70%, 40%);">wiiu</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/262/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 10-10-17, 02:49 am by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> <br>
+							Last Post: <a href="../profile/20-h%c3%bcseyin-der-m%c3%a4chtige.html" title=""><span  style="color: #97ACEF;" class="userlink" title="H&uuml;seyin der M&auml;chtige (20) [Normal user]"><img src="../data/avatars/20_1530098269.jpg" alt="" class="minipic" /> Hüseyin the Mighty</span></a> on 10-13-17, 07:09 am <a href="../thread/262-how-to-rebuild-a-sarc-with-padding23ae.html">&raquo;</a><br>
+							Thread ID: 262
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 2 replies
+					<i class="fa fa-eye"></i> 1291 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/206-haxchi-titles.html">Haxchi Titles</a>
+					 <span class="threadTag" style="background-color: hsl(357, 70%, 40%);">wiiu</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/206/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 08-28-17, 11:12 pm by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> <br>
+							Last Post: <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 10-11-17, 12:25 am <a href="../thread/206-haxchi-titles457f.html">&raquo;</a><br>
+							Thread ID: 206
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 6 replies
+					<i class="fa fa-eye"></i> 2039 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/260-ultimate-super-mario-bros-wii.html">Ultimate Super Mario Bros. Wii</a>
+									</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/260/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 10-08-17, 03:59 am by <a href="../profile/118-marioburger71.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MarioBurger71 (118) [Normal user]"><img src="../data/avatars/118_1508383665.png" alt="" class="minipic" /> god</span></a> <br>
+							Last Post: <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 10-08-17, 04:10 am <a href="../thread/260-ultimate-super-mario-bros-wii71c5.html">&raquo;</a><br>
+							Thread ID: 260
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 1 reply
+					<i class="fa fa-eye"></i> 1757 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+															<img src="../img/icons/icon28.html" alt="" class="smiley" style="max-width:32px; max-height:32px;">					<a href="../thread/247-cloudy-smbu.html">Cloudy SMBU</a>
+					 <span class="threadTag" style="background-color: hsl(291, 70%, 40%);">nsmbu hack</span><span class="threadTag" style="background-color: hsl(354, 70%, 40%);">full mod</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/247/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 09-25-17, 08:36 pm by <a href="../profile/105-koopaartist.html" title=""><span  style="color: #97ACEF;" class="userlink" title="KoopaArtist (105) [Normal user]"><img src="../data/avatars/105_1540143739.png" alt="" class="minipic" /> Koopa</span></a> <br>
+							Last Post: <a href="../profile/105-koopaartist.html" title=""><span  style="color: #97ACEF;" class="userlink" title="KoopaArtist (105) [Normal user]"><img src="../data/avatars/105_1540143739.png" alt="" class="minipic" /> Koopa</span></a> on 10-07-17, 04:36 pm <a href="../thread/247-cloudy-smbu5fb6.html">&raquo;</a><br>
+							Thread ID: 247
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 5 replies
+					<i class="fa fa-eye"></i> 2142 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/20-mlg-super-luigi-bros-wii.html">MLG Super Luigi Bros Wii</a>
+					 <span class="threadTag" style="background-color: hsl(222, 70%, 40%);">nsmbw</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/20/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 05-21-17, 05:32 pm by <a href="../profile/22-iggy3434.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Iggy3434 (22) [Normal user]"><img src="../data/avatars/22_1495382889.png" alt="" class="minipic" /> Iggy3434</span></a> <br>
+							Last Post: <a href="../profile/22-iggy3434.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Iggy3434 (22) [Normal user]"><img src="../data/avatars/22_1495382889.png" alt="" class="minipic" /> Iggy3434</span></a> on 10-01-17, 01:18 am <a href="../thread/20-mlg-super-luigi-bros-wiia1c4.html">&raquo;</a><br>
+							Thread ID: 20
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 19 replies
+					<i class="fa fa-eye"></i> 6994 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/238-how-to-repack-sonic-mania-files.html">How to repack Sonic Mania files</a>
+									</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/238/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 09-20-17, 04:57 pm by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> <br>
+							Last Post: <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 09-20-17, 04:57 pm <a href="../thread/238-how-to-repack-sonic-mania-files6199.html">&raquo;</a><br>
+							Thread ID: 238
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 0 replies
+					<i class="fa fa-eye"></i> 1904 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/237-how-to-extract-sonic-mania-files.html">How to extract Sonic Mania files</a>
+									</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/237/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 09-20-17, 04:48 pm by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> <br>
+							Last Post: <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 09-20-17, 04:48 pm <a href="../thread/237-how-to-extract-sonic-mania-filesf067.html">&raquo;</a><br>
+							Thread ID: 237
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 0 replies
+					<i class="fa fa-eye"></i> 1569 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/231-when-penguin-fly-my-first-custom-nsmbu-level.html">When Penguin Fly! - my first custom NSMBU level</a>
+									</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/231/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 09-17-17, 09:38 pm by <a href="../profile/105-koopaartist.html" title=""><span  style="color: #97ACEF;" class="userlink" title="KoopaArtist (105) [Normal user]"><img src="../data/avatars/105_1540143739.png" alt="" class="minipic" /> Koopa</span></a> <br>
+							Last Post: <a href="../profile/105-koopaartist.html" title=""><span  style="color: #97ACEF;" class="userlink" title="KoopaArtist (105) [Normal user]"><img src="../data/avatars/105_1540143739.png" alt="" class="minipic" /> Koopa</span></a> on 09-17-17, 09:42 pm <a href="../thread/231-when-penguin-fly-my-first-custom-nsmbu-leveld4a7.html">&raquo;</a><br>
+							Thread ID: 231
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 2 replies
+					<i class="fa fa-eye"></i> 1093 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/221-i-ve-made-a-discovery.html">I've made a discovery!</a>
+									</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/221/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 09-04-17, 07:27 pm by <a href="../profile/87-datboikong.html" title=""><span  style="color: #97ACEF;" class="userlink" title="DatBoiKong (87) [Normal user]">DatBoiKong</span></a> <br>
+							Last Post: <a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]"><img src="../data/avatars/5_1517641935.png" alt="" class="minipic" /> MasterVermilli0n</span></a> on 09-06-17, 03:09 am <a href="../thread/221-i-ve-made-a-discovery25fc.html">&raquo;</a><br>
+							Thread ID: 221
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 3 replies
+					<i class="fa fa-eye"></i> 1307 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/215-exploit-history.html">Exploit History!</a>
+					 <span class="threadTag" style="background-color: hsl(177, 70%, 40%);">3ds</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/215/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 09-01-17, 06:24 am by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> <br>
+							Last Post: <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 09-01-17, 06:24 am <a href="../thread/215-exploit-history191e.html">&raquo;</a><br>
+							Thread ID: 215
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 0 replies
+					<i class="fa fa-eye"></i> 982 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered ">
+			<thead>
+				<tr><th >
+
+																				<a href="../thread/197-bowser-over-mario.html">Bowser over Mario</a>
+					 <span class="threadTag" style="background-color: hsl(162, 70%, 40%);">newsmbw</span><span class="threadTag" style="background-color: hsl(48, 70%, 40%);">model</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/197/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 08-25-17, 05:45 am by <a href="../profile/36-danster.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Danster (36) [Normal user]"><img src="../data/avatars/36_1495674934.gif" alt="" class="minipic" /> Danster64</span></a> <br>
+							Last Post: <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 08-26-17, 12:32 am <a href="../thread/197-bowser-over-marioac17.html">&raquo;</a><br>
+							Thread ID: 197
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 3 replies
+					<i class="fa fa-eye"></i> 1734 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+			<table class="table table-bordered table-striped">
+			<thead>
+				<tr><th >
+
+															<img src="../img/icons/icon1.html" alt="" class="smiley" style="max-width:32px; max-height:32px;">					<a href="../thread/200-how-to-run-game-modifications-off-of-your-pc.html">How to run game modifications off of your PC</a>
+					 <span class="threadTag" style="background-color: hsl(78, 70%, 40%);">cafiine</span><span class="threadTag" style="background-color: hsl(357, 70%, 40%);">wiiu</span>				</th></tr>
+							</thead>
+			<tbody><tr>
+									<td>
+						<div style="float: right;">
+							<div class="btn-group">
+																	<a href="http://twitter.com/share?text=&amp;url=https://mariomods.net/thread/200/&amp;via=MarioMakingMods" class="btn btn-sm btn-link" title="Tweet">
+										<i class="fa fa-twitter fa-2x"></i>
+									</a>
+															</div>
+						</div>
+						<div style="float: left;">
+							Posted on 08-25-17, 08:47 pm by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> <br>
+							Last Post: <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 08-25-17, 08:47 pm <a href="../thread/200-how-to-run-game-modifications-off-of-your-pce5cf.html">&raquo;</a><br>
+							Thread ID: 200
+						</div>
+					</td>
+			</tr></tbody>
+			<tfoot><tr><td >
+				<span style="float: left;">
+					<i class="fa fa-comments-o"></i> 0 replies
+					<i class="fa fa-eye"></i> 1308 views
+				</span>
+							</td></tr></tfoot>
+		</table>
+		
+	<div class="smallFonts pages">
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			
+			<li class="page-item first">
+				<a class="page-link" href="9-General%20Modding.html" aria-label="First">
+					<span aria-hidden="true">&#x00AB;</span>
+					<span class="sr-only">First</span>
+				</a>
+			</li>
+			<li class="page-item previous">
+				<a class="page-link" href="9-General%20Modding.html" aria-label="Previous">
+					<span aria-hidden="true">&#x2039;</span>
+					<span class="sr-only">Previous</span>
+				</a>
+			</li><li class="page-item"><a class="page-link" href="9-General%20Modding.html">1</a></li><li class="page-item active"><span class="page-link">2 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="9-General%20Modding627d.html?from=100">3</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="9-General%20Modding627d.html?from=100" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="9-General%20Modding627d.html?from=100" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav></div>	<div class="forumjump">
+		Go to forum: <select onchange="document.location=this.options[this.selectedIndex].value;">			<optgroup label="Super Mario Maker">
+				<option value="/forum/7">Level showcase</option>
+				<option value="/forum/8">Tips, Tricks and Glitches</option>
+				<option value="/forum/4">Hacking info</option>
+				<option value="/forum/3">&nbsp; &nbsp; Project Releases</option>
+				<option value="/forum/15">&nbsp; &nbsp; Questions and Answers</option>
+				<option value="/forum/5">&nbsp; &nbsp; Request a project!</option>
+			</optgroup>
+			<optgroup label="Fan Games">
+				<option value="/forum/12">Gatete's Engine</option>
+				<option value="/forum/13">Super Mario ReMaker</option>
+				<option value="/forum/16">Super Mario Unimaker</option>
+				<option value="/forum/19">Other fangames</option>
+			</optgroup>
+			<optgroup label="Super Forum Maker">
+				<option value="/forum/1">Latest News</option>
+				<option value="/forum/6">General Chat</option>
+				<option value="/forum/14">&nbsp; &nbsp; End Of Forums</option>
+				<option value="/forum/9" selected="selected">General Modding</option>
+				<option value="/forum/2">Mario Making Mods Talk</option>
+			</optgroup>
+			<optgroup label="SMB3 Underwater Theme">
+				<option value="/forum/25">The Hall of Fame</option>
+				<option value="/forum/10">Forgotten Depths</option>
+			</optgroup>
+</select>
+	</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="9-general-modding.html">General Modding</a></li>
+											</ol>
+								</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/forum/9-General Modding?from=50 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:26:15 GMT -->
+</html>

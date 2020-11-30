@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/thread/502-glitchy-shell-mechanic-in-native-smm-tested-in-1-47-wii-u by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:19:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Glitchy Shell Mechanic in native SMM (Tested in 1.47, Wii U) &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content="So recently, I was watching a Twitch streamer play a level which had a very intriguing glitch. IDK if this was possible before the latest SMM (Wii U) patch but..." />
+        <meta name="keywords" content="glitchy shell mechanic native smm tested 147 wii trick glitch" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Glitchy Shell Mechanic in native SMM (Tested in 1.47, Wii U) &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="Glitchy Shell Mechanic in native SMM (Tested in 1.47, Wii U) &amp;raquo; Mario Making Mods" /><meta property="og:description" content="So recently, I was watching a Twitch streamer play a level which had a very intriguing glitch. IDK if this was possible before the latest SMM (Wii U) patch but..." /> <meta name="og:description" content="So recently, I was watching a Twitch streamer play a level which had a very intriguing glitch. IDK if this was possible before the latest SMM (Wii U) patch but..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Glitchy Shell Mechanic in native SMM (Tested in 1.47, Wii U) &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="So recently, I was watching a Twitch streamer play a level which had a very intriguing glitch. IDK if this was possible before the latest SMM (Wii U) patch but..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/8-tips-tricks-and-glitches.html">Tips, Tricks and Glitches</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="502-glitchy-shell-mechanic-in-native-smm-tested-in-1-47-wii-u.html">Glitchy Shell Mechanic in native SMM (Tested in 1.47, Wii U)</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="485.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="542.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dGlitchy%2bShell%2bMechanic%2bin%2bnative%2bSMM%2b(Tested%2bin%2b1.47%2c%2bWii%2bU)%26url%3dhttp_/localhost/thread/502/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>	    
+
+    	<table class="table table-striped" id="post3661">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/85-thenawab.html" title=""><span  style="color: #97ACEF;" class="userlink" title="TheNawab (85) [Normal user]">TheNawab</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 08-09-17<br>
+						From: Bardoli, India<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/85-thenawab/posts-2.html" title="List TheNawab's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/85-thenawab/threads.html" title="List TheNawab's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3661">
+				So recently, I was watching a Twitch streamer play a level which had a very intriguing glitch. IDK if this was possible before the latest SMM (Wii U) patch [1.47] but here is how it works. It's not very hard to recreate but it has some potential for puzzle and troll levels. <br />
+<br />
+- First place a semisolid anywhere you want, it can be of any height and length. Next, place ground tiles all above it leaving a 1x1 area of semisolid's upper part exposed (i.e. where you can stand). <br />
+<br />
+- Then you can place any sort of activation mechanic, POW block or a P switch ahead in the level parallel to the height of the semisolid's uppermost part.<br />
+ <br />
+- Cover the mechanic all around with block so it's not possible to access directly by the mario.<br />
+<br />
+- Here comes the interesting part, it's completely possible to hit or activate that concealed mechanic by throwing a shell inside the wall. All you have to do is to stand beside the open semisolid area (which we left earlier) then jump and throw the shell right when you are going to touch the wall block at the corner with the shell (see video) and the shell will just go through the wall as if it was sliding on the semisolid's upper part.<br />
+<br />
+Preview :<br />
+<br />
+ <img class="img-fluid" src="../../i.imgur.com/4DaLPdQ.gif" alt=""/><br />
+<br />
+Note : <br />
+      - The setup I used is not important. The only thing required is the placement of ground and semisolid in that way.<br />
+      - I have not tested this in other styles. Please let me know if you do.<br />
+      - This might be possible in older updates but I noticed it rn. So I made this post. <br />
+<br />
+EDIT : <br />
+<br />
+- It's possible even if you don't leave a 1x1 open area for the semi-solid, but it becomes a little bit harder that way. <br />
+- Twitch clip of the streamer playing the glitch level : <a href="https://clips.twitch.tv/ProudKnottyWitchSoonerLater">https://clips.twitch.tv/ProudKnottyWitchSoonerLater</a>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3661">
+									Posted on 02-15-18, 10:38 am
+										 (rev. 1 by <a href="../profile/85-thenawab.html" title=""><span  style="color: #97ACEF;" class="userlink" title="TheNawab (85) [Normal user]">TheNawab</span></a> on 02-15-18, 10:42 am)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3661">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="502-glitchy-shell-mechanic-in-native-smm-tested-in-1-47-wii-u5ce1.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bTheNawab)%2bin%2b__%26url%3dhttp_/localhost/post/3661/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3661</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post3666">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1672794592_1518607006.gif" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1672794592-osaro.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Osaro (1672794592) [Normal user]">Osaro</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 02-14-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1672794592-osaro/posts.html" title="List Osaro's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1672794592-osaro/threads.html" title="List Osaro's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_3666">
+				Wow; would be nice for glitchy levels!<br>_________________________<br><div class="signature">Discord: Osaro#8932<br />
+Skype: are you joking?<br />
+<br />
+Pasta and chatting. Undertale also, that's good.<br />
+And shitposting too. It's better with a bit of shitposting.<br />
+<br />
+I use some mods on my favorite games (Minecraft, BOTW, SMM…)</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_3666">
+									Posted on 02-15-18, 06:25 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_3666">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="502-glitchy-shell-mechanic-in-native-smm-tested-in-1-47-wii-u3d18.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bOsaro)%2bin%2b__%26url%3dhttp_/localhost/post/3666/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#3666</button>							</div>
+		</td></tr>
+	</table>	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/8-tips-tricks-and-glitches.html">Tips, Tricks and Glitches</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="502-glitchy-shell-mechanic-in-native-smm-tested-in-1-47-wii-u.html">Glitchy Shell Mechanic in native SMM (Tested in 1.47, Wii U)</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="485.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="542.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dGlitchy%2bShell%2bMechanic%2bin%2bnative%2bSMM%2b(Tested%2bin%2b1.47%2c%2bWii%2bU)%26url%3dhttp_/localhost/thread/502/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/thread/502-glitchy-shell-mechanic-in-native-smm-tested-in-1-47-wii-u by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:19:58 GMT -->
+</html>

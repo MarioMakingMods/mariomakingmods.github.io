@@ -1,0 +1,616 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/depot/hacks/276-the-metro-kingdom-new-donk-city by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:20:33 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>The Metro Kingdom / New Donk City &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../../css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/mdb.css">
+		<script src="../../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+        <link rel="manifest" href="../../API/manifest.php" />
+        <meta name="description" content="The City of New Donk City is now in Super Mario Maker! In this mod, you'll find taxis, buildings, fire hydrants and more! Wii U: 3DS: the 3DS Version has..." />
+        <meta name="keywords" content="metro kingdom new donk city smb1" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="The Metro Kingdom / New Donk City &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="The Metro Kingdom / New Donk City &amp;raquo; Mario Making Mods" /><meta property="og:description" content="The City of New Donk City is now in Super Mario Maker! In this mod, you'll find taxis, buildings, fire hydrants and more! Wii U: 3DS: the 3DS Version has..." /> <meta name="og:description" content="The City of New Donk City is now in Super Mario Maker! In this mod, you'll find taxis, buildings, fire hydrants and more! Wii U: 3DS: the 3DS Version has..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="The Metro Kingdom / New Donk City &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="The City of New Donk City is now in Super Mario Maker! In this mod, you'll find taxis, buildings, fire hydrants and more! Wii U: 3DS: the 3DS Version has..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../../css/common.css" />
+        <link rel="stylesheet" href="../../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../../js/jquery-ui.js"></script>
+        <script src="../../js/tricks.js"></script>
+        <script src="../../js/jscolor.js" async></script>
+        <script src="../../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../../index.html">
+				<img id="theme_banner" src="../../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../depot.html">Depot</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../hacks.html">Super Mario Maker Mods</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="276-The%20Metro%20Kingdom/%20New%20Donk%20City.html">The Metro Kingdom / New Donk City</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="https://www.mediafire.com/file/y3nbzbpqnij7jbk/new donk city.rar"									class="nav-link"
+									>
+									Download 3DS Theme
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="274-The%20Cascade%20Kingdom/%20Fossil%20Falls%20%5bwii%20u%5d%20%5bsmb1%5d.html"									class="nav-link"
+									>
+									Previous Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="285-Super%20Mario%20Maker%20-%20Night%20Time%20Mod%20%5bwii%20u%5d.html"									class="nav-link"
+									>
+									Next Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="http://twitter.com/share?text=The%20Metro%20Kingdom%20/%20New%20Donk%20City&amp;url=http://localhost/depot/hacks/276-/&amp;via=MarioMakingMods"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+							<div class="col-lg-2 col-md-3 col-sm-4 sidenav">
+					
+                    <table class="table table-bordered table-striped table-sm">
+                        <thead><tr><th>Depot Selections</th></tr></thead>
+                        <tbody>
+                            <tr><td><a href="../hacks.html" title="">Theme Projects</a></td></tr>
+                            <tr><td><a href="../level.html" title="">Level Depot</a></td></tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table class="table table-bordered table-striped table-sm">
+                        <tr class="header0"><th>Filter</th></tr>
+                            <form action="http://localhost/depot/hacks">
+                                <tr class="header1"><th>Sort by</th></tr>
+                                <tr class="cell0"><td><input type="radio" name="sort" checked value="lastdate"> Last Post Date</td></tr>
+                                <tr class="cell1"><td><input type="radio" name="sort"  value="date"> Date Published</td></tr>
+                                <tr class="cell0"><td><input type="radio" name="sort"  value="name"> Name (alphabetical)</td></tr>
+                                <tr class="header1"><th>Name of Hack</th></tr>
+                                <tr class="cell0"><td><input class="form-control" type="text" name="hackname" value=""></td></tr>
+                                <tr class="header1"><th><input type="submit" value="Submit"></th></tr>
+                            </form>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+				</div>
+						<div class="col-lg-10 col-md-9 col-sm-8 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>	<table class="table table-bordered table-striped" id="post2012">
+		<tr class="cell0">
+			<td>
+				<small>
+					<span id="meta_2012">
+											Posted on 10-19-17, 02:09 am by <a href="../../profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]">Buntendo</span></a>
+						 (rev. 9 by <a href="../../profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]"><img src="../../data/avatars/109_1572859516.png" alt="" class="minipic" /> Buntendo</span></a> on 12-02-17, 05:20 pm)										</span>
+					<span style="text-align:left; display: none;" id="dyna_2012">
+						blarg
+					</span>
+				</small>
+			</td>
+		</tr>
+		<tr class="cell1">
+			<td id="post_2012">
+				<strong><em>The City of New Donk City is now in Super Mario Maker!</em></strong><br />
+In this mod, you'll find taxis, buildings, fire hydrants and more!<br />
+Wii U:<br />
+<a href="../../../i.imgur.com/BHSdqDr.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/BHSdqDr.png" alt=""/></a><br />
+3DS:<br />
+<a href="../../../i.imgur.com/Nsa8uuw.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/Nsa8uuw.png" alt=""/></a><a href="../../../i.imgur.com/FeDccQQ.png"><img class="img-thumbnail" style="max-width:300px; max-height:300px;" src="../../../i.imgur.com/FeDccQQ.png" alt=""/></a><br />
+the 3DS Version has a custom Mario sprite.<br />
+<iframe width="560" height="315" src="http://www.youtube.com/embed/V6OFyzzuKfo" frameborder="0" allowfullscreen></iframe><br />
+<a href="https://www.mediafire.com/file/1j9afa2pf42yw9a/New Donk City.zip">Wii U Download</a><br />
+<a href="https://www.mediafire.com/file/y3nbzbpqnij7jbk/new donk city.rar">3DS Download</a><br />
+<br />
+Full Credits:<br />
+<a href="../../profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]"><img src="../../data/avatars/109_1572859516.png" alt="" class="minipic" /> Buntendo</span></a> - Tileset, Background, and Wii U import.<br />
+<a href="../../profile/20-h%c3%bcseyin-der-m%c3%a4chtige.html" title=""><span  style="color: #97ACEF;" class="userlink" title="H&uuml;seyin der M&auml;chtige (20) [Normal user]"><img src="../../data/avatars/20_1530098269.jpg" alt="" class="minipic" /> Hüseyin the Mighty</span></a> - Tileset, 3DS import.<br />
+<a href="../../profile/9-granimated.html" title=""><span  style="color: #97ACEF;" class="userlink" title="GRAnimated (9) [Normal user]"><img src="../../data/avatars/9_1507994313.jpg" alt="" class="minipic" /> GRAnimated</span></a>- Imported Background
+			</td>
+		</tr>
+				<tr class="cell0">
+			<td class="right">
+				<div class="btn-group btn-group-sm">
+															<a class="btn btn-primary" role="button"  href="../../thread/276-the-metro-kingdom-new-donk-cityf848.html" title="Link this post">
+								<i class="fa fa-link"></i>														</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 6</button>
+														<button class="btn btn-primary">#2012</button>									</div>
+			</td>
+		</tr>
+			</table>    
+
+    <table class="table table-bordered table-striped">
+	<thead><tr><th>Comments</th></tr></thead>
+	<tbody>
+					<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 10-19-17, 02:35 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-city43ec.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2017</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Please stop the shitposting.<br />
+<br />
+Anyways, I like the newer background. However, since I only own a 3DS, I hope Huseyin successfully ported it.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/20-h%c3%bcseyin-der-m%c3%a4chtige.html" title=""><span  style="color: #97ACEF;" class="userlink" title="H&uuml;seyin der M&auml;chtige (20) [Normal user]">Hüseyin the Mighty</span></a> Posted on 10-22-17, 06:55 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-city40da.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2028</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Btw 3DS version is out!</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/78-smm-level-tester.html" title=""><span  style="color: #97ACEF;" class="userlink" title="SMM Level Tester (78) [Normal user]">ModMaker</span></a> Posted on 10-23-17, 12:26 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-cityda85.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2035</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Dude....<h1><strong>THIS</strong> IS MY FAVORITE THEME OF ALL TIME!</h1><br />
+Thank You to ALL the people who <em>helped</em>  in making this. You did awesome. This is my favorite custom theme for SMM.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/136-marioluiginabbittrio.html" title=""><span  style="color: #7C60B0;" class="userlink" title="MarioLuigiNabbitTrio (136) [Normal user]">MarioLuigiNabbitTrio</span></a> Posted on 10-24-17, 01:20 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-citybefa.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2038</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Nice! Also How do you download this?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/6-destroyerxl44.html" title=""><span  style="color: #97ACEF;" class="userlink" title="DestroyerXL44 (6) [Normal user]">DestroyerXL44</span></a> Posted on 10-25-17, 01:22 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-city1045.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2044</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">BTG and someone else played this, btw. </div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/20-h%c3%bcseyin-der-m%c3%a4chtige.html" title=""><span  style="color: #97ACEF;" class="userlink" title="H&uuml;seyin der M&auml;chtige (20) [Normal user]">Hüseyin the Mighty</span></a> Posted on 10-25-17, 01:25 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-city8c1f.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2045</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">yeah, we saw it.<br />
+</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 10-25-17, 01:28 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-city75c2.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2046</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">The others are <a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> and 64iOS.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/131-realheroicgamer.html" title=""><span  style="color: #F185C9;" class="userlink" title="RealHeroicGamer (131) [Normal user]">HEYimHeroic</span></a> Posted on 10-25-17, 10:17 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-cityaa07.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2047</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Nice! I'm gonna test this later today, it looks really cool!<br />
+<br />
+EDIT: I made a level using this theme! I bet it looks weird without the mod :P<br />
+Name: Super Mario Odyssey<br />
+ID: 04A6-0000-036A-5BF1<br />
+If anyone plays it and gets stuck at the first part, I made a contraption that gives you a key if you go close to the door as costume Mario... or in this case, Mario with the Builder outfit c;</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/147-mrguyguy.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MrGuyGuy (147) [Normal user]">MrGuyGuy</span></a> Posted on 10-26-17, 06:59 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-cityb4cc.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2051</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">How do I download.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/136-marioluiginabbittrio.html" title=""><span  style="color: #7C60B0;" class="userlink" title="MarioLuigiNabbitTrio (136) [Normal user]">MarioLuigiNabbitTrio</span></a> Posted on 10-28-17, 09:48 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-citycb85.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2074</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote">MrGuyGuy: How do I download.</div> I was wondering the same!</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 10-31-17, 10:22 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-cityd302.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2090</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote"> How do I download. <div class="quote-footer"><a href="../../thread/276-the-metro-kingdom-new-donk-cityb4cc.html">Posted by MrGuyGuy</a></div></div><div class="quote"> Nice! Also How do you download this? <div class="quote-footer"><a href="../../thread/276-the-metro-kingdom-new-donk-citybefa.html">Posted by MarioLuigiNabbitTrio</a></div></div>3DS or Wii U?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/78-smm-level-tester.html" title=""><span  style="color: #97ACEF;" class="userlink" title="SMM Level Tester (78) [Normal user]">ModMaker</span></a> Posted on 10-31-17, 10:39 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-city8843.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2091</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Um well you can.... <br />
+<br />
+Click the download button in the description.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/20-h%c3%bcseyin-der-m%c3%a4chtige.html" title=""><span  style="color: #97ACEF;" class="userlink" title="H&uuml;seyin der M&auml;chtige (20) [Normal user]">Hüseyin the Mighty</span></a> Posted on 10-31-17, 10:43 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-city0cd2.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2092</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Someone should make a tutorial how to apply SMM/SMM3DS mods.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/78-smm-level-tester.html" title=""><span  style="color: #97ACEF;" class="userlink" title="SMM Level Tester (78) [Normal user]">ModMaker</span></a> Posted on 10-31-17, 10:45 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-city975e.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2093</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">I think GRA made one, but I think they should have one for people who don't know anything about modding. Like beginners<br />
+</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 10-31-17, 10:46 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-cityecae.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2094</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"> <span class="threadTag" style="background-color: hsl(78, 70%, 40%);">cafiine</span><span class="threadTag" style="background-color: hsl(357, 70%, 40%);">wiiu</span> <a href="../../thread/200-how-to-run-game-modifications-off-of-your-pc.html">How to run game modifications off of your PC</a><br />
+ <span class="threadTag" style="background-color: hsl(93, 70%, 40%);">sdcafiine</span><span class="threadTag" style="background-color: hsl(357, 70%, 40%);">wiiu</span> <a href="../../thread/46-how-to-run-game-modifications-off-of-your-sd-card.html">How to run game modifications off of your SD Card</a><br />
+<br />
+Both of these work for the cases above in case they own a wii U.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/131-realheroicgamer.html" title=""><span  style="color: #F185C9;" class="userlink" title="RealHeroicGamer (131) [Normal user]">HEYimHeroic</span></a> Posted on 11-01-17, 01:39 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-cityee75.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2101</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote">  <span class="threadTag" style="background-color: hsl(78, 70%, 40%);">cafiine</span><span class="threadTag" style="background-color: hsl(357, 70%, 40%);">wiiu</span> <a href="../../thread/200-how-to-run-game-modifications-off-of-your-pc.html">How to run game modifications off of your PC</a><br />
+ <a href="../../thread/246-is-hacking-super-mario-maker-legal.html">Is hacking Super Mario Maker legal?</a> <div class="quote-footer"><a href="../../thread/276-the-metro-kingdom-new-donk-cityecae.html">Posted by NightYoshi370</a></div></div>I might do one for SDCafiine though, since one isn't actually a tutorial and the other is for normal Cafiine. (And use this mod as an example :D)</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 11-01-17, 02:08 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-cityc699.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2103</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Ah, my bad. I copied the wrong thread I'd. I'll go fix it.<br />
+<br />
+Edit: fixed</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/136-marioluiginabbittrio.html" title=""><span  style="color: #7C60B0;" class="userlink" title="MarioLuigiNabbitTrio (136) [Normal user]">MarioLuigiNabbitTrio</span></a> Posted on 11-01-17, 07:22 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-city178c.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2104</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote"> <div class="quote"> How do I download. <div class="quote-footer"><a href="../../thread/276-the-metro-kingdom-new-donk-cityb4cc.html">Posted by MrGuyGuy</a></div></div><div class="quote"> Nice! Also How do you download this? <div class="quote-footer"><a href="../../thread/276-the-metro-kingdom-new-donk-citybefa.html">Posted by MarioLuigiNabbitTrio</a></div></div>3DS or Wii U? <div class="quote-footer"><a href="../../thread/276-the-metro-kingdom-new-donk-cityd302.html">Posted by NightYoshi370</a></div></div>thanks! I downloaded it! I found out how to see the button!</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/78-smm-level-tester.html" title=""><span  style="color: #97ACEF;" class="userlink" title="SMM Level Tester (78) [Normal user]">ModMaker</span></a> Posted on 11-01-17, 08:35 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-cityefe0.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2106</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote"> Ah, my bad. I copied the wrong thread I'd. I'll go fix it.<br />
+<br />
+Edit: fixed <div class="quote-footer"><a href="../../thread/276-the-metro-kingdom-new-donk-cityc699.html">Posted by NightYoshi370</a></div></div><br />
+oh.. Ok I was gonna say</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/131-realheroicgamer.html" title=""><span  style="color: #F185C9;" class="userlink" title="RealHeroicGamer (131) [Normal user]">HEYimHeroic</span></a> Posted on 11-02-17, 07:25 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-city0c17.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2117</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote"> Ah, my bad. I copied the wrong thread I'd. I'll go fix it.<br />
+<br />
+Edit: fixed <div class="quote-footer"><a href="../../thread/276-the-metro-kingdom-new-donk-cityc699.html">Posted by NightYoshi370</a></div></div>Oh, okay, that makes a lot more sense. xD<br />
+<br />
+So that eliminates my need to do a tutorial. Back to messing around I go!</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/119-wrathsoffire76.html" title=""><span  style="color: #97ACEF;" class="userlink" title="wrathsoffire76 (119) [Normal user]">wrathsoffire76</span></a> Posted on 11-03-17, 01:40 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-city5bbe.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2122</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">This looks so cool, I'll check it out when the time comes. Nice work</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 11-08-17, 04:55 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-citya432.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2149</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote"> Nice! I'm gonna test this later today, it looks really cool!<br />
+<br />
+EDIT: I made a level using this theme! I bet it looks weird without the mod :P<br />
+Name: Super Mario Odyssey<br />
+ID: 04A6-0000-036A-5BF1<br />
+If anyone plays it and gets stuck at the first part, I made a contraption that gives you a key if you go close to the door as costume Mario... or in this case, Mario with the Builder outfit c; <div class="quote-footer"><a href="../../thread/276-the-metro-kingdom-new-donk-cityaa07.html">Posted by RealHeroicGamer</a></div></div>Nice! If you want, you can upload it to SMMDB and make a new thread on it.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/131-realheroicgamer.html" title=""><span  style="color: #F185C9;" class="userlink" title="RealHeroicGamer (131) [Normal user]">HEYimHeroic</span></a> Posted on 11-08-17, 03:02 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-city95aa.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2152</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote"> Nice! If you want, you can upload it to SMMDB and make a new thread on it. <div class="quote-footer"><a href="../../thread/276-the-metro-kingdom-new-donk-citya432.html">Posted by NightYoshi370</a></div></div>Sure! I'll mess around with doing that today then :P</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/87-datboikong.html" title=""><span  style="color: #97ACEF;" class="userlink" title="DatBoiKong (87) [Normal user]">DatBoiKong</span></a> Posted on 11-08-17, 11:46 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/276-the-metro-kingdom-new-donk-city858f.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#2153</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Since you made custom Mario sprites with this theme, is it OK if you can do it for the Wii u too? </div>
+		</td></tr>	</tbody>
+</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../depot.html">Depot</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../hacks.html">Super Mario Maker Mods</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="276-The%20Metro%20Kingdom/%20New%20Donk%20City.html">The Metro Kingdom / New Donk City</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="https://www.mediafire.com/file/y3nbzbpqnij7jbk/new donk city.rar"									class="nav-link"
+									>
+									Download 3DS Theme
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="274-The%20Cascade%20Kingdom/%20Fossil%20Falls%20%5bwii%20u%5d%20%5bsmb1%5d.html"									class="nav-link"
+									>
+									Previous Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="285-Super%20Mario%20Maker%20-%20Night%20Time%20Mod%20%5bwii%20u%5d.html"									class="nav-link"
+									>
+									Next Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="http://twitter.com/share?text=The%20Metro%20Kingdom%20/%20New%20Donk%20City&amp;url=http://localhost/depot/hacks/276-/&amp;via=MarioMakingMods"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../../online.html" class="btn btn-link">Online Users</a>
+		<a href="../../records.html" class="btn btn-link">Records</a>
+		<a href="../../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../../js/timeago.js"></script>
+		<script src="../../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+        <script src="../../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/depot/hacks/276-the-metro-kingdom-new-donk-city by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:20:46 GMT -->
+</html>

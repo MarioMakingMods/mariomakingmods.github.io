@@ -1,0 +1,8 @@
+.threadTag
+{
+    text-shadow: 0px 0px 0px hsla(0, 0%, 0%, .5);
+    border: 0px dotted hsla(0, 0%, 100%, .75);
+    padding: 3px 6px 3px 6px;
+    margin: 2px;
+    font-weight: bold;
+}

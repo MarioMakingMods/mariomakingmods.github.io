@@ -1,0 +1,751 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/depot/hacks/478-odyssey-in-8-bit-set by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 08:26:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Odyssey in 8-bit set &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../../css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/mdb.css">
+		<script src="../../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+        <link rel="manifest" href="../../API/manifest.php" />
+        <meta name="description" content="So this is currently the thing I'm working on, porting a full set of Super Mario Odyssey themes to replace every theme in SMB. Buntendo's themes are a base for..." />
+        <meta name="keywords" content="odyssey 8bit set smb1 3ds" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Odyssey in 8-bit set &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="Odyssey in 8-bit set &amp;raquo; Mario Making Mods" /><meta property="og:description" content="So this is currently the thing I'm working on, porting a full set of Super Mario Odyssey themes to replace every theme in SMB. Buntendo's themes are a base for..." /> <meta name="og:description" content="So this is currently the thing I'm working on, porting a full set of Super Mario Odyssey themes to replace every theme in SMB. Buntendo's themes are a base for..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Odyssey in 8-bit set &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="So this is currently the thing I'm working on, porting a full set of Super Mario Odyssey themes to replace every theme in SMB. Buntendo's themes are a base for..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../../css/common.css" />
+        <link rel="stylesheet" href="../../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../../js/jquery-ui.js"></script>
+        <script src="../../js/tricks.js"></script>
+        <script src="../../js/jscolor.js" async></script>
+        <script src="../../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../../index.html">
+				<img id="theme_banner" src="../../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../depot.html">Depot</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../hacks.html">Super Mario Maker Mods</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="478-Odyssey%20in%208-bit%20set.html">Odyssey in 8-bit set</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="https://drive.google.com/open?id=1BhIwT0cTClbNVFDB7QpXn4tpU-_roqFT"									class="nav-link"
+									>
+									Download 3DS Theme
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="476-Super%20Mario%20Brothers%20Special%20Theme.html"									class="nav-link"
+									>
+									Previous Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="479-Luigi%20in%20Super%20Mario%20Maker%21.html"									class="nav-link"
+									>
+									Next Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="http://twitter.com/share?text=Odyssey%20in%208-bit%20set&amp;url=http://localhost/depot/hacks/478-/&amp;via=MarioMakingMods"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+							<div class="col-lg-2 col-md-3 col-sm-4 sidenav">
+					
+                    <table class="table table-bordered table-striped table-sm">
+                        <thead><tr><th>Depot Selections</th></tr></thead>
+                        <tbody>
+                            <tr><td><a href="../hacks.html" title="">Theme Projects</a></td></tr>
+                            <tr><td><a href="../level.html" title="">Level Depot</a></td></tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table class="table table-bordered table-striped table-sm">
+                        <tr class="header0"><th>Filter</th></tr>
+                            <form action="http://localhost/depot/hacks">
+                                <tr class="header1"><th>Sort by</th></tr>
+                                <tr class="cell0"><td><input type="radio" name="sort" checked value="lastdate"> Last Post Date</td></tr>
+                                <tr class="cell1"><td><input type="radio" name="sort"  value="date"> Date Published</td></tr>
+                                <tr class="cell0"><td><input type="radio" name="sort"  value="name"> Name (alphabetical)</td></tr>
+                                <tr class="header1"><th>Name of Hack</th></tr>
+                                <tr class="cell0"><td><input class="form-control" type="text" name="hackname" value=""></td></tr>
+                                <tr class="header1"><th><input type="submit" value="Submit"></th></tr>
+                            </form>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+				</div>
+						<div class="col-lg-10 col-md-9 col-sm-8 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>    
+
+    	<table class="table table-bordered table-striped" id="post3361">
+		<tr class="cell0">
+			<td>
+				<small>
+					<span id="meta_3361">
+											Posted on 01-25-18, 03:38 pm by <a href="../../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><span style="color:hsl(14,100%,80.4%);">S</span><span style="color:hsl(45,100%,80.4%);">m</span><span style="color:hsl(76,100%,80.4%);">-</span><span style="color:hsl(107,100%,80.4%);">A</span><span style="color:hsl(138,100%,80.4%);">r</span><span style="color:hsl(169,100%,80.4%);">t</span><span style="color:hsl(200,100%,80.4%);">T</span><span style="color:hsl(231,100%,80.4%);">h</span><span style="color:hsl(262,100%,80.4%);">i</span><span style="color:hsl(293,100%,80.4%);">n</span><span style="color:hsl(324,100%,80.4%);">g</span><span style="color:hsl(355,100%,80.4%);">s</span></span></a>
+						 (rev. 7 by <a href="../../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><img src="../../data/avatars/996211172_1551296122.jpg" alt="" class="minipic" /> <span style="color:hsl(4,100%,80.4%);">S</span><span style="color:hsl(35,100%,80.4%);">m</span><span style="color:hsl(66,100%,80.4%);">-</span><span style="color:hsl(97,100%,80.4%);">A</span><span style="color:hsl(128,100%,80.4%);">r</span><span style="color:hsl(159,100%,80.4%);">t</span><span style="color:hsl(190,100%,80.4%);">T</span><span style="color:hsl(221,100%,80.4%);">h</span><span style="color:hsl(252,100%,80.4%);">i</span><span style="color:hsl(283,100%,80.4%);">n</span><span style="color:hsl(314,100%,80.4%);">g</span><span style="color:hsl(345,100%,80.4%);">s</span></span></a> on 03-26-19, 07:52 pm)										</span>
+					<span style="text-align:left; display: none;" id="dyna_3361">
+						blarg
+					</span>
+				</small>
+			</td>
+		</tr>
+		<tr class="cell1">
+			<td id="post_3361">
+				So this is currently the thing I'm working on, porting a full set of Super Mario Odyssey themes to replace every theme in SMB. Buntendo's themes are a base for every theme except Water, which I edited on my own. Slightly changed the colour of the backgrounds which will have to do until a reliable and easy background replacement for those themes become mainstream. Original music is in the Cascade and Metro Kingdoms.<br />
+<br />
+<img class="img-fluid" src="../../../i.imgur.com/8B5Rsp2.png" alt=""/><br />
+<br />
+<strong><u>Ground: Cascade Kingdom</u></strong><br />
+<strong>Changes:</strong> <br />
+-shrinking and blurring the background so it doesnt clash with the foreground tiles as much<br />
+-changng the block tile so it doesnt clash with the semisolids<br />
+-replacing the flower decoration with an edited skeleton decoration and making the rock very slightly smaller<br />
+<br />
+<strong><u>Underground: Cap Kingdom</u></strong><br />
+<strong>Changes:</strong> <br />
+-taking elements from Samplasion's Cap Kingdom mod (the pipes, making the doughnut block a hat)<br />
+-adding gold to two of the semisolids<br />
+-making one mushroom platform a hat and changing the colours of the other two<br />
+<br />
+<strong><u>Water: Lake Kingdom</u></strong><br />
+<strong>Changes:</strong><br />
+-chaning the floor tiles completely (using the floor of the Cascade Kingdom)<br />
+-changing the colours of two of the semisolids to be closer to Lake Kingdom aesthetics<br />
+-making one mushroom platform a roof and changing the colours of the other two<br />
+-adding ground decoration<br />
+-changing the colours of the pipes and blocks<br />
+<br />
+<strong><u>Ghost House: Wooded Kingdom</u></strong><br />
+<strong>Changes:</strong> <br />
+-making one mushroom platform a tree and changing the colours of the others<br />
+-making the ground decoration darker<br />
+<br />
+<strong><u>Airship: Metro Kingdom</u></strong><br />
+<strong>Changes:</strong> <br />
+-none because this is flawless<br />
+<br />
+<strong><u>Castle: Luncheon Kingdom</u></strong><br />
+<strong>Changes:</strong><br />
+-making one mushroom platform the building roof<br />
+-making another a corn cob<br />
+-making one semi-solid the colours of the hills in the kingdom<br />
+-adding a purple pot ground decoration<br />
+<br />
+<strong>General Changes: </strong><br />
+-changing the colour of every ice block except for the Wooded Kingdom<br />
+-squaring off the edges for every standard bridge<br />
+-adgusting the background colours for the themes that need it<br />
+-making all the used con blocks in line with the one from the original Cap Kingdom mod<br />
+-changing all the unchanged doughnut blocks<br />
+<br />
+<strong><u>To Do:</u></strong><br />
+-the rest of the music <strong>(I actually need help with this in terms of naming and conversion from WiiU)</strong> namely the Cap, Lake and Luncheon Kingdoms.<br />
+<br />
+<strong><u>Example Levels</u></strong><br />
+<img class="img-fluid" src="../../../i.imgur.com/ScCVyZn.png" alt=""/><br />
+<br />
+Just wanted to make a level with each theme to see how it looks in game or give an idea of how to use a few of the things. Of course give feedback on these if you want, though I'd certainly appreciate stars and feedback and all that jazz. But it's mainly visual aid. As an added bit of exploration and puzzle solving, each level has one 1-UP Mushroom to find, though most are hidden.<br />
+<br />
+Simple Cascade Kingdom: <a href="https://smmdb.ddns.net/api/downloadcourse?id=5a7e0e1b7395951628c70ad8&amp;type=3ds">https://smmdb.ddns.net/api/downloadcourse?id=5a7e0e1b7395951628c70ad8&type=3ds</a><br />
+Simple Cap Kingdom: <a href="https://smmdb.ddns.net/api/downloadcourse?id=5a7e11217395951628c70ad9&amp;type=3ds">https://smmdb.ddns.net/api/downloadcourse?id=5a7e11217395951628c70ad9&type=3ds</a><br />
+Simple Lake Kingdom: <a href="https://smmdb.ddns.net/api/downloadcourse?id=5a7e1601adb8da50bb118907&amp;type=3ds">https://smmdb.ddns.net/api/downloadcourse?id=5a7e1601adb8da50bb118907&type=3ds</a><br />
+Simple Wooded Kingdom: <a href="https://smmdb.ddns.net/api/downloadcourse?id=5a7e16a7adb8da50bb118908&amp;type=3ds">https://smmdb.ddns.net/api/downloadcourse?id=5a7e16a7adb8da50bb118908&type=3ds</a><br />
+Simple Metro Kingdom: <a href="https://smmdb.ddns.net/api/downloadcourse?id=5a7e1737adb8da50bb118909&amp;type=3ds">https://smmdb.ddns.net/api/downloadcourse?id=5a7e1737adb8da50bb118909&type=3ds</a><br />
+Simple Luncheon Kingdom: <a href="https://smmdb.ddns.net/api/downloadcourse?id=5a7e1860adb8da50bb11890a&amp;type=3ds">https://smmdb.ddns.net/api/downloadcourse?id=5a7e1860adb8da50bb11890a&type=3ds</a><br />
+<br />
+(Or you can just look at videos of each level here: <a href="https://www.youtube.com/playlist?list=PLHmTwZ6F995B6lJYVWdfGPH3VO3pt_DcZ">https://www.youtube.com/playlist?list=PLHmTwZ6F995B6lJYVWdfGPH3VO3pt_DcZ</a>)<br />
+<br />
+<strong><u>Download Link:</u></strong> <br />
+<a href="https://drive.google.com/open?id=1vqbVq4TMZOOB8RZTT-ZKUXNBWCx1F3cm">https://drive.google.com/open?id=1vqbVq4TMZOOB8RZTT-ZKUXNBWCx1F3cm</a><br />
+<br />
+<u><strong>Shameless Self Promotion:</strong></u>: <br />
+<a href="https://sm-artthings.deviantart.com/">https://sm-artthings.deviantart.com/</a> (I am active there as well so you can follow me if you wish, I have monthly art trades and requests, and wouldnt mind getting your support there too.)<br />
+<br />
+<strong><u>Notes:</u></strong><br />
+Just a small note that the image isnt entirely up to date, as there are small changes in the themes, most notably the doughnut block in Cascade Kingdom being a small bone now.<br />
+<br />
+<strong><u>Credits:</u></strong><br />
+Obviously go to Buntendo and everyone involved in making his Odyssey mods in the first place (notably Tater Tot Tunes for the changed music). NightYoshi370 for helping me figure out how to do half of this stuff, and Samplasion for the things from his own Cap Kingdom mod I used. <br />
+
+			</td>
+		</tr>
+				<tr class="cell0">
+			<td class="right">
+				<div class="btn-group btn-group-sm">
+															<a class="btn btn-primary" role="button"  href="../../thread/478-odyssey-in-8-bit-set51a4.html" title="Link this post">
+								<i class="fa fa-link"></i>														</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 3</button>
+														<button class="btn btn-primary">#3361</button>									</div>
+			</td>
+		</tr>
+			</table><table class="table table-bordered table-striped">
+	<thead><tr><th>Comments</th></tr></thead>
+	<tbody>
+					<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]">Buntendo</span></a> Posted on 01-25-18, 03:39 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-setd8ad.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3362</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">oooooooooooooooooooooooooooooooo<br />
+<br />
+good</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><span style="color:hsl(143,100%,80.4%);">S</span><span style="color:hsl(174,100%,80.4%);">m</span><span style="color:hsl(205,100%,80.4%);">-</span><span style="color:hsl(236,100%,80.4%);">A</span><span style="color:hsl(267,100%,80.4%);">r</span><span style="color:hsl(298,100%,80.4%);">t</span><span style="color:hsl(329,100%,80.4%);">T</span><span style="color:hsl(0,100%,80.4%);">h</span><span style="color:hsl(31,100%,80.4%);">i</span><span style="color:hsl(62,100%,80.4%);">n</span><span style="color:hsl(93,100%,80.4%);">g</span><span style="color:hsl(124,100%,80.4%);">s</span></span></a> Posted on 01-25-18, 03:46 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set9c70.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3363</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote"> oooooooooooooooooooooooooooooooo<br />
+<br />
+good <div class="quote-footer"><a href="../../thread/478-odyssey-in-8-bit-setd8ad.html">Posted by Buntendo</a></div></div><br />
+Thanks! This honestly started from realising I had no background for the Wooded Kingdom and making the tree so things could stand out more, and it morphed into this big  thing. Also took me a couple tries to find a colour that works with three kingdoms, ended up scrapping the Sand Kingdom which was originally gonna be here.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a> Posted on 01-25-18, 05:02 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-seta2dc.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3364</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Ghost house should be Cap Kingdom. And also don't forget that the castle them has a black background. Overall really good !</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><span style="color:hsl(1,100%,80.4%);">S</span><span style="color:hsl(32,100%,80.4%);">m</span><span style="color:hsl(63,100%,80.4%);">-</span><span style="color:hsl(94,100%,80.4%);">A</span><span style="color:hsl(125,100%,80.4%);">r</span><span style="color:hsl(156,100%,80.4%);">t</span><span style="color:hsl(187,100%,80.4%);">T</span><span style="color:hsl(218,100%,80.4%);">h</span><span style="color:hsl(249,100%,80.4%);">i</span><span style="color:hsl(280,100%,80.4%);">n</span><span style="color:hsl(311,100%,80.4%);">g</span><span style="color:hsl(342,100%,80.4%);">s</span></span></a> Posted on 01-25-18, 05:08 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-setcbde.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3365</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">I prefer making the Wooded Kingdom have Ghost House's music until if/when I bring in the new tracks. And yeah. Funnily enough, even though the file says m1 black, the SMB3 black backgrounds changed colours too. Still, thanks.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><span style="color:hsl(28,100%,80.4%);">S</span><span style="color:hsl(59,100%,80.4%);">m</span><span style="color:hsl(90,100%,80.4%);">-</span><span style="color:hsl(121,100%,80.4%);">A</span><span style="color:hsl(152,100%,80.4%);">r</span><span style="color:hsl(183,100%,80.4%);">t</span><span style="color:hsl(214,100%,80.4%);">T</span><span style="color:hsl(245,100%,80.4%);">h</span><span style="color:hsl(276,100%,80.4%);">i</span><span style="color:hsl(307,100%,80.4%);">n</span><span style="color:hsl(338,100%,80.4%);">g</span><span style="color:hsl(9,100%,80.4%);">s</span></span></a> Posted on 02-01-18, 06:26 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-setc385.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3476</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Big Update: Almost done. <br />
+<br />
+New Donk City will always be the best but I'm realy liking how Fossel Falls is looking right now</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/171-samplasion.html" title=""><span  style="color: #97ACEF;" class="userlink" title="samplasion (171) [Normal user]">Samplasion</span></a> Posted on 02-02-18, 06:34 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set5e0c.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3479</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Wow!<br />
+<br />
+I like it</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><span style="color:hsl(217,100%,80.4%);">S</span><span style="color:hsl(248,100%,80.4%);">m</span><span style="color:hsl(279,100%,80.4%);">-</span><span style="color:hsl(310,100%,80.4%);">A</span><span style="color:hsl(341,100%,80.4%);">r</span><span style="color:hsl(12,100%,80.4%);">t</span><span style="color:hsl(43,100%,80.4%);">T</span><span style="color:hsl(74,100%,80.4%);">h</span><span style="color:hsl(105,100%,80.4%);">i</span><span style="color:hsl(136,100%,80.4%);">n</span><span style="color:hsl(167,100%,80.4%);">g</span><span style="color:hsl(198,100%,80.4%);">s</span></span></a> Posted on 02-02-18, 11:54 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-seta40a.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3491</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Thanks! I'm almost ready to post it actually. Though a very last minute issue came up and delayed things.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><span style="color:hsl(239,100%,80.4%);">S</span><span style="color:hsl(270,100%,80.4%);">m</span><span style="color:hsl(301,100%,80.4%);">-</span><span style="color:hsl(332,100%,80.4%);">A</span><span style="color:hsl(3,100%,80.4%);">r</span><span style="color:hsl(34,100%,80.4%);">t</span><span style="color:hsl(65,100%,80.4%);">T</span><span style="color:hsl(96,100%,80.4%);">h</span><span style="color:hsl(127,100%,80.4%);">i</span><span style="color:hsl(158,100%,80.4%);">n</span><span style="color:hsl(189,100%,80.4%);">g</span><span style="color:hsl(220,100%,80.4%);">s</span></span></a> Posted on 02-09-18, 10:25 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set2457.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3548</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Finally ready for the download link.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 02-09-18, 10:26 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set6d10.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3549</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">BTW, uh, with the help of <a href="../../profile/171-samplasion.html" title=""><span  style="color: #97ACEF;" class="userlink" title="samplasion (171) [Normal user]"><img src="../../data/avatars/171_1536581823.png" alt="" class="minipic" /> Samplasion</span></a>, I found a way to add backgrounds to the 3DS version. I wanna test it with a mod.<br />
+<br />
+Can you send me some backgrounds that you'd like from this mod?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><span style="color:hsl(336,100%,80.4%);">S</span><span style="color:hsl(7,100%,80.4%);">m</span><span style="color:hsl(38,100%,80.4%);">-</span><span style="color:hsl(69,100%,80.4%);">A</span><span style="color:hsl(100,100%,80.4%);">r</span><span style="color:hsl(131,100%,80.4%);">t</span><span style="color:hsl(162,100%,80.4%);">T</span><span style="color:hsl(193,100%,80.4%);">h</span><span style="color:hsl(224,100%,80.4%);">i</span><span style="color:hsl(255,100%,80.4%);">n</span><span style="color:hsl(286,100%,80.4%);">g</span><span style="color:hsl(317,100%,80.4%);">s</span></span></a> Posted on 02-09-18, 11:43 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-setd69f.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3551</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote"> BTW, uh, with the help of <a href="../../profile/171-samplasion.html" title=""><span  style="color: #97ACEF;" class="userlink" title="samplasion (171) [Normal user]"><img src="../../data/avatars/171_1536581823.png" alt="" class="minipic" /> Samplasion</span></a>, I found a way to add backgrounds to the 3DS version. I wanna test it with a mod.<br />
+<br />
+Can you send me some backgrounds that you'd like from this mod? <div class="quote-footer"><a href="../../thread/478-odyssey-in-8-bit-set6d10.html">Posted by NightYoshi370</a></div></div><br />
+<img class="img-fluid" src="../../../i.imgur.com/FlXOsJr.png" alt=""/><br />
+You can try it with this, I extracted it from the original Luncheon Kingdom mod from Buntendo. In the meantime I suppose I can work on backgrounds for the Cap and Lake Kingdoms over the weekend, just in case.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/171-samplasion.html" title=""><span  style="color: #97ACEF;" class="userlink" title="samplasion (171) [Normal user]">Samplasion</span></a> Posted on 02-17-18, 08:45 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set0747.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3688</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote"> BTW, uh, with the help of <a href="../../profile/171-samplasion.html" title=""><span  style="color: #97ACEF;" class="userlink" title="samplasion (171) [Normal user]"><img src="../../data/avatars/171_1536581823.png" alt="" class="minipic" /> Samplasion</span></a>, I found a way to add backgrounds to the 3DS version. I wanna test it with a mod.<br />
+<br />
+Can you send me some backgrounds that you'd like from this mod? <div class="quote-footer"><a href="../../thread/478-odyssey-in-8-bit-set6d10.html">Posted by NightYoshi370</a></div></div>did it work?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 02-18-18, 02:37 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-setd07d.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3692</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Unfortunately, all the methods that I have tried did not work.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/171-samplasion.html" title=""><span  style="color: #97ACEF;" class="userlink" title="samplasion (171) [Normal user]">Samplasion</span></a> Posted on 02-18-18, 08:39 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-setfb4d.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3706</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">what a shame</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1093721157-xxxkreasxxx.html" title=""><span  style="color: #97ACEF;" class="userlink" title="XxxkreasxxX (1093721157) [Normal user]">Kreas</span></a> Posted on 02-18-18, 09:32 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set3380.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3707</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">So it's not possible for 3ds...<br />
+Anyway nice work!!!!<br />
+I really love those themes</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/629015754-machow8.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Machow8 (629015754) [Normal user]">Machow8</span></a> Posted on 02-19-18, 11:20 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set498a.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3726</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote"> <strong><u>To Do:</u></strong><br />
+-the rest of the music <strong>(I actually need help with this in terms of naming and conversion from WiiU)</strong> namely the Cap, Lake and Luncheon Kingdoms. <div class="quote-footer"><a href="../../thread/478-odyssey-in-8-bit-set51a4.html">Posted by Sm-ArtThings</a></div></div><br />
+Do you have Odyssey musics already?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><span style="color:hsl(249,100%,80.4%);">S</span><span style="color:hsl(280,100%,80.4%);">m</span><span style="color:hsl(311,100%,80.4%);">-</span><span style="color:hsl(342,100%,80.4%);">A</span><span style="color:hsl(13,100%,80.4%);">r</span><span style="color:hsl(44,100%,80.4%);">t</span><span style="color:hsl(75,100%,80.4%);">T</span><span style="color:hsl(106,100%,80.4%);">h</span><span style="color:hsl(137,100%,80.4%);">i</span><span style="color:hsl(168,100%,80.4%);">n</span><span style="color:hsl(199,100%,80.4%);">g</span><span style="color:hsl(230,100%,80.4%);">s</span></span></a> Posted on 02-19-18, 09:55 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set779e.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3740</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">I assume all the WiiU versions of each mod have the necessary music in them.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1672794592-osaro.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Osaro (1672794592) [Normal user]">Osaro</span></a> Posted on 02-21-18, 07:16 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set40af.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#3774</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Not for WiiU ? Shame !</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><span style="color:hsl(326,100%,80.4%);">S</span><span style="color:hsl(357,100%,80.4%);">m</span><span style="color:hsl(28,100%,80.4%);">-</span><span style="color:hsl(59,100%,80.4%);">A</span><span style="color:hsl(90,100%,80.4%);">r</span><span style="color:hsl(121,100%,80.4%);">t</span><span style="color:hsl(152,100%,80.4%);">T</span><span style="color:hsl(183,100%,80.4%);">h</span><span style="color:hsl(214,100%,80.4%);">i</span><span style="color:hsl(245,100%,80.4%);">n</span><span style="color:hsl(276,100%,80.4%);">g</span><span style="color:hsl(307,100%,80.4%);">s</span></span></a> Posted on 03-15-18, 01:29 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set25ea.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4003</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Sweet, this passed a thousand views. Glad people seem interested.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a> Posted on 03-16-18, 01:36 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set7732.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4007</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">So now that we know how to add backgrounds, are you going to make backgrounds for the underground, ghost house and castle themes ?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 03-16-18, 01:41 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set3314.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4008</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Unfortunately, we haven't found a method to make this work on the 3DS.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/194-lakifume.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Lakifume (194) [Normal user]">Lakifume</span></a> Posted on 03-16-18, 01:48 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-setcc56.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4010</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Yeah I know but for now we could at least do it for the Wii U version.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 03-16-18, 01:50 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set4df3.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4013</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Yeah, but afaik, I think this mod has only been released for 3DS at the moment...</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/515890276-nintega21.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Nintega21 (515890276) [Normal user]">Nintega Yoshistan</span></a> Posted on 03-20-18, 09:56 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-setae70.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4050</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote"> <strong><u>To Do:</u></strong><br />
+-the rest of the music <strong>(I actually need help with this in terms of naming and conversion from WiiU)</strong> namely the Cap, Lake and Luncheon Kingdoms. <div class="quote-footer"><a href="../../thread/478-odyssey-in-8-bit-set51a4.html">Posted by Sm-ArtThings</a></div></div><br />
+<br />
+I have been getting better at making music mods for super mario maker. Maybe I could help with missing music?</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a> Posted on 03-21-18, 05:14 am</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set5e53.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4057</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Well if you know how to convert them, I don't see why not.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/150086033-charlie59876.html" title=""><span  style="color: #97ACEF;" class="userlink" title="charlie59876 (150086033) [Normal user]">Charlie59876</span></a> Posted on 04-18-18, 04:49 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set6cd9.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4260</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">plz port to wii u</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><span style="color:hsl(343,100%,80.4%);">S</span><span style="color:hsl(14,100%,80.4%);">m</span><span style="color:hsl(45,100%,80.4%);">-</span><span style="color:hsl(76,100%,80.4%);">A</span><span style="color:hsl(107,100%,80.4%);">r</span><span style="color:hsl(138,100%,80.4%);">t</span><span style="color:hsl(169,100%,80.4%);">T</span><span style="color:hsl(200,100%,80.4%);">h</span><span style="color:hsl(231,100%,80.4%);">i</span><span style="color:hsl(262,100%,80.4%);">n</span><span style="color:hsl(293,100%,80.4%);">g</span><span style="color:hsl(324,100%,80.4%);">s</span></span></a> Posted on 04-24-18, 06:33 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set3a64.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4291</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Aww I saw a post that made me think we learned how to add backgrounds.<br />
+<br />
+Also yeah if you could get the missing music that would be great.</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/636550628-glitchy-the-smm-main.html" title=""><span  style="color: #7C60B0;" class="userlink" title="Glitchy the SMM main (636550628) [Normal user]">Glitchy the SMM main</span></a> Posted on 05-11-18, 11:44 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set92c6.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4360</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">Could i use These customs theme's for a fan project?<br />
+<br />
+</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><span style="color:hsl(107,100%,80.4%);">S</span><span style="color:hsl(138,100%,80.4%);">m</span><span style="color:hsl(169,100%,80.4%);">-</span><span style="color:hsl(200,100%,80.4%);">A</span><span style="color:hsl(231,100%,80.4%);">r</span><span style="color:hsl(262,100%,80.4%);">t</span><span style="color:hsl(293,100%,80.4%);">T</span><span style="color:hsl(324,100%,80.4%);">h</span><span style="color:hsl(355,100%,80.4%);">i</span><span style="color:hsl(26,100%,80.4%);">n</span><span style="color:hsl(57,100%,80.4%);">g</span><span style="color:hsl(88,100%,80.4%);">s</span></span></a> Posted on 05-12-18, 06:13 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set206e.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4362</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">What project? </div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/636550628-glitchy-the-smm-main.html" title=""><span  style="color: #7C60B0;" class="userlink" title="Glitchy the SMM main (636550628) [Normal user]">Glitchy the SMM main</span></a> Posted on 05-12-18, 09:51 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set8afd.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4363</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;"><div class="quote"> What project?  <div class="quote-footer"><a href="../../thread/478-odyssey-in-8-bit-set206e.html">Posted by Sm-ArtThings</a></div></div><br />
+<br />
+Super Fan Made bros.<br />
+<br />
+(soon to be called super Mario multiverse)</div>
+		</td></tr>			<tr class="cell1"><td>
+				<div style="display:inline-block;"><a href="../../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><span style="color:hsl(136,100%,80.4%);">S</span><span style="color:hsl(167,100%,80.4%);">m</span><span style="color:hsl(198,100%,80.4%);">-</span><span style="color:hsl(229,100%,80.4%);">A</span><span style="color:hsl(260,100%,80.4%);">r</span><span style="color:hsl(291,100%,80.4%);">t</span><span style="color:hsl(322,100%,80.4%);">T</span><span style="color:hsl(353,100%,80.4%);">h</span><span style="color:hsl(24,100%,80.4%);">i</span><span style="color:hsl(55,100%,80.4%);">n</span><span style="color:hsl(86,100%,80.4%);">g</span><span style="color:hsl(117,100%,80.4%);">s</span></span></a> Posted on 05-12-18, 10:37 pm</div>
+				<div style="display:inline-block;float:right;" class="btn-group btn-group-sm">
+					<a class="btn btn-primary" role="button" title="Link this post" href="../../thread/478-odyssey-in-8-bit-set700a.html">
+						<i class="fa fa-link"></i>
+					</a>
+											<a class="btn btn-primary" role="button" href='../../Array.html' title="Share this post on Twitter" target="_blank">
+							<i class="fa fa-twitter"></i>
+						</a>
+																																								<button class="btn btn-primary">#4364</button>									</div>
+			<div style="height: 4px;"></div>
+			<div style="padding-left: 12px;">I suppose as long as you give the source I think it's fine. Though I wouldnt mind if you also linked my Deviantart when you do, I'll take all the eyes on my profile I can get. Either way, go right ahead. Hopefully I get to play it in the end.</div>
+		</td></tr>	</tbody>
+</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../depot.html">Depot</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../hacks.html">Super Mario Maker Mods</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="478-Odyssey%20in%208-bit%20set.html">Odyssey in 8-bit set</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="https://drive.google.com/open?id=1BhIwT0cTClbNVFDB7QpXn4tpU-_roqFT"									class="nav-link"
+									>
+									Download 3DS Theme
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="476-Super%20Mario%20Brothers%20Special%20Theme.html"									class="nav-link"
+									>
+									Previous Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="479-Luigi%20in%20Super%20Mario%20Maker%21.html"									class="nav-link"
+									>
+									Next Entry
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="http://twitter.com/share?text=Odyssey%20in%208-bit%20set&amp;url=http://localhost/depot/hacks/478-/&amp;via=MarioMakingMods"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../../online.html" class="btn btn-link">Online Users</a>
+		<a href="../../records.html" class="btn btn-link">Records</a>
+		<a href="../../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../../js/timeago.js"></script>
+		<script src="../../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+        <script src="../../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/depot/hacks/478-odyssey-in-8-bit-set by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 08:27:00 GMT -->
+</html>

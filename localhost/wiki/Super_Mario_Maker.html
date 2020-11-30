@@ -1,0 +1,752 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/wiki/Super_Mario_Maker by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:20:48 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Super Mario Maker &raquo; Wiki &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" />
+        <meta name="keywords" content="Mario, Super Mario, Super Mario Maker, Super Mario Maker 2, Super Mario Maker Mod, Super Mario Maker Modding, SMM Mod, SMM Modding, Super Mario Maker 2 Mod, Super Mario Maker 2 Modding, SMM2 Mod, SMM2 Modding, Super Mario Maker for Nintendo 3DS Mod, Super Mario Maker for Nintendo 3DS modding, SMM3DS Mod, SMM3DS Modding" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Super Mario Maker &amp;raquo; Wiki &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="Super Mario Maker &amp;raquo; Wiki &amp;raquo; Mario Making Mods" /><meta property="og:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" /> <meta name="og:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Super Mario Maker &raquo; Wiki &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item active">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../wiki.html">Wiki</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="Super_Mario_Maker.html">Super Mario Maker</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="../wikichanges.html"									class="nav-link"
+									>
+									Recent changes
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="Talk_Super_Mario_Maker.html"									class="nav-link"
+									>
+									Discuss
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../wikidiff/Super_Mario_Maker.html"									class="nav-link"
+									>
+									Page Revisions
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+					<table class="table table-striped table-bordered">
+		<thead><tr><th>Wiki Page -- Super Mario Maker</th></tr></thead>
+		<tbody><tr><td><div style="text-align: center;"><img class="img-fluid" src="../../i.imgur.com/lzZzxVG.png" alt=""/><br />
+<br />
+<br />
+This is <strong>The Ultimate Mario Maker Modding Guide</strong>, a collaboration of the community to help you and others.<br />
+<br />
+There have been many attempts to make a full, complete modding guide but they all fell short in some way or another.<br />
+<br />
+It's time to make the definitive modding guide, for players, and makers.<br />
+<br />
+<br />
+<strong> - The Basics - </strong><br />
+<br />
+<br />
+To start playing mods, you'll need..<br />
+<br />
+<em>1. Either a Wii U, 3DS, Pre-July 2018 Switch or a decently powerful computer.<br />
+<br />
+2. An SD card of at least 4gb (if playing on a Wii U, 3DS, or Switch.).<br />
+<br />
+3. Basic computer abilities.</em><br />
+<br />
+<br />
+<strong> - Modding Your System - </strong><br />
+<br />
+<br />
+<em>Wii U - <a href="https://wiiu.hacks.guide/">https://wiiu.hacks.guide/</a><br />
+<br />
+3DS - <a href="https://3ds.hacks.guide/">https://3ds.hacks.guide/</a><br />
+<br />
+Switch - <a href="https://guide.sdsetup.com/">https://guide.sdsetup.com/</a></em><br />
+<br />
+<br />
+<strong> - Making Your Mod - </strong><br />
+<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Editing Wii U Graphics</button><div class="spoiled hidden"><strong>How To Edit Graphics</strong> <em>(For Wii U)</em><br />
+<br />
+<br />
+<u>Tools you'll need.</u><br />
+<br />
+<br />
+- Switch Toolbox : <a href="https://github.com/KillzXGaming/Switch-Toolbox/releases">Switch Toolbox Download</a><br />
+- Image-editing program : <a href="https://www.getpaint.net/">I use paint.NET personally.</a><br />
+- Super Mario Maker Dump ( <a href="http://mariomods.net/post/4470" target="_blank">SMM Dumping Guide</a> )<br />
+<br />
+<br />
+<strong>Additional Information.</strong><br />
+<br />
+<br />
+- Tilesets & Backgrounds are in content/model<br />
+  - Tilesets follow a name like M1_field_plain.szs<br />
+  - Backgrounds follow a name like M1_DV_plain.szs<br />
+<br />
+- SZS files for sprites are in content/pack/StaticSkin.pack/StaticSkin<br />
+  - Link to StaticSkin.pack documentation - <a href="https://pastebin.com/hZmD8WUs">https://pastebin.com/hZmD8WUs</a><br />
+  <br />
+  <br />
+<strong>Step One.</strong> <em>(Sprite Editing Only)</em><br />
+<br />
+<br />
+- Open StaticSkin.pack, click the view tab in switch toolbox and press sort.<br />
+- Search for the SZS you want to edit, and double click it to open it.<br />
+<br />
+<br />
+<strong>Step Two.</strong><br />
+<br />
+<br />
+- Open the SZS in Switch Toolbox<br />
+- You should see "output.bfres". Double click it to open it.<br />
+ <br />
+<br />
+<strong>Step Three.</strong><br />
+<br />
+- In the textures folder, you should see one or more images. Right click the textures folder and export all textures in png format.<br />
+- Modify the png files it outputs however you like.<br />
+<br />
+<br />
+<strong>Step Four.</strong><br />
+<br />
+<br />
+- When you're finished, save each png file. No specific settings are needed.<br />
+- In Switch Toolbox, right click the image you want to replace in the bfres file's texture folder and click replace.<br />
+<br />
+<br />
+<strong>Step Five.</strong><br />
+<br />
+- Select the new png file. Make sure the settings, format, and mipmaps are the same as the original.<br />
+- When step four is complete, press CTRL+S to save the file. You're done!<br />
+<br />
+<br />
+<strong>That's how you edit sprites / tilesets.</strong></div></div><br />
+<div class="spoiler"><button class="spoilerbutton named"> Editing 3DS Graphics. (Courtesy of NightYoshi370)</button><div class="spoiled hidden"><strong><u>What you need</u></strong><br />
+<br />
+- <a href="https://github.com/polaris-/ctpktool">ctpktool</a><br />
+- Windows<br />
+<br />
+1. Download and extract the zip file.<br />
+2. Place your ctpk file in the same directory.<br />
+3. Open command line to that directory<br />
+4. Type the following (with replacing "file.ctpk" with the file name):<br />
+<br />
+<pre><code class="nohighlight">ctpktool.exe -x file.ctpk</code></pre><br />
+5. Now you can do your edits to the generated PNG <strong>without changing the resolution.</strong> Also, do not touch the XML file unless noted.<br />
+6. Once you are done with the edits, type this (with replacing "folder" with the folder that was made):<br />
+<br />
+<pre><code class="nohighlight">ctpktool.exe -c folder</code></pre><br />
+7. Enjoy</div></div><br />
+<div class="spoiler"><button class="spoilerbutton named">Editing Switch Graphics</button><div class="spoiled hidden"><strong>How To Edit Graphics</strong> <em>(For SMM2)</em><br />
+<br />
+<br />
+<u>Tools you'll need.</u><br />
+<br />
+<br />
+- Switch Toolbox : <a href="https://github.com/KillzXGaming/Switch-Toolbox/releases">Switch Toolbox Download</a><br />
+- Image-editing program : <a href="https://www.getpaint.net/">I use paint.NET personally.</a><br />
+- Super Mario Maker Dump (GUIDE WORK IN PROGRESS)<br />
+<br />
+<br />
+<strong>Additional Information.</strong><br />
+<br />
+<br />
+- Tilesets & Backgrounds are in romfs/model<br />
+  - Tilesets follow a name like M1_Field_plain.Nin_NX_NVN.zs<br />
+  - Backgrounds follow a name like M1_DV_plain.Nin_NX_NVN.zs<br />
+<br />
+- ZS files for sprites are in romfs/Pack/XX_Model.pack/StaticSkin (XX = M1, M3, MW, WU, 3W)<br />
+  - Link to StaticSkin.pack documentation - <a href="https://pastebin.com/hZmD8WUs">https://pastebin.com/hZmD8WUs</a> (Not updated for SMM2 yet!)<br />
+  <br />
+  <br />
+<strong>Step One.</strong> <em>(Sprite Editing Only)</em><br />
+<br />
+<br />
+- Open XX_Model.pack, click the view tab in switch toolbox and press sort.<br />
+- Search for the ZS you want to edit, and double click it to open it.<br />
+<br />
+<br />
+<strong>Step Two.</strong><br />
+<br />
+<br />
+- Open the ZS in Switch Toolbox<br />
+- You should see "output.bfres". Double click it to open it.<br />
+ <br />
+<br />
+<strong>Step Three.</strong><br />
+<br />
+- In the textures folder, you should see one or more images. Right click the textures folder and export all textures in png format.<br />
+- Modify the png files it outputs however you like.<br />
+<br />
+<br />
+<strong>Step Four.</strong><br />
+<br />
+<br />
+- When you're finished, save each png file. No specific settings are needed.<br />
+- In Switch Toolbox, right click the image you want to replace in the bfres file's texture folder and click replace.<br />
+<br />
+<br />
+<strong>Step Five.</strong><br />
+<br />
+- Select the new png file. Make sure the settings, format, and mipmaps are the same as the original.<br />
+- When step four is complete, press CTRL+S to save the file. You're done!<br />
+<br />
+<br />
+<strong>That's how you edit sprites / tilesets.</strong></div></div><br />
+<br />
+<strong> - Playing Your Mod - </strong><br />
+<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Playing Wii U Mods</button><div class="spoiled hidden">How to play SMM Wii U mods. (Originally by pablobro18, updated by Buntendo.)<br />
+<br />
+1. Download <a href="https://wiiubru.com/appstore/#/app/SDcafiine">SDCafiine</a> and extract it to the root of your SD Card.<br />
+<br />
+2. Make a new folder on the root of your SD card called sdcafiine. Inside it create another folder and name it one of the respective title IDs.<br />
+<br />
+Wii U US - 000500001018DC00<br />
+Wii U EU - 000500001018DD00<br />
+Wii U JP - 0005000E1018DB00<br />
+<br />
+3. Inside the Title ID folder, make yet another new folder. You can name this the mod's name if you'd like.<br />
+<br />
+4. Make a folder called content inside it and extract the mod files into it.<br />
+<br />
+5. Boot the Homebrew Launcher using your preffered method, and then load SDCafiine.<br />
+<br />
+6. Launch Super Mario Maker.</div></div><br />
+<div class="spoiler"><button class="spoilerbutton named">Playing 3DS Mods</button><div class="spoiled hidden">How to play Super Mario Maker for Nintendo 3DS mods using Luma3DS!<br />
+<br />
+Step 1: Make sure you have Luma3DS installed! ( This guide should be helpful: <a href="https://3ds.hacks.guide/">https://3ds.hacks.guide/</a> )<br />
+<br />
+Step 2: Remove the SD Card from your 3DS system and put it in your PC.<br />
+<br />
+Step 3: Place your mod files in &lt;sdcardname&gt;\luma\titles\&lt;titleidhere&gt;\romfs<br />
+<br />
+Title IDs<br />
+<br />
+JP - 00040000001A0300<br />
+<br />
+US - 00040000001A0400<br />
+<br />
+EU - 00040000001A0500<br />
+<br />
+It should look something like this. (Maybe not exactly but at least similar.)<br />
+<img class="img-fluid" src="../../cdn.discordapp.com/attachments/421929367229300736/534034577371561987/unknown.png" alt=""/><br />
+<br />
+Step 4: Eject your SD Card from your PC and put it in your 3DS system.<br />
+<br />
+Step 5: Make sure you have game patching enabled, then press START to save. ( To check, hold select upon booting your 3DS system. )<br />
+<br />
+Step 6: Open Super Mario Maker for Nintendo 3DS.<br />
+<br />
+Step 7: You should be finished! Congratulations.<br />
+<br />
+If there are any errors, please let me know.<br />
+<br />
+(Hidden Step 8: To play normal SMM3DS, turn off game patching.)</div></div><br />
+<div class="spoiler"><button class="spoilerbutton named">Playing Switch Mods</button><div class="spoiled hidden">Requirements:<br />
+<br />
+1. Nintendo Switch<br />
+2. Laptop/Computer/etc. <br />
+<br />
+1. Download <a href="https://github.com/Atmosphere-NX/Atmosphere/releases">the latest atmosphere release</a> and drag the contents to the root of your microSD Card.<br />
+<br />
+2. Go to atmosphere/titles/ and make a new folder called "01009B90006DC000". Inside that folder, make a new folder called "romfs". If the mod archive file has a romfs folder, drag the contents of it inside romfs. If the archive has no romfs, instead just Model, Pack, etc, drag the contents into romfs.<br />
+<br />
+3. Eject your microSD Card and insert into your Switch. <br />
+<br />
+4. Inject fusee-primary, then launch Super Mario Maker 2! If all goes well, you should have mods!<br />
+</div></div><br />
+<div class="spoiler"><button class="spoilerbutton named">Playing Wii U mods on CEMU</button><div class="spoiled hidden">To use a mod on Cemu, open the graphics pack folder and create a new folder. The folder needs to be called SuperMarioMaker_xxxxx. xxxxx can be replaced with the name of your mod, but it cannot have spaces. Inside that new folder, create a new text document called rules.txt. Copy the following in:<br />
+<br />
+[Definition]<br />
+titleIds = 000500001018DB00,000500001018DC00,000500001018DD00<br />
+name = An Awesome Name!<br />
+path = "Super Mario Maker/Mods/A Cool Mod"<br />
+description = A mod that changes the game to be cool.<br />
+version = 3<br />
+<br />
+Change the name, path, and description to your liking. Now, make a new folder and call it content. Your mod goes in there. For example, a custom tileset would go into Cemu like this:<br />
+<br />
+&lt;cemu folder&gt;\graphicPacks\SuperMarioMaker_CustomTileset\content\Model\WU_Field_plain.szs</div></div><br />
+<br />
+<strong> - Resources - </strong><br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Title IDs</button><div class="spoiled hidden">Wii U US - 000500001018DC00<br />
+Wii U EU - 000500001018DD00<br />
+Wii U JP - 0005000E1018DB00<br />
+<br />
+<br />
+3DS US - 00040000001A0400<br />
+3DS EU - 00040000001A0500<br />
+3DS JP - 00040000001A0300<br />
+<br />
+<br />
+Switch - 01009B90006DC000</div></div><br />
+<div class="spoiler"><button class="spoilerbutton named">Gamestyle Abbreviations</button><div class="spoiled hidden">M1 = SMB1<br />
+M3 = SMB3<br />
+MW = SMW<br />
+WU = NSMBU<br />
+3W = SM3DW</div></div><br />
+<div class="spoiler"><button class="spoilerbutton named">Wii U</button><div class="spoiled hidden"><br />
+<strong>Tools</strong><br />
+<br />
+File Explorer - <a href="https://github.com/KillzXGaming/Switch-Toolbox/releases">Switch Toolbox</a><br />
+<br />
+Image Editor - <a href="https://www.getpaint.net/">Paint.NET</a><br />
+<br />
+Text Editor - <a href="https://github.com/IcySon55/Kuriimu/releases">Kuriimu</a><br />
+<br />
+Course Editor - <a href="https://mariomods.net/thread/358-pointlessmaker">PointlessMaker</a><br />
+<br />
+Music Converter - <a href="https://github.com/libertyernie/LoopingAudioConverter/releases">LoopingAudioConverter</a><br />
+<br />
+<strong>Tutorials</strong><br />
+<br />
+<div class="spoiler"><button class="spoilerbutton">Show spoiler</button><div class="spoiled hidden"><br />
+How to fix bonus music and other themes. - <a href="https://mariomods.net/thread/503-bameta-edit">https://mariomods.net/thread/503-bameta-edit</a> (By Otomo)<br />
+<br />
+How to make custom normal maps. - <a href="https://mariomods.net/thread/711-how-to-make-custom-normal-maps">https://mariomods.net/thread/711-how-to-make-custom-normal-maps</a> (By The Mario Modder)<br />
+<br />
+How to add backgrounds. - <a href="https://mariomods.net/thread/481-how-to-add-backgrounds">https://mariomods.net/thread/481-how-to-add-backgrounds</a> (By Buntendo)<br />
+<br />
+How to run PointlessMaker - <a href="https://mariomods.net/thread/469-how-to-run-pointlessmaker">https://mariomods.net/thread/469-how-to-run-pointlessmaker</a> (By Samplasion)<br />
+<br />
+Memory Modding basics - <a href="../../themindhero.com/smemod.png" target="_blank">http://themindhero.com/smemod.png</a> (By Psycrow)<br />
+<br />
+</div></div><br />
+<strong>Modding Information</strong><br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Wii U File System Documentation</button><div class="spoiled hidden">Course - Contains szs files that contain the sample course files.<br />
+<br />
+   (More detailed documentation coming soon.)<br />
+<br />
+CourseThumbnail - Contains the thumbnail files for the courses.<br />
+<br />
+Font - Contains the szs file that contains font files.<br />
+<br />
+   M1_NumberFont.bffnt - SMB1 font<br />
+<br />
+   M3_NumberFont.bffnt - SMB3 font<br />
+<br />
+   MW_NumberFont.bffnt - SMW font<br />
+<br />
+   WU_NumberFont.bffnt - NSMBU font<br />
+<br />
+   SpecialFont.bffnt - SMM font<br />
+<br />
+   CountMario.bffnt - SMM font, again.<br />
+<br />
+   Block_NumberFont.bffnt - SMM font, yet again.<br />
+ <br />
+   CountRanking.bffnt Yet another SMM font.<br />
+<br />
+   MessageFont.bffnt - message font.<br />
+<br />
+   FontInfo.byml - Has info telling the game what the font is and other info.<br />
+<br />
+Layout - Contains layout files. (Mainly unused, though.)<br />
+<br />
+   Boot_BootSceneXXX_00.szs (XXX is Sun-Sat) - Boot layouts for when you load into the game.<br />
+  <br />
+   Cursor.szs - Wiimote cursor (Presumed to be unused)<br />
+  <br />
+   E3_DebugMenuNormalBtn_00.szs - Leftover button from the E3 2014 demo.<br />
+  <br />
+   E3_DebugMenuSelectBtn_00.szs - Leftover (selected) button from the E3 2014 demo.<br />
+  <br />
+   image.jpg - Leftover from SDK (Image of someone from Swapnote.)<br />
+  <br />
+   ItemIcon_00.szs - Early splatoon weapons (Almost every one of them have differences from their final version)<br />
+  <br />
+   LEnd_WorldClearTelop_00.szs - Likely unused and from E3 2014. If not, it's a layout for finishing the 10/100 Mario Challenge.<br />
+  <br />
+   LWM_PlayBtn_01.szs - A start button for the 10/100 Mario Challenge.<br />
+  <br />
+   LWM_WorldMap_00.szs - Used for the 10/100 Mario Challenge.<br />
+  <br />
+   LWM_WorldMapCastle_00.szs - Used for the 10/100 Mario Challenge.<br />
+  <br />
+   LWM_WorldMapCourse_00.szs - Used for the 10/100 Mario Challenge.<br />
+  <br />
+   LWM_WorldMapKuribo_00.szs - Used for the 10/100 Mario Challenge.<br />
+  <br />
+   LWM_WorldMapMario_00.szs - Used for the 10/100 Mario Challenge.<br />
+  <br />
+   MessageTest_00.szs - Leftover message (Likely from Splatoon, images aren't there however).<br />
+  <br />
+   MessageTest_01.szs - Leftover message (Likely from Splatoon, images aren't there however).<br />
+  <br />
+   PauseBtn_00.szs - Leftover pause button from Splatoon (Might be an early version).<br />
+  <br />
+   Test_ActorBtn_00.szs - Leftover asset from the E3 2014 demo.<br />
+  <br />
+   Test_PointGet_00.szs - Leftover asset for getting points/1 up from the E3 2014 demo.<br />
+  <br />
+<br />
+Message - Contains the message files.<br />
+<br />
+Model - Contains backgrounds, tilesets, and amiibo costumes.<br />
+<br />
+   DV - Background<br />
+<br />
+   Field - Tileset<br />
+<br />
+Pack - Contains pack files with different types of files.<br />
+<br />
+   CourseData - Contains info about the sample courses.<br />
+  <br />
+   Edit - Contains layouts and graphics for the editor.<br />
+  <br />
+   Env - Contains files related to lighting.<br />
+  <br />
+   Layout - Misc. layouts that aren't included in other packs (Some Splatoon layouts are in here!).<br />
+  <br />
+   Lcl - Random layouts for Course World.<br />
+  <br />
+   NormalPlay - Contains everything needed during playing a course, beating a course, the screen to get to the course, and the title screen.<br />
+  <br />
+   Nwk - Layout files for Course World.<br />
+  <br />
+   Sound - Contains sound effects and sounds pertaining to music files.<br />
+  <br />
+   Static - Contains byaml files.<br />
+  <br />
+   StaticSkin - Contains sprites for enemies, items, objects, and the player.<br />
+  <br />
+   System - Contains files related to interpreting shaders and layouts. (Possibly unused?)<br />
+  <br />
+   UI_Boot_Sound - Contains all the UI sounds (including the editor), boot sounds, and some course world sounds.<br />
+  <br />
+   FieldEnv_Normal - Contains blocks for the ground themes.<br />
+  <br />
+   FieldEnv_Dark - Contains blocks for the underground themes.<br />
+  <br />
+   FieldEnv_Water - Contains blocks for underwater themes.<br />
+  <br />
+   FieldEnv_Yogan - Contains blocks for castle themes.<br />
+  <br />
+Sound - Contains music and amiibo costume SFX.<br />
+<br />
+   (More detailed documentation coming soon.)</div></div><br />
+<div class="spoiler"><button class="spoilerbutton named">StaticSkin.pack Documentation</button><div class="spoiled hidden">Important Notes :<br />
+_A means variation acc. to mega mario.<br />
+_mega means the item has mushroom applied to it.<br />
+_mini means if they have a smaller version (blooper,etc).<br />
+_jr means essentially the same thing as _mini.<br />
+_fire means it has fire flower applied to it.<br />
+_D will be applied to the name if the item/enemy has an another variant.<br />
+<br />
+black = Black Tile<br />
+tutorial = Tutorial Background<br />
+<br />
+XX_Enemy :<br />
+<br />
+blackpakkun = Muncher<br />
+bombhei = Bob-omb<br />
+bros = Hammer Bros.<br />
+bubble = Podoboo<br />
+choropoo = Monty Mole<br />
+dossun = Thwomp<br />
+firepakkun = Venus Fire Trap<br />
+fishbone &#x3D; Fish Bone<br />
+gesso = Blooper<br />
+hanachan = Wiggler<br />
+jugem = Lakitu<br />
+kameck = Magikoopa<br />
+karon = Dry Bones<br />
+killer = Bullet Bill<br />
+killer_houdai = Bill Blaster<br />
+koopa = Bowser<br />
+koopa_clown = Clown Car<br />
+kuribo = Goomba<br />
+kutsu_kuribo = Goomba's Shoe (A = Normal & B = Heel)<br />
+met = Buzzy Beetle<br />
+necchi = Stretch (Boo Appearing from the floor )<br />
+nokonoko &#x3D; Koopa Troopa (A = Green & B = Red)<br />
+paipo = Falling Spiny<br />
+pakkun = Pirhana Plant<br />
+poo = Rocky Wrench<br />
+pukupuku = Cheep Cheep (A = Green & B = Red)<br />
+senkan houdai = Cannon<br />
+teresa = Boo<br />
+togemet = Spiketop (A = Red & B = Blue)<br />
+togezo = Spiny<br />
+wanwan = Chain Chomp<br />
+<br />
+XX_Item :<br />
+<br />
+Charakinoko = Mystery Mushroom<br />
+kinoko = Mushroom<br />
+flower = Fire Flower<br />
+flower2 = Fire Flower & Mushroom<br />
+kinokofunny = Weird Mushroom<br />
+Mega kinoko = Classic Mega Mushroom<br />
+Mega kinoko2 = Modern Mega Mushroom<br />
+star = Super Star<br />
+<br />
+XX_Object_block :<br />
+<br />
+chikuwa = Donut Block<br />
+hatena = Question Block<br />
+kara = Used Question Block<br />
+katai = Breakable Block<br />
+kori = Ice Block<br />
+kumo = Cloud Platform<br />
+block_onpu &#x3D; Note Block (White)<br />
+pow = Pow Block<br />
+renga = Brick Block<br />
+toumei = Winged Invisible Block<br />
+tuta = Vine emerging from block<br />
+<br />
+XX_Object :<br />
+<br />
+burner = Burner<br />
+coinrotate = Rotating Coins<br />
+daikonbou &#x3D; Skewer<br />
+door = Door<br />
+firebar = Firebar Block & Fireball<br />
+Goalpole = Goal Pole<br />
+hanatari = One Way Wall<br />
+jumpstep = Springboard<br />
+key = Key<br />
+lift = Independent Platforms (Orange & Blue) {"_rail = On track" ; "_fall = falling"}<br />
+liftyougan = Skull Platforms (1 = White ; 2 = Blue)<br />
+magma = Castle Lava<br />
+middleflag = Checkpoint<br />
+ono &#x3D; Ending Castle in Castle Theme<br />
+peach = Princess Peach<br />
+pswitch = P-Switch<br />
+saw = Saw<br />
+startblock = Temporary Editor Block Sprites<br />
+tower = Ending Castle<br />
+yajirushi = Arrow</div></div></div></div><br />
+<div class="spoiler"><button class="spoilerbutton named">3DS</button><div class="spoiled hidden"><br />
+<strong>Tools</strong><br />
+<br />
+File Explorer - <a href="https://github.com/KillzXGaming/Switch-Toolbox/releases">Switch Toolbox</a><br />
+<br />
+Image Editor - <a href="https://www.getpaint.net/">Paint.NET</a><br />
+<br />
+Text Editor - <a href="https://github.com/IcySon55/Kuriimu/releases">Kuriimu</a><br />
+<br />
+Course Editor - <a href="https://mariomods.net/thread/358-pointlessmaker">PointlessMaker</a><br />
+<br />
+Music Converter - <a href="https://github.com/libertyernie/LoopingAudioConverter/releases">LoopingAudioConverter</a><br />
+<br />
+<strong>Tutorials</strong><br />
+<br />
+<div class="spoiler"><button class="spoilerbutton">Show spoiler</button><div class="spoiled hidden">How to convert 3DS byamls - <a href="https://mariomods.net/thread/474-how-to-convert-3ds-byamls">https://mariomods.net/thread/474-how-to-convert-3ds-byamls</a> (By Samplasion)<br />
+</div></div><br />
+<strong>Modding Information</strong><br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">File System Documentation (Courtesy of NightYoshi370)</button><div class="spoiled hidden">- Firstly, some the code is written in Lua 5.0.3, and can be found here: <strong>romfs\UIX\Final\UIX\scripts\</strong><br />
+<br />
+- The lua basic functions were found by Sono and are listed <a href="https://pastebin.com/Gu4X7AsP">here</a><br />
+<br />
+- The icons for the editor can be found here: <strong>romfs\PaletteIconTextures\</strong><br />
+<br />
+- The sprite textures and animations can be found here: <strong>romfs\Models\[game]_DV_[theme].szs</strong><br />
+<br />
+- The tileset files can be found here: <strong>romfs\Tiledata\[game]_field_[theme]_textures.ctpk</strong><br />
+<br />
+- The backgrounds can be found here: <strong>romfs\Textures\[game]_dv_[theme]_textures.ctpk</strong><br />
+<br />
+- Messages can be found here:  <strong>romfs\MessageC\[Region]\[Lanuage]</strong><br />
+<br />
+- Fonts can be found here:  <strong>romfs\Font\</strong><br />
+<br />
+- Game Icon can be found here:  <strong>romfs\Icons</strong><br />
+<br />
+- Soundeffects can be found in:  <strong>romfs\Sound\sound_data.bcsar</strong><br />
+<br />
+- Background music can be found in:  <strong>romfs\Sound\stream\musicname.bcstm</strong><br />
+<br />
+- Layout files can be found in:  <strong>romfs\UIX\Final\UIX\Layouts\[layoutname].arc</strong><br />
+<br />
+- The lighting files for the NSMBU themes can be found at  <strong>romfs\A3D\</strong><br />
+</div></div></div></div><br />
+<sup>This guide will be updated as the modding scene develops and as new information comes. Nothing here is final and is subject to change eventually.<br />
+If you have anything you want me to add, contact me through MMM's discord server or through MMM pms.<br />
+Mario Making Mods, this guide, and the mods created from this guide's contents are not affiliated or endorsed by Nintendo.</sup><br />
+</div></td></tr></tbody>
+	</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../wiki.html">Wiki</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="Super_Mario_Maker.html">Super Mario Maker</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="../wikichanges.html"									class="nav-link"
+									>
+									Recent changes
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="Talk_Super_Mario_Maker.html"									class="nav-link"
+									>
+									Discuss
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../wikidiff/Super_Mario_Maker.html"									class="nav-link"
+									>
+									Page Revisions
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/wiki/Super_Mario_Maker by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:20:49 GMT -->
+</html>

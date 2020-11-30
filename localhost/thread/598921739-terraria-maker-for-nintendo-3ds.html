@@ -1,0 +1,476 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/thread/598921739-terraria-maker-for-nintendo-3ds by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:38:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Terraria Maker for Nintendo 3DS &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content=" Okay so after learning that Terraria 3DS uses the exact same tile size as Mario Maker 3DS I was able to just go ahead and make a 3DS version..." />
+        <meta name="keywords" content="terraria maker nintendo 3ds wip smw" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Terraria Maker for Nintendo 3DS &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="Terraria Maker for Nintendo 3DS &amp;raquo; Mario Making Mods" /><meta property="og:description" content=" Okay so after learning that Terraria 3DS uses the exact same tile size as Mario Maker 3DS I was able to just go ahead and make a 3DS version..." /> <meta name="og:description" content=" Okay so after learning that Terraria 3DS uses the exact same tile size as Mario Maker 3DS I was able to just go ahead and make a 3DS version..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Terraria Maker for Nintendo 3DS &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content=" Okay so after learning that Terraria 3DS uses the exact same tile size as Mario Maker 3DS I was able to just go ahead and make a 3DS version..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/4-hacking-info.html">Hacking info</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/3-project-releases.html">Project Releases</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="598921739-terraria-maker-for-nintendo-3ds.html">Terraria Maker for Nintendo 3DS</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="1126779203.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="1128932456.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dTerraria%2bMaker%2bfor%2bNintendo%2b3DS%26url%3dhttp_/localhost/thread/598921739/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>	    
+
+    	<table class="table table-striped" id="post1323383332">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/996211172_1551296122.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><span style="color:hsl(22,100%,80.4%);">S</span><span style="color:hsl(53,100%,80.4%);">m</span><span style="color:hsl(84,100%,80.4%);">-</span><span style="color:hsl(115,100%,80.4%);">A</span><span style="color:hsl(146,100%,80.4%);">r</span><span style="color:hsl(177,100%,80.4%);">t</span><span style="color:hsl(208,100%,80.4%);">T</span><span style="color:hsl(239,100%,80.4%);">h</span><span style="color:hsl(270,100%,80.4%);">i</span><span style="color:hsl(301,100%,80.4%);">n</span><span style="color:hsl(332,100%,80.4%);">g</span><span style="color:hsl(3,100%,80.4%);">s</span></span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-03-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/996211172-sm-artthings/posts.html" title="List Sm-ArtThings's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/996211172-sm-artthings/threads.html" title="List Sm-ArtThings's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1323383332">
+				<img class="img-fluid" src="../../i.imgur.com/DNRSyqz.png" alt=""/><br />
+<br />
+Okay so after learning that Terraria 3DS uses the exact same tile size as Mario Maker 3DS I was able to just go ahead and make a 3DS version of Terraria+Mario Maker myself using Tanookid's WiiU mod of the Surface and Underground as a base, though even those two have a few small changes in it. It replaces the SMW Theme and is still a WIP. There's parts I need help with but I likely wont get any which means those parts will remain unfinished.<br />
+<br />
+<strong><u>Areas:</u></strong><br />
+Overworld=Surface<br />
+Underground=Underground<br />
+Water=Nothing yet <br />
+Ghost House=Jungle<br />
+Airship=Sky<br />
+Castle=Underground Jungle<br />
+<br />
+<strong>Images:</strong><br />
+<img class="img-fluid" src="../../i.imgur.com/fZrNmzB.png" alt=""/><br />
+<br />
+<strong><u>Issues:</u></strong><br />
+-nothing made for Water yet. (I still dont know how to arrange ground tiles so until I can get assistance with that Water just wont be made. My two major choices are making it the Ocean or a flooded Underground Corruption)<br />
+-Jungle Background doesnt scroll continuously (as seen in screenshot. Also maybe I'd make it a night Jungle to make the lanterns stand out less.)<br />
+-Beehive Semisolid doesnt scale correctly when enlarged (this is difficult because there is no way to make hive walls on the 3DS version, but  all the available walls are underground where the lighting is inconsistent)<br />
+<br />
+<strong>Link:</strong> <a href="https://drive.google.com/open?id=1f3JUtx29SjHhqhjecN0sZbSLFABKFsG4">https://drive.google.com/open?id=1f3JUtx29SjHhqhjecN0sZbSLFABKFsG4</a><br />
+<br />
+<strong>Credits:</strong><br />
+Tanookid for the base mod from <a href="https://mariomods.net/thread/658-terraria-maker">https://mariomods.net/thread/658-terraria-maker</a> that had Surface and Underground.<br />
+<br />
+Links where I post things including art so check me out (I'd also prefer these links be used if I were to be credited offsite): <br />
+Twitter: <a href="https://twitter.com/SArtthings">https://twitter.com/SArtthings</a><br />
+Deviantart: <a href="https://www.deviantart.com/sm-artthings">https://www.deviantart.com/sm-artthings</a><br>_________________________<br><div class="signature">Check out my other places, subscribing would be nice too:<br />
+<br />
+Deviantart: <a href="https://sm-artthings.deviantart.com/">https://sm-artthings.deviantart.com/</a><br />
+I regularly post art of cartoons, video games and my original characters. I also have montly request slots.<br />
+<br />
+Youtube: <a href="https://www.youtube.com/channel/UCTp7iHZlSWGVWtRa5ohlhgQ">https://www.youtube.com/channel/UCTp7iHZlSWGVWtRa5ohlhgQ</a><br />
+Nothing much yet but will soon have things like playthroughs of my Mario Maker levels, good Smash Bros matches and discussions about animation.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1323383332">
+									Posted on 03-25-19, 11:38 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1323383332">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="598921739-terraria-maker-for-nintendo-3ds66e8.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bSm-ArtThings)%2bin%2b__%26url%3dhttp_/localhost/post/1323383332/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 1</button>
+													<button class="btn btn-primary">#1323383332</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post872588882">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1467199586_1552003331.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1467199586-hu-hu.html" title=""><span  style="color: #7C60B0;" class="userlink" title="hu hu (1467199586) [Normal user]">falling upwards</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">idiot who returns to this site to try and get mods before he finds his usb</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 11-26-18<br>
+						From: nowhere<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1467199586-hu-hu/posts.html" title="List hu hu's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1467199586-hu-hu/threads.html" title="List hu hu's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_872588882">
+				me like this.<br>_________________________<br><div class="signature">hello i'm someone don't ignore me pls</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_872588882">
+									Posted on 03-26-19, 12:01 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_872588882">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="598921739-terraria-maker-for-nintendo-3dsf17b.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bfalling%2bupwards)%2bin%2b__%26url%3dhttp_/localhost/post/872588882/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 1</button>
+													<button class="btn btn-primary">#872588882</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post715848898">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/996211172_1551296122.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><span style="color:hsl(86,100%,80.4%);">S</span><span style="color:hsl(117,100%,80.4%);">m</span><span style="color:hsl(148,100%,80.4%);">-</span><span style="color:hsl(179,100%,80.4%);">A</span><span style="color:hsl(210,100%,80.4%);">r</span><span style="color:hsl(241,100%,80.4%);">t</span><span style="color:hsl(272,100%,80.4%);">T</span><span style="color:hsl(303,100%,80.4%);">h</span><span style="color:hsl(334,100%,80.4%);">i</span><span style="color:hsl(5,100%,80.4%);">n</span><span style="color:hsl(36,100%,80.4%);">g</span><span style="color:hsl(67,100%,80.4%);">s</span></span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-03-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/996211172-sm-artthings/posts.html" title="List Sm-ArtThings's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/996211172-sm-artthings/threads.html" title="List Sm-ArtThings's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_715848898">
+				<div class="quote"> me like this. <div class="quote-footer"><a href="598921739-terraria-maker-for-nintendo-3dsf17b.html">Posted by hu hu de da</a></div></div>Thanks.<br>_________________________<br><div class="signature">Check out my other places, subscribing would be nice too:<br />
+<br />
+Deviantart: <a href="https://sm-artthings.deviantart.com/">https://sm-artthings.deviantart.com/</a><br />
+I regularly post art of cartoons, video games and my original characters. I also have montly request slots.<br />
+<br />
+Youtube: <a href="https://www.youtube.com/channel/UCTp7iHZlSWGVWtRa5ohlhgQ">https://www.youtube.com/channel/UCTp7iHZlSWGVWtRa5ohlhgQ</a><br />
+Nothing much yet but will soon have things like playthroughs of my Mario Maker levels, good Smash Bros matches and discussions about animation.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_715848898">
+									Posted on 04-12-19, 04:50 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_715848898">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="598921739-terraria-maker-for-nintendo-3ds6b9a.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bSm-ArtThings)%2bin%2b__%26url%3dhttp_/localhost/post/715848898/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#715848898</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1180432075">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1867606187_1566503629.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1867606187-net.html" title=""><span  style="color: #97ACEF;" class="userlink" title=".NET (1867606187) [Normal user]">.NET</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-11-19<br>
+						From: IN THE REAL LIFE ON A PLACE!<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1867606187-net/posts.html" title="List .NET's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1867606187-net/threads.html" title="List .NET's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1180432075">
+				Can you send me the tilesets and BGS so I can import them to the Wii U version? (Overworld and underground are not neded, so does the music)<br />
+(EDIT NOTE:) Everything possible is neded, just still not music...
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1180432075">
+									Posted on 06-09-19, 03:29 pm
+										 (rev. 1 by <a href="../profile/1867606187-net.html" title=""><span  style="color: #97ACEF;" class="userlink" title=".NET (1867606187) [Normal user]"><img src="../data/avatars/1867606187_1566503629.png" alt="" class="minipic" /> .NET</span></a> on 06-15-19, 09:22 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1180432075">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="598921739-terraria-maker-for-nintendo-3ds6ed1.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2b.NET)%2bin%2b__%26url%3dhttp_/localhost/post/1180432075/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1180432075</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1105442770">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/996211172_1551296122.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><span style="color:hsl(67,100%,80.4%);">S</span><span style="color:hsl(98,100%,80.4%);">m</span><span style="color:hsl(129,100%,80.4%);">-</span><span style="color:hsl(160,100%,80.4%);">A</span><span style="color:hsl(191,100%,80.4%);">r</span><span style="color:hsl(222,100%,80.4%);">t</span><span style="color:hsl(253,100%,80.4%);">T</span><span style="color:hsl(284,100%,80.4%);">h</span><span style="color:hsl(315,100%,80.4%);">i</span><span style="color:hsl(346,100%,80.4%);">n</span><span style="color:hsl(17,100%,80.4%);">g</span><span style="color:hsl(48,100%,80.4%);">s</span></span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-03-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/996211172-sm-artthings/posts.html" title="List Sm-ArtThings's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/996211172-sm-artthings/threads.html" title="List Sm-ArtThings's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1105442770">
+				The tiles are a bit different now btw. Gonna put them together. <br />
+<br />
+In the meantime in terms of what I have left if you do have music and know what format they should be in for the 3DS version I'd love to get that to improve my version as well. Also the Water Theme is still basically not done, I did make a lot of stuff for it but still actually need the Ground Tiles (specifically for either Snow or Ice since I went with underground Ice Biome) but if you have tiles for underground Corruption that would be good as well.<br />
+<br />
+Regardless I should be able to put the tilesets/backgrounds together next time I get access to the PC they are on.<br>_________________________<br><div class="signature">Check out my other places, subscribing would be nice too:<br />
+<br />
+Deviantart: <a href="https://sm-artthings.deviantart.com/">https://sm-artthings.deviantart.com/</a><br />
+I regularly post art of cartoons, video games and my original characters. I also have montly request slots.<br />
+<br />
+Youtube: <a href="https://www.youtube.com/channel/UCTp7iHZlSWGVWtRa5ohlhgQ">https://www.youtube.com/channel/UCTp7iHZlSWGVWtRa5ohlhgQ</a><br />
+Nothing much yet but will soon have things like playthroughs of my Mario Maker levels, good Smash Bros matches and discussions about animation.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1105442770">
+									Posted on 06-09-19, 10:19 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1105442770">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="598921739-terraria-maker-for-nintendo-3ds5706.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bSm-ArtThings)%2bin%2b__%26url%3dhttp_/localhost/post/1105442770/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1105442770</button>							</div>
+		</td></tr>
+	</table>	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/4-hacking-info.html">Hacking info</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/3-project-releases.html">Project Releases</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="598921739-terraria-maker-for-nintendo-3ds.html">Terraria Maker for Nintendo 3DS</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="1126779203.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="1128932456.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dTerraria%2bMaker%2bfor%2bNintendo%2b3DS%26url%3dhttp_/localhost/thread/598921739/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/thread/598921739-terraria-maker-for-nintendo-3ds by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:38:57 GMT -->
+</html>

@@ -1,0 +1,998 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/memberlist?from=650 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 08:03:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Member list &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/mdb.css">
+		<script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/minicon.png" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="manifest" href="API/manifest.php" />
+        <meta name="description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" />
+        <meta name="keywords" content="Mario, Super Mario, Super Mario Maker, Super Mario Maker 2, Super Mario Maker Mod, Super Mario Maker Modding, SMM Mod, SMM Modding, Super Mario Maker 2 Mod, Super Mario Maker 2 Modding, SMM2 Mod, SMM2 Modding, Super Mario Maker for Nintendo 3DS Mod, Super Mario Maker for Nintendo 3DS modding, SMM3DS Mod, SMM3DS Modding" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Member list &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="Member list &amp;raquo; Mario Making Mods" /><meta property="og:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" /> <meta name="og:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Member list &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/tricks.js"></script>
+        <script src="js/jscolor.js" async></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="index.html">
+				<img id="theme_banner" src="img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="memberlist.html">Member list</a></li>
+											</ol>
+								</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<form method="GET"><input type="hidden" value="memberlist">	<table class="table table-bordered table-striped">
+		<tr class="header1">
+			<th colspan=2>Search options</th>
+		</tr>
+		<tr class="cell0">
+			<td class="cell2 center" style="width:20%;">
+				Sort by
+			</td>
+			<td>
+				<select name="sort" id="sort">
+	<option value="">Post count</option>
+	<option value="id">ID</option>
+	<option value="name">Name</option>
+	<option value="reg">Registration date</option>
+</select>
+			</td>
+		</tr>
+		<tr class="cell1">
+			<td class="cell2 center">
+				Order
+			</td>
+			<td>
+				<select name="order" id="order">
+	<option value="desc">Descending</option>
+	<option value="asc">Ascending</option>
+</select>
+			</td>
+		</tr>
+		<tr class="cell0">
+			<td class="cell2 center">
+				Group
+			</td>
+			<td>
+				<select name="group" id="group">
+	<option selected="selected" value="none">(any)</option>
+	<optgroup label="Primary">
+	<option value="-1">Banned users</option>
+	<option value="0">Normal users</option>
+	<option value="1">Local moderators</option>
+	<option value="2">Global moderators</option>
+	<option value="3">Administrators</option>
+	<option value="4">Owners</option>
+	<option value="staff">(all staff)</option>
+	</optgroup>
+	<optgroup label="Secondary">
+	<option value="5">Super Mario Maker Hackers</option>
+	<option value="6">Super Mario ReMakers</option>
+	</optgroup>
+</select>
+			</td>
+		</tr>
+		<tr class="cell1">
+			<td class="cell2 center">
+				Find in name
+			</td>
+			<td>
+				<input type="text" name="name" id="name" placeholder="Find in name" size=24 maxlength=20 value="">
+			</td>
+		</tr>
+		<tr class="cell2">
+			<td></td>
+			<td>
+				<input type="submit" value="Search">
+			</td>
+		</tr>
+	</table>
+
+	</form>	Search results &mdash; 867 users found<br>
+	
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			
+			<li class="page-item first">
+				<a class="page-link" href="memberlist.html" aria-label="First">
+					<span aria-hidden="true">&#x00AB;</span>
+					<span class="sr-only">First</span>
+				</a>
+			</li>
+			<li class="page-item previous">
+				<a class="page-link" href="memberlistaf8a.html?from=600" aria-label="Previous">
+					<span aria-hidden="true">&#x2039;</span>
+					<span class="sr-only">Previous</span>
+				</a>
+			</li><li class="page-item"><a class="page-link" href="memberlistb695.html?from=400">9</a></li><li class="page-item"><a class="page-link" href="memberlist13b7.html?from=450">10</a></li><li class="page-item"><a class="page-link" href="memberliste222.html?from=500">11</a></li><li class="page-item"><a class="page-link" href="memberlistb649.html?from=550">12</a></li><li class="page-item"><a class="page-link" href="memberlistaf8a.html?from=600">13</a></li><li class="page-item active"><span class="page-link">14 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="memberlist9fb2.html?from=700">15</a></li><li class="page-item"><a class="page-link" href="memberlist0597.html?from=750">16</a></li><li class="page-item"><a class="page-link" href="memberlist2dd6.html?from=800">17</a></li><li class="page-item"><a class="page-link" href="memberlist8256.html?from=850">18</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="memberlist9fb2.html?from=700" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="memberlist8256.html?from=850" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="row">
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/179314419-mrmelon350.html" title=""><span  style="color: #97ACEF;" class="userlink" title="mrmelon350 (179314419) [Normal user]">mrmelon350</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Mar 27th 2019<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1935215941-mrsecupupps.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MrSecuPupps (1935215941) [Normal user]">MrSecuPupps</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Nov 10th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/873812983-mrunusual.html" title=""><span  style="color: #97ACEF;" class="userlink" title="mrunusual (873812983) [Normal user]">mrunusual</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Jul 1st 2019<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/250322442-ms-paint-banana.html" title=""><span  style="color: #7C60B0;" class="userlink" title="ms-paint-banana (250322442) [Normal user]">ms-paint-banana</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Apr 15th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1687984964-mumboshotz.html" title=""><span  style="color: #97ACEF;" class="userlink" title="mumboshotz (1687984964) [Normal user]">mumboshotz</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Dec 1st 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/2122453577-murzya3000.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Murzya3000 (2122453577) [Normal user]">Murzya3000</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Jan 13th 2019<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1977482645-musai-bk-ru.html" title=""><span  style="color: #7C60B0;" class="userlink" title="musai@bk.ru (1977482645) [Normal user]">musai@bk.ru</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Nov 29th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1944873829-mystery-wood.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Mystery Wood (1944873829) [Normal user]">Mystery Wood</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Nov 10th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1282269791-mzayd.html" title=""><span  style="color: #97ACEF;" class="userlink" title="mzayd (1282269791) [Normal user]">mzayd</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Feb 8th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1457275653-nabulsi.html" title=""><span  style="color: #97ACEF;" class="userlink" title="NabulSi (1457275653) [Normal user]">NabulSi</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Jul 3rd 2019<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+					<img src="data/avatars/385173815_1542157631.png" class="card-img-top" style="width:100%; max-height:350px;">					<div class="card-body">
+						<h6 class="card-title"><a href="profile/385173815-naixe.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Naixe .-. (385173815) [Normal user]">Naixe .-.</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Nov 14th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/386620112-nareshplays.html" title=""><span  style="color: #97ACEF;" class="userlink" title="NareshPlays (386620112) [Normal user]">NareshPlays</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Jan 13th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/743289628-newdeadcat.html" title=""><span  style="color: #97ACEF;" class="userlink" title="NewDeadcat (743289628) [Normal user]">NewDeadcat</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Apr 21st 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+					<img src="data/avatars/39_1495840395.jpg" class="card-img-top" style="width:100%; max-height:350px;">					<div class="card-body">
+						<h6 class="card-title"><a href="profile/39-newluigidev.html" title=""><span  style="color: #97ACEF;" class="userlink" title="newluigidev (39) [Normal user]">newluigidev</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: May 26th 2017<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/167-nic-t.html" title=""><span  style="color: #F185C9;" class="userlink" title="nic@t (167) [Normal user]">nic@t</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Nov 8th 2017<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/85965205-ninja-mario.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Ninja+Mario (85965205) [Normal user]">Ninja+Mario</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Nov 25th 2019<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/42-ninjagrump.html" title=""><span  style="color: #97ACEF;" class="userlink" title="NinjaGrump (42) [Normal user]">NinjaGrump</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Aug 30th 2017<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/46159329-nintendo-stivenelpro.html" title=""><span  style="color: #97ACEF;" class="userlink" title="NINTENDO STIVENELPRO (46159329) [Normal user]">NINTENDO STIVENELPRO</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Sep 21st 2019<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/162-nintendohg125.html" title=""><span  style="color: #97ACEF;" class="userlink" title="nintendohg125 (162) [Normal user]">nintendohg125</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Nov 4th 2017<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+					<img src="data/avatars/894838017_1518667464.png" class="card-img-top" style="width:100%; max-height:350px;">					<div class="card-body">
+						<h6 class="card-title"><a href="profile/894838017-nintenerd.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Nintenerd (894838017) [Normal user]">Nintenerd</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Feb 15th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/711991377-nitrocell-inc.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Nitrocell Inc. (711991377) [Normal user]">Nitrocell Inc.</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Jul 18th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1872428910-nmdnkybjko.html" title=""><span  style="color: #7C60B0;" class="userlink" title="NMDnKYBJko (1872428910) [Normal user]">NMDnKYBJko</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Jan 10th 2020<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1839633112-no-u.html" title=""><span  style="color: #888888;" class="userlink" title="NO U (1839633112) [Banned]">NO U</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+						<p class="card-subtitle">Banned permanently: No u no takebacks </p>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Aug 3rd 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/129208143-noirscape.html" title=""><span  style="color: #97ACEF;" class="userlink" title="noirscape (129208143) [Normal user]">noirscape</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Dec 13th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+					<img src="data/avatars/2013142508_1560111660.jpg" class="card-img-top" style="width:100%; max-height:350px;">					<div class="card-body">
+						<h6 class="card-title"><a href="profile/2013142508-notmario.html" title=""><span  style="color: #97ACEF;" class="userlink" title="NotMario (2013142508) [Normal user]">NotMario</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Jun 9th 2019<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1091001522-notsosupermariomaker.html" title=""><span  style="color: #97ACEF;" class="userlink" title="NotSoSuperMarioMaker (1091001522) [Normal user]">Not So Super Mario</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Jan 7th 2019<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/177-nsmbw-the-third.html" title=""><span  style="color: #97ACEF;" class="userlink" title="NSMBW THE THIRD (177) [Normal user]">NSMBW THE THIRD</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Nov 19th 2017<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1304035887-nyc.html" title=""><span  style="color: #7C60B0;" class="userlink" title="nyc (1304035887) [Normal user]">nyc</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Feb 1st 2020<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/507708478-okenglish.html" title=""><span  style="color: #97ACEF;" class="userlink" title="OkEnglish (507708478) [Normal user]">OkEnglish</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Nov 27th 2019<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1814625428-oleguer.html" title=""><span  style="color: #97ACEF;" class="userlink" title="oleguer (1814625428) [Normal user]">oleguer</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Jan 28th 2020<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1251871563-oliwerthefantendo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="OliwerTheFantendo (1251871563) [Normal user]">OliwerTheFantendo</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Dec 3rd 2019<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+					<img src="data/avatars/207642969_1518879615.png" class="card-img-top" style="width:100%; max-height:350px;">					<div class="card-body">
+						<h6 class="card-title"><a href="profile/207642969-omegayoshi.html" title=""><span  style="color: #97ACEF;" class="userlink" title="OmegaYoshi (207642969) [Normal user]">OmegaYoshi</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Feb 17th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/694607079-%c3%b6merornothing.html" title=""><span  style="color: #7C60B0;" class="userlink" title="&Ouml;merOrNothing (694607079) [Normal user]">ÖmerOrNothing</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Dec 1st 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/379971223-oreo777.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Oreo777 (379971223) [Normal user]">Oreo777</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Apr 2nd 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/187825364-owlcitynew.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Owlcitynew (187825364) [Normal user]">Owlcitynew</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Sep 6th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/203276916-pacabella.html" title=""><span  style="color: #7C60B0;" class="userlink" title="pacabella (203276916) [Normal user]">pacabella</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Dec 29th 2017<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/90-pacmariogamersmg.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="PacMarioGamerSMG (90) [Normal user]"><span style="color:hsl(309,100%,80.4%);">P</span><span style="color:hsl(340,100%,80.4%);">a</span><span style="color:hsl(11,100%,80.4%);">c</span><span style="color:hsl(42,100%,80.4%);">M</span><span style="color:hsl(73,100%,80.4%);">a</span><span style="color:hsl(104,100%,80.4%);">r</span><span style="color:hsl(135,100%,80.4%);">i</span><span style="color:hsl(166,100%,80.4%);">o</span><span style="color:hsl(197,100%,80.4%);">G</span><span style="color:hsl(228,100%,80.4%);">a</span><span style="color:hsl(259,100%,80.4%);">m</span><span style="color:hsl(290,100%,80.4%);">e</span><span style="color:hsl(321,100%,80.4%);">r</span><span style="color:hsl(352,100%,80.4%);">S</span><span style="color:hsl(23,100%,80.4%);">M</span><span style="color:hsl(54,100%,80.4%);">G</span></span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Aug 17th 2017<br>
+														Birthday: Nov 30th						</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1675581108-paper-mario.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Paper Mario (1675581108) [Normal user]">Paper Mario</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Aug 12th 2019<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/64-paperfolks.html" title=""><span  style="color: #97ACEF;" class="userlink" title="PaperFolks (64) [Normal user]">PaperFolks</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Jun 28th 2017<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/187-papo825.html" title=""><span  style="color: #97ACEF;" class="userlink" title="papo825 (187) [Normal user]">papo825</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Nov 28th 2017<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/501992314-pegamer.html" title=""><span  style="color: #97ACEF;" class="userlink" title="pegamer (501992314) [Normal user]">pegamer</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Jul 16th 2019<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/163-pepe.html" title=""><span  style="color: #97ACEF;" class="userlink" title="pepe (163) [Normal user]">pepe</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Nov 4th 2017<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1305757856-pieking66.html" title=""><span  style="color: #7C60B0;" class="userlink" title="pieking66 (1305757856) [Normal user]">pieking66</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Jul 22nd 2019<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1158025712-pieroh44.html" title=""><span  style="color: #97ACEF;" class="userlink" title="PieroH44 (1158025712) [Normal user]">PieroH44</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Aug 7th 2019<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/995338648-pikachuevoloyt.html" title=""><span  style="color: #97ACEF;" class="userlink" title="PikachuEvoloYT (995338648) [Normal user]">PikachuEvoloYT</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Jan 12th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1931975178-piolin.html" title=""><span  style="color: #97ACEF;" class="userlink" title="PIOLIN (1931975178) [Normal user]">PIOLIN</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Nov 29th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1294985000-pittguy578.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PITTGUY578 (1294985000) [Normal user]">PITTGUY578</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Sep 7th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1772435620-pittmanrashau032.html" title=""><span  style="color: #97ACEF;" class="userlink" title="pittmanrashau032 (1772435620) [Normal user]">pittmanrashau032</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Jul 9th 2019<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+										<div class="card-body">
+						<h6 class="card-title"><a href="profile/1197142141-plopp-95.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Plopp_95 (1197142141) [Normal user]">Plopp_95</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: May 13th 2018<br>
+																				</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+					<div class="col-md-6 col-lg-3">
+				<div class="card hoverable" style="width: 100%; max-width: 350px; margin: 0 auto;">
+					<img src="data/avatars/1974829264_1555690126.jpg" class="card-img-top" style="width:100%; max-height:350px;">					<div class="card-body">
+						<h6 class="card-title"><a href="profile/1974829264-pochiyu.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Pochiyu (1974829264) [Normal user]">Pochiyu</span></a><img src="img/offline.png" title="User is Offline" alt="User is Offline"></h6>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+						<div class="card-body">
+							Posts: 0 (0.00)<br>
+							Since: Apr 19th 2019<br>
+							From: Fortaleza, Ceara, Brazil<br>							Birthday: Feb 5th						</div>
+						<div class="card-footer d-flex justify-content-between">
+													</div>
+				</div><br>
+			</div>
+			</div>
+
+	<div class="smallFonts pages">
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			
+			<li class="page-item first">
+				<a class="page-link" href="memberlist.html" aria-label="First">
+					<span aria-hidden="true">&#x00AB;</span>
+					<span class="sr-only">First</span>
+				</a>
+			</li>
+			<li class="page-item previous">
+				<a class="page-link" href="memberlistaf8a.html?from=600" aria-label="Previous">
+					<span aria-hidden="true">&#x2039;</span>
+					<span class="sr-only">Previous</span>
+				</a>
+			</li><li class="page-item"><a class="page-link" href="memberlistb695.html?from=400">9</a></li><li class="page-item"><a class="page-link" href="memberlist13b7.html?from=450">10</a></li><li class="page-item"><a class="page-link" href="memberliste222.html?from=500">11</a></li><li class="page-item"><a class="page-link" href="memberlistb649.html?from=550">12</a></li><li class="page-item"><a class="page-link" href="memberlistaf8a.html?from=600">13</a></li><li class="page-item active"><span class="page-link">14 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="memberlist9fb2.html?from=700">15</a></li><li class="page-item"><a class="page-link" href="memberlist0597.html?from=750">16</a></li><li class="page-item"><a class="page-link" href="memberlist2dd6.html?from=800">17</a></li><li class="page-item"><a class="page-link" href="memberlist8256.html?from=850">18</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="memberlist9fb2.html?from=700" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="memberlist8256.html?from=850" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="memberlist.html">Member list</a></li>
+											</ol>
+								</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="memberlist.html" class="btn btn-link">Member List</a>
+		<a href="online.html" class="btn btn-link">Online Users</a>
+		<a href="records.html" class="btn btn-link">Records</a>
+		<a href="calendar.html" class="btn btn-link">Calendar</a>
+		<a href="privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="js/timeago.js"></script>
+		<script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/memberlist?from=650 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 08:04:06 GMT -->
+</html>

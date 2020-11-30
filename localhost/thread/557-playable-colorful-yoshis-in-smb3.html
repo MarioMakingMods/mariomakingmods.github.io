@@ -1,0 +1,987 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/thread/557-playable-colorful-yoshis-in-smb3 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:47:00 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Playable Colorful Yoshis in SMB3! &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content="I've updated the Colorful Yoshis mod to work with the US rip, and (hopefully) fix other compatibility issues as well! Download Yoshi Ride! (Replaces Goomba's Shoe) (Possibly EU rip only!)..." />
+        <meta name="keywords" content="playable colorful yoshis smb3 character" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Playable Colorful Yoshis in SMB3! &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="Playable Colorful Yoshis in SMB3! &amp;raquo; Mario Making Mods" /><meta property="og:description" content="I've updated the Colorful Yoshis mod to work with the US rip, and (hopefully) fix other compatibility issues as well! Download Yoshi Ride! (Replaces Goomba's Shoe) (Possibly EU rip only!)..." /> <meta name="og:description" content="I've updated the Colorful Yoshis mod to work with the US rip, and (hopefully) fix other compatibility issues as well! Download Yoshi Ride! (Replaces Goomba's Shoe) (Possibly EU rip only!)..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Playable Colorful Yoshis in SMB3! &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="I've updated the Colorful Yoshis mod to work with the US rip, and (hopefully) fix other compatibility issues as well! Download Yoshi Ride! (Replaces Goomba's Shoe) (Possibly EU rip only!)..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/4-hacking-info.html">Hacking info</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/3-project-releases.html">Project Releases</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="557-playable-colorful-yoshis-in-smb3.html">Playable Colorful Yoshis in SMB3!</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="552.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="561.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dPlayable%2bColorful%2bYoshis%2bin%2bSMB3%21%26url%3dhttp_/localhost/thread/557/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>		<table class="table table-striped" id="post4049">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/784807142_1520282110.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]">Unsavory Maggot</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 03-05-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/784807142-unsavory/posts-2.html" title="List Unsavory's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/784807142-unsavory/threads.html" title="List Unsavory's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4049">
+				I've updated the Colorful Yoshis mod to work with the US rip, and (hopefully) fix other compatibility issues as well!<br />
+<br />
+<del><strong>Download Yoshi Ride!</strong> (Replaces Goomba's Shoe) (Possibly EU rip only!)</del><br />
+<a href="https://www.dropbox.com/s/371orj4mge4fnkd/Colorful Yoshis.zip?dl=0">Download Colorful Yoshis!</a> (Replaces Goomba's Shoe, and all of the shoe related animations) UPDATED! 3/30/2018<br />
+<br />
+<iframe width="560" height="315" src="http://www.youtube.com/embed/NfwUOi1B3xg" frameborder="0" allowfullscreen></iframe><br />
+<br />
+<iframe width="560" height="315" src="http://www.youtube.com/embed/27K5oA4Ptoc" frameborder="0" allowfullscreen></iframe><br><div class="post_attachment"><a href="../Image116fdf.png?id=7F9WxOHDpWRYOGFZ"><img src="../Image116fdf.png?id=7F9WxOHDpWRYOGFZ" alt="Image11.png &mdash; 19.70&nbsp;KiB, viewed 731 times" title="Image11.png &mdash; 19.70&nbsp;KiB, viewed 731 times" style="max-width:300px; max-height:300px;"></a></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4049">
+									Posted on 03-20-18, 08:43 pm
+										 (rev. 6 by <a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]"><img src="../data/avatars/784807142_1520282110.png" alt="" class="minipic" /> Unsavory Maggot</span></a> on 03-31-18, 05:45 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4049">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="557-playable-colorful-yoshis-in-smb361be.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bUnsavory%2bMaggot)%2bin%2b__%26url%3dhttp_/localhost/post/4049/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4049</button>							</div>
+		</td></tr>
+	</table>    
+
+    	<table class="table table-striped" id="post4074">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/515890276_1521377610.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/515890276-nintega21.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Nintega21 (515890276) [Normal user]">Nintega Yoshistan</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 02-22-18<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/515890276-nintega21/posts-2.html" title="List Nintega21's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/515890276-nintega21/threads.html" title="List Nintega21's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4074">
+				<div class="quote"> <a href="https://www.dropbox.com/s/5md0yktwp2sfgog/StaticSkin.pack?dl=0">Download Yoshi Ride!</a> (Replaces Goomba's Shoe)<br />
+<a href="https://www.dropbox.com/s/371orj4mge4fnkd/Colorful Yoshis.zip?dl=0">Download Be Colorful Yoshis!</a> (Replaces Goomba's Shoe, and all of the shoe related animations)<br />
+<br />
+<iframe width="560" height="315" src="http://www.youtube.com/embed/27K5oA4Ptoc" frameborder="0" allowfullscreen></iframe> <div class="quote-footer"><a href="557-playable-colorful-yoshis-in-smb361be.html">Posted by Unsavory</a></div></div><br />
+There better be a cyan yoshi. I would download it so many times. (Ok, maybe not but u get the idea) <br />
+<br />
+EDIT: Scratch that. There is.<br>_________________________<br><div class="signature">*A yoshi at heart (Yoshi Clan Forever!)</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4074">
+									Posted on 03-22-18, 08:50 pm
+										 (rev. 1 by <a href="../profile/515890276-nintega21.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Nintega21 (515890276) [Normal user]"><img src="../data/avatars/515890276_1521377610.png" alt="" class="minipic" /> Nintega Yoshistan</span></a> on 03-22-18, 09:11 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4074">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="557-playable-colorful-yoshis-in-smb3a62a.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNintega%2bYoshistan)%2bin%2b__%26url%3dhttp_/localhost/post/4074/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4074</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4078">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar1" id="post_4078">
+				<style>td.topbar1_1 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+text-align: center;
+border-top-left-radius: 25px;
+}td.topbar1_1 > a > span {
+     color:white !important;
+}td.topbar1_2 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+border-top-right-radius: 25px;
+}td.topbar1_2 a {
+color: #fff !important;
+}.mainbar1 {
+  background: url('../../i.imgur.com/1K5VeC8.png') no-repeat !important;
+  background=color: #090909;
+  padding: 0 !important;
+  background-color: #000 !important;
+  font-family: 'Arial', sans-serif;
+  border-bottom-right-radius: 25px;
+}.sidebar1 {
+  background-color: #090909 !important;
+  text-align: center !important;
+  color: #E6E6E6 !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  border-bottom-left-radius: 25px;
+}.sidebar1 div.smallFonts > img:nth-child(4):hover {
+border-radius: 2%;
+box-shadow: 7px 7px 30px #000000 !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4) { 
+box-shadow: 5px 5px 40px #000000 !important;
+border-radius: 50%;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4):active {
+border-radius: 0%;
+box-shadow: 0px 0px 5px #FFFFFF !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+.mainbar1 a:link {color: gray;}
+.mainbar1 a:visited {color: gray;}
+.mainbar1 a:active {color: gray;}
+.mainbar1 a:hover {color: gray;} 
+.mainbar1 > div.post {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+} .mainbar1 > div.sig {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+}
+</style><div class="post">No black Yoshi?!?!?!?!?<br />
+<br />
+JK, this is a huge addition to my favorite mods list. Great job!<br></div><div class="sig">Old 3DS XL info:<br />
+I used to have a 3DSafe A9LH V11.3.0-36U with Luma in my CTRNAND. Since ReiNAND Reibooted and Re-Reileased, I "switch"ed back.<br />
+Right now, I have boot9strap with Luma 8.0 as my CFW. Though, I'd like to see other CFW's for B9S.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4078">
+									Posted on 03-23-18, 06:24 pm
+										 (rev. 1 by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 03-23-18, 06:25 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4078">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="557-playable-colorful-yoshis-in-smb3bc77.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/4078/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4078</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4079">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/784807142_1520282110.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]">Unsavory Maggot</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 03-05-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/784807142-unsavory/posts-2.html" title="List Unsavory's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/784807142-unsavory/threads.html" title="List Unsavory's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4079">
+				Thank you! Technically there is, if you use clear Yoshi underground. ;) There also exists a Rainbow Yoshi, via Star power! That's one of the perks of using Mario to color Yoshi.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4079">
+									Posted on 03-23-18, 06:39 pm
+										 (rev. 1 by <a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]"><img src="../data/avatars/784807142_1520282110.png" alt="" class="minipic" /> Unsavory Maggot</span></a> on 03-23-18, 06:40 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4079">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="557-playable-colorful-yoshis-in-smb34bba.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bUnsavory%2bMaggot)%2bin%2b__%26url%3dhttp_/localhost/post/4079/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4079</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4080">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1645699670_1532349041.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1645699670-tee.html" title=""><span  style="color: #97ACEF;" class="userlink" title="tee (1645699670) [Normal user]">tee</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">I'm tea. Live with it.</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 01-16-18<br>
+						From: Chemical Plant Zone<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1645699670-tee/posts.html" title="List tee's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1645699670-tee/threads.html" title="List tee's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post haslayout" id="post_4080">
+				<div style="background:#0000ff url(../../tinypic.com/images/goodbye.jpg) center top !important;
+color:#FFFFFF;
+margin-left: auto;
+height: 100%;
+background-size:100%;"><br />
+<div style="margin: 24px;
+border: 1px solid #DDDDDD;
+outline: 1px solid #DDDDDD;
+outline-offset:-3px;
+padding:10px;
+border-radius: 2px;
+background: rgb(166, 112, 1, 6);">A simple concept. I like it!<br>_________________________<br>Discord - tee#0151<br />
+Twitter - @teebeeYT<br />
+WiiU - beetle857<br />
+Switch - SW-1142-1551-7831<br />
+<div class="spoiler"><button class="spoilerbutton named">RPG Status</button><div class="spoiled hidden"><img class="img-fluid" src="https://mariomods.net/gfx/rpgstatus.php?u=1645699670" alt=""/><br />
+</div></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4080">
+									Posted on 03-24-18, 02:09 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4080">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="557-playable-colorful-yoshis-in-smb3240c.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2btee)%2bin%2b__%26url%3dhttp_/localhost/post/4080/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4080</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4081">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/515890276_1521377610.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/515890276-nintega21.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Nintega21 (515890276) [Normal user]">Nintega Yoshistan</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 02-22-18<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/515890276-nintega21/posts-2.html" title="List Nintega21's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/515890276-nintega21/threads.html" title="List Nintega21's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4081">
+				I just realised im using the SML2 over SMB3 mod. If I find out how to mod the files, I will turn it into SML2 DX (Basically the game with color and some fixes + playable luigi. I have a 3ds .cia file of the mod. Download: &lt; N/A right now) so it doesnt look too out of place. Heck I might request it.<br>_________________________<br><div class="signature">*A yoshi at heart (Yoshi Clan Forever!)</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4081">
+									Posted on 03-24-18, 08:07 am
+										 (rev. 1 by <a href="../profile/515890276-nintega21.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Nintega21 (515890276) [Normal user]"><img src="../data/avatars/515890276_1521377610.png" alt="" class="minipic" /> Nintega Yoshistan</span></a> on 03-24-18, 05:41 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4081">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="557-playable-colorful-yoshis-in-smb3fcd9.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNintega%2bYoshistan)%2bin%2b__%26url%3dhttp_/localhost/post/4081/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4081</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4082">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/784807142_1520282110.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]">Unsavory Maggot</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 03-05-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/784807142-unsavory/posts-2.html" title="List Unsavory's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/784807142-unsavory/threads.html" title="List Unsavory's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4082">
+				XD But what does that have to do with Yoshi, SMB3, etc.?
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4082">
+									Posted on 03-24-18, 03:22 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4082">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="557-playable-colorful-yoshis-in-smb31269.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bUnsavory%2bMaggot)%2bin%2b__%26url%3dhttp_/localhost/post/4082/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4082</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4083">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/515890276_1521377610.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/515890276-nintega21.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Nintega21 (515890276) [Normal user]">Nintega Yoshistan</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 02-22-18<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/515890276-nintega21/posts-2.html" title="List Nintega21's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/515890276-nintega21/threads.html" title="List Nintega21's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4083">
+				<div class="quote"> XD But what does that have to do with Yoshi, SMB3, etc.? <div class="quote-footer"><a href="557-playable-colorful-yoshis-in-smb31269.html">Posted by Unsavory</a></div></div><br />
+The SML2 theme goes over SMB3 (Forgot to add the 3) and its in black and white. Like a gameboy game (Where it came from). It would look very out of place. Thats the only reason.<br>_________________________<br><div class="signature">*A yoshi at heart (Yoshi Clan Forever!)</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4083">
+									Posted on 03-24-18, 03:57 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4083">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="557-playable-colorful-yoshis-in-smb33f4d.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNintega%2bYoshistan)%2bin%2b__%26url%3dhttp_/localhost/post/4083/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4083</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4085">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/784807142_1520282110.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]">Unsavory Maggot</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 03-05-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/784807142-unsavory/posts-2.html" title="List Unsavory's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/784807142-unsavory/threads.html" title="List Unsavory's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4085">
+				Ah, I see. Yeah, that would be pretty cool -- I would like a SML2 color mod theme, based on the colorized rom hack. I also wouldn't mind seeing a B&W version of my Yoshi mod. :)
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4085">
+									Posted on 03-24-18, 04:42 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4085">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="557-playable-colorful-yoshis-in-smb3f776.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bUnsavory%2bMaggot)%2bin%2b__%26url%3dhttp_/localhost/post/4085/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4085</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4086">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/515890276_1521377610.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/515890276-nintega21.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Nintega21 (515890276) [Normal user]">Nintega Yoshistan</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 02-22-18<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/515890276-nintega21/posts-2.html" title="List Nintega21's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/515890276-nintega21/threads.html" title="List Nintega21's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4086">
+				<div class="quote"> Ah, I see. Yeah, that would be pretty cool -- I would like a SML2 color mod theme, based on the colorized rom hack. I also wouldn't mind seeing a B&W version of my Yoshi mod. :) <div class="quote-footer"><a href="557-playable-colorful-yoshis-in-smb3f776.html">Posted by Unsavory</a></div></div><br />
+Maybe I could do that. It should be easy as I would just need to adjust to color scheme. (I mean, I would miss the blue yoshi :'( and they would lose their individuality but its fine...) though I would need a file decrypter to actually ADD it to the SML2 Style.<br>_________________________<br><div class="signature">*A yoshi at heart (Yoshi Clan Forever!)</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4086">
+									Posted on 03-24-18, 05:47 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4086">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="557-playable-colorful-yoshis-in-smb3c101.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNintega%2bYoshistan)%2bin%2b__%26url%3dhttp_/localhost/post/4086/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4086</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4094">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar1" id="post_4094">
+				<style>td.topbar1_1 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+text-align: center;
+border-top-left-radius: 25px;
+}td.topbar1_1 > a > span {
+     color:white !important;
+}td.topbar1_2 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+border-top-right-radius: 25px;
+}td.topbar1_2 a {
+color: #fff !important;
+}.mainbar1 {
+  background: url('../../i.imgur.com/1K5VeC8.png') no-repeat !important;
+  background=color: #090909;
+  padding: 0 !important;
+  background-color: #000 !important;
+  font-family: 'Arial', sans-serif;
+  border-bottom-right-radius: 25px;
+}.sidebar1 {
+  background-color: #090909 !important;
+  text-align: center !important;
+  color: #E6E6E6 !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  border-bottom-left-radius: 25px;
+}.sidebar1 div.smallFonts > img:nth-child(4):hover {
+border-radius: 2%;
+box-shadow: 7px 7px 30px #000000 !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4) { 
+box-shadow: 5px 5px 40px #000000 !important;
+border-radius: 50%;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4):active {
+border-radius: 0%;
+box-shadow: 0px 0px 5px #FFFFFF !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+.mainbar1 a:link {color: gray;}
+.mainbar1 a:visited {color: gray;}
+.mainbar1 a:active {color: gray;}
+.mainbar1 a:hover {color: gray;} 
+.mainbar1 > div.post {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+} .mainbar1 > div.sig {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+}
+</style><div class="post">I mean, this is something that should have been in regular Super Mario Maker. I don't think you should restrict Yoshi to just SMB4 and NSMBU. So that's why I think this mod is special.<br></div><div class="sig">Old 3DS XL info:<br />
+I used to have a 3DSafe A9LH V11.3.0-36U with Luma in my CTRNAND. Since ReiNAND Reibooted and Re-Reileased, I "switch"ed back.<br />
+Right now, I have boot9strap with Luma 8.0 as my CFW. Though, I'd like to see other CFW's for B9S.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4094">
+									Posted on 03-25-18, 09:11 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4094">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="557-playable-colorful-yoshis-in-smb3e46c.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/4094/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4094</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4096">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/784807142_1520282110.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]">Unsavory Maggot</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 03-05-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/784807142-unsavory/posts-2.html" title="List Unsavory's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/784807142-unsavory/threads.html" title="List Unsavory's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4096">
+				I highly agree -- if we could port SMW Yoshi to SMB and SMB3, that would be amazing! I've seen so many cool things get ported between themes, so I'm hyped. Also, thank you! :)<br />
+<br />
+// Just realized another thing that makes this mod special: I think it only works on the EU version. I could be wrong.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4096">
+									Posted on 03-25-18, 09:29 pm
+										 (rev. 1 by <a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]"><img src="../data/avatars/784807142_1520282110.png" alt="" class="minipic" /> Unsavory Maggot</span></a> on 03-25-18, 10:58 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4096">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="557-playable-colorful-yoshis-in-smb31f03.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bUnsavory%2bMaggot)%2bin%2b__%26url%3dhttp_/localhost/post/4096/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4096</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4112">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/142-darhkwing.html" title=""><span  style="color: #7C60B0;" class="userlink" title="Darhkwing (142) [Normal user]">Darhkwing</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 10-25-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/142-darhkwing/posts.html" title="List Darhkwing's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/142-darhkwing/threads.html" title="List Darhkwing's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4112">
+				This brings up a disc error on my PAL wii u =(
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4112">
+									Posted on 03-27-18, 10:04 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4112">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="557-playable-colorful-yoshis-in-smb3c26a.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bDarhkwing)%2bin%2b__%26url%3dhttp_/localhost/post/4112/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4112</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-bordered" id="post4113">
+		<tr>
+			<td class="side userlink" id="4113">
+				<a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]">Unsavory Maggot</span></a>
+			</td>
+			<td class="smallFonts meta right">
+				<div style="float:left">
+					Posted on 03-27-18, 12:24 pm, deleted by <a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]"><img src="../data/avatars/784807142_1520282110.png" alt="" class="minipic" /> Unsavory Maggot</span></a>				</div>
+															#4113
+								</td>
+		</tr>
+	</table>
+	<table class="table table-striped" id="post4119">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/784807142_1520282110.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/784807142-unsavory.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Unsavory (784807142) [Normal user]">Unsavory Maggot</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 03-05-18<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/784807142-unsavory/posts-2.html" title="List Unsavory's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/784807142-unsavory/threads.html" title="List Unsavory's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4119">
+				<del>Hmmm... there seem to be major bugs with this mod that render it incompatible with most configurations; it has only tested successfully on the EU version with Cemu, so far. I'll have to repack everything with the US version as a base, and hope for the best.</del><br />
+<br />
+I have updated the original post with an update of the Colorful Yoshi mod, and I'm hoping that it will fix the compatibility issues of the previous version. It works on my end, but I haven't tested it elsewhere. Maybe this will work for you?
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4119">
+									Posted on 03-30-18, 04:50 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4119">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="557-playable-colorful-yoshis-in-smb39b3e.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bUnsavory%2bMaggot)%2bin%2b__%26url%3dhttp_/localhost/post/4119/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4119</button>							</div>
+		</td></tr>
+	</table>	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/4-hacking-info.html">Hacking info</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/3-project-releases.html">Project Releases</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="557-playable-colorful-yoshis-in-smb3.html">Playable Colorful Yoshis in SMB3!</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="552.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="561.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dPlayable%2bColorful%2bYoshis%2bin%2bSMB3%21%26url%3dhttp_/localhost/thread/557/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/thread/557-playable-colorful-yoshis-in-smb3 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:47:05 GMT -->
+</html>

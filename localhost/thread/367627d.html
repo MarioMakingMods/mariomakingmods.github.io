@@ -1,0 +1,1155 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/thread/367?from=100 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:30:29 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>MakerBoard Github Repo &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content="Hello everyone. Today, I have something exciting to announce. The Mario Making Mods Github repository is now open. What this will allow is that it'll let other developers commit brand..." />
+        <meta name="keywords" content="makerboard github repo" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="MakerBoard Github Repo &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="MakerBoard Github Repo &amp;raquo; Mario Making Mods" /><meta property="og:description" content="Hello everyone. Today, I have something exciting to announce. The Mario Making Mods Github repository is now open. What this will allow is that it'll let other developers commit brand..." /> <meta name="og:description" content="Hello everyone. Today, I have something exciting to announce. The Mario Making Mods Github repository is now open. What this will allow is that it'll let other developers commit brand..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="MakerBoard Github Repo &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="Hello everyone. Today, I have something exciting to announce. The Mario Making Mods Github repository is now open. What this will allow is that it'll let other developers commit brand..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/2-mario-making-mods-talk.html">Mario Making Mods Talk</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="367-makerboard-github-repo.html">MakerBoard Github Repo</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="351.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="380.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dMakerBoard%2bGithub%2bRepo%26url%3dhttp_/localhost/thread/367/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>			
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			
+			<li class="page-item first">
+				<a class="page-link" href="367-makerboard-github-repo.html" aria-label="First">
+					<span aria-hidden="true">&#x00AB;</span>
+					<span class="sr-only">First</span>
+				</a>
+			</li>
+			<li class="page-item previous">
+				<a class="page-link" href="367-makerboard-github-repocfcc.html?from=80" aria-label="Previous">
+					<span aria-hidden="true">&#x2039;</span>
+					<span class="sr-only">Previous</span>
+				</a>
+			</li><li class="page-item"><a class="page-link" href="367-makerboard-github-repo.html">1</a></li><li class="page-item"><a class="page-link" href="367-makerboard-github-repo704a.html?from=20">2</a></li><li class="page-item"><a class="page-link" href="367-makerboard-github-repof05b.html?from=40">3</a></li><li class="page-item"><a class="page-link" href="367-makerboard-github-repo521d.html?from=60">4</a></li><li class="page-item"><a class="page-link" href="367-makerboard-github-repocfcc.html?from=80">5</a></li><li class="page-item active"><span class="page-link">6 <span class="sr-only">(current)</span></span></li>
+		</ul>
+	</nav>
+		<table class="table table-striped" id="post4481">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/197_1515304254.gif" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/197-maryo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MaryO (197) [Normal user]">MaryO</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-11-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/197-maryo/posts-2.html" title="List MaryO's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/197-maryo/threads.html" title="List MaryO's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4481">
+				NightYoshi370 has made a new commit: [Discord Bot] Hello mariomods.net<br />
+<br />
+1. Help now uses embeds.<br />
+2. Add a MySQL module.<br />
+3. Add a HTML-&gt;text module.<br />
+4. Add a bio command. Currently uses direct MySQL. TODO: Make API an option for bots that are not hosted on the same server as the board. Might make use for other blargboards. Currently needs you to link your MMM account to Discord. An update will be coming soon.<br><br><a href="https://github.com/NightYoshi370/Mario-Making-Mods/commit/ebcf164a35f8a5c9271b5e278e17bd4bb7652ec6">Commit URL</a><br>ID: ebcf164a35f8a5c9271b5e278e17bd4bb7652ec6
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4481">
+									Posted on 06-08-18, 04:33 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4481">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repo1c78.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMaryO)%2bin%2b__%26url%3dhttp_/localhost/post/4481/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4481</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4482">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/197_1515304254.gif" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/197-maryo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MaryO (197) [Normal user]">MaryO</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-11-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/197-maryo/posts-2.html" title="List MaryO's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/197-maryo/threads.html" title="List MaryO's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4482">
+				NightYoshi370 has made a new commit: [Discord Bot]: Fix some messups and minor improvements<br />
+<br />
+This is all (well, most of it anyways) thanks to superwhiskers.<br />
+<br />
+1. Fix gaining points.<br />
+2. Fix !bio breaking the bot if you don't have your discord connected.<br />
+3. The ban command deletes the command trigger.<br />
+4. r[1-14] now exist for users who need to quote the rules.<br />
+5. Welcome bot now sends DM as well.<br><br><a href="https://github.com/NightYoshi370/Mario-Making-Mods/commit/31e8312d85501ece1e80ef3fc4a4ab5e75de3f36">Commit URL</a><br>ID: 31e8312d85501ece1e80ef3fc4a4ab5e75de3f36
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4482">
+									Posted on 06-08-18, 06:52 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4482">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repo4ba4.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMaryO)%2bin%2b__%26url%3dhttp_/localhost/post/4482/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4482</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4487">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/197_1515304254.gif" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/197-maryo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MaryO (197) [Normal user]">MaryO</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-11-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/197-maryo/posts-2.html" title="List MaryO's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/197-maryo/threads.html" title="List MaryO's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4487">
+				NightYoshi370 has made a new commit: &lt;invalid forum ID&gt; Hello MaryO on discord!<br />
+<br />
+1. You can now connect your MMM account to discord.<br />
+2. Profile API can now use names or Discord ID, with more support added soon(TM)<br><br><a href="https://github.com/NightYoshi370/Mario-Making-Mods/commit/b74b4747bca4fae6df9c1e788e4b9498e0055558">Commit URL</a><br>ID: b74b4747bca4fae6df9c1e788e4b9498e0055558
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4487">
+									Posted on 06-08-18, 11:44 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4487">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repob91e.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMaryO)%2bin%2b__%26url%3dhttp_/localhost/post/4487/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4487</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4494">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/197_1515304254.gif" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/197-maryo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MaryO (197) [Normal user]">MaryO</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-11-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/197-maryo/posts-2.html" title="List MaryO's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/197-maryo/threads.html" title="List MaryO's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4494">
+				NightYoshi370 has made a new commit: &lt;invalid forum ID&gt; Minor fixes<br />
+<br />
+1. Make the "can't star post" image be FA icon.<br />
+2. In TitleCard.php, users that have a PFP below 100px in width will now have the size be 150px, instead of 250.<br><br><a href="https://github.com/NightYoshi370/Mario-Making-Mods/commit/e41b638bfa94fada2e15009e9097efc1aaecc9af">Commit URL</a><br>ID: e41b638bfa94fada2e15009e9097efc1aaecc9af
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4494">
+									Posted on 06-10-18, 10:13 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4494">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repo3a37.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMaryO)%2bin%2b__%26url%3dhttp_/localhost/post/4494/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4494</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4495">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/197_1515304254.gif" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/197-maryo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MaryO (197) [Normal user]">MaryO</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-11-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/197-maryo/posts-2.html" title="List MaryO's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/197-maryo/threads.html" title="List MaryO's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4495">
+				NightYoshi370 has made a new commit: [Discord Bot] Huge bot rewrite<br />
+<br />
+1. Now uses Better-SQLite3.<br />
+2. New command: Leaderboard<br />
+3. New command: Join VC.<br />
+4. Make codebase overall cleaner.<br />
+<br />
+Issues<br />
+-------<br />
+<br />
+1. The name doesn't show in the leaderboard.<br />
+2. If you've never posted before, you actually make the bot end up offline.<br><br><a href="https://github.com/NightYoshi370/Mario-Making-Mods/commit/6c299efb14ab8da41e91008b45581d0bf7866de9">Commit URL</a><br>ID: 6c299efb14ab8da41e91008b45581d0bf7866de9
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4495">
+									Posted on 06-10-18, 10:20 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4495">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repo335a.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMaryO)%2bin%2b__%26url%3dhttp_/localhost/post/4495/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4495</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4514">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/197_1515304254.gif" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/197-maryo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MaryO (197) [Normal user]">MaryO</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-11-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/197-maryo/posts-2.html" title="List MaryO's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/197-maryo/threads.html" title="List MaryO's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4514">
+				NightYoshi370 has made a new commit: Kill MySQL<br />
+<br />
+Made bot go offline<br />
+ToDo: Make !bio use API calls<br><br><a href="https://github.com/NightYoshi370/Mario-Making-Mods/commit/479155c68bd8710a9ffc3357465b584aea5058d4">Commit URL</a><br>ID: 479155c68bd8710a9ffc3357465b584aea5058d4
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4514">
+									Posted on 06-12-18, 11:11 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4514">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repo7adb.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMaryO)%2bin%2b__%26url%3dhttp_/localhost/post/4514/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4514</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4559">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/197_1515304254.gif" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/197-maryo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MaryO (197) [Normal user]">MaryO</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-11-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/197-maryo/posts-2.html" title="List MaryO's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/197-maryo/threads.html" title="List MaryO's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4559">
+				NightYoshi370 has made a new commit: Some revamping on the backend<br />
+<br />
+1. Fix the profile API stuff.<br />
+2. Add new stackedMenu CSS stuff.<br />
+3. add minibar.png<br />
+4. Private Messages now has a list of suggestions on who to message too.<br />
+5. Memberlist for modern layout got completely revamped.<br />
+6. The mobile layout got some form of revampation. Now, instead of each link having its own cell, its now part of a big cell.<br />
+7. Search results got user friendly.<br />
+8. make TimeUnits2 a global function<br />
+9. Make the memory usage not rounded.<br />
+10. Fix mobile forums bug.<br />
+11. Extend the avatar upload size to 512x512<br />
+12. Add more meta description<br />
+13. Fix audio controls on depot<br />
+14. Simplify the sorting in forum.php<br />
+15. Fix the login Redirect.<br />
+16. Add postsbyforum.php and postsbytime.php from Jul.<br />
+<br />
+Also, some changes here and there.<br><br><a href="https://github.com/NightYoshi370/Mario-Making-Mods/commit/d8ca0384b28325fb1f919dce35793f4b74822c76">Commit URL</a><br>ID: d8ca0384b28325fb1f919dce35793f4b74822c76
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4559">
+									Posted on 06-22-18, 07:09 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4559">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repo43b8.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMaryO)%2bin%2b__%26url%3dhttp_/localhost/post/4559/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4559</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4564">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/197_1515304254.gif" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/197-maryo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MaryO (197) [Normal user]">MaryO</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-11-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/197-maryo/posts-2.html" title="List MaryO's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/197-maryo/threads.html" title="List MaryO's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4564">
+				NightYoshi370 has made a new commit: [Discord Bot] Whole rewrite<br />
+<br />
+Currently DMs disabled stuff is broken<br><br><a href="https://github.com/NightYoshi370/Mario-Making-Mods/commit/6ecf05ecc72741d7db86579cd5489ec3019fd60c">Commit URL</a><br>ID: 6ecf05ecc72741d7db86579cd5489ec3019fd60c
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4564">
+									Posted on 06-23-18, 12:33 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4564">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repo4f7a.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMaryO)%2bin%2b__%26url%3dhttp_/localhost/post/4564/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4564</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4575">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/197_1515304254.gif" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/197-maryo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MaryO (197) [Normal user]">MaryO</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-11-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/197-maryo/posts-2.html" title="List MaryO's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/197-maryo/threads.html" title="List MaryO's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4575">
+				NightYoshi370 has made a new commit: [Discord Bot]Use Better SQLite3<br />
+<br />
+and actually works<br />
+<br />
+Also, more RichEmbed Migration.<br />
+Also, more stuff git to ignore<br />
+Also, edit config to remove outdated SQL stuff<br><br><a href="https://github.com/NightYoshi370/Mario-Making-Mods/commit/1550a49fdab4829545b68de6fa4dbdc5c91f5108">Commit URL</a><br>ID: 1550a49fdab4829545b68de6fa4dbdc5c91f5108
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4575">
+									Posted on 06-24-18, 10:25 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4575">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repo4910.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMaryO)%2bin%2b__%26url%3dhttp_/localhost/post/4575/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4575</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4579">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/197_1515304254.gif" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/197-maryo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MaryO (197) [Normal user]">MaryO</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-11-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/197-maryo/posts-2.html" title="List MaryO's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/197-maryo/threads.html" title="List MaryO's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4579">
+				NightYoshi370 has made a new commit: Fix !help<br><br><a href="https://github.com/NightYoshi370/Mario-Making-Mods/commit/ec57de0ebe1128676b61893bdccad859e6cd1a53">Commit URL</a><br>ID: ec57de0ebe1128676b61893bdccad859e6cd1a53
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4579">
+									Posted on 06-25-18, 11:19 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4579">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repo4c71.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMaryO)%2bin%2b__%26url%3dhttp_/localhost/post/4579/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4579</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4621">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/197_1515304254.gif" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/197-maryo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MaryO (197) [Normal user]">MaryO</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-11-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/197-maryo/posts-2.html" title="List MaryO's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/197-maryo/threads.html" title="List MaryO's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4621">
+				NightYoshi370 has made a new commit: [Website] Huge WIP stuff for Jluy 4th.<br />
+<br />
+1. Merge RPGStats API and Profile API.<br />
+2. Have a new API: UserMenu links.<br />
+3. Edit Mother 3 rankset slightly. Full edit will be performed by MoonlightCapital.<br />
+4. Do we really need a seperate slot for each size in the NSMBW rankset?<br />
+5. Furthermore, most of it is based of Newer SMBW. Change it's name to reflect that<br />
+6. Fix the custom poll for the acmlmboard layout.<br />
+7. Have a percentage bar for depot mods.<br />
+8. Mobile icon implementation is now alot more normal. Instead of it being done PHP side, make it done using templates.<br />
+9. Speaking of templates, make "postsbyforum" page a full template instead of just the options.<br />
+10. Have a scroll bar for the ranksets (they overflew)<br />
+11. The website now links to our Twitter as well as our Discord and Youtube.<br />
+12. Mobile users will no longer see ID's and IP addresses. They take up way too much of the screen width.<br />
+13. Make images (using the img BBCode tag) resize depending on screen width.<br />
+14. Add a new function: percentage of #.<br />
+15. The reason why we have that is because the "Posts by Forum" page now contains %'s.<br />
+16. Slugify usernames.<br />
+17. WIP Poll class. Should make things alot cleaner<br />
+18. Make the edit profile page use the new Router engine.<br />
+19. Make the Private Messages viewing page a lot less confusing for admins.<br />
+20. Sort ranksets alphabetically<br />
+<br />
+Alot more things will be coming on July 4th, so stay tuned!<br><br><a href="https://github.com/NightYoshi370/Mario-Making-Mods/commit/15d0e25bac2f223f9112a7330a04a371007c58aa">Commit URL</a><br>ID: 15d0e25bac2f223f9112a7330a04a371007c58aa
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4621">
+									Posted on 07-02-18, 05:10 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4621">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repod181.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMaryO)%2bin%2b__%26url%3dhttp_/localhost/post/4621/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4621</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4627">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/197_1515304254.gif" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/197-maryo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MaryO (197) [Normal user]">MaryO</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-11-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/197-maryo/posts-2.html" title="List MaryO's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/197-maryo/threads.html" title="List MaryO's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4627">
+				NightYoshi370 has made a new commit: Fix bugs<br />
+<br />
+Keep in mind that while this commit was supposed to come out tomorrow, I'm pushing it today cause of things I overlooked and I also need StyleCI fixes.<br />
+<br />
+1. Add recent activity tab to the list of profile tabs.<br />
+2. Allow posts to be returned as an array.<br />
+3. Fix PostsByForum $by variable<br />
+4. Fix new Link Formula in profile.php and private.php<br><br><a href="https://github.com/NightYoshi370/Mario-Making-Mods/commit/9e7fb4d8c5e0ecbff3e93c4bfc22e99d8d0d1be2">Commit URL</a><br>ID: 9e7fb4d8c5e0ecbff3e93c4bfc22e99d8d0d1be2
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4627">
+									Posted on 07-03-18, 10:02 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4627">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repodf8c.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMaryO)%2bin%2b__%26url%3dhttp_/localhost/post/4627/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4627</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post4653">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/197_1515304254.gif" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/197-maryo.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MaryO (197) [Normal user]">MaryO</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 12-11-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/197-maryo/posts-2.html" title="List MaryO's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/197-maryo/threads.html" title="List MaryO's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_4653">
+				NightYoshi370 has made a new commit: API, engines, and descriptions<br />
+<br />
+1. Simplify ajaxcallbacks.php<br />
+2. Make a notifications API<br />
+3. Make a posts API<br />
+4. Fix RSS per-forum stuff.<br />
+5. Add a thread listing API<br />
+6. Fix bugs in index.php<br />
+7. Don't AJAX update view counter, cause that doesn't exist on modern layout<br />
+8. Fix acmlmboard layout's header links.<br />
+9. only show the Edit/Delete links if they are available.<br />
+10. Fix profile tabs looking ugly and inconsistent.<br />
+11. Make Last Activity look alot better.<br />
+12. Make new functions to strip unnesesary characters.<br />
+13. Make token use SHA256 as SHA1 is decrepated.<br />
+14. Fix Post links<br />
+15. Add new "profile" tab to edit profile page. Now, you can set friend codes.<br />
+16. Merge both search engines into one table, instead of having 2 different ones.<br />
+17. If you link a post, the page description will now show that post's content.<br />
+18. Reddit styled threads are now possible. I'll change them to be a lot less ugly later on this month<br><br><a href="https://github.com/NightYoshi370/Mario-Making-Mods/commit/987eac4827f94026cd04256fb23b353adee6f5ec">Commit URL</a><br>ID: 987eac4827f94026cd04256fb23b353adee6f5ec
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_4653">
+									Posted on 07-10-18, 06:46 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_4653">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repo5472.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMaryO)%2bin%2b__%26url%3dhttp_/localhost/post/4653/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#4653</button>							</div>
+		</td></tr>
+	</table>    
+
+    	<table class="table table-striped" id="post5403">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/2063600240-jeyneko.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Jeyneko (2063600240) [Normal user]">Jeyneko</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 11-12-18<br>
+						From: Margate, GB<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/2063600240-jeyneko/posts.html" title="List Jeyneko's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/2063600240-jeyneko/threads.html" title="List Jeyneko's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_5403">
+				Could the current codebase that's used here be taken and then moved to GitLab, perhaps with the default theme being the white Bootstrap theme (which looks really professional).<br />
+<br />
+GitHub isn't safe with Microsoft...
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_5403">
+									Posted on 11-12-18, 12:18 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_5403">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repo6f64.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bJeyneko)%2bin%2b__%26url%3dhttp_/localhost/post/5403/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#5403</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post5408">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/14_1517928889.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/14-moonlightcapital.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MoonlightCapital (14) [Normal user]">MoonlightCapital</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-19-17<br>
+						From: Italy<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/14-moonlightcapital/posts-2.html" title="List MoonlightCapital's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/14-moonlightcapital/threads.html" title="List MoonlightCapital's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post haslayout" id="post_5408">
+				<style>\* .mainbar14 {
+color:black;
+background:url(../../i.pinimg.com/originals/f3/c9/0d/f3c90d7d4ab8b6a6689a97d0d6b43758.png) center;
+font-family:Helvetica,Arial,sans-serif;
+border-bottom-right-radius:20px;
+text-shadow: -1px -1px white, 0px -1px white, 1px -1px white, 1px 0px white, 1px 1px white, 0px 1px white, -1px 1px white, -1px 0px white;
+font-size: 15px;
+}
+
+.sidebar14 {
+color:black;
+background:skyblue;
+text-align:center;
+font-family:Helvetica,Arial,sans-serif;
+border-bottom-left-radius:20px;
+}
+
+.topbar14_1 {
+border-top-left-radius:20px;
+background:white;
+color:black;
+text-align:center;
+}
+
+.topbar14_2 {
+border-top-right-radius:20px;
+background:white;
+color:black;
+}
+
+.mainbar14 a{
+color:#008080;
+}
+
+.topbar14_2 a{
+color:#008080;
+}
+
+.mainbar14 .quote {
+border-radius:20px;
+background:rgba(0,200,200,0.5);
+}
+
+.mainbar14 .postbox14 {
+margin:10px;
+padding:10px;
+border-radius:20px;
+border:2px solid white;
+background:rgba(0,255,255,0.5);
+}
+*/
+</style><div class="postbox14">There is a GitLab repo, but only NightYoshi, Samplasion and me can access it.<br></div><hr /><a href="https://nick-name.ru/nickname/MoonlightCapital/"><img class="img-fluid" src="../../nick-name.ru/forum3t9/MoonlightCapital.gif" alt=""/></a><br />
+<a style="display:none;" href="https://nick-name.ru/nickname/MoonlightCapital/"><img src="https://nick-name.ru/img.php?id=1437240&amp;sert=1" alt="Certificate for nickname MoonlightCapital, is registered to: MoonlightCapital" border="0" /></a><br /><a style="display:none;" href="https://nick-name.ru/">Nickname database</a><br />
+<a href="http://internetometer.com/give/46812" target="_blank"><img class="img-fluid" src="../../internetometer.com/image/46812.png" alt=""/></a>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_5408">
+									Posted on 11-12-18, 04:07 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_5408">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repo2302.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMoonlightCapital)%2bin%2b__%26url%3dhttp_/localhost/post/5408/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#5408</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post5409">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar1" id="post_5409">
+				<style>td.topbar1_1 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+text-align: center;
+border-top-left-radius: 25px;
+}td.topbar1_1 > a > span {
+     color:white !important;
+}td.topbar1_2 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+border-top-right-radius: 25px;
+}td.topbar1_2 a {
+color: #fff !important;
+}.mainbar1 {
+  background: url('../../i.imgur.com/1K5VeC8.png') no-repeat !important;
+  background=color: #090909;
+  padding: 0 !important;
+  background-color: #000 !important;
+  font-family: 'Arial', sans-serif;
+  border-bottom-right-radius: 25px;
+}.sidebar1 {
+  background-color: #090909 !important;
+  text-align: center !important;
+  color: #E6E6E6 !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  border-bottom-left-radius: 25px;
+}.sidebar1 div.smallFonts > img:nth-child(4):hover {
+border-radius: 2%;
+box-shadow: 7px 7px 30px #000000 !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4) { 
+box-shadow: 5px 5px 40px #000000 !important;
+border-radius: 50%;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4):active {
+border-radius: 0%;
+box-shadow: 0px 0px 5px #FFFFFF !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+.mainbar1 a:link {color: gray;}
+.mainbar1 a:visited {color: gray;}
+.mainbar1 a:active {color: gray;}
+.mainbar1 a:hover {color: gray;} 
+.mainbar1 > div.post {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+} .mainbar1 > div.sig {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+}
+</style><div class="post">Yeah, there's a private GitLab for MakerBoard and CourseBot. I'm not looking towards open sourcing it for a couple of reason, but it doesn't even matter.<br />
+<br />
+Thread closed since it's pointless to keep this here for a private repo<br></div><div class="sig">Old 3DS XL info:<br />
+I used to have a 3DSafe A9LH V11.3.0-36U with Luma in my CTRNAND. Since ReiNAND Reibooted and Re-Reileased, I "switch"ed back.<br />
+Right now, I have boot9strap with Luma 8.0 as my CFW. Though, I'd like to see other CFW's for B9S.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_5409">
+									Posted on 11-12-18, 04:10 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_5409">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="367-makerboard-github-repo8df6.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/5409/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#5409</button>							</div>
+		</td></tr>
+	</table>			
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			
+			<li class="page-item first">
+				<a class="page-link" href="367-makerboard-github-repo.html" aria-label="First">
+					<span aria-hidden="true">&#x00AB;</span>
+					<span class="sr-only">First</span>
+				</a>
+			</li>
+			<li class="page-item previous">
+				<a class="page-link" href="367-makerboard-github-repocfcc.html?from=80" aria-label="Previous">
+					<span aria-hidden="true">&#x2039;</span>
+					<span class="sr-only">Previous</span>
+				</a>
+			</li><li class="page-item"><a class="page-link" href="367-makerboard-github-repo.html">1</a></li><li class="page-item"><a class="page-link" href="367-makerboard-github-repo704a.html?from=20">2</a></li><li class="page-item"><a class="page-link" href="367-makerboard-github-repof05b.html?from=40">3</a></li><li class="page-item"><a class="page-link" href="367-makerboard-github-repo521d.html?from=60">4</a></li><li class="page-item"><a class="page-link" href="367-makerboard-github-repocfcc.html?from=80">5</a></li><li class="page-item active"><span class="page-link">6 <span class="sr-only">(current)</span></span></li>
+		</ul>
+	</nav>
+	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/2-mario-making-mods-talk.html">Mario Making Mods Talk</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="367-makerboard-github-repo.html">MakerBoard Github Repo</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="351.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="380.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dMakerBoard%2bGithub%2bRepo%26url%3dhttp_/localhost/thread/367/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/thread/367?from=100 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:30:43 GMT -->
+</html>

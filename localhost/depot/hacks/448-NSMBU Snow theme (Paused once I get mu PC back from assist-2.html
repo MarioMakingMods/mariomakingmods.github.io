@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/depot/hacks/448-NSMBU Snow theme (Paused once I get mu PC back from assist.) by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 08:27:03 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../../css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/mdb.css">
+		<script src="../../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../../apple-touch-icon.png" />
+        <link rel="manifest" href="../../API/manifest.php" />
+        <meta name="description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" />
+        <meta name="keywords" content="Mario, Super Mario, Super Mario Maker, Super Mario Maker 2, Super Mario Maker Mod, Super Mario Maker Modding, SMM Mod, SMM Modding, Super Mario Maker 2 Mod, Super Mario Maker 2 Modding, SMM2 Mod, SMM2 Modding, Super Mario Maker for Nintendo 3DS Mod, Super Mario Maker for Nintendo 3DS modding, SMM3DS Mod, SMM3DS Modding" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Mario Making Mods" /> <meta name="og:title" content="Mario Making Mods" /><meta property="og:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" /> <meta name="og:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../../css/common.css" />
+        <link rel="stylesheet" href="../../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../../js/jquery-ui.js"></script>
+        <script src="../../js/tricks.js"></script>
+        <script src="../../js/jscolor.js" async></script>
+        <script src="../../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../../index.html">
+				<img id="theme_banner" src="../../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../depot.html">Depot</a></li>
+											</ol>
+								</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+							<div class="col-lg-2 col-md-3 col-sm-4 sidenav">
+					
+                    <table class="table table-bordered table-striped table-sm">
+                        <thead><tr><th>Depot Selections</th></tr></thead>
+                        <tbody>
+                            <tr><td><a href="../hacks.html" title="">Theme Projects</a></td></tr>
+                            <tr><td><a href="../level.html" title="">Level Depot</a></td></tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <table class="table table-bordered table-striped table-sm">
+                        <tr class="header0"><th>Filter</th></tr>
+                            <form action="http://localhost/depot/hacks">
+                                <tr class="header1"><th>Sort by</th></tr>
+                                <tr class="cell0"><td><input type="radio" name="sort" checked value="lastdate"> Last Post Date</td></tr>
+                                <tr class="cell1"><td><input type="radio" name="sort"  value="date"> Date Published</td></tr>
+                                <tr class="cell0"><td><input type="radio" name="sort"  value="name"> Name (alphabetical)</td></tr>
+                                <tr class="header1"><th>Name of Hack</th></tr>
+                                <tr class="cell0"><td><input class="form-control" type="text" name="hackname" value=""></td></tr>
+                                <tr class="header1"><th><input type="submit" value="Submit"></th></tr>
+                            </form>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </td>
+				</div>
+						<div class="col-lg-10 col-md-9 col-sm-8 text-left">
+					<div class="alert alert-success alert-dismissible">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+		<span class="alert-link">Welcome to the Mario Making Mods Depot!</span>: You can submit your custom levels and tilesets here, or browse and download those created by other people.
+	</div>	<div class="alert alert-info alert-dismissible">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+		<span class="alert-link">Specify the following in your submission</span>: <ul>
+					<li>Name of Theme
+					<li>Platform (WiiU/3DS)
+					<li>Game it replaces (SMB1/SMB3/SMW/NSMBU)
+					<li>Screenshots/Video
+					<li>Download link
+				</ul>
+	</div>	<div class="alert alert-info alert-dismissible fade show" role="alert">
+		<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+		  <span class="threadTag" style="background-color: hsl(177, 70%, 40%);">3ds</span><a href="../../thread/1241148923-super-mario-maker-2ds-mario-maker-2-3ds-mod.html" class="alert-link">Super Mario Maker 2DS (Mario Maker 2 3DS mod)</a> &mdash; Posted by <a href="../../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><img src="../../data/avatars/996211172_1551296122.jpg" alt="" class="minipic" /> <span style="color:hsl(297,100%,80.4%);">S</span><span style="color:hsl(328,100%,80.4%);">m</span><span style="color:hsl(359,100%,80.4%);">-</span><span style="color:hsl(30,100%,80.4%);">A</span><span style="color:hsl(61,100%,80.4%);">r</span><span style="color:hsl(92,100%,80.4%);">t</span><span style="color:hsl(123,100%,80.4%);">T</span><span style="color:hsl(154,100%,80.4%);">h</span><span style="color:hsl(185,100%,80.4%);">i</span><span style="color:hsl(216,100%,80.4%);">n</span><span style="color:hsl(247,100%,80.4%);">g</span><span style="color:hsl(278,100%,80.4%);">s</span></span></a> on 02-15-20, 12:21 am
+	</div>	<div class="row">
+		<div class="col-sm-4">
+			<table class="table table-bordered table-striped">
+				<thead><tr><th>Most Recent</th></tr></th>
+				<tbody>
+											<tr><td>
+							 <span class="threadTag" style="background-color: hsl(177, 70%, 40%);">3ds</span><img src="#"><a href="1241148923-super-mario-maker-2ds-mario-maker-2-3ds-mod.html">Super Mario Maker 2DS (Mario Maker 2 3DS mod)</a><br>
+							<a href="../../profile/996211172-sm-artthings.html" title=""><span  style="text-shadow:0px 0px 4px;" class="userlink" title="Sm-ArtThings (996211172) [Normal user]"><img src="../../data/avatars/996211172_1551296122.jpg" alt="" class="minipic" /> <span style="color:hsl(8,100%,80.4%);">S</span><span style="color:hsl(39,100%,80.4%);">m</span><span style="color:hsl(70,100%,80.4%);">-</span><span style="color:hsl(101,100%,80.4%);">A</span><span style="color:hsl(132,100%,80.4%);">r</span><span style="color:hsl(163,100%,80.4%);">t</span><span style="color:hsl(194,100%,80.4%);">T</span><span style="color:hsl(225,100%,80.4%);">h</span><span style="color:hsl(256,100%,80.4%);">i</span><span style="color:hsl(287,100%,80.4%);">n</span><span style="color:hsl(318,100%,80.4%);">g</span><span style="color:hsl(349,100%,80.4%);">s</span></span></a> - 02-15-20, 12:21 am
+						</td></tr>
+											<tr><td>
+							<img src="#"><a href="541068215-modded-nso-files.html">Modded Nso Files</a><br>
+							<a href="../../profile/1425533397-mariopossamato.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MarioPossamato (1425533397) [Normal user]"><img src="../../data/avatars/1425533397_1557510517.png" alt="" class="minipic" /> MarioPossamato</span></a> - 01-31-20, 04:34 pm
+						</td></tr>
+											<tr><td>
+							<img src="../../../files.gamebanana.com/img/ss/gamefiles/530-90_5e2a0fdc3004d.jpg"><a href="476610072-content-pack-2.html">Content_Pack_2</a><br>
+							<a href="../../profile/1425533397-mariopossamato.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MarioPossamato (1425533397) [Normal user]"><img src="../../data/avatars/1425533397_1557510517.png" alt="" class="minipic" /> MarioPossamato</span></a> - 01-24-20, 06:53 pm
+						</td></tr>
+											<tr><td>
+							<img src="#"><a href="1019839269-pickpen-s-smm1-costume-pack.html">Pickpen's SMM1 Costume Pack</a><br>
+							<a href="../../profile/1914564187-pickpen.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Pickpen (1914564187) [Normal user]"><img src="../../data/avatars/1914564187_1572292115.jpg" alt="" class="minipic" /> Pickpen</span></a> - 01-14-20, 10:28 pm
+						</td></tr>
+											<tr><td>
+							<img src="#"><a href="822647268-kiylo-cyanboone-in-smm1.html">Kiylo (@CyanBoone) in SMM1</a><br>
+							<a href="../../profile/1914564187-pickpen.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Pickpen (1914564187) [Normal user]"><img src="../../data/avatars/1914564187_1572292115.jpg" alt="" class="minipic" /> Pickpen</span></a> - 01-13-20, 08:51 pm
+						</td></tr>
+									</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table table-bordered table-striped">
+				<thead><tr><th>Most Viewed</th></tr></th>
+				<tbody>
+											<tr><td>
+							 <span class="threadTag" style="background-color: hsl(6, 70%, 40%);">smm2</span><span class="threadTag" style="background-color: hsl(96, 70%, 40%);">nintendo switch</span><img src="#"><a href="397-super-mario-maker-vanilla-revamped.html">Super Mario Maker: Vanilla Revamped</a><br>
+							<a href="../../profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]"><img src="../../data/avatars/109_1572859516.png" alt="" class="minipic" /> Buntendo</span></a> - 12-20-17, 11:02 pm
+						</td></tr>
+											<tr><td>
+							 <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(102, 70%, 40%);">smm2 wip</span><img src="#"><a href="130-super-mario-land-2-six-golden-coins.html">Super Mario Land 2: Six Golden Coins</a><br>
+							<a href="../../profile/66-louiskovskie.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Louiskovskie (66) [Normal user]"><img src="../../data/avatars/66_1514581103.png" alt="" class="minipic" /> Louis Miles</span></a> - 06-29-17, 04:36 pm
+						</td></tr>
+											<tr><td>
+							 <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(102, 70%, 40%);">smm2 wip</span><img src="#"><a href="654-new-super-mario-bros-ds.html">New Super Mario Bros DS</a><br>
+							<a href="../../profile/66-louiskovskie.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Louiskovskie (66) [Normal user]"><img src="../../data/avatars/66_1514581103.png" alt="" class="minipic" /> Louis Miles</span></a> - 07-04-18, 08:21 pm
+						</td></tr>
+											<tr><td>
+							 <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(102, 70%, 40%);">smm2 wip</span><img src="#"><a href="464-super-mario-bros-all-stars.html">Super Mario Bros All-Stars</a><br>
+							<a href="../../profile/66-louiskovskie.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Louiskovskie (66) [Normal user]"><img src="../../data/avatars/66_1514581103.png" alt="" class="minipic" /> Louis Miles</span></a> - 01-15-18, 12:53 pm
+						</td></tr>
+											<tr><td>
+							 <span class="threadTag" style="background-color: hsl(42, 70%, 40%);">smb1</span><img src="#"><a href="276-the-metro-kingdom-new-donk-city.html">The Metro Kingdom / New Donk City</a><br>
+							<a href="../../profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]"><img src="../../data/avatars/109_1572859516.png" alt="" class="minipic" /> Buntendo</span></a> - 10-19-17, 02:09 am
+						</td></tr>
+									</tbody>
+			</table>
+		</div>
+		<div class="col-sm-4">
+			<table class="table table-bordered table-striped">
+				<thead><tr><th>Most Liked</th></tr></th>
+				<tbody>
+											<tr><td>
+							 <span class="threadTag" style="background-color: hsl(6, 70%, 40%);">smm2</span><span class="threadTag" style="background-color: hsl(96, 70%, 40%);">nintendo switch</span><img src="#"><a href="397-super-mario-maker-vanilla-revamped.html">Super Mario Maker: Vanilla Revamped</a><br>
+							<a href="../../profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]"><img src="../../data/avatars/109_1572859516.png" alt="" class="minipic" /> Buntendo</span></a> - 12-20-17, 11:02 pm
+						</td></tr>
+											<tr><td>
+							 <span class="threadTag" style="background-color: hsl(42, 70%, 40%);">smb1</span><img src="#"><a href="276-the-metro-kingdom-new-donk-city.html">The Metro Kingdom / New Donk City</a><br>
+							<a href="../../profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]"><img src="../../data/avatars/109_1572859516.png" alt="" class="minipic" /> Buntendo</span></a> - 10-19-17, 02:09 am
+						</td></tr>
+											<tr><td>
+							 <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(102, 70%, 40%);">smm2 wip</span><img src="#"><a href="130-super-mario-land-2-six-golden-coins.html">Super Mario Land 2: Six Golden Coins</a><br>
+							<a href="../../profile/66-louiskovskie.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Louiskovskie (66) [Normal user]"><img src="../../data/avatars/66_1514581103.png" alt="" class="minipic" /> Louis Miles</span></a> - 06-29-17, 04:36 pm
+						</td></tr>
+											<tr><td>
+							<img src="#"><a href="125-navigation-rules.html">Navigation Rules</a><br>
+							<a href="../../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> - 06-25-17, 07:53 pm
+						</td></tr>
+											<tr><td>
+							 <span class="threadTag" style="background-color: hsl(21, 70%, 40%);">wii u</span><span class="threadTag" style="background-color: hsl(102, 70%, 40%);">smm2 wip</span><img src="#"><a href="654-new-super-mario-bros-ds.html">New Super Mario Bros DS</a><br>
+							<a href="../../profile/66-louiskovskie.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Louiskovskie (66) [Normal user]"><img src="../../data/avatars/66_1514581103.png" alt="" class="minipic" /> Louis Miles</span></a> - 07-04-18, 08:21 pm
+						</td></tr>
+									</tbody>
+			</table>
+		</div>
+	</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../../depot.html">Depot</a></li>
+											</ol>
+								</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../../online.html" class="btn btn-link">Online Users</a>
+		<a href="../../records.html" class="btn btn-link">Records</a>
+		<a href="../../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../../js/timeago.js"></script>
+		<script src="../../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../../js/bootstrap.js"></script>
+        <script src="../../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/depot/hacks/448-NSMBU Snow theme (Paused once I get mu PC back from assist.) by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 08:27:03 GMT -->
+</html>

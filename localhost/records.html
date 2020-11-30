@@ -1,0 +1,800 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/records by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:10:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Records &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/mdb.css">
+		<script src="../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/minicon.png" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="manifest" href="API/manifest.php" />
+        <meta name="description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" />
+        <meta name="keywords" content="Mario, Super Mario, Super Mario Maker, Super Mario Maker 2, Super Mario Maker Mod, Super Mario Maker Modding, SMM Mod, SMM Modding, Super Mario Maker 2 Mod, Super Mario Maker 2 Modding, SMM2 Mod, SMM2 Modding, Super Mario Maker for Nintendo 3DS Mod, Super Mario Maker for Nintendo 3DS modding, SMM3DS Mod, SMM3DS Modding" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Records &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="Records &amp;raquo; Mario Making Mods" /><meta property="og:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" /> <meta name="og:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Records &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="Welcome to Mario Making Mods, the go-to place for Super Mario Maker series modding!" />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="css/common.css" />
+        <link rel="stylesheet" href="css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/tricks.js"></script>
+        <script src="js/jscolor.js" async></script>
+        <script src="../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="index.html">
+				<img id="theme_banner" src="img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="records.html">Records</a></li>
+											</ol>
+								</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<table class="table table-bordered table-striped">
+	<thead><tr><th colspan="2">Highest Numbers</th></tr></thead>
+	<tbody>
+					<tr>
+				<td class="cell2">Highest number of posts in 24 hours</td>
+				<td><strong>90</strong>, on Tuesday, May 23rd 2017, 3:42:09 GMT</td>
+			</tr>
+					<tr>
+				<td class="cell2">Highest number of posts in one hour</td>
+				<td><strong>41</strong>, on Sunday, May 28th 2017, 14:17:33 GMT</td>
+			</tr>
+					<tr>
+				<td class="cell2">Highest number of users in five minutes</td>
+				<td><strong>9</strong>, on Friday, May 19th 2017, 18:49:39 GMT<br><a href="profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]"><img src="data/avatars/5_1517641935.png" alt="" class="minipic" /> MasterVermilli0n</span></a>, <a href="profile/6-destroyerxl44.html" title=""><span  style="color: #97ACEF;" class="userlink" title="DestroyerXL44 (6) [Normal user]"><img src="data/avatars/6_1524146725.png" alt="" class="minipic" /> DestroyerXL44</span></a>, <a href="profile/3-jedayoshi.html" title=""><span  style="color: #97ACEF;" class="userlink" title="JeDaYoshi (3) [Normal user]"><img src="data/avatars/3_1581352635.png" alt="" class="minipic" /> JeDaYoshi</span></a>, <a href="profile/8-luzifer.html" title=""><span  style="color: #97ACEF;" class="userlink" title="Luzifer (8) [Normal user]"><img src="data/avatars/8_1495138552.gif" alt="" class="minipic" /> Luzifer</span></a>, <a href="profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a>, <a href="profile/15-miky88.html" title=""><span  style="color: #7C60B0;" class="userlink" title="Miky88 (15) [Normal user]"><img src="data/avatars/15_1495219680.png" alt="" class="minipic" /> Miky88</span></a>, <a href="profile/14-moonlightcapital.html" title=""><span  style="color: #97ACEF;" class="userlink" title="MoonlightCapital (14) [Normal user]"><img src="data/avatars/14_1517928889.png" alt="" class="minipic" /> MoonlightCapital</span></a>, <a href="profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a>, <a href="profile/4-zachabossaloler.html" title=""><span  style="color: #97ACEF;" class="userlink" title="zachabossaloler (4) [Normal user]"><img src="data/avatars/4_1495118407.png" alt="" class="minipic" /> zachabossaloler</span></a></td>
+			</tr>
+					<tr>
+				<td class="cell2">Average age of members</td>
+				<td>January 18, 2001 (19 years old)</td>
+			</tr>
+			</tbody>
+</table>
+
+<table class="table table-bordered table-striped">
+	<tbody>
+		<tr class="header0">
+			<th colspan="7" style="cursor:pointer;" onclick="$('#fulltables').toggle();">
+				Table Status (click to toggle details)
+			</th>
+		</tr>
+		<tr class="header1">
+			<th width="15%">Name</th>
+			<th width="14%">Rows</th>
+			<th width="14%">Avg. data/row</th>
+			<th width="14%">Data size</th>
+			<th width="14%">Index size</th>
+			<th width="14%">Unused data</th>
+			<th width="14%">Total size</th>
+		</tr>
+	</tbody>
+	<tbody id="fulltables" style="display:none;">
+					<tr>
+				<td class="cell2">badges</td>
+				<td>77</td>
+				<td>61</td>
+				<td>4,760</td>
+				<td>8,192</td>
+				<td>0</td>
+				<td>12,952</td>
+			</tr>
+					<tr>
+				<td class="cell2">blockedlayouts</td>
+				<td>44</td>
+				<td>9</td>
+				<td>396</td>
+				<td>2,048</td>
+				<td>0</td>
+				<td>2,444</td>
+			</tr>
+					<tr>
+				<td class="cell2">calendar</td>
+				<td>6</td>
+				<td>2,730</td>
+				<td>16,384</td>
+				<td>0</td>
+				<td>0</td>
+				<td>16,384</td>
+			</tr>
+					<tr>
+				<td class="cell2">categories</td>
+				<td>7</td>
+				<td>29</td>
+				<td>208</td>
+				<td>2,048</td>
+				<td>0</td>
+				<td>2,256</td>
+			</tr>
+					<tr>
+				<td class="cell2">chat</td>
+				<td>0</td>
+				<td>0</td>
+				<td>16,384</td>
+				<td>0</td>
+				<td>0</td>
+				<td>16,384</td>
+			</tr>
+					<tr>
+				<td class="cell2">chat_login_details</td>
+				<td>0</td>
+				<td>0</td>
+				<td>16,384</td>
+				<td>0</td>
+				<td>0</td>
+				<td>16,384</td>
+			</tr>
+					<tr>
+				<td class="cell2">enabledplugins</td>
+				<td>6</td>
+				<td>20</td>
+				<td>124</td>
+				<td>8,192</td>
+				<td>0</td>
+				<td>8,316</td>
+			</tr>
+					<tr>
+				<td class="cell2">favorites</td>
+				<td>93</td>
+				<td>9</td>
+				<td>837</td>
+				<td>4,096</td>
+				<td>0</td>
+				<td>4,933</td>
+			</tr>
+					<tr>
+				<td class="cell2">forums</td>
+				<td>26</td>
+				<td>121</td>
+				<td>3,164</td>
+				<td>5,120</td>
+				<td>0</td>
+				<td>8,284</td>
+			</tr>
+					<tr>
+				<td class="cell2">guests</td>
+				<td>1</td>
+				<td>92</td>
+				<td>352</td>
+				<td>4,096</td>
+				<td>260</td>
+				<td>4,448</td>
+			</tr>
+					<tr>
+				<td class="cell2">ignoredforums</td>
+				<td>9</td>
+				<td>9</td>
+				<td>81</td>
+				<td>2,048</td>
+				<td>0</td>
+				<td>2,129</td>
+			</tr>
+					<tr>
+				<td class="cell2">ip2c</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1,024</td>
+				<td>0</td>
+				<td>1,024</td>
+			</tr>
+					<tr>
+				<td class="cell2">ipbans</td>
+				<td>56</td>
+				<td>46</td>
+				<td>2,616</td>
+				<td>5,120</td>
+				<td>0</td>
+				<td>7,736</td>
+			</tr>
+					<tr>
+				<td class="cell2">itemcateg</td>
+				<td>9</td>
+				<td>54</td>
+				<td>488</td>
+				<td>2,048</td>
+				<td>0</td>
+				<td>2,536</td>
+			</tr>
+					<tr>
+				<td class="cell2">items</td>
+				<td>201</td>
+				<td>84</td>
+				<td>17,004</td>
+				<td>8,192</td>
+				<td>0</td>
+				<td>25,196</td>
+			</tr>
+					<tr>
+				<td class="cell2">misc</td>
+				<td>1</td>
+				<td>116</td>
+				<td>116</td>
+				<td>1,024</td>
+				<td>0</td>
+				<td>1,140</td>
+			</tr>
+					<tr>
+				<td class="cell2">moodavatars</td>
+				<td>108</td>
+				<td>28</td>
+				<td>3,092</td>
+				<td>7,168</td>
+				<td>0</td>
+				<td>10,260</td>
+			</tr>
+					<tr>
+				<td class="cell2">notifications</td>
+				<td>111</td>
+				<td>28</td>
+				<td>3,144</td>
+				<td>11,264</td>
+				<td>0</td>
+				<td>14,408</td>
+			</tr>
+					<tr>
+				<td class="cell2">nuked</td>
+				<td>22</td>
+				<td>744</td>
+				<td>16,384</td>
+				<td>0</td>
+				<td>0</td>
+				<td>16,384</td>
+			</tr>
+					<tr>
+				<td class="cell2">passmatches</td>
+				<td>37</td>
+				<td>32</td>
+				<td>1,204</td>
+				<td>1,024</td>
+				<td>0</td>
+				<td>2,228</td>
+			</tr>
+					<tr>
+				<td class="cell2">permissions</td>
+				<td>522</td>
+				<td>27</td>
+				<td>14,560</td>
+				<td>46,080</td>
+				<td>0</td>
+				<td>60,640</td>
+			</tr>
+					<tr>
+				<td class="cell2">pm_access</td>
+				<td>0</td>
+				<td>0</td>
+				<td>16,384</td>
+				<td>65,536</td>
+				<td>0</td>
+				<td>81,920</td>
+			</tr>
+					<tr>
+				<td class="cell2">pm_folders</td>
+				<td>0</td>
+				<td>0</td>
+				<td>16,384</td>
+				<td>65,536</td>
+				<td>0</td>
+				<td>81,920</td>
+			</tr>
+					<tr>
+				<td class="cell2">pm_foldersread</td>
+				<td>0</td>
+				<td>0</td>
+				<td>16,384</td>
+				<td>0</td>
+				<td>0</td>
+				<td>16,384</td>
+			</tr>
+					<tr>
+				<td class="cell2">pm_posts</td>
+				<td>0</td>
+				<td>0</td>
+				<td>16,384</td>
+				<td>65,536</td>
+				<td>0</td>
+				<td>81,920</td>
+			</tr>
+					<tr>
+				<td class="cell2">pm_ratings</td>
+				<td>0</td>
+				<td>0</td>
+				<td>16,384</td>
+				<td>32,768</td>
+				<td>0</td>
+				<td>49,152</td>
+			</tr>
+					<tr>
+				<td class="cell2">pm_threads</td>
+				<td>0</td>
+				<td>0</td>
+				<td>16,384</td>
+				<td>32,768</td>
+				<td>0</td>
+				<td>49,152</td>
+			</tr>
+					<tr>
+				<td class="cell2">pm_threadsread</td>
+				<td>0</td>
+				<td>0</td>
+				<td>16,384</td>
+				<td>16,384</td>
+				<td>0</td>
+				<td>32,768</td>
+			</tr>
+					<tr>
+				<td class="cell2">pmsg</td>
+				<td>0</td>
+				<td>0</td>
+				<td>16,384</td>
+				<td>49,152</td>
+				<td>0</td>
+				<td>65,536</td>
+			</tr>
+					<tr>
+				<td class="cell2">pmsgs</td>
+				<td>816</td>
+				<td>39</td>
+				<td>32,504</td>
+				<td>52,224</td>
+				<td>0</td>
+				<td>84,728</td>
+			</tr>
+					<tr>
+				<td class="cell2">pmsgs_text</td>
+				<td>818</td>
+				<td>441</td>
+				<td>361,384</td>
+				<td>10,240</td>
+				<td>0</td>
+				<td>371,624</td>
+			</tr>
+					<tr>
+				<td class="cell2">poll</td>
+				<td>71</td>
+				<td>48</td>
+				<td>3,412</td>
+				<td>2,048</td>
+				<td>0</td>
+				<td>5,460</td>
+			</tr>
+					<tr>
+				<td class="cell2">poll_choices</td>
+				<td>318</td>
+				<td>30</td>
+				<td>9,712</td>
+				<td>11,264</td>
+				<td>0</td>
+				<td>20,976</td>
+			</tr>
+					<tr>
+				<td class="cell2">pollvotes</td>
+				<td>320</td>
+				<td>13</td>
+				<td>4,160</td>
+				<td>12,288</td>
+				<td>0</td>
+				<td>16,448</td>
+			</tr>
+					<tr>
+				<td class="cell2">post_radar</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1,024</td>
+				<td>0</td>
+				<td>1,024</td>
+			</tr>
+					<tr>
+				<td class="cell2">posticons</td>
+				<td>30</td>
+				<td>26</td>
+				<td>800</td>
+				<td>2,048</td>
+				<td>0</td>
+				<td>2,848</td>
+			</tr>
+					<tr>
+				<td class="cell2">postplusones</td>
+				<td>356</td>
+				<td>9</td>
+				<td>3,204</td>
+				<td>17,408</td>
+				<td>0</td>
+				<td>20,612</td>
+			</tr>
+					<tr>
+				<td class="cell2">posts</td>
+				<td>6229</td>
+				<td>42</td>
+				<td>266,560</td>
+				<td>459,776</td>
+				<td>0</td>
+				<td>726,336</td>
+			</tr>
+					<tr>
+				<td class="cell2">posts_text</td>
+				<td>8886</td>
+				<td>566</td>
+				<td>5,031,736</td>
+				<td>3,269,632</td>
+				<td>0</td>
+				<td>8,301,368</td>
+			</tr>
+					<tr>
+				<td class="cell2">queryerrors</td>
+				<td>3</td>
+				<td>897</td>
+				<td>2,692</td>
+				<td>2,048</td>
+				<td>0</td>
+				<td>4,740</td>
+			</tr>
+					<tr>
+				<td class="cell2">ranks</td>
+				<td>277</td>
+				<td>65</td>
+				<td>18,036</td>
+				<td>1,024</td>
+				<td>0</td>
+				<td>19,060</td>
+			</tr>
+					<tr>
+				<td class="cell2">ranksets</td>
+				<td>5</td>
+				<td>24</td>
+				<td>124</td>
+				<td>2,048</td>
+				<td>0</td>
+				<td>2,172</td>
+			</tr>
+					<tr>
+				<td class="cell2">ref</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1,024</td>
+				<td>0</td>
+				<td>1,024</td>
+			</tr>
+					<tr>
+				<td class="cell2">reports</td>
+				<td>24550</td>
+				<td>114</td>
+				<td>2,812,712</td>
+				<td>1,024</td>
+				<td>0</td>
+				<td>2,813,736</td>
+			</tr>
+					<tr>
+				<td class="cell2">rpgchat</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1,024</td>
+				<td>0</td>
+				<td>1,024</td>
+			</tr>
+					<tr>
+				<td class="cell2">rpgrooms</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>1,024</td>
+				<td>0</td>
+				<td>1,024</td>
+			</tr>
+					<tr>
+				<td class="cell2">searchcache</td>
+				<td>2832</td>
+				<td>1,738</td>
+				<td>4,924,440</td>
+				<td>164,864</td>
+				<td>0</td>
+				<td>5,089,304</td>
+			</tr>
+					<tr>
+				<td class="cell2">secondarygroups</td>
+				<td>36</td>
+				<td>9</td>
+				<td>324</td>
+				<td>2,048</td>
+				<td>0</td>
+				<td>2,372</td>
+			</tr>
+					<tr>
+				<td class="cell2">sessions</td>
+				<td>0</td>
+				<td>0</td>
+				<td>0</td>
+				<td>4,096</td>
+				<td>0</td>
+				<td>4,096</td>
+			</tr>
+					<tr>
+				<td class="cell2">settings</td>
+				<td>69</td>
+				<td>102</td>
+				<td>7,048</td>
+				<td>8,192</td>
+				<td>0</td>
+				<td>15,240</td>
+			</tr>
+					<tr>
+				<td class="cell2">smilies</td>
+				<td>57</td>
+				<td>38</td>
+				<td>2,184</td>
+				<td>2,048</td>
+				<td>0</td>
+				<td>4,232</td>
+			</tr>
+					<tr>
+				<td class="cell2">spieslog</td>
+				<td>517</td>
+				<td>13</td>
+				<td>6,721</td>
+				<td>15,360</td>
+				<td>0</td>
+				<td>22,081</td>
+			</tr>
+					<tr>
+				<td class="cell2">threads</td>
+				<td>988</td>
+				<td>129</td>
+				<td>128,412</td>
+				<td>122,880</td>
+				<td>0</td>
+				<td>251,292</td>
+			</tr>
+					<tr>
+				<td class="cell2">threadsread</td>
+				<td>4</td>
+				<td>13</td>
+				<td>52</td>
+				<td>2,048</td>
+				<td>0</td>
+				<td>2,100</td>
+			</tr>
+					<tr>
+				<td class="cell2">timezones</td>
+				<td>465</td>
+				<td>105</td>
+				<td>49,152</td>
+				<td>0</td>
+				<td>0</td>
+				<td>49,152</td>
+			</tr>
+					<tr>
+				<td class="cell2">uploadedfiles</td>
+				<td>237</td>
+				<td>107</td>
+				<td>25,592</td>
+				<td>21,504</td>
+				<td>0</td>
+				<td>47,096</td>
+			</tr>
+					<tr>
+				<td class="cell2">usercomments</td>
+				<td>1806</td>
+				<td>61</td>
+				<td>111,808</td>
+				<td>66,560</td>
+				<td>0</td>
+				<td>178,368</td>
+			</tr>
+					<tr>
+				<td class="cell2">usergroups</td>
+				<td>8</td>
+				<td>62</td>
+				<td>496</td>
+				<td>2,048</td>
+				<td>0</td>
+				<td>2,544</td>
+			</tr>
+					<tr>
+				<td class="cell2">users</td>
+				<td>867</td>
+				<td>452</td>
+				<td>391,988</td>
+				<td>89,088</td>
+				<td>0</td>
+				<td>481,076</td>
+			</tr>
+					<tr>
+				<td class="cell2">usersrpg</td>
+				<td>126</td>
+				<td>63</td>
+				<td>7,938</td>
+				<td>4,096</td>
+				<td>0</td>
+				<td>12,034</td>
+			</tr>
+					<tr>
+				<td class="cell2">wiki_pages</td>
+				<td>16</td>
+				<td>33</td>
+				<td>540</td>
+				<td>4,096</td>
+				<td>0</td>
+				<td>4,636</td>
+			</tr>
+					<tr>
+				<td class="cell2">wiki_pages_text</td>
+				<td>36</td>
+				<td>6,366</td>
+				<td>229,200</td>
+				<td>4,096</td>
+				<td>0</td>
+				<td>233,296</td>
+			</tr>
+				<tr class="header1">
+			<th colspan="7" style="height: 8px;"></th>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr class="cell2">
+			<td class="bold">Total</td>
+			<td>52,079</td>
+			<td>15,844</td>
+			<td>14,681,685</td>
+			<td>0</td>
+			<td>4,806,656</td>
+			<td>14,681,685</td>
+		</tr>
+	</tbody>
+</table>
+
+<table class="table table-bordered">
+	<thead><tr><th>This month's daily stats</th></tr></thead>
+	<tbody><tr><td>
+		<table class="table table-bordered table-striped">
+			<thead><tr>
+				<th>Date</th>
+				<th>Total users</th>
+				<th>Total threads</th>
+				<th>Total posts</th>
+				<th>New users</th>
+				<th>New threads</th>
+				<th>New posts</th>
+			</tr></thead>
+			<tbody>
+							</tbody>
+		</table>
+	</td></tr></tbody>
+</table>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="records.html">Records</a></li>
+											</ol>
+								</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="memberlist.html" class="btn btn-link">Member List</a>
+		<a href="online.html" class="btn btn-link">Online Users</a>
+		<a href="records.html" class="btn btn-link">Records</a>
+		<a href="calendar.html" class="btn btn-link">Calendar</a>
+		<a href="privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="js/timeago.js"></script>
+		<script src="../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/records by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:11:01 GMT -->
+</html>

@@ -1,0 +1,1822 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/thread/8-how-to-make-a-post-layout by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:36:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>How to make a post layout! &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content="A guide on how to make a post layout! First off, you need some basic HTML and CSS knowledge, to make a decent enough layout so that it is readable...." />
+        <meta name="keywords" content="how make post layout" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="How to make a post layout! &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="How to make a post layout! &amp;raquo; Mario Making Mods" /><meta property="og:description" content="A guide on how to make a post layout! First off, you need some basic HTML and CSS knowledge, to make a decent enough layout so that it is readable...." /> <meta name="og:description" content="A guide on how to make a post layout! First off, you need some basic HTML and CSS knowledge, to make a decent enough layout so that it is readable...." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="How to make a post layout! &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="A guide on how to make a post layout! First off, you need some basic HTML and CSS knowledge, to make a decent enough layout so that it is readable...." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/2-mario-making-mods-talk.html">Mario Making Mods Talk</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="8-how-to-make-a-post-layout.html">How to make a post layout!</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="27.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dHow%2bto%2bmake%2ba%2bpost%2blayout%21%26url%3dhttp_/localhost/thread/8/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>			
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			<li class="page-item active"><span class="page-link">1 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="8-how-to-make-a-post-layout704a.html?from=20">2</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="8-how-to-make-a-post-layout704a.html?from=20" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="8-how-to-make-a-post-layout704a.html?from=20" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	    
+
+    	<table class="table table-striped" id="post23">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Banned permanently: Jamie Rereg</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 05-19-17<br>
+						From: England<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/11-icefairyamy/posts.html" title="List IceFairyAmy's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/11-icefairyamy/threads.html" title="List IceFairyAmy's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_23">
+				A guide on how to make a post layout!<br />
+<br />
+First off, you need some basic HTML and CSS knowledge, to make a decent enough layout so that it is readable. :)<br />
+<br />
+You need to put in the post header:<br />
+<pre><code class="nohighlight">&lt;style&gt;
+~~layout code go here~~
+&lt;/style&gt;
+</code></pre><br />
+Next, we need to add the correct classes. The tilde will be used in place of your user , please make sure you get this correct for each class or it will screw up other people's layouts when they post in the same thread and page.<br />
+<br />
+<strong>.mainbar~</strong> - Controls the background and general elements of the post.<br />
+<strong>.sidebar~</strong> - Controls the sidebar of your posts.<br />
+<strong>.topbar~_1</strong> - Controls the left side where your username is displayed on the top bar.<br />
+<strong>.topbar~_2</strong> - Controls the right side where the 'Link' 'Quote' and post date etc. are listed on the top bar.<br />
+<br />
+Additions to .mainbar~, these can be placed by writing '.mainbar~ .newclass' in your post layout.<br />
+<br />
+<strong>.quoteheader</strong> - Controls the 'Posted by' on the quote header.<br />
+<strong>.quotecontent</strong> - Controls the actual quote's contents.<br />
+<strong>div.codeblock</strong> - Controls code BBCode tag blocks.<br />
+<strong>.spoilerbutton</strong> - Controls the spoiler tag button.<br />
+<strong>.spoiled</strong> - Controls the content inside a spoiler.<br />
+<br />
+Another thing you can do is add a Post Box with a DIV, you can do this by making a class of whatever name you want, setting a custom margin and padding, and then setting up the rest of it yourself. Remember to add after the style tag your div class, and close it in the footer.<br />
+<br />
+Here's an example code to help you out, it is the same as the code on my layout.<br />
+Header:<br />
+<pre><code class="nohighlight">&lt;style&gt;
+.mainbar1 {
+background:url(http://i.pi.gy/WRmP.jpg) center top !important;
+background-width:100% !important;
+color:white;
+font-family:Tahoma,sans-serif;
+border: 3px solid #066;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+}
+
+.sidebar1 {
+background:url(/themes/bstruct/back.png) repeat !important;
+color:white;
+font-family:Tahoama,sans-serif;
+border: 3px solid #066;
+text-align:center;
+}
+
+.topbar1_1, .topbar1_2 {
+background: #066 url(/themes/glossy/generic_gloss.svg) repeat !important;
+background-size:100% 100%;
+color:white;
+font-family:Tahoma,sans-serif;
+}
+
+.topbar1_1 {
+text-align:center;
+}
+
+.mainbar1 div.codeblock {
+background:rgba(0,0,0,0.2);
+color:white;
+}
+
+.postbox1 {
+margin:20px;
+border:3px solid #066;
+background:rgba(0,102,102,0.65);
+}
+&lt;/style&gt;
+&lt;div class=&quot;postbox1&quot;&gt;
+</code></pre>Footer:<br />
+<pre><code class="nohighlight">&lt;/div&gt;&lt;div class=&quot;postbox1&quot;&gt;[user 1]&lt;/div&gt;</code></pre><br />
+Make sure to disable signature separator and then set 'Apply layout to entire post box'.<br />
+<br />
+Tips:<br />
+* Make sure your layout is readable on all themes. This is usually done by manually forcing a colour.<br />
+* Don't use GIFs in your background.<br />
+* Keep signature at around 200px or smaller in height.<br />
+* Feel free to customise it to the max!<br />
+* Check your layout is fully compatible with Google Chrome and Mozilla Firefox, since these are the most-conforming to web standards.<br />
+* Don't use fixed backgrounds as they lag the page on some browsers such as Safari and look odd on mobile devices.<br />
+<br />
+Hope this helps! :D<br />
+(Note that the reason I didn't use my ID here on the example is because I copied it from my own board.)
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_23">
+									Posted on 05-19-17, 05:27 pm
+										 (rev. 3 by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 06-29-17, 02:58 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_23">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layout520c.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bIceFairyAmy)%2bin%2b__%26url%3dhttp_/localhost/post/23/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 2</button>
+													<button class="btn btn-primary">#23</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post802">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/47_1496949701.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/47-theninja1000.html" title=""><span  style="color: #888888;" class="userlink" title="theninja1000 (47) [Banned]">theninja1000</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Check bio for ban reason</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 06-06-17<br>
+						From: UK<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/47-theninja1000/posts.html" title="List theninja1000's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/47-theninja1000/threads.html" title="List theninja1000's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_802">
+				You should show others how to make a div post layout for if they're on a AcmlmBoard 2.064 board like K64. Or how to do the style and div like in my post layout.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_802">
+									Posted on 06-08-17, 06:41 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_802">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layout8567.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2btheninja1000)%2bin%2b__%26url%3dhttp_/localhost/post/802/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#802</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post811">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar1" id="post_811">
+				<style>td.topbar1_1 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+text-align: center;
+border-top-left-radius: 25px;
+}td.topbar1_1 > a > span {
+     color:white !important;
+}td.topbar1_2 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+border-top-right-radius: 25px;
+}td.topbar1_2 a {
+color: #fff !important;
+}.mainbar1 {
+  background: url('../../i.imgur.com/1K5VeC8.png') no-repeat !important;
+  background=color: #090909;
+  padding: 0 !important;
+  background-color: #000 !important;
+  font-family: 'Arial', sans-serif;
+  border-bottom-right-radius: 25px;
+}.sidebar1 {
+  background-color: #090909 !important;
+  text-align: center !important;
+  color: #E6E6E6 !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  border-bottom-left-radius: 25px;
+}.sidebar1 div.smallFonts > img:nth-child(4):hover {
+border-radius: 2%;
+box-shadow: 7px 7px 30px #000000 !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4) { 
+box-shadow: 5px 5px 40px #000000 !important;
+border-radius: 50%;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4):active {
+border-radius: 0%;
+box-shadow: 0px 0px 5px #FFFFFF !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+.mainbar1 a:link {color: gray;}
+.mainbar1 a:visited {color: gray;}
+.mainbar1 a:active {color: gray;}
+.mainbar1 a:hover {color: gray;} 
+.mainbar1 > div.post {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+} .mainbar1 > div.sig {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+}
+</style><div class="post"><a href="../profile/47-theninja1000.html" title=""><span  style="color: #888888;" class="userlink" title="theninja1000 (47) [Banned]"><img src="../data/avatars/47_1496949701.png" alt="" class="minipic" /> theninja1000</span></a> No. This is supposed to be on how to make a post layout <strong>for our forum</strong>.<br></div><div class="sig">Old 3DS XL info:<br />
+I used to have a 3DSafe A9LH V11.3.0-36U with Luma in my CTRNAND. Since ReiNAND Reibooted and Re-Reileased, I "switch"ed back.<br />
+Right now, I have boot9strap with Luma 8.0 as my CFW. Though, I'd like to see other CFW's for B9S.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_811">
+									Posted on 06-08-17, 09:02 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_811">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layout0fa5.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/811/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 1</button>
+													<button class="btn btn-primary">#811</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post816">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/47_1496949701.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/47-theninja1000.html" title=""><span  style="color: #888888;" class="userlink" title="theninja1000 (47) [Banned]">theninja1000</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Check bio for ban reason</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 06-06-17<br>
+						From: UK<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/47-theninja1000/posts.html" title="List theninja1000's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/47-theninja1000/threads.html" title="List theninja1000's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_816">
+				I was saying it like if users wanted to do it a different way, not towards those boards.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_816">
+									Posted on 06-08-17, 09:19 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_816">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layout6e16.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2btheninja1000)%2bin%2b__%26url%3dhttp_/localhost/post/816/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#816</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post817">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar1" id="post_817">
+				<style>td.topbar1_1 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+text-align: center;
+border-top-left-radius: 25px;
+}td.topbar1_1 > a > span {
+     color:white !important;
+}td.topbar1_2 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+border-top-right-radius: 25px;
+}td.topbar1_2 a {
+color: #fff !important;
+}.mainbar1 {
+  background: url('../../i.imgur.com/1K5VeC8.png') no-repeat !important;
+  background=color: #090909;
+  padding: 0 !important;
+  background-color: #000 !important;
+  font-family: 'Arial', sans-serif;
+  border-bottom-right-radius: 25px;
+}.sidebar1 {
+  background-color: #090909 !important;
+  text-align: center !important;
+  color: #E6E6E6 !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  border-bottom-left-radius: 25px;
+}.sidebar1 div.smallFonts > img:nth-child(4):hover {
+border-radius: 2%;
+box-shadow: 7px 7px 30px #000000 !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4) { 
+box-shadow: 5px 5px 40px #000000 !important;
+border-radius: 50%;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4):active {
+border-radius: 0%;
+box-shadow: 0px 0px 5px #FFFFFF !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+.mainbar1 a:link {color: gray;}
+.mainbar1 a:visited {color: gray;}
+.mainbar1 a:active {color: gray;}
+.mainbar1 a:hover {color: gray;} 
+.mainbar1 > div.post {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+} .mainbar1 > div.sig {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+}
+</style><div class="post">Oh. Well um, IDK how to do it. Maybe you can, if you want to.<br></div><div class="sig">Old 3DS XL info:<br />
+I used to have a 3DSafe A9LH V11.3.0-36U with Luma in my CTRNAND. Since ReiNAND Reibooted and Re-Reileased, I "switch"ed back.<br />
+Right now, I have boot9strap with Luma 8.0 as my CFW. Though, I'd like to see other CFW's for B9S.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_817">
+									Posted on 06-08-17, 09:26 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_817">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layoutd9f2.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/817/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#817</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post819">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/47_1496949701.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/47-theninja1000.html" title=""><span  style="color: #888888;" class="userlink" title="theninja1000 (47) [Banned]">theninja1000</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Check bio for ban reason</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 06-06-17<br>
+						From: UK<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/47-theninja1000/posts.html" title="List theninja1000's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/47-theninja1000/threads.html" title="List theninja1000's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_819">
+				Look at my post layout for an example. I know that Tierage did a tutorial on it at K64.<br />
+<br />
+Example (This is just the div, not all of my post layout)<br />
+<pre><code class="nohighlight">&lt;div style=&quot;background:#601106 url(http://s01.shiftdelete.net/img/general_b/16-08/04/super-smash-brother-u-mario-wallpaper-hd.jpg) center top !important;padding:24px;color:#ffffff;min-height:350px;background-size:100% 100%;&quot;&gt;
+&lt;div style=&quot;border: 1px solid #9e2422;outline: 1px solid #9e2422;outline-offset:-3px;padding:10px;max-width:800px;border-radius: 2px;background: rgba(215, 44, 44, 1););&quot;&gt;</code></pre>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_819">
+									Posted on 06-08-17, 09:28 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_819">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layout52cc.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2btheninja1000)%2bin%2b__%26url%3dhttp_/localhost/post/819/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#819</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post985">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Banned permanently: Jamie Rereg</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 05-19-17<br>
+						From: England<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/11-icefairyamy/posts.html" title="List IceFairyAmy's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/11-icefairyamy/threads.html" title="List IceFairyAmy's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_985">
+				You should use a HTTPS-based image host so as to not break HTTPS mode on this website and expose security risks somewhat. Even just element that is loaded from an insecure source will break it.<br />
+<br />
+Not sure why you'd mix style element styling with div styling, however.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_985">
+									Posted on 06-15-17, 06:05 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_985">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layouta6a4.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bIceFairyAmy)%2bin%2b__%26url%3dhttp_/localhost/post/985/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#985</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post992">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/23_1497550914.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/23-dankmemeitthefrog.html" title=""><span  style="color: #7C60B0;" class="userlink" title="DankMemeitTheFrog (23) [Normal user]">FROG</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">That one Bird Thing</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-21-17<br>
+						From: The city of OOF vile<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/23-dankmemeitthefrog/posts-2.html" title="List DankMemeitTheFrog's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/23-dankmemeitthefrog/threads.html" title="List DankMemeitTheFrog's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar23" id="post_992">
+				<style>.mainbar23 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/purple.png"); }
+.sidebar23 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/green.png"); border-right: dashed 2px blue; }
+.topbar23_1 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/green.png"); border-right: dashed 2px blue; border-bottom: solid 2px blue; text-align: center; }
+.topbar23_2 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/green.png"); border-bottom: dashed 2px blue; }
+.topbar23_1 .userlink, .topbar23_2 .userlink {  text-shadow: 1px 1px black; }
+.topbar23_2 .pipemenu a:link, .topbar23_2 .pipemenu a:visited { color: #8fa; }
+.topbar23_2 .pipemenu a:hover, .topbar23_2 .pipemenu a:active { color: ##fff; text-decoration: underline; }
+
+.mainbar23, .sidebar23, .topbar23_1, .topbar23_2 { color: white !important; }
+
+.sidebar23 { text-align: center; }
+
+.topbar23_2 .pipemenu/*, .sidebar23 .smallFonts*/{  visibility: hidden; opacity: 0; transition: visibility 0s 2s, opacity 1s linear; }
+table[class="custompost table23 margin"] { border-style: solid; border-width: 10px; border-color: grey; } 
+
+table[class="custompost table23 margin"]:hover .topbar23_2 .pipemenu{ visibility: visible !important; opacity: 1; transition: opacity 1s linear; }
+/*table[class="custompost table23 margin"]:hover .sidebar23 .smallFonts{ visibility: visible !important; opacity: 1; transition: opacity 1s linear; }*/
+
+div[id="post23"] { margin: 25px; background-color: rgba(59,26,81, 0.5); padding: 15px; border: 5px solid rgb(59, 26, 81); border-radius: 4px; }
+.mainbar23 a { color: orange; }
+.mainbar23 a:hover { color: #ca9ddd; } 
+.mainbar23 div.codeblock { background: black; border: 2px dashed rgb(59,26,81); border-radious: 2px; }
+.mainbar23 button.spoilerbutton { background: purple; text-align: center; border: 2px solid rgb(59,26,81); border-radius: 0px !important; }
+.mainbar23 div.spoiled { background: rgb(59,26,81) !important; border: 2px dashed purple !important; }
+.mainbar23 div.quote { background: rgb(59,26,81); border: 2px dashed purple; }
+</style><div id="post23"><div class="quote"> You should use a HTTPS-based image host so as to not break HTTPS mode on this website and expose security risks somewhat. Even just element that is loaded from an insecure source will break it.<br />
+<br />
+Not sure why you'd mix style element styling with div styling, however. <div class="quote-footer"><a href="8-how-to-make-a-post-layouta6a4.html">Posted by Vanilla Lumina</a></div></div><br />
+I didnt even know this place had https, ive been using plain old http because it still works<br></div><div  id="post23">Error 702: You provided Type C Meme gas when the Meme Machine&trade; required Type B Meme water<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_992">
+									Posted on 06-15-17, 06:36 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_992">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layout6cf8.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bFROG)%2bin%2b__%26url%3dhttp_/localhost/post/992/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#992</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1005">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Banned permanently: Jamie Rereg</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 05-19-17<br>
+						From: England<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/11-icefairyamy/posts.html" title="List IceFairyAmy's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/11-icefairyamy/threads.html" title="List IceFairyAmy's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1005">
+				Yeah it does, just somebody didn't decided to force HTTPS links by default, which can be done via htaccess somehow.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1005">
+									Posted on 06-16-17, 08:00 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1005">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layoutbf9f.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bIceFairyAmy)%2bin%2b__%26url%3dhttp_/localhost/post/1005/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1005</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1142">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar1" id="post_1142">
+				<style>td.topbar1_1 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+text-align: center;
+border-top-left-radius: 25px;
+}td.topbar1_1 > a > span {
+     color:white !important;
+}td.topbar1_2 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+border-top-right-radius: 25px;
+}td.topbar1_2 a {
+color: #fff !important;
+}.mainbar1 {
+  background: url('../../i.imgur.com/1K5VeC8.png') no-repeat !important;
+  background=color: #090909;
+  padding: 0 !important;
+  background-color: #000 !important;
+  font-family: 'Arial', sans-serif;
+  border-bottom-right-radius: 25px;
+}.sidebar1 {
+  background-color: #090909 !important;
+  text-align: center !important;
+  color: #E6E6E6 !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  border-bottom-left-radius: 25px;
+}.sidebar1 div.smallFonts > img:nth-child(4):hover {
+border-radius: 2%;
+box-shadow: 7px 7px 30px #000000 !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4) { 
+box-shadow: 5px 5px 40px #000000 !important;
+border-radius: 50%;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4):active {
+border-radius: 0%;
+box-shadow: 0px 0px 5px #FFFFFF !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+.mainbar1 a:link {color: gray;}
+.mainbar1 a:visited {color: gray;}
+.mainbar1 a:active {color: gray;}
+.mainbar1 a:hover {color: gray;} 
+.mainbar1 > div.post {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+} .mainbar1 > div.sig {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+}
+</style><div class="post">Yeah, I didn't do it because not every browser has https support.<br></div><div class="sig">Old 3DS XL info:<br />
+I used to have a 3DSafe A9LH V11.3.0-36U with Luma in my CTRNAND. Since ReiNAND Reibooted and Re-Reileased, I "switch"ed back.<br />
+Right now, I have boot9strap with Luma 8.0 as my CFW. Though, I'd like to see other CFW's for B9S.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1142">
+									Posted on 06-25-17, 01:30 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1142">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layout71c6.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/1142/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1142</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1143">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Banned permanently: Jamie Rereg</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 05-19-17<br>
+						From: England<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/11-icefairyamy/posts.html" title="List IceFairyAmy's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/11-icefairyamy/threads.html" title="List IceFairyAmy's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1143">
+				<div class="quote"> Yeah, I didn't do it because not every browser has https support. <div class="quote-footer"><a href="8-how-to-make-a-post-layout71c6.html">Posted by NightYoshi370</a></div></div>Are you trying to cater to IE6 or something? :/<br />
+All browsers support HTTPS except old as crap browsers that are mostly used by computer illiterates and spambots.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1143">
+									Posted on 06-25-17, 03:09 pm
+										 (rev. 1 by <a href="../profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a> on 06-25-17, 03:10 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1143">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layoutdde9.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bIceFairyAmy)%2bin%2b__%26url%3dhttp_/localhost/post/1143/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1143</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1144">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/23_1497550914.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/23-dankmemeitthefrog.html" title=""><span  style="color: #7C60B0;" class="userlink" title="DankMemeitTheFrog (23) [Normal user]">FROG</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">That one Bird Thing</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-21-17<br>
+						From: The city of OOF vile<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/23-dankmemeitthefrog/posts-2.html" title="List DankMemeitTheFrog's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/23-dankmemeitthefrog/threads.html" title="List DankMemeitTheFrog's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar23" id="post_1144">
+				<style>.mainbar23 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/purple.png"); }
+.sidebar23 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/green.png"); border-right: dashed 2px blue; }
+.topbar23_1 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/green.png"); border-right: dashed 2px blue; border-bottom: solid 2px blue; text-align: center; }
+.topbar23_2 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/green.png"); border-bottom: dashed 2px blue; }
+.topbar23_1 .userlink, .topbar23_2 .userlink {  text-shadow: 1px 1px black; }
+.topbar23_2 .pipemenu a:link, .topbar23_2 .pipemenu a:visited { color: #8fa; }
+.topbar23_2 .pipemenu a:hover, .topbar23_2 .pipemenu a:active { color: ##fff; text-decoration: underline; }
+
+.mainbar23, .sidebar23, .topbar23_1, .topbar23_2 { color: white !important; }
+
+.sidebar23 { text-align: center; }
+
+.topbar23_2 .pipemenu/*, .sidebar23 .smallFonts*/{  visibility: hidden; opacity: 0; transition: visibility 0s 2s, opacity 1s linear; }
+table[class="custompost table23 margin"] { border-style: solid; border-width: 10px; border-color: grey; } 
+
+table[class="custompost table23 margin"]:hover .topbar23_2 .pipemenu{ visibility: visible !important; opacity: 1; transition: opacity 1s linear; }
+/*table[class="custompost table23 margin"]:hover .sidebar23 .smallFonts{ visibility: visible !important; opacity: 1; transition: opacity 1s linear; }*/
+
+div[id="post23"] { margin: 25px; background-color: rgba(59,26,81, 0.5); padding: 15px; border: 5px solid rgb(59, 26, 81); border-radius: 4px; }
+.mainbar23 a { color: orange; }
+.mainbar23 a:hover { color: #ca9ddd; } 
+.mainbar23 div.codeblock { background: black; border: 2px dashed rgb(59,26,81); border-radious: 2px; }
+.mainbar23 button.spoilerbutton { background: purple; text-align: center; border: 2px solid rgb(59,26,81); border-radius: 0px !important; }
+.mainbar23 div.spoiled { background: rgb(59,26,81) !important; border: 2px dashed purple !important; }
+.mainbar23 div.quote { background: rgb(59,26,81); border: 2px dashed purple; }
+</style><div id="post23"><div class="quote"> <div class="quote"> Yeah, I didn't do it because not every browser has https support. <div class="quote-footer"><a href="8-how-to-make-a-post-layout71c6.html">Posted by NightYoshi370</a></div></div>Are you trying to cater to IE6 or something? :/<br />
+All browsers support HTTPS except old as crap browsers that are mostly used by computer illiterates and spambots. <div class="quote-footer"><a href="8-how-to-make-a-post-layoutdde9.html">Posted by Vanilla Lumina</a></div></div><br />
+well, some people might have connection issues with https or are on an older system with old web browsers, windows 3.1 or 95 for example, lol<br></div><div  id="post23">Error 702: You provided Type C Meme gas when the Meme Machine&trade; required Type B Meme water<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1144">
+									Posted on 06-25-17, 03:18 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1144">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layout0cc0.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bFROG)%2bin%2b__%26url%3dhttp_/localhost/post/1144/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1144</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1145">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Banned permanently: Jamie Rereg</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 05-19-17<br>
+						From: England<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/11-icefairyamy/posts.html" title="List IceFairyAmy's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/11-icefairyamy/threads.html" title="List IceFairyAmy's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1145">
+				No one is going to be using those normally. And anything from around 2008 should work with it, heck even IE7 or FF2 would work.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1145">
+									Posted on 06-25-17, 04:17 pm
+										 (rev. 2 by <a href="../profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a> on 06-25-17, 04:17 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1145">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layoutf0d3.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bIceFairyAmy)%2bin%2b__%26url%3dhttp_/localhost/post/1145/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1145</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1148">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/21_1495377995.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/21-gota7.html" title=""><span  style="color: #7C60B0;" class="userlink" title="Gota7 (21) [Normal user]">Star Wolf</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-21-17<br>
+						From: Same as above. ^<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/21-gota7/posts.html" title="List Gota7's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/21-gota7/threads.html" title="List Gota7's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar21" id="post_1148">
+				<style>.mainbar21 {
+background:url(../../a1star.com/images/star--background-seamless-repeating9.html) center top !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+img: src(https://i.imgur.com/uddaCHU.png);
+padding: 30px;
+border-top: 3px solid #8228a3;
+border-right: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius:24px;
+font-weight:bold;
+}
+
+.sidebar21 {
+background:url(../../a1star.com/images/star--background-seamless-repeating9.html) repeat !important;
+color:white;
+border-top: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius: 24px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 115%;
+font-style: italic; text-align:center;
+}
+
+.topbar21_1,.topbar21_2 {
+background:gray url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-radius:20px;
+}
+
+.mainbar21 a,.topbar21_2 a {
+color: #8228a3;
+text-size: 110%;
+}
+
+.mainbar21 .quoteheader {
+background:rgba(197,32,212,0.175);
+border-radius:24px;
+}
+
+.mainbar21 .quotecontent {
+background:rgba(147,12,152,0.175);
+border-radius:24px;
+}
+
+.mainbar21 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+
+.mainbar21 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:3px solid #8228a3;
+border-radius:24px;
+width:100%;
+}
+
+.mainbar21 .spoiled {
+background:rgba(0,0,0,0.5);
+border-right: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius:24px;
+left: 50%;
+margin-right: -50%;
+width:100%;
+}
+
+.postbox21 {
+margin:20px;
+border:3px solid #066;
+background: url(../../i.imgur.com/7d000se.png);border:3px solid #8228a3;border-radius: 24px;padding:24px;max-width:800px;
+}
+</style><div class="postbox21">Thanks for the tutorial! It helped me make a much better layout!<br></div><div class="postbox21" style = "font-size: 69%;font-style: italic; text-align:center;padding:24px;color:white;">Nella carne io sono uno, ma nello spirito, che sono e per sempre saranno sette.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1148">
+									Posted on 06-26-17, 10:04 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1148">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layoute146.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bStar%2bWolf)%2bin%2b__%26url%3dhttp_/localhost/post/1148/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1148</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1163">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/5_6.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Dat weeb NSMBU hacker though :3</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+						From: Not under a rock! :3<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/5-aboood40091/posts.html" title="List aboood40091's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/5-aboood40091/threads.html" title="List aboood40091's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar5" id="post_1163">
+				<style>.mainbar5 {
+background:url(../../i.imgur.com/7OWI9MX.jpg) top center fixed !important;
+background-width:100% !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-right: 2px solid black !important;
+border-bottom-right-radius: 20px !important;
+border-top-right-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+padding: 20px !important;
+}
+
+.sidebar5 {
+background:url(../../upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2000px-Solid_white.svg.png) !important;
+background-size: 80px 60px !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-left: 2px solid black !important;
+border-bottom-left-radius: 20px !important;
+border-top-left-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+font-style: oblique !important;
+font-weight: bold !important;
+padding: 10px !important;
+text-align:center !important;
+}
+
+.topbar5_1 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+text-indent: 10px;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+}
+
+.topbar5_2 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.mainbar5 a,.topbar5_2 a {
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+color: rgb(233,30,99) !important;
+text-align:center !important;
+padding: 1px;
+text-size: 101%;
+}
+
+.mainbar5 .quotecontent {
+background:rgba(0, 0, 0 ,0.175);
+border-radius:15px;
+}
+
+.mainbar5 div.codeblock {
+background:rgb(233,30,99);
+border-radius:15px;
+}
+
+.mainbar5 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:100% !important;
+}
+
+.mainbar5 .spoiled {
+background:rgba(0,0,0,0.675) !important;
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:97.3% !important;
+}
+ 
+.postbox5 {
+margin:20px;
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+padding:10px;
+}
+</style><div class="postbox5"><div class="quote"> <strong>.codeblock</strong> - Controls code BBCode tag blocks. <div class="quote-footer"><a href="8-how-to-make-a-post-layout520c.html">Posted by Vanilla Lumina</a></div></div>It's <strong>dev.codeblock</strong>, Shironeko.<br></div><div class="postbox5" style = "padding:10px;color:white;text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;">Stella is best waifu. :3<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Things I hate about Stella</button><div class="spoiled hidden"><sub>She's just a balloon of fanservice...</sub></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1163">
+									Posted on 06-27-17, 07:31 am
+										 (rev. 1 by <a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]"><img src="../data/avatars/5_1517641935.png" alt="" class="minipic" /> MasterVermilli0n</span></a> on 06-27-17, 07:41 am)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1163">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layout7be9.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMasterVermilli0n)%2bin%2b__%26url%3dhttp_/localhost/post/1163/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1163</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1197">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Banned permanently: Jamie Rereg</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 05-19-17<br>
+						From: England<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/11-icefairyamy/posts.html" title="List IceFairyAmy's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/11-icefairyamy/threads.html" title="List IceFairyAmy's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1197">
+				div.codeblock just selects the divs in .mainbarX called "codeblock", there is no need to do div.codeblock because there aren't any other elements using class codeblock.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1197">
+									Posted on 06-28-17, 11:19 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1197">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layout47d0.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bIceFairyAmy)%2bin%2b__%26url%3dhttp_/localhost/post/1197/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1197</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1200">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/5_4.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Dat weeb NSMBU hacker though :3</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+						From: Not under a rock! :3<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/5-aboood40091/posts.html" title="List aboood40091's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/5-aboood40091/threads.html" title="List aboood40091's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar5" id="post_1200">
+				<style>.mainbar5 {
+background:url(../../i.imgur.com/7OWI9MX.jpg) top center fixed !important;
+background-width:100% !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-right: 2px solid black !important;
+border-bottom-right-radius: 20px !important;
+border-top-right-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+padding: 20px !important;
+}
+
+.sidebar5 {
+background:url(../../upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2000px-Solid_white.svg.png) !important;
+background-size: 80px 60px !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-left: 2px solid black !important;
+border-bottom-left-radius: 20px !important;
+border-top-left-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+font-style: oblique !important;
+font-weight: bold !important;
+padding: 10px !important;
+text-align:center !important;
+}
+
+.topbar5_1 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+text-indent: 10px;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+}
+
+.topbar5_2 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.mainbar5 a,.topbar5_2 a {
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+color: rgb(233,30,99) !important;
+text-align:center !important;
+padding: 1px;
+text-size: 101%;
+}
+
+.mainbar5 .quotecontent {
+background:rgba(0, 0, 0 ,0.175);
+border-radius:15px;
+}
+
+.mainbar5 div.codeblock {
+background:rgb(233,30,99);
+border-radius:15px;
+}
+
+.mainbar5 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:100% !important;
+}
+
+.mainbar5 .spoiled {
+background:rgba(0,0,0,0.675) !important;
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:97.3% !important;
+}
+ 
+.postbox5 {
+margin:20px;
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+padding:10px;
+}
+</style><div class="postbox5"><strong><em>codeblock</em></strong> doesn't even work, Shironeko.<br />
+If it did, I wouldn't have bothered telling you.<br></div><div class="postbox5" style = "padding:10px;color:white;text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;">Stella is best waifu. :3<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Things I hate about Stella</button><div class="spoiled hidden"><sub>She's just a balloon of fanservice...</sub></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1200">
+									Posted on 06-28-17, 11:23 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1200">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layout687e.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMasterVermilli0n)%2bin%2b__%26url%3dhttp_/localhost/post/1200/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1200</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1201">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Banned permanently: Jamie Rereg</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 05-19-17<br>
+						From: England<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/11-icefairyamy/posts.html" title="List IceFairyAmy's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/11-icefairyamy/threads.html" title="List IceFairyAmy's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1201">
+				I thought it was .codeblock. I'll give it a try, though.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1201">
+									Posted on 06-28-17, 03:47 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1201">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layoutc809.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bIceFairyAmy)%2bin%2b__%26url%3dhttp_/localhost/post/1201/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1201</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1217">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/5_2.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Dat weeb NSMBU hacker though :3</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+						From: Not under a rock! :3<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/5-aboood40091/posts.html" title="List aboood40091's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/5-aboood40091/threads.html" title="List aboood40091's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar5" id="post_1217">
+				<style>.mainbar5 {
+background:url(../../i.imgur.com/7OWI9MX.jpg) top center fixed !important;
+background-width:100% !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-right: 2px solid black !important;
+border-bottom-right-radius: 20px !important;
+border-top-right-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+padding: 20px !important;
+}
+
+.sidebar5 {
+background:url(../../upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2000px-Solid_white.svg.png) !important;
+background-size: 80px 60px !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-left: 2px solid black !important;
+border-bottom-left-radius: 20px !important;
+border-top-left-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+font-style: oblique !important;
+font-weight: bold !important;
+padding: 10px !important;
+text-align:center !important;
+}
+
+.topbar5_1 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+text-indent: 10px;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+}
+
+.topbar5_2 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.mainbar5 a,.topbar5_2 a {
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+color: rgb(233,30,99) !important;
+text-align:center !important;
+padding: 1px;
+text-size: 101%;
+}
+
+.mainbar5 .quotecontent {
+background:rgba(0, 0, 0 ,0.175);
+border-radius:15px;
+}
+
+.mainbar5 div.codeblock {
+background:rgb(233,30,99);
+border-radius:15px;
+}
+
+.mainbar5 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:100% !important;
+}
+
+.mainbar5 .spoiled {
+background:rgba(0,0,0,0.675) !important;
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:97.3% !important;
+}
+ 
+.postbox5 {
+margin:20px;
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+padding:10px;
+}
+</style><div class="postbox5">I tried it, didn't work, took me ages to realize that it should be <strong><em>div.codeblock</em></strong>.<br />
+<del>Freaking great.</del><br></div><div class="postbox5" style = "padding:10px;color:white;text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;">Stella is best waifu. :3<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Things I hate about Stella</button><div class="spoiled hidden"><sub>She's just a balloon of fanservice...</sub></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1217">
+									Posted on 06-29-17, 11:29 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1217">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layoutda7d.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMasterVermilli0n)%2bin%2b__%26url%3dhttp_/localhost/post/1217/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1217</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1219">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Banned permanently: Jamie Rereg</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 05-19-17<br>
+						From: England<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/11-icefairyamy/posts.html" title="List IceFairyAmy's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/11-icefairyamy/threads.html" title="List IceFairyAmy's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1219">
+				Someone fix it then. It's awkward as fuck to edit posts on mobile.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1219">
+									Posted on 06-29-17, 02:51 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1219">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="8-how-to-make-a-post-layout75fe.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bIceFairyAmy)%2bin%2b__%26url%3dhttp_/localhost/post/1219/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1219</button>							</div>
+		</td></tr>
+	</table>			
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			<li class="page-item active"><span class="page-link">1 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="8-how-to-make-a-post-layout704a.html?from=20">2</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="8-how-to-make-a-post-layout704a.html?from=20" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="8-how-to-make-a-post-layout704a.html?from=20" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/2-mario-making-mods-talk.html">Mario Making Mods Talk</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="8-how-to-make-a-post-layout.html">How to make a post layout!</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="27.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dHow%2bto%2bmake%2ba%2bpost%2blayout%21%26url%3dhttp_/localhost/thread/8/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/thread/8-how-to-make-a-post-layout by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 06:37:12 GMT -->
+</html>

@@ -1,0 +1,3037 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/thread/126-post-layouts-guide?from=20 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:51:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>Post Layouts Guide &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content="Since I'm bored, I'll make custom layouts for people. Please be suppperr specific though. If you need an example of my work, look at my layouts in this thread. EDIT:..." />
+        <meta name="keywords" content="post layouts guide" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="Post Layouts Guide &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="Post Layouts Guide &amp;raquo; Mario Making Mods" /><meta property="og:description" content="Since I'm bored, I'll make custom layouts for people. Please be suppperr specific though. If you need an example of my work, look at my layouts in this thread. EDIT:..." /> <meta name="og:description" content="Since I'm bored, I'll make custom layouts for people. Please be suppperr specific though. If you need an example of my work, look at my layouts in this thread. EDIT:..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Post Layouts Guide &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="Since I'm bored, I'll make custom layouts for people. Please be suppperr specific though. If you need an example of my work, look at my layouts in this thread. EDIT:..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/2-mario-making-mods-talk.html">Mario Making Mods Talk</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="126-post-layouts-guide.html">Post Layouts Guide</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="101.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="128.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dPost%2bLayouts%2bGuide%26url%3dhttp_/localhost/thread/126/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>			
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			
+			<li class="page-item first">
+				<a class="page-link" href="126-post-layouts-guide.html" aria-label="First">
+					<span aria-hidden="true">&#x00AB;</span>
+					<span class="sr-only">First</span>
+				</a>
+			</li>
+			<li class="page-item previous">
+				<a class="page-link" href="126-post-layouts-guide.html" aria-label="Previous">
+					<span aria-hidden="true">&#x2039;</span>
+					<span class="sr-only">Previous</span>
+				</a>
+			</li><li class="page-item"><a class="page-link" href="126-post-layouts-guide.html">1</a></li><li class="page-item active"><span class="page-link">2 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="126-post-layouts-guidef05b.html?from=40">3</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="126-post-layouts-guidef05b.html?from=40" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="126-post-layouts-guidef05b.html?from=40" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+		<table class="table table-striped" id="post1171">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/62_1501738843.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]">PostLayoutTest</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Don't mind me, I'm just the guy that tests posts layouts.</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 06-26-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/62-postlayoutderp/posts-2.html" title="List PostLayoutDerp's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/62-postlayoutderp/threads.html" title="List PostLayoutDerp's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar62" id="post_1171">
+				<style>.mainbar62 {
+background:url(../../cdn1-www.gamerevolution.com/assets/uploads/2013/11/file_6792_Super-Mario-Galaxy-2.jpg) fixed 65px 0px !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+padding: 20px;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+}
+ 
+.sidebar62 {
+background:url(../../cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/857/full/tileable-classic-nebula-space-patterns-5.jpg) 0px 0px/200% !important;
+background-width:100% !important;
+color:white;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 107%;
+text-align:center;
+padding: 13px;
+}
+ 
+.topbar62_1 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-left-radius:10px;
+}
+ 
+.topbar62_2 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-right-radius:10px;
+}
+ 
+.mainbar62 a,.topbar62_2 a {
+color: #f73197 !important;
+text-size: 101%;
+}
+ 
+.mainbar62 .quoteheader {
+background:rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .quotecontent {
+background: rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+ 
+.mainbar62 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid blueviolet;
+border-radius:15px;
+width:100%;
+}
+ 
+.mainbar62 .spoiled {
+background: url(../../i.imgur.com/Px2qIPw.png);
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-radius:15px;
+width:100%
+}
+ 
+.postbox62 {
+margin:20px;
+border:2px solid #066;
+background: rgba(35, 35, 35, .7);
+border:2px solid blueviolet;
+text-shadow: 0 0 0.95em #4a4e52, 0 0 0.8em #4a4e52;
+border-radius: 20px;
+border-style:groove;
+font-weight:bold;
+color: blue;
+padding:10px;
+/* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 5s infinite;
+}
+
+@-webkit-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+</style><div class="postbox62">A Black Yoshi layout, for @NightYoshi370.<br />
+I recommend only night yoshi uses it; however, anyone can, but let's not have a bunch of the same themes here.<br />
+<br />
+Here is how it looks:<br />
+<div class="spoiler"><button class="spoilerbutton">Show spoiler</button><div class="spoiled hidden"><img class="img-fluid" src="../../i.imgur.com/prGG1gN.png" alt=""/><br />
+</div></div><br />
+You can download it here:<br />
+<a href="https://drive.google.com/open?id=0B0F0uV0-yypPUmczbDIyQk11bmM">https://drive.google.com/open?id=0B0F0uV0-yypPUmczbDIyQk11bmM</a><br />
+<br />
+Or you can browse through my layouts here:<br />
+<a href="https://drive.google.com/open?id=0B0F0uV0-yypPbXNFUnBGbjh0WnM">https://drive.google.com/open?id=0B0F0uV0-yypPbXNFUnBGbjh0WnM</a><br />
+<br />
+<br />
+Before complaining that it doesn't work, please change the 62s to your user number (found by hovering over your username).<br />
+<br />
+If there's anything wrong with this, please tell me.<br />
+<br />
+I just made this based off the NSMBW layout.<br></div><div class="postbox62" style = "font-size: 75%;text-align:center;padding:10px;color:blue;">Making post layouts since '69.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1171">
+									Posted on 06-27-17, 05:10 pm
+										 (rev. 3 by <a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]"><img src="../data/avatars/62_1501738843.png" alt="" class="minipic" /> PostLayoutTest</span></a> on 06-27-17, 09:29 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1171">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guide5dc8.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bPostLayoutTest)%2bin%2b__%26url%3dhttp_/localhost/post/1171/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1171</button>							</div>
+		</td></tr>
+	</table>    
+
+    	<table class="table table-striped" id="post1172">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/21_1495377995.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/21-gota7.html" title=""><span  style="color: #7C60B0;" class="userlink" title="Gota7 (21) [Normal user]">Star Wolf</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-21-17<br>
+						From: Same as above. ^<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/21-gota7/posts.html" title="List Gota7's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/21-gota7/threads.html" title="List Gota7's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar21" id="post_1172">
+				<style>.mainbar21 {
+background:url(../../a1star.com/images/star--background-seamless-repeating9.html) center top !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+img: src(https://i.imgur.com/uddaCHU.png);
+padding: 30px;
+border-top: 3px solid #8228a3;
+border-right: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius:24px;
+font-weight:bold;
+}
+
+.sidebar21 {
+background:url(../../a1star.com/images/star--background-seamless-repeating9.html) repeat !important;
+color:white;
+border-top: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius: 24px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 115%;
+font-style: italic; text-align:center;
+}
+
+.topbar21_1,.topbar21_2 {
+background:gray url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-radius:20px;
+}
+
+.mainbar21 a,.topbar21_2 a {
+color: #8228a3;
+text-size: 110%;
+}
+
+.mainbar21 .quoteheader {
+background:rgba(197,32,212,0.175);
+border-radius:24px;
+}
+
+.mainbar21 .quotecontent {
+background:rgba(147,12,152,0.175);
+border-radius:24px;
+}
+
+.mainbar21 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+
+.mainbar21 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:3px solid #8228a3;
+border-radius:24px;
+width:100%;
+}
+
+.mainbar21 .spoiled {
+background:rgba(0,0,0,0.5);
+border-right: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius:24px;
+left: 50%;
+margin-right: -50%;
+width:100%;
+}
+
+.postbox21 {
+margin:20px;
+border:3px solid #066;
+background: url(../../i.imgur.com/7d000se.png);border:3px solid #8228a3;border-radius: 24px;padding:24px;max-width:800px;
+}
+</style><div class="postbox21">Since I don't want to lose all these layouts, I'll make a public folder for the layouts in my drive. If any links are down in the next hour, I'll fix it.<br></div><div class="postbox21" style = "font-size: 69%;font-style: italic; text-align:center;padding:24px;color:white;">Nella carne io sono uno, ma nello spirito, che sono e per sempre saranno sette.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1172">
+									Posted on 06-27-17, 06:00 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1172">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guided8fd.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bStar%2bWolf)%2bin%2b__%26url%3dhttp_/localhost/post/1172/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1172</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1174">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/62_1501738843.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]">PostLayoutTest</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Don't mind me, I'm just the guy that tests posts layouts.</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 06-26-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/62-postlayoutderp/posts-2.html" title="List PostLayoutDerp's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/62-postlayoutderp/threads.html" title="List PostLayoutDerp's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar62" id="post_1174">
+				<style>.mainbar62 {
+background:url(../../cdn1-www.gamerevolution.com/assets/uploads/2013/11/file_6792_Super-Mario-Galaxy-2.jpg) fixed 65px 0px !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+padding: 20px;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+}
+ 
+.sidebar62 {
+background:url(../../cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/857/full/tileable-classic-nebula-space-patterns-5.jpg) 0px 0px/200% !important;
+background-width:100% !important;
+color:white;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 107%;
+text-align:center;
+padding: 13px;
+}
+ 
+.topbar62_1 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-left-radius:10px;
+}
+ 
+.topbar62_2 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-right-radius:10px;
+}
+ 
+.mainbar62 a,.topbar62_2 a {
+color: #f73197 !important;
+text-size: 101%;
+}
+ 
+.mainbar62 .quoteheader {
+background:rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .quotecontent {
+background: rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+ 
+.mainbar62 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid blueviolet;
+border-radius:15px;
+width:100%;
+}
+ 
+.mainbar62 .spoiled {
+background: url(../../i.imgur.com/Px2qIPw.png);
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-radius:15px;
+width:100%
+}
+ 
+.postbox62 {
+margin:20px;
+border:2px solid #066;
+background: rgba(35, 35, 35, .7);
+border:2px solid blueviolet;
+text-shadow: 0 0 0.95em #4a4e52, 0 0 0.8em #4a4e52;
+border-radius: 20px;
+border-style:groove;
+font-weight:bold;
+color: blue;
+padding:10px;
+/* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 5s infinite;
+}
+
+@-webkit-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+</style><div class="postbox62">I updated all the layouts! Now all the layout's and their dependencies are all in one folder if anything were to happen.<br />
+<br />
+<a href="https://drive.google.com/open?id=0B0F0uV0-yypPbXNFUnBGbjh0WnM">https://drive.google.com/open?id=0B0F0uV0-yypPbXNFUnBGbjh0WnM</a><br></div><div class="postbox62" style = "font-size: 75%;text-align:center;padding:10px;color:blue;">Making post layouts since '69.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1174">
+									Posted on 06-27-17, 06:59 pm
+										 (rev. 1 by <a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]"><img src="../data/avatars/62_1501738843.png" alt="" class="minipic" /> PostLayoutTest</span></a> on 06-27-17, 07:00 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1174">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guidecd15.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bPostLayoutTest)%2bin%2b__%26url%3dhttp_/localhost/post/1174/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1174</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1185">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/2_1499603862.html" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/2-mayrosmm.html" title=""><span  style="color: #7C60B0;" class="userlink" title="MayroSMM (2) [Normal user]">MayroSMM</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Box<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/2-mayrosmm/posts.html" title="List MayroSMM's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/2-mayrosmm/threads.html" title="List MayroSMM's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1185">
+				Absolutely none of the embedded images work. Might wanna fix that.<br />
+<br />
+Also, could you possible make a layout related to Mario and Luigi Dream Team Bros? Don't worry about specifics - just make it colourful!
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1185">
+									Posted on 06-27-17, 09:16 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1185">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guide1e4e.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMayroSMM)%2bin%2b__%26url%3dhttp_/localhost/post/1185/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1185</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1187">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/62_1501738843.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]">PostLayoutTest</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Don't mind me, I'm just the guy that tests posts layouts.</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 06-26-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/62-postlayoutderp/posts-2.html" title="List PostLayoutDerp's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/62-postlayoutderp/threads.html" title="List PostLayoutDerp's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar62" id="post_1187">
+				<style>.mainbar62 {
+background:url(../../cdn1-www.gamerevolution.com/assets/uploads/2013/11/file_6792_Super-Mario-Galaxy-2.jpg) fixed 65px 0px !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+padding: 20px;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+}
+ 
+.sidebar62 {
+background:url(../../cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/857/full/tileable-classic-nebula-space-patterns-5.jpg) 0px 0px/200% !important;
+background-width:100% !important;
+color:white;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 107%;
+text-align:center;
+padding: 13px;
+}
+ 
+.topbar62_1 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-left-radius:10px;
+}
+ 
+.topbar62_2 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-right-radius:10px;
+}
+ 
+.mainbar62 a,.topbar62_2 a {
+color: #f73197 !important;
+text-size: 101%;
+}
+ 
+.mainbar62 .quoteheader {
+background:rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .quotecontent {
+background: rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+ 
+.mainbar62 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid blueviolet;
+border-radius:15px;
+width:100%;
+}
+ 
+.mainbar62 .spoiled {
+background: url(../../i.imgur.com/Px2qIPw.png);
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-radius:15px;
+width:100%
+}
+ 
+.postbox62 {
+margin:20px;
+border:2px solid #066;
+background: rgba(35, 35, 35, .7);
+border:2px solid blueviolet;
+text-shadow: 0 0 0.95em #4a4e52, 0 0 0.8em #4a4e52;
+border-radius: 20px;
+border-style:groove;
+font-weight:bold;
+color: blue;
+padding:10px;
+/* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 5s infinite;
+}
+
+@-webkit-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+</style><div class="postbox62">Do the drive links work at least? And I guess I'll get back the imgur links. :P<br />
+<br />
+*Edit: The previews now use imgur links, let me know if the downloads don't*<br></div><div class="postbox62" style = "font-size: 75%;text-align:center;padding:10px;color:blue;">Making post layouts since '69.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1187">
+									Posted on 06-27-17, 09:22 pm
+										 (rev. 1 by <a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]"><img src="../data/avatars/62_1501738843.png" alt="" class="minipic" /> PostLayoutTest</span></a> on 06-27-17, 09:29 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1187">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guidec3e2.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bPostLayoutTest)%2bin%2b__%26url%3dhttp_/localhost/post/1187/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1187</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1188">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/2_1499603862.html" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/2-mayrosmm.html" title=""><span  style="color: #7C60B0;" class="userlink" title="MayroSMM (2) [Normal user]">MayroSMM</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Box<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/2-mayrosmm/posts.html" title="List MayroSMM's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/2-mayrosmm/threads.html" title="List MayroSMM's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1188">
+				Everything looks okay now as far as I can see.<br />
+Also please don't make my layout fixed or whatever it's called. I want it to scroll with my post if possible.
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1188">
+									Posted on 06-27-17, 09:53 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1188">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guide8f41.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMayroSMM)%2bin%2b__%26url%3dhttp_/localhost/post/1188/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1188</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1189">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/62_1501738843.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]">PostLayoutTest</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Don't mind me, I'm just the guy that tests posts layouts.</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 06-26-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/62-postlayoutderp/posts-2.html" title="List PostLayoutDerp's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/62-postlayoutderp/threads.html" title="List PostLayoutDerp's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar62" id="post_1189">
+				<style>.mainbar62 {
+background:url(../../cdn1-www.gamerevolution.com/assets/uploads/2013/11/file_6792_Super-Mario-Galaxy-2.jpg) fixed 65px 0px !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+padding: 20px;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+}
+ 
+.sidebar62 {
+background:url(../../cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/857/full/tileable-classic-nebula-space-patterns-5.jpg) 0px 0px/200% !important;
+background-width:100% !important;
+color:white;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 107%;
+text-align:center;
+padding: 13px;
+}
+ 
+.topbar62_1 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-left-radius:10px;
+}
+ 
+.topbar62_2 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-right-radius:10px;
+}
+ 
+.mainbar62 a,.topbar62_2 a {
+color: #f73197 !important;
+text-size: 101%;
+}
+ 
+.mainbar62 .quoteheader {
+background:rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .quotecontent {
+background: rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+ 
+.mainbar62 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid blueviolet;
+border-radius:15px;
+width:100%;
+}
+ 
+.mainbar62 .spoiled {
+background: url(../../i.imgur.com/Px2qIPw.png);
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-radius:15px;
+width:100%
+}
+ 
+.postbox62 {
+margin:20px;
+border:2px solid #066;
+background: rgba(35, 35, 35, .7);
+border:2px solid blueviolet;
+text-shadow: 0 0 0.95em #4a4e52, 0 0 0.8em #4a4e52;
+border-radius: 20px;
+border-style:groove;
+font-weight:bold;
+color: blue;
+padding:10px;
+/* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 5s infinite;
+}
+
+@-webkit-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+</style><div class="postbox62">Ugh. That will be a pain, but I'll try<br></div><div class="postbox62" style = "font-size: 75%;text-align:center;padding:10px;color:blue;">Making post layouts since '69.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1189">
+									Posted on 06-27-17, 10:55 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1189">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guidee1ab.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bPostLayoutTest)%2bin%2b__%26url%3dhttp_/localhost/post/1189/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1189</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1190">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/21_1495377995.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/21-gota7.html" title=""><span  style="color: #7C60B0;" class="userlink" title="Gota7 (21) [Normal user]">Star Wolf</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-21-17<br>
+						From: Same as above. ^<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/21-gota7/posts.html" title="List Gota7's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/21-gota7/threads.html" title="List Gota7's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar21" id="post_1190">
+				<style>.mainbar21 {
+background:url(../../a1star.com/images/star--background-seamless-repeating9.html) center top !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+img: src(https://i.imgur.com/uddaCHU.png);
+padding: 30px;
+border-top: 3px solid #8228a3;
+border-right: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius:24px;
+font-weight:bold;
+}
+
+.sidebar21 {
+background:url(../../a1star.com/images/star--background-seamless-repeating9.html) repeat !important;
+color:white;
+border-top: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius: 24px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 115%;
+font-style: italic; text-align:center;
+}
+
+.topbar21_1,.topbar21_2 {
+background:gray url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-radius:20px;
+}
+
+.mainbar21 a,.topbar21_2 a {
+color: #8228a3;
+text-size: 110%;
+}
+
+.mainbar21 .quoteheader {
+background:rgba(197,32,212,0.175);
+border-radius:24px;
+}
+
+.mainbar21 .quotecontent {
+background:rgba(147,12,152,0.175);
+border-radius:24px;
+}
+
+.mainbar21 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+
+.mainbar21 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:3px solid #8228a3;
+border-radius:24px;
+width:100%;
+}
+
+.mainbar21 .spoiled {
+background:rgba(0,0,0,0.5);
+border-right: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius:24px;
+left: 50%;
+margin-right: -50%;
+width:100%;
+}
+
+.postbox21 {
+margin:20px;
+border:3px solid #066;
+background: url(../../i.imgur.com/7d000se.png);border:3px solid #8228a3;border-radius: 24px;padding:24px;max-width:800px;
+}
+</style><div class="postbox21">Finished: Here it is!<br></div><div class="postbox21" style = "font-size: 69%;font-style: italic; text-align:center;padding:24px;color:white;">Nella carne io sono uno, ma nello spirito, che sono e per sempre saranno sette.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1190">
+									Posted on 06-27-17, 11:18 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1190">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guide6f17.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bStar%2bWolf)%2bin%2b__%26url%3dhttp_/localhost/post/1190/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1190</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1191">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/62_1501738843.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]">PostLayoutTest</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Don't mind me, I'm just the guy that tests posts layouts.</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 06-26-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/62-postlayoutderp/posts-2.html" title="List PostLayoutDerp's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/62-postlayoutderp/threads.html" title="List PostLayoutDerp's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar62" id="post_1191">
+				<style>.mainbar62 {
+background:url(../../cdn1-www.gamerevolution.com/assets/uploads/2013/11/file_6792_Super-Mario-Galaxy-2.jpg) fixed 65px 0px !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+padding: 20px;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+}
+ 
+.sidebar62 {
+background:url(../../cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/857/full/tileable-classic-nebula-space-patterns-5.jpg) 0px 0px/200% !important;
+background-width:100% !important;
+color:white;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 107%;
+text-align:center;
+padding: 13px;
+}
+ 
+.topbar62_1 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-left-radius:10px;
+}
+ 
+.topbar62_2 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-right-radius:10px;
+}
+ 
+.mainbar62 a,.topbar62_2 a {
+color: #f73197 !important;
+text-size: 101%;
+}
+ 
+.mainbar62 .quoteheader {
+background:rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .quotecontent {
+background: rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+ 
+.mainbar62 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid blueviolet;
+border-radius:15px;
+width:100%;
+}
+ 
+.mainbar62 .spoiled {
+background: url(../../i.imgur.com/Px2qIPw.png);
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-radius:15px;
+width:100%
+}
+ 
+.postbox62 {
+margin:20px;
+border:2px solid #066;
+background: rgba(35, 35, 35, .7);
+border:2px solid blueviolet;
+text-shadow: 0 0 0.95em #4a4e52, 0 0 0.8em #4a4e52;
+border-radius: 20px;
+border-style:groove;
+font-weight:bold;
+color: blue;
+padding:10px;
+/* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 5s infinite;
+}
+
+@-webkit-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+</style><div class="postbox62">A Dream Team layout, for @Mayro.<br />
+Anyone can use it, but let's not have a bunch of the same themes here.<br />
+<br />
+Here is how it looks:<br />
+<div class="spoiler"><button class="spoilerbutton">Show spoiler</button><div class="spoiled hidden"><img class="img-fluid" src="../../i.imgur.com/B1FQl76.png" alt=""/><br />
+</div></div>(Text changes color btw.)<br />
+<br />
+You can download it here:<br />
+<a href="https://drive.google.com/open?id=0B0F0uV0-yypPWXJ5TExBZmtudkE">https://drive.google.com/open?id=0B0F0uV0-yypPWXJ5TExBZmtudkE</a><br />
+<br />
+Or you can browse through my layouts here:<br />
+<a href="https://drive.google.com/open?id=0B0F0uV0-yypPbXNFUnBGbjh0WnM">https://drive.google.com/open?id=0B0F0uV0-yypPbXNFUnBGbjh0WnM</a><br />
+<br />
+<br />
+Before complaining that it doesn't work, please change the 62s to your user number (found by hovering over your username).<br />
+<br />
+If there's anything wrong with this, please tell me.<br />
+<br />
+I just made this based off the NSMBW layout.<br></div><div class="postbox62" style = "font-size: 75%;text-align:center;padding:10px;color:blue;">Making post layouts since '69.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1191">
+									Posted on 06-27-17, 11:20 pm
+										 (rev. 3 by <a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]"><img src="../data/avatars/62_1501738843.png" alt="" class="minipic" /> PostLayoutTest</span></a> on 06-27-17, 11:23 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1191">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guide2442.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bPostLayoutTest)%2bin%2b__%26url%3dhttp_/localhost/post/1191/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1191</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1192">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/21_1495377995.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/21-gota7.html" title=""><span  style="color: #7C60B0;" class="userlink" title="Gota7 (21) [Normal user]">Star Wolf</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-21-17<br>
+						From: Same as above. ^<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/21-gota7/posts.html" title="List Gota7's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/21-gota7/threads.html" title="List Gota7's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar21" id="post_1192">
+				<style>.mainbar21 {
+background:url(../../a1star.com/images/star--background-seamless-repeating9.html) center top !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+img: src(https://i.imgur.com/uddaCHU.png);
+padding: 30px;
+border-top: 3px solid #8228a3;
+border-right: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius:24px;
+font-weight:bold;
+}
+
+.sidebar21 {
+background:url(../../a1star.com/images/star--background-seamless-repeating9.html) repeat !important;
+color:white;
+border-top: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius: 24px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 115%;
+font-style: italic; text-align:center;
+}
+
+.topbar21_1,.topbar21_2 {
+background:gray url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-radius:20px;
+}
+
+.mainbar21 a,.topbar21_2 a {
+color: #8228a3;
+text-size: 110%;
+}
+
+.mainbar21 .quoteheader {
+background:rgba(197,32,212,0.175);
+border-radius:24px;
+}
+
+.mainbar21 .quotecontent {
+background:rgba(147,12,152,0.175);
+border-radius:24px;
+}
+
+.mainbar21 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+
+.mainbar21 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:3px solid #8228a3;
+border-radius:24px;
+width:100%;
+}
+
+.mainbar21 .spoiled {
+background:rgba(0,0,0,0.5);
+border-right: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius:24px;
+left: 50%;
+margin-right: -50%;
+width:100%;
+}
+
+.postbox21 {
+margin:20px;
+border:3px solid #066;
+background: url(../../i.imgur.com/7d000se.png);border:3px solid #8228a3;border-radius: 24px;padding:24px;max-width:800px;
+}
+</style><div class="postbox21"><strong>YOU MAKE GOOD LEVEL NOW!!!</strong><br></div><div class="postbox21" style = "font-size: 69%;font-style: italic; text-align:center;padding:24px;color:white;">Nella carne io sono uno, ma nello spirito, che sono e per sempre saranno sette.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1192">
+									Posted on 06-28-17, 12:13 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1192">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guidee5f3.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bStar%2bWolf)%2bin%2b__%26url%3dhttp_/localhost/post/1192/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1192</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1193">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/62_1501738843.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]">PostLayoutTest</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Don't mind me, I'm just the guy that tests posts layouts.</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 06-26-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/62-postlayoutderp/posts-2.html" title="List PostLayoutDerp's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/62-postlayoutderp/threads.html" title="List PostLayoutDerp's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar62" id="post_1193">
+				<style>.mainbar62 {
+background:url(../../cdn1-www.gamerevolution.com/assets/uploads/2013/11/file_6792_Super-Mario-Galaxy-2.jpg) fixed 65px 0px !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+padding: 20px;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+}
+ 
+.sidebar62 {
+background:url(../../cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/857/full/tileable-classic-nebula-space-patterns-5.jpg) 0px 0px/200% !important;
+background-width:100% !important;
+color:white;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 107%;
+text-align:center;
+padding: 13px;
+}
+ 
+.topbar62_1 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-left-radius:10px;
+}
+ 
+.topbar62_2 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-right-radius:10px;
+}
+ 
+.mainbar62 a,.topbar62_2 a {
+color: #f73197 !important;
+text-size: 101%;
+}
+ 
+.mainbar62 .quoteheader {
+background:rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .quotecontent {
+background: rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+ 
+.mainbar62 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid blueviolet;
+border-radius:15px;
+width:100%;
+}
+ 
+.mainbar62 .spoiled {
+background: url(../../i.imgur.com/Px2qIPw.png);
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-radius:15px;
+width:100%
+}
+ 
+.postbox62 {
+margin:20px;
+border:2px solid #066;
+background: rgba(35, 35, 35, .7);
+border:2px solid blueviolet;
+text-shadow: 0 0 0.95em #4a4e52, 0 0 0.8em #4a4e52;
+border-radius: 20px;
+border-style:groove;
+font-weight:bold;
+color: blue;
+padding:10px;
+/* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 5s infinite;
+}
+
+@-webkit-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+</style><div class="postbox62"><strong>MIYAMOTO LAYOUT, SO ALL MAKE GOOD LEVEL NOW!!!<br />
+ALL CAN USE, NO USING TOO MUCH!<br />
+<br />
+YOU LOOK NOW:<br />
+<div class="spoiler"><button class="spoilerbutton">Show spoiler</button><div class="spoiled hidden"><img class="img-fluid" src="../../i.imgur.com/rgz8Ah2.png" alt=""/><br />
+</div></div><br />
+YOU DOWNROAD NOW:<br />
+<a href="https://drive.google.com/open?id=0B0F0uV0-yypPcEdEbW0taE41a0k">https://drive.google.com/open?id=0B0F0uV0-yypPcEdEbW0taE41a0k</a><br />
+<br />
+YOU NO RIKE, YOU USE OTHER LAYOUT!<br />
+<a href="https://drive.google.com/open?id=0B0F0uV0-yypPbXNFUnBGbjh0WnM">https://drive.google.com/open?id=0B0F0uV0-yypPbXNFUnBGbjh0WnM</a><br />
+<br />
+<br />
+YOU NO COMPLAIN, YOU CHANGE 62s!<br />
+<br />
+YOU TELL ME IF BAD THING!<br />
+<br />
+I MAKE THIS BECAUSE I MIYAMOTO!</strong><br></div><div class="postbox62" style = "font-size: 75%;text-align:center;padding:10px;color:blue;">Making post layouts since '69.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1193">
+									Posted on 06-28-17, 12:16 am
+										 (rev. 3 by <a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]"><img src="../data/avatars/62_1501738843.png" alt="" class="minipic" /> PostLayoutTest</span></a> on 06-28-17, 02:16 am)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1193">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guidecb99.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bPostLayoutTest)%2bin%2b__%26url%3dhttp_/localhost/post/1193/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1193</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1194">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/63_1498612679.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/63-the-zombro-543.html" title=""><span  style="color: #97ACEF;" class="userlink" title="The_Zombro_543 (63) [Normal user]">The_Zombro_543</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 06-27-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/63-the-zombro-543/posts.html" title="List The_Zombro_543's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/63-the-zombro-543/threads.html" title="List The_Zombro_543's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1194">
+				New Super mario Bros U<br />
+<br />
+<br />
+'cause why not<br />
+<br />
+
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1194">
+									Posted on 06-28-17, 12:23 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1194">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guideb108.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bThe_Zombro_543)%2bin%2b__%26url%3dhttp_/localhost/post/1194/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1194</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1195">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/5_1517641935.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/5-aboood40091.html" title=""><span  style="color: #E91E63" class="userlink" title="aboood40091 (5) [Normal user]">MasterVermilli0n</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Dat weeb NSMBU hacker though :3</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+						From: Not under a rock! :3<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/5-aboood40091/posts.html" title="List aboood40091's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/5-aboood40091/threads.html" title="List aboood40091's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar5" id="post_1195">
+				<style>.mainbar5 {
+background:url(../../i.imgur.com/7OWI9MX.jpg) top center fixed !important;
+background-width:100% !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-right: 2px solid black !important;
+border-bottom-right-radius: 20px !important;
+border-top-right-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+padding: 20px !important;
+}
+
+.sidebar5 {
+background:url(../../upload.wikimedia.org/wikipedia/commons/thumb/7/70/Solid_white.svg/2000px-Solid_white.svg.png) !important;
+background-size: 80px 60px !important;
+border-top: 2px solid black !important;
+border-bottom: 2px solid black !important;
+border-left: 2px solid black !important;
+border-bottom-left-radius: 20px !important;
+border-top-left-radius: 20px !important;
+color:white;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+font-size: 105% !important;
+font-style: oblique !important;
+font-weight: bold !important;
+padding: 10px !important;
+text-align:center !important;
+}
+
+.topbar5_1 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+text-indent: 10px;
+border-bottom-left-radius: 20px;
+border-top-left-radius: 20px;
+}
+
+.topbar5_2 {
+background:grey url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-family: Lucida Handwriting, sans-serif;
+border-bottom-right-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.mainbar5 a,.topbar5_2 a {
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+color: rgb(233,30,99) !important;
+text-align:center !important;
+padding: 1px;
+text-size: 101%;
+}
+
+.mainbar5 .quotecontent {
+background:rgba(0, 0, 0 ,0.175);
+border-radius:15px;
+}
+
+.mainbar5 div.codeblock {
+background:rgb(233,30,99);
+border-radius:15px;
+}
+
+.mainbar5 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:100% !important;
+}
+
+.mainbar5 .spoiled {
+background:rgba(0,0,0,0.675) !important;
+border:2px solid black;
+border-radius:15px;
+color:white !important;
+text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;
+font-family: Lucida Handwriting, sans-serif;
+width:97.3% !important;
+}
+ 
+.postbox5 {
+margin:20px;
+border:2px solid #066;
+background: rgba(9, 15, 25, .55);
+border:2px solid black;
+border-radius: 15px;
+padding:10px;
+}
+</style><div class="postbox5">That Miyamoto is going to haunt my dreams... &gt;.&gt;<br></div><div class="postbox5" style = "padding:10px;color:white;text-shadow: 0 0 0.8em #4a4e52, 0 0 0.8em #4a4e52;">Stella is best waifu. :3<br />
+<br />
+<div class="spoiler"><button class="spoilerbutton named">Things I hate about Stella</button><div class="spoiled hidden"><sub>She's just a balloon of fanservice...</sub></div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1195">
+									Posted on 06-28-17, 01:18 am
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1195">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guide07a3.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bMasterVermilli0n)%2bin%2b__%26url%3dhttp_/localhost/post/1195/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1195</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1202">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/62_1501738843.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]">PostLayoutTest</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Don't mind me, I'm just the guy that tests posts layouts.</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 06-26-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/62-postlayoutderp/posts-2.html" title="List PostLayoutDerp's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/62-postlayoutderp/threads.html" title="List PostLayoutDerp's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar62" id="post_1202">
+				<style>.mainbar62 {
+background:url(../../cdn1-www.gamerevolution.com/assets/uploads/2013/11/file_6792_Super-Mario-Galaxy-2.jpg) fixed 65px 0px !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+padding: 20px;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+}
+ 
+.sidebar62 {
+background:url(../../cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/857/full/tileable-classic-nebula-space-patterns-5.jpg) 0px 0px/200% !important;
+background-width:100% !important;
+color:white;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 107%;
+text-align:center;
+padding: 13px;
+}
+ 
+.topbar62_1 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-left-radius:10px;
+}
+ 
+.topbar62_2 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-right-radius:10px;
+}
+ 
+.mainbar62 a,.topbar62_2 a {
+color: #f73197 !important;
+text-size: 101%;
+}
+ 
+.mainbar62 .quoteheader {
+background:rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .quotecontent {
+background: rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+ 
+.mainbar62 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid blueviolet;
+border-radius:15px;
+width:100%;
+}
+ 
+.mainbar62 .spoiled {
+background: url(../../i.imgur.com/Px2qIPw.png);
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-radius:15px;
+width:100%
+}
+ 
+.postbox62 {
+margin:20px;
+border:2px solid #066;
+background: rgba(35, 35, 35, .7);
+border:2px solid blueviolet;
+text-shadow: 0 0 0.95em #4a4e52, 0 0 0.8em #4a4e52;
+border-radius: 20px;
+border-style:groove;
+font-weight:bold;
+color: blue;
+padding:10px;
+/* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 5s infinite;
+}
+
+@-webkit-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+</style><div class="postbox62">A Blue layout, for @Danster64.<br />
+Anyone can use it, but let's not have a bunch of the same themes here.<br />
+<br />
+Here is how it looks:<br />
+<div class="spoiler"><button class="spoilerbutton">Show spoiler</button><div class="spoiled hidden"><img class="img-fluid" src="../../i.imgur.com/ODfhexG.png" alt=""/><br />
+</div></div><br />
+You can download it here:<br />
+<a href="https://drive.google.com/open?id=0B0F0uV0-yypPNDNFa1RPSVBOZkE">https://drive.google.com/open?id=0B0F0uV0-yypPNDNFa1RPSVBOZkE</a><br />
+<br />
+Or you can browse through my layouts here:<br />
+<a href="https://drive.google.com/open?id=0B0F0uV0-yypPbXNFUnBGbjh0WnM">https://drive.google.com/open?id=0B0F0uV0-yypPbXNFUnBGbjh0WnM</a><br />
+<br />
+<br />
+Before complaining that it doesn't work, please change the 62s to your user number (found by hovering over your username).<br />
+<br />
+If there's anything wrong with this, please tell me.<br />
+<br />
+I just made this based off the Honeybuntu layout.<br></div><div class="postbox62" style = "font-size: 75%;text-align:center;padding:10px;color:blue;">Making post layouts since '69.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1202">
+									Posted on 06-28-17, 04:46 pm
+										 (rev. 3 by <a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]"><img src="../data/avatars/62_1501738843.png" alt="" class="minipic" /> PostLayoutTest</span></a> on 06-28-17, 04:53 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1202">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guide1f0b.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bPostLayoutTest)%2bin%2b__%26url%3dhttp_/localhost/post/1202/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1202</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1203">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/21_1495377995.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/21-gota7.html" title=""><span  style="color: #7C60B0;" class="userlink" title="Gota7 (21) [Normal user]">Star Wolf</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-21-17<br>
+						From: Same as above. ^<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/21-gota7/posts.html" title="List Gota7's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/21-gota7/threads.html" title="List Gota7's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar21" id="post_1203">
+				<style>.mainbar21 {
+background:url(../../a1star.com/images/star--background-seamless-repeating9.html) center top !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+img: src(https://i.imgur.com/uddaCHU.png);
+padding: 30px;
+border-top: 3px solid #8228a3;
+border-right: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius:24px;
+font-weight:bold;
+}
+
+.sidebar21 {
+background:url(../../a1star.com/images/star--background-seamless-repeating9.html) repeat !important;
+color:white;
+border-top: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius: 24px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 115%;
+font-style: italic; text-align:center;
+}
+
+.topbar21_1,.topbar21_2 {
+background:gray url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-radius:20px;
+}
+
+.mainbar21 a,.topbar21_2 a {
+color: #8228a3;
+text-size: 110%;
+}
+
+.mainbar21 .quoteheader {
+background:rgba(197,32,212,0.175);
+border-radius:24px;
+}
+
+.mainbar21 .quotecontent {
+background:rgba(147,12,152,0.175);
+border-radius:24px;
+}
+
+.mainbar21 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+
+.mainbar21 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:3px solid #8228a3;
+border-radius:24px;
+width:100%;
+}
+
+.mainbar21 .spoiled {
+background:rgba(0,0,0,0.5);
+border-right: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius:24px;
+left: 50%;
+margin-right: -50%;
+width:100%;
+}
+
+.postbox21 {
+margin:20px;
+border:3px solid #066;
+background: url(../../i.imgur.com/7d000se.png);border:3px solid #8228a3;border-radius: 24px;padding:24px;max-width:800px;
+}
+</style><div class="postbox21">Another simple theme because I'm lazy:<br></div><div class="postbox21" style = "font-size: 69%;font-style: italic; text-align:center;padding:24px;color:white;">Nella carne io sono uno, ma nello spirito, che sono e per sempre saranno sette.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1203">
+									Posted on 06-28-17, 05:15 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1203">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guide5c52.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bStar%2bWolf)%2bin%2b__%26url%3dhttp_/localhost/post/1203/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1203</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1204">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/62_1501738843.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]">PostLayoutTest</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Don't mind me, I'm just the guy that tests posts layouts.</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 06-26-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/62-postlayoutderp/posts-2.html" title="List PostLayoutDerp's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/62-postlayoutderp/threads.html" title="List PostLayoutDerp's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar62" id="post_1204">
+				<style>.mainbar62 {
+background:url(../../cdn1-www.gamerevolution.com/assets/uploads/2013/11/file_6792_Super-Mario-Galaxy-2.jpg) fixed 65px 0px !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+padding: 20px;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+}
+ 
+.sidebar62 {
+background:url(../../cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/857/full/tileable-classic-nebula-space-patterns-5.jpg) 0px 0px/200% !important;
+background-width:100% !important;
+color:white;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 107%;
+text-align:center;
+padding: 13px;
+}
+ 
+.topbar62_1 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-left-radius:10px;
+}
+ 
+.topbar62_2 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-right-radius:10px;
+}
+ 
+.mainbar62 a,.topbar62_2 a {
+color: #f73197 !important;
+text-size: 101%;
+}
+ 
+.mainbar62 .quoteheader {
+background:rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .quotecontent {
+background: rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+ 
+.mainbar62 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid blueviolet;
+border-radius:15px;
+width:100%;
+}
+ 
+.mainbar62 .spoiled {
+background: url(../../i.imgur.com/Px2qIPw.png);
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-radius:15px;
+width:100%
+}
+ 
+.postbox62 {
+margin:20px;
+border:2px solid #066;
+background: rgba(35, 35, 35, .7);
+border:2px solid blueviolet;
+text-shadow: 0 0 0.95em #4a4e52, 0 0 0.8em #4a4e52;
+border-radius: 20px;
+border-style:groove;
+font-weight:bold;
+color: blue;
+padding:10px;
+/* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 5s infinite;
+}
+
+@-webkit-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+</style><div class="postbox62">A green layout because I'm lazy.<br />
+Anyone can use it, but let's not have a bunch of the same themes here.<br />
+<br />
+Here is how it looks:<br />
+<div class="spoiler"><button class="spoilerbutton">Show spoiler</button><div class="spoiled hidden"><img class="img-fluid" src="../../i.imgur.com/sgU3FGe.png" alt=""/><br />
+</div></div><br />
+You can download it here:<br />
+<a href="https://drive.google.com/open?id=0B0F0uV0-yypPaVNKT0xPY3N0bzg">https://drive.google.com/open?id=0B0F0uV0-yypPaVNKT0xPY3N0bzg</a><br />
+<br />
+Or you can browse through my layouts here:<br />
+<a href="https://drive.google.com/open?id=0B0F0uV0-yypPbXNFUnBGbjh0WnM">https://drive.google.com/open?id=0B0F0uV0-yypPbXNFUnBGbjh0WnM</a><br />
+<br />
+<br />
+Before complaining that it doesn't work, please change the 62s to your user number (found by hovering over your username).<br />
+<br />
+If there's anything wrong with this, please tell me.<br />
+<br />
+I just made this based off the Honeybuntu layout.<br></div><div class="postbox62" style = "font-size: 75%;text-align:center;padding:10px;color:blue;">Making post layouts since '69.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1204">
+									Posted on 06-28-17, 05:16 pm
+										 (rev. 2 by <a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]"><img src="../data/avatars/62_1501738843.png" alt="" class="minipic" /> PostLayoutTest</span></a> on 06-28-17, 05:18 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1204">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guidef036.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bPostLayoutTest)%2bin%2b__%26url%3dhttp_/localhost/post/1204/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1204</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1206">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/21_1495377995.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/21-gota7.html" title=""><span  style="color: #7C60B0;" class="userlink" title="Gota7 (21) [Normal user]">Star Wolf</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-21-17<br>
+						From: Same as above. ^<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/21-gota7/posts.html" title="List Gota7's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/21-gota7/threads.html" title="List Gota7's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar21" id="post_1206">
+				<style>.mainbar21 {
+background:url(../../a1star.com/images/star--background-seamless-repeating9.html) center top !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+img: src(https://i.imgur.com/uddaCHU.png);
+padding: 30px;
+border-top: 3px solid #8228a3;
+border-right: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius:24px;
+font-weight:bold;
+}
+
+.sidebar21 {
+background:url(../../a1star.com/images/star--background-seamless-repeating9.html) repeat !important;
+color:white;
+border-top: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius: 24px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 115%;
+font-style: italic; text-align:center;
+}
+
+.topbar21_1,.topbar21_2 {
+background:gray url(../themes/glossy/generic_gloss.html) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-radius:20px;
+}
+
+.mainbar21 a,.topbar21_2 a {
+color: #8228a3;
+text-size: 110%;
+}
+
+.mainbar21 .quoteheader {
+background:rgba(197,32,212,0.175);
+border-radius:24px;
+}
+
+.mainbar21 .quotecontent {
+background:rgba(147,12,152,0.175);
+border-radius:24px;
+}
+
+.mainbar21 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+
+.mainbar21 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:3px solid #8228a3;
+border-radius:24px;
+width:100%;
+}
+
+.mainbar21 .spoiled {
+background:rgba(0,0,0,0.5);
+border-right: 3px solid #8228a3;
+border-bottom: 3px solid #8228a3;
+border-left: 3px solid #8228a3;
+border-radius:24px;
+left: 50%;
+margin-right: -50%;
+width:100%;
+}
+
+.postbox21 {
+margin:20px;
+border:3px solid #066;
+background: url(../../i.imgur.com/7d000se.png);border:3px solid #8228a3;border-radius: 24px;padding:24px;max-width:800px;
+}
+</style><div class="postbox21">This theme is just like the last two, except it's red. Enjoy.<br></div><div class="postbox21" style = "font-size: 69%;font-style: italic; text-align:center;padding:24px;color:white;">Nella carne io sono uno, ma nello spirito, che sono e per sempre saranno sette.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1206">
+									Posted on 06-28-17, 06:34 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1206">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guidec5ea.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bStar%2bWolf)%2bin%2b__%26url%3dhttp_/localhost/post/1206/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1206</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1207">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/62_1501738843.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]">PostLayoutTest</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Don't mind me, I'm just the guy that tests posts layouts.</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 06-26-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/62-postlayoutderp/posts-2.html" title="List PostLayoutDerp's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/62-postlayoutderp/threads.html" title="List PostLayoutDerp's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar62" id="post_1207">
+				<style>.mainbar62 {
+background:url(../../cdn1-www.gamerevolution.com/assets/uploads/2013/11/file_6792_Super-Mario-Galaxy-2.jpg) fixed 65px 0px !important;
+background-width:100% !important;
+color:white;
+font-size: 105%;
+padding: 20px;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+}
+ 
+.sidebar62 {
+background:url(../../cdn.mysitemyway.com/etc-mysitemyway/webtreats/assets/posts/857/full/tileable-classic-nebula-space-patterns-5.jpg) 0px 0px/200% !important;
+background-width:100% !important;
+color:white;
+border-top: 1px solid blueviolet;
+border-right: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-bottom-left-radius: 13px;
+border-bottom-right-radius: 13px;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+font-size: 107%;
+text-align:center;
+padding: 13px;
+}
+ 
+.topbar62_1 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-left-radius:10px;
+}
+ 
+.topbar62_2 {
+background:blueviolet url(http://www.mariomods.net/themes/glossy/generic_gloss.svg) repeat;
+background-size:100% 100%;
+color:white;
+text-shadow: -1px -1px black, 0px -1px black, 1px -1px black, 1px 0px black, 1px 1px black, 0px 1px black, -1px 1px black, -1px 0px black;
+text-indent: 10px;
+border-top-right-radius:10px;
+}
+ 
+.mainbar62 a,.topbar62_2 a {
+color: #f73197 !important;
+text-size: 101%;
+}
+ 
+.mainbar62 .quoteheader {
+background:rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .quotecontent {
+background: rgba(35, 35, 35, .175);
+border-radius:15px;
+}
+ 
+.mainbar62 .codeblock {
+background:rgba(0,0,0,0.5);
+border-radius:15px;
+}
+ 
+.mainbar62 .spoilerbutton {
+background:rgba(0,0,0,0.5);
+border:2px solid blueviolet;
+border-radius:15px;
+width:100%;
+}
+ 
+.mainbar62 .spoiled {
+background: url(../../i.imgur.com/Px2qIPw.png);
+border-right: 2px solid blueviolet;
+border-bottom: 2px solid blueviolet;
+border-left: 2px solid blueviolet;
+border-radius:15px;
+width:100%
+}
+ 
+.postbox62 {
+margin:20px;
+border:2px solid #066;
+background: rgba(35, 35, 35, .7);
+border:2px solid blueviolet;
+text-shadow: 0 0 0.95em #4a4e52, 0 0 0.8em #4a4e52;
+border-radius: 20px;
+border-style:groove;
+font-weight:bold;
+color: blue;
+padding:10px;
+/* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 5s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 5s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 5s infinite;
+}
+
+@-webkit-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+}
+
+/* Standar Syntax */
+@keyframes rainbow{
+	12.5%{color: Blue;}
+	25%{color: BlueViolet;}
+	37.5%{color: Violet;}
+	50%{color: RedViolet;}
+	62.5%{color: Violet;}
+	75%{color: BlueViolet;}
+	87.5%{color: Blue;}
+	100%{color: Blue;}		
+</style><div class="postbox62">A red layout because I'm lazy.<br />
+Anyone can use it, but let's not have a bunch of the same themes here.<br />
+<br />
+Here is how it looks:<br />
+<div class="spoiler"><button class="spoilerbutton">Show spoiler</button><div class="spoiled hidden"><img class="img-fluid" src="../../i.imgur.com/HUwZvdP.png" alt=""/><br />
+</div></div><br />
+You can download it here:<br />
+<a href="https://drive.google.com/open?id=0B0F0uV0-yypPZHhKMU1tcUhkLXM">https://drive.google.com/open?id=0B0F0uV0-yypPZHhKMU1tcUhkLXM</a><br />
+<br />
+Or you can browse through my layouts here:<br />
+<a href="https://drive.google.com/open?id=0B0F0uV0-yypPbXNFUnBGbjh0WnM">https://drive.google.com/open?id=0B0F0uV0-yypPbXNFUnBGbjh0WnM</a><br />
+<br />
+<br />
+Before complaining that it doesn't work, please change the 62s to your user number (found by hovering over your username).<br />
+<br />
+If there's anything wrong with this, please tell me.<br />
+<br />
+I just made this based off the Honeybuntu layout.<br></div><div class="postbox62" style = "font-size: 75%;text-align:center;padding:10px;color:blue;">Making post layouts since '69.<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1207">
+									Posted on 06-28-17, 06:36 pm
+										 (rev. 1 by <a href="../profile/62-postlayoutderp.html" title=""><span  style="color: #7C60B0;" class="userlink" title="PostLayoutDerp (62) [Normal user]"><img src="../data/avatars/62_1501738843.png" alt="" class="minipic" /> PostLayoutTest</span></a> on 06-28-17, 06:38 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1207">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guideb08b.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bPostLayoutTest)%2bin%2b__%26url%3dhttp_/localhost/post/1207/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1207</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1213">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">Banned permanently: Jamie Rereg</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Banned</li></ul>
+					<div class="card-body">
+						Since: 05-19-17<br>
+						From: England<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/11-icefairyamy/posts.html" title="List IceFairyAmy's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/11-icefairyamy/threads.html" title="List IceFairyAmy's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_1213">
+				I rofl'd at the Miyamoto layout. XD<br />
+Hey um staff, is it ok if I move this to site discussion?
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1213">
+									Posted on 06-28-17, 09:07 pm
+										 (rev. 1 by <a href="../profile/11-icefairyamy.html" title=""><span  style="color: #888888;" class="userlink" title="IceFairyAmy (11) [Banned]">IceFairyAmy</span></a> on 06-30-17, 07:20 am)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1213">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guidef6fb.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bIceFairyAmy)%2bin%2b__%26url%3dhttp_/localhost/post/1213/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1213</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1255">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar1" id="post_1255">
+				<style>td.topbar1_1 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+text-align: center;
+border-top-left-radius: 25px;
+}td.topbar1_1 > a > span {
+     color:white !important;
+}td.topbar1_2 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+border-top-right-radius: 25px;
+}td.topbar1_2 a {
+color: #fff !important;
+}.mainbar1 {
+  background: url('../../i.imgur.com/1K5VeC8.png') no-repeat !important;
+  background=color: #090909;
+  padding: 0 !important;
+  background-color: #000 !important;
+  font-family: 'Arial', sans-serif;
+  border-bottom-right-radius: 25px;
+}.sidebar1 {
+  background-color: #090909 !important;
+  text-align: center !important;
+  color: #E6E6E6 !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  border-bottom-left-radius: 25px;
+}.sidebar1 div.smallFonts > img:nth-child(4):hover {
+border-radius: 2%;
+box-shadow: 7px 7px 30px #000000 !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4) { 
+box-shadow: 5px 5px 40px #000000 !important;
+border-radius: 50%;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4):active {
+border-radius: 0%;
+box-shadow: 0px 0px 5px #FFFFFF !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+.mainbar1 a:link {color: gray;}
+.mainbar1 a:visited {color: gray;}
+.mainbar1 a:active {color: gray;}
+.mainbar1 a:hover {color: gray;} 
+.mainbar1 > div.post {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+} .mainbar1 > div.sig {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+}
+</style><div class="post">Its alright. I'll move it.<br />
+<br />
+Edit: Done.<br></div><div class="sig">Old 3DS XL info:<br />
+I used to have a 3DSafe A9LH V11.3.0-36U with Luma in my CTRNAND. Since ReiNAND Reibooted and Re-Reileased, I "switch"ed back.<br />
+Right now, I have boot9strap with Luma 8.0 as my CFW. Though, I'd like to see other CFW's for B9S.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1255">
+									Posted on 06-30-17, 08:55 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1255">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="126-post-layouts-guide6028.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/1255/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1255</button>							</div>
+		</td></tr>
+	</table>			
+	<nav aria-label="Page navigation example">
+		<ul class="pagination pg-blue">
+			
+			<li class="page-item first">
+				<a class="page-link" href="126-post-layouts-guide.html" aria-label="First">
+					<span aria-hidden="true">&#x00AB;</span>
+					<span class="sr-only">First</span>
+				</a>
+			</li>
+			<li class="page-item previous">
+				<a class="page-link" href="126-post-layouts-guide.html" aria-label="Previous">
+					<span aria-hidden="true">&#x2039;</span>
+					<span class="sr-only">Previous</span>
+				</a>
+			</li><li class="page-item"><a class="page-link" href="126-post-layouts-guide.html">1</a></li><li class="page-item active"><span class="page-link">2 <span class="sr-only">(current)</span></span></li><li class="page-item"><a class="page-link" href="126-post-layouts-guidef05b.html?from=40">3</a></li>
+			<li class="page-item next">
+				<a class="page-link" href="126-post-layouts-guidef05b.html?from=40" aria-label="Next">
+					<span aria-hidden="true">&#x203A;</span>
+					<span class="sr-only">Next</span>
+				</a>
+			</li>
+			<li class="page-item last">
+				<a class="page-link" href="126-post-layouts-guidef05b.html?from=40" aria-label="Last">
+					<span aria-hidden="true">&#x00BB;</span>
+					<span class="sr-only">Last</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/2-mario-making-mods-talk.html">Mario Making Mods Talk</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="126-post-layouts-guide.html">Post Layouts Guide</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="101.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="128.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dPost%2bLayouts%2bGuide%26url%3dhttp_/localhost/thread/126/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/thread/126-post-layouts-guide?from=20 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 07:51:37 GMT -->
+</html>

@@ -1,0 +1,996 @@
+<!DOCTYPE HTML>
+<html>
+    
+<!-- Mirrored from localhost/thread/46 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 08:08:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+        <!-- Mobile meta tags -->
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#2196F3" />
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, shrink-to-fit=no, user-scalable=yes">
+
+        <title>How to run game modifications off of your SD Card &raquo; Mario Making Mods</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="../fonts/fork-awesome/css/fork-awesome.min.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="../css/mdb.css">
+		<script src="../../ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <link rel="shortcut icon" type="image/x-icon" href="../img/minicon.png" />
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+        <link rel="manifest" href="../API/manifest.php" />
+        <meta name="description" content="This tutorial uses SD Cafiine, in which all the files are hosted on your SD card. The advantage to using SD Cafiine is that you can do this tutorial if..." />
+        <meta name="keywords" content="how run game modifications off your card sdcafiine wiiu" />
+        <base  />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+		<meta property="og:type" content="website" /> <meta name="og:type" content="website" /><meta property="og:url" content="http://localhost" /> <meta name="og:url" content="http://localhost" /><meta property="og:image" content="/apple-touch-icon.png" /> <meta name="og:image" content="/apple-touch-icon.png" /><meta property="og:title" content="How to run game modifications off of your SD Card &amp;raquo; Mario Making Mods" /> <meta name="og:title" content="How to run game modifications off of your SD Card &amp;raquo; Mario Making Mods" /><meta property="og:description" content="This tutorial uses SD Cafiine, in which all the files are hosted on your SD card. The advantage to using SD Cafiine is that you can do this tutorial if..." /> <meta name="og:description" content="This tutorial uses SD Cafiine, in which all the files are hosted on your SD card. The advantage to using SD Cafiine is that you can do this tutorial if..." /><meta property="og:site_name" content="Mario Making Mods" /> <meta name="og:site_name" content="Mario Making Mods" />        <!-- Twitter information -->
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="How to run game modifications off of your SD Card &raquo; Mario Making Mods" />
+        <meta name="twitter:image:src" content="img/logo.png" />
+        <meta name="twitter:description" content="This tutorial uses SD Cafiine, in which all the files are hosted on your SD card. The advantage to using SD Cafiine is that you can do this tutorial if..." />
+        <meta name="twitter:site" content="@MarioMakingMods" />
+        <meta name="twitter:creator" content="@MaorNinja322" />
+        <meta name="twitter:widgets:theme" content="dark">
+        <meta name="twitter:widgets:link-color" content="#2196F3">
+        <meta name="twitter:widgets:border-color" content="#2196F3">
+
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/highlight.css" />
+        <link rel="stylesheet" id="theme_css" href="../themes/nsmb1/style.css" />
+        <script>
+            (function(document,navigator,standalone) {
+                // prevents links from apps from oppening in mobile safari
+                // this javascript must be the first script in your <head>
+                if ((standalone in navigator) && navigator[standalone]) {
+                    var curnode, location=document.location, stop=/^(a|html)$/i;
+                    document.addEventListener('click', function(e) {
+                        curnode=e.target;
+                        while (!(stop).test(curnode.nodeName)) {
+                            curnode=curnode.parentNode;
+                        }
+                        // Conditions to do this only on links to your own app
+                        // if you want all links, use if('href' in curnode) instead.
+                        if('href' in curnode && ( curnode.href.indexOf('http') || ~curnode.href.indexOf(location.host) ) ) {
+                            e.preventDefault();
+                            location.href = curnode.href;
+                        }
+                    },false);
+                }
+            })(document,window.navigator,'standalone');
+        </script>
+
+        <script src="../js/jquery-ui.js"></script>
+        <script src="../js/tricks.js"></script>
+        <script src="../js/jscolor.js" async></script>
+        <script src="../../cdnjs.cloudflare.com/ajax/libs/highlight.js/9.2.0/highlight.min.js"></script>
+
+        <script>
+            hljs.initHighlightingOnLoad();
+            boardroot = "#\/";
+
+            if ('serviceWorker' in navigator) navigator.serviceWorker.register('../service-worker.js').catch();
+        </script>
+        <link rel="stylesheet" href="../css/modern.css" />    </head>
+    <body>
+        <form action="http://localhost/accounts/login" method="post" id="logout" style="display:none;">
+            <input type="hidden" name="action" value="logout">
+        </form>
+        <div style="min-height:77vh;">
+		<div style="height: auto; text-align:center;" id="boardHeader">
+			<a href="../index.html">
+				<img id="theme_banner" src="../img/logo.png" alt="Mario Making Mods" title="Mario Making Mods" style="max-width:100%;">
+			</a>
+		</div>
+
+	<!--NavBar-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top" style="margin-bottom: 0px; border-radius: 0px;">
+		<input type="checkbar" id="navbar-toggle-cbox">
+		<label for="navbar-toggle-cbox" class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar-header">
+			<span class="navbar-toggler-icon"></span>
+		</label>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="mr-auto ml-auto navbar-nav">
+															<li class="nav-item ">
+							<a class="nav-link" href="../index.html">Home</a>
+						</li>
+																				<li class="nav-item dropdown ">
+							<a class="nav-link nav-dropdown dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="../forum.html">
+								Forums <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+																	<li class="dropdown-item"><a class="dropdown-link" href="../forum.html">Index</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/latest.html">Latest Posts</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../activeusers.html">Active users</a></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/ranks/2048.html">Ranks</a></li>
+																			<li class="dropdown-divider"></li>
+																										<li class="dropdown-item"><a class="dropdown-link" href="../forum/search.html">Search</a></li>
+																								</ul>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../faq.html">FAQ</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../depot.html">Depot</a>
+						</li>
+																				<li class="nav-item ">
+							<a class="nav-link" href="../wiki.html">Wiki</a>
+						</li>
+												</ul>
+		</div>
+	</nav>
+
+				<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/9-general-modding.html">General Modding</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="46-how-to-run-game-modifications-off-of-your-sd-card.html">How to run game modifications off of your SD Card</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="40.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="49.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dHow%2bto%2brun%2bgame%2bmodifications%2boff%2bof%2byour%2bSD%2bCard%26url%3dhttp_/localhost/thread/46/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	<br>
+
+	<div class="container-fluid text-center">
+		<div class="row content">
+						<div class="col-sm-12 text-left">
+				<script type="text/javascript">window.addEventListener("load", hookUpControls, false);</script>	    
+
+    	<table class="table table-striped" id="post392">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_392">
+				This tutorial uses SD Cafiine, in which all the files are hosted on your SD card. The advantage to using SD Cafiine is that you can do this tutorial if you are offline (you need Haxchi for this) and you don't need a PC. The disadvantage is that if you are a beta tester or you are a theme developer, every time you want to change your files, you'll have to close your wii u, take out SD, edit, reinsert, launch hax, and etc...<br />
+<br />
+If you want to have everything hosted on your PC, I'd advise you follow our <a href="http://mariomods.net/thread/200" target="_blank">Cafiine tutorial</a>.<br />
+<br />
+<strong>Keep in mind that you can't do this with CBHC (Coldboot Haxchi). You'll have to uninstall it first.</strong><br />
+<br />
+<strong><u>What you need</u></strong><br />
+<br />
+- <a href="https://wiiubru.com/appstore/#/app/SDcafiine">SD Cafiine</a><br />
+<br />
+1. Put the extracted <code>SDCafiine.zip</code> contents onto the root of your SD Card.<br />
+<br />
+2. Make a new folder. You'll need to name it with the Title ID for the game that you are hacking. <a href="http://wiiubrew.org/wiki/Title_database" target="_blank">Here is a list of all the title IDs for your specific game</a>.<br />
+<br />
+3. Insert the mods content into the newly created folder.<br />
+<br />
+4. Go to the Homebrew Laucher and load SD Caffine.<br />
+  -  It will take you to the home screen<br />
+<br />
+5. Now launch the game that you wanted to mod.<br />
+<br />
+You have just launched your modified game! Enjoy!
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_392">
+									Posted on 05-26-17, 08:46 pm
+										 (rev. 8 by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 08-25-17, 08:47 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_392">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="46-how-to-run-game-modifications-off-of-your-sd-card3edb.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/392/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#392</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post429">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/24-customlevelfan78.html" title=""><span  style="color: #7C60B0;" class="userlink" title="customlevelfan78 (24) [Normal user]">customlevelfan78</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-22-17<br>
+						From: Italy<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/24-customlevelfan78/posts.html" title="List customlevelfan78's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/24-customlevelfan78/threads.html" title="List customlevelfan78's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_429">
+				Japan is 000500001018DB00<br>_________________________<br><div class="signature">YouTube : <a href="https://youtube.com/user/ollychannel78">https://youtube.com/user/ollychannel78</a></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_429">
+									Posted on 05-27-17, 04:35 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_429">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="46-how-to-run-game-modifications-off-of-your-sd-cardbec6.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bcustomlevelfan78)%2bin%2b__%26url%3dhttp_/localhost/post/429/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#429</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post540">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar1" id="post_540">
+				<style>td.topbar1_1 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+text-align: center;
+border-top-left-radius: 25px;
+}td.topbar1_1 > a > span {
+     color:white !important;
+}td.topbar1_2 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+border-top-right-radius: 25px;
+}td.topbar1_2 a {
+color: #fff !important;
+}.mainbar1 {
+  background: url('../../i.imgur.com/1K5VeC8.png') no-repeat !important;
+  background=color: #090909;
+  padding: 0 !important;
+  background-color: #000 !important;
+  font-family: 'Arial', sans-serif;
+  border-bottom-right-radius: 25px;
+}.sidebar1 {
+  background-color: #090909 !important;
+  text-align: center !important;
+  color: #E6E6E6 !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  border-bottom-left-radius: 25px;
+}.sidebar1 div.smallFonts > img:nth-child(4):hover {
+border-radius: 2%;
+box-shadow: 7px 7px 30px #000000 !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4) { 
+box-shadow: 5px 5px 40px #000000 !important;
+border-radius: 50%;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4):active {
+border-radius: 0%;
+box-shadow: 0px 0px 5px #FFFFFF !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+.mainbar1 a:link {color: gray;}
+.mainbar1 a:visited {color: gray;}
+.mainbar1 a:active {color: gray;}
+.mainbar1 a:hover {color: gray;} 
+.mainbar1 > div.post {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+} .mainbar1 > div.sig {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+}
+</style><div class="post">Thanks, I added it to the OP<br />
+<br />
+BTW, I wasn't the one who made it, as I found it from pablobro18 (who wanted me to post it here)<br />
+<br />
+Also, I'll make a 3DS tutorial soon, featuring a bunch of ways of running your hands!<br></div><div class="sig">Old 3DS XL info:<br />
+I used to have a 3DSafe A9LH V11.3.0-36U with Luma in my CTRNAND. Since ReiNAND Reibooted and Re-Reileased, I "switch"ed back.<br />
+Right now, I have boot9strap with Luma 8.0 as my CFW. Though, I'd like to see other CFW's for B9S.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_540">
+									Posted on 05-29-17, 07:38 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_540">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="46-how-to-run-game-modifications-off-of-your-sd-carda563.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/540/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#540</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post1690">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/1_1533482386.png" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]">NightYoshi370</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Owner</li></ul>
+					<div class="card-body">
+						Since: 05-17-17<br>
+						From: Mushroom Kingdom<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/1-nightyoshi370/posts.html" title="List NightYoshi370's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/1-nightyoshi370/threads.html" title="List NightYoshi370's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar1" id="post_1690">
+				<style>td.topbar1_1 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+text-align: center;
+border-top-left-radius: 25px;
+}td.topbar1_1 > a > span {
+     color:white !important;
+}td.topbar1_2 {
+background: #3d0f0f !important;
+background-image: linear-gradient(#3636E3, #090909) !important;
+padding: 4px 8px;
+color: #FFF !important;
+border-top-right-radius: 25px;
+}td.topbar1_2 a {
+color: #fff !important;
+}.mainbar1 {
+  background: url('../../i.imgur.com/1K5VeC8.png') no-repeat !important;
+  background=color: #090909;
+  padding: 0 !important;
+  background-color: #000 !important;
+  font-family: 'Arial', sans-serif;
+  border-bottom-right-radius: 25px;
+}.sidebar1 {
+  background-color: #090909 !important;
+  text-align: center !important;
+  color: #E6E6E6 !important;
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+  padding-left: 10px !important;
+  border-bottom-left-radius: 25px;
+}.sidebar1 div.smallFonts > img:nth-child(4):hover {
+border-radius: 2%;
+box-shadow: 7px 7px 30px #000000 !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4) { 
+box-shadow: 5px 5px 40px #000000 !important;
+border-radius: 50%;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}.sidebar1 div.smallFonts > img:nth-child(4):active {
+border-radius: 0%;
+box-shadow: 0px 0px 5px #FFFFFF !important;
+transition: box-shadow 0.6s ease, border-radius 0.6s ease;
+}
+.mainbar1 a:link {color: gray;}
+.mainbar1 a:visited {color: gray;}
+.mainbar1 a:active {color: gray;}
+.mainbar1 a:hover {color: gray;} 
+.mainbar1 > div.post {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+} .mainbar1 > div.sig {
+  background: RGBA(0, 0, 0, 0.85) !important;
+  padding: 15px;
+  margin: 25px;
+  border: 3px solid #8C8C8C;
+  border-radius: 10px;
+  color: white;
+}
+</style><div class="post">Well, I updated the first post.<br />
+<br />
+This time, I made it not only be SMM, but pretty much, allow all games.<br />
+Secondly, I fixed a bunch of terrible grammar.<br />
+And finally, I mentioned that instead of getting forced to use loadliine.ovh, I mentioned that you need to get a way into the Homebrew launcher<br />
+<br />
+Also, credits to GRAnimated who told me that it doesn't work with CBHC<br></div><div class="sig">Old 3DS XL info:<br />
+I used to have a 3DSafe A9LH V11.3.0-36U with Luma in my CTRNAND. Since ReiNAND Reibooted and Re-Reileased, I "switch"ed back.<br />
+Right now, I have boot9strap with Luma 8.0 as my CFW. Though, I'd like to see other CFW's for B9S.</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_1690">
+									Posted on 08-27-17, 04:43 pm
+										 (rev. 1 by <a href="../profile/1-nightyoshi370.html" title=""><span  style="color: #5555FF;" class="userlink" title="NightYoshi370 (1) [Owner]"><img src="../data/avatars/1_1533482386.png" alt="" class="minipic" /> NightYoshi370</span></a> on 08-27-17, 04:43 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_1690">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="46-how-to-run-game-modifications-off-of-your-sd-card2cf8.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bNightYoshi370)%2bin%2b__%26url%3dhttp_/localhost/post/1690/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#1690</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post2154">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/168-adhgaming.html" title=""><span  style="color: #97ACEF;" class="userlink" title="ADHGaming (168) [Normal user]">ADHGaming</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 11-10-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/168-adhgaming/posts-2.html" title="List ADHGaming's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/168-adhgaming/threads.html" title="List ADHGaming's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_2154">
+				Hey . First time i have tried hacks with SMM but had no issues in the past with smash bros.<br />
+<br />
+I can not get the SMM hacks to show up at all.<br />
+<br />
+Here is what i am doing.<br />
+<br />
+I have Wii U Firmware 5.1.1<br />
+<br />
+I have a SD Card with a folder in the root - 000500001018DD00   (I have eur disc version).<br />
+<br />
+I have downloaded the Odyssey hack and placed the folders inside here (sound and model).<br />
+<br />
+I boot up the wii u, load up the hack webpage and from the list i choose SDCaffine. After i do this, i load the url back and sdcaffine instructs me to press a button.<br />
+<br />
+I load up SMM and goto create a coure. I choose the mario airship theme for the original mario bros... and nothing.<br />
+<br />
+any ideas? Thanks in advance +)
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_2154">
+									Posted on 11-10-17, 02:20 pm
+										 (rev. 1 by <a href="../profile/168-adhgaming.html" title=""><span  style="color: #97ACEF;" class="userlink" title="ADHGaming (168) [Normal user]">ADHGaming</span></a> on 11-10-17, 02:21 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_2154">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="46-how-to-run-game-modifications-off-of-your-sd-card5a56.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bADHGaming)%2bin%2b__%26url%3dhttp_/localhost/post/2154/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#2154</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post2155">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/9_1507994313.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/9-granimated.html" title=""><span  style="color: #97ACEF;" class="userlink" title="GRAnimated (9) [Normal user]">GRAnimated</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/9-granimated/posts-2.html" title="List GRAnimated's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/9-granimated/threads.html" title="List GRAnimated's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post haslayout" id="post_2155">
+				<style>/* unvisited link */
+#linkchange a:link {
+    color: white;
+}
+
+/* visited link */
+#linkchange a:visited {
+    color: white;
+}
+
+/* mouse over link */
+#linkchange a:hover {
+    color: white;
+}
+
+/* selected link */
+#linkchange a:active {
+    color: white;
+}</style><div style="background:#ffffff url(../../mariomods.net/img/layout/granimated/bg_character.png) center top !important;
+color:#FFFFFF;
+background-repeat: repeat;
+margin-left: auto;
+height: 100%;
+background-size:100%;"><br />
+<div style='border: 12px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;
+padding:10px;
+margin: 24px;
+border-radius: 2px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-size: 14px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;'>Update to the latest firmware and follow <a href="https://www.youtube.com/watch?v=QTSE5fZ9VX8">https://www.youtube.com/watch?v=QTSE5fZ9VX8</a><br />
+<br />
+The latest SDCafiine is much different than when this forum post was made, which the video is up-to-date<br><div style='border: 6px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;padding:10px;
+border-radius: 2px;
+font-size: 14px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-family: "Trebuchet MS", Helvetica, sans-serif;' id="linkchange">YouTube: <a href="https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ">https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ</a><br />
+Twitter: <a href="https://www.twitter.com/granimated">https://www.twitter.com/granimated</a><br />
+Discord: GRAnimated ✓ᵛᵉʳᶦᶠᶦᵉᵈ#4979</div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_2155">
+									Posted on 11-10-17, 02:23 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_2155">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="46-how-to-run-game-modifications-off-of-your-sd-card3051.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bGRAnimated)%2bin%2b__%26url%3dhttp_/localhost/post/2155/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#2155</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post2156">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+										<div class="card-body">
+						<span class="card-title"><a href="../profile/168-adhgaming.html" title=""><span  style="color: #97ACEF;" class="userlink" title="ADHGaming (168) [Normal user]">ADHGaming</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 11-10-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/168-adhgaming/posts-2.html" title="List ADHGaming's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/168-adhgaming/threads.html" title="List ADHGaming's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post" id="post_2156">
+				<div class="quote"> Update to the latest firmware and follow <a href="https://www.youtube.com/watch?v=QTSE5fZ9VX8">https://www.youtube.com/watch?v=QTSE5fZ9VX8</a><br />
+<br />
+The latest SDCafiine is much different than when this forum post was made, which the video is up-to-date <div class="quote-footer"><a href="46-how-to-run-game-modifications-off-of-your-sd-card3051.html">Posted by GRAnimated</a></div></div><br />
+thanks i shall try this. I had seen this tutorial before but assumed i could do it the old way. 
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_2156">
+									Posted on 11-10-17, 02:43 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_2156">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="46-how-to-run-game-modifications-off-of-your-sd-cardbdcf.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bADHGaming)%2bin%2b__%26url%3dhttp_/localhost/post/2156/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#2156</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post2157">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/23_1497550914.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/23-dankmemeitthefrog.html" title=""><span  style="color: #7C60B0;" class="userlink" title="DankMemeitTheFrog (23) [Normal user]">FROG</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">That one Bird Thing</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-21-17<br>
+						From: The city of OOF vile<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/23-dankmemeitthefrog/posts-2.html" title="List DankMemeitTheFrog's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/23-dankmemeitthefrog/threads.html" title="List DankMemeitTheFrog's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar23" id="post_2157">
+				<style>.mainbar23 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/purple.png"); }
+.sidebar23 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/green.png"); border-right: dashed 2px blue; }
+.topbar23_1 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/green.png"); border-right: dashed 2px blue; border-bottom: solid 2px blue; text-align: center; }
+.topbar23_2 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/green.png"); border-bottom: dashed 2px blue; }
+.topbar23_1 .userlink, .topbar23_2 .userlink {  text-shadow: 1px 1px black; }
+.topbar23_2 .pipemenu a:link, .topbar23_2 .pipemenu a:visited { color: #8fa; }
+.topbar23_2 .pipemenu a:hover, .topbar23_2 .pipemenu a:active { color: ##fff; text-decoration: underline; }
+
+.mainbar23, .sidebar23, .topbar23_1, .topbar23_2 { color: white !important; }
+
+.sidebar23 { text-align: center; }
+
+.topbar23_2 .pipemenu/*, .sidebar23 .smallFonts*/{  visibility: hidden; opacity: 0; transition: visibility 0s 2s, opacity 1s linear; }
+table[class="custompost table23 margin"] { border-style: solid; border-width: 10px; border-color: grey; } 
+
+table[class="custompost table23 margin"]:hover .topbar23_2 .pipemenu{ visibility: visible !important; opacity: 1; transition: opacity 1s linear; }
+/*table[class="custompost table23 margin"]:hover .sidebar23 .smallFonts{ visibility: visible !important; opacity: 1; transition: opacity 1s linear; }*/
+
+div[id="post23"] { margin: 25px; background-color: rgba(59,26,81, 0.5); padding: 15px; border: 5px solid rgb(59, 26, 81); border-radius: 4px; }
+.mainbar23 a { color: orange; }
+.mainbar23 a:hover { color: #ca9ddd; } 
+.mainbar23 div.codeblock { background: black; border: 2px dashed rgb(59,26,81); border-radious: 2px; }
+.mainbar23 button.spoilerbutton { background: purple; text-align: center; border: 2px solid rgb(59,26,81); border-radius: 0px !important; }
+.mainbar23 div.spoiled { background: rgb(59,26,81) !important; border: 2px dashed purple !important; }
+.mainbar23 div.quote { background: rgb(59,26,81); border: 2px dashed purple; }
+</style><div id="post23"><div class="quote"> Hey . First time i have tried hacks with SMM but had no issues in the past with smash bros.<br />
+<br />
+I can not get the SMM hacks to show up at all.<br />
+<br />
+Here is what i am doing.<br />
+<br />
+I have Wii U Firmware 5.1.1<br />
+<br />
+I have a SD Card with a folder in the root - 000500001018DD00   (I have eur disc version).<br />
+<br />
+I have downloaded the Odyssey hack and placed the folders inside here (sound and model).<br />
+<br />
+I boot up the wii u, load up the hack webpage and from the list i choose SDCaffine. After i do this, i load the url back and sdcaffine instructs me to press a button.<br />
+<br />
+I load up SMM and goto create a coure. I choose the mario airship theme for the original mario bros... and nothing.<br />
+<br />
+any ideas? Thanks in advance +) <div class="quote-footer"><a href="46-how-to-run-game-modifications-off-of-your-sd-card5a56.html">Posted by ADHGaming</a></div></div><br />
+mario maker doesnt use the sd card, so it cant read it. This applies to all games that dont use the sd card<br />
+<br />
+the solution is to get a version of mocha cfw (I think its called "mocha overall sd" on the wii u homebrew app store) and start that first before starting sdcafiine. Doing so will alllow games that dont use the sd card to read the sd card and allow sdcafiine to work.<br />
+<br />
+This worked in my testing with a non sd  card game, mario kart 8, so it should work with all others<br />
+<br />
+hope i helped you<br></div><div  id="post23">Error 702: You provided Type C Meme gas when the Meme Machine&trade; required Type B Meme water<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_2157">
+									Posted on 11-10-17, 10:35 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_2157">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="46-how-to-run-game-modifications-off-of-your-sd-card3bbe.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bFROG)%2bin%2b__%26url%3dhttp_/localhost/post/2157/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#2157</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post2158">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/9_1507994313.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/9-granimated.html" title=""><span  style="color: #97ACEF;" class="userlink" title="GRAnimated (9) [Normal user]">GRAnimated</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+											</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-18-17<br>
+																	</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/9-granimated/posts-2.html" title="List GRAnimated's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/9-granimated/threads.html" title="List GRAnimated's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post haslayout" id="post_2158">
+				<style>/* unvisited link */
+#linkchange a:link {
+    color: white;
+}
+
+/* visited link */
+#linkchange a:visited {
+    color: white;
+}
+
+/* mouse over link */
+#linkchange a:hover {
+    color: white;
+}
+
+/* selected link */
+#linkchange a:active {
+    color: white;
+}</style><div style="background:#ffffff url(../../mariomods.net/img/layout/granimated/bg_character.png) center top !important;
+color:#FFFFFF;
+background-repeat: repeat;
+margin-left: auto;
+height: 100%;
+background-size:100%;"><br />
+<div style='border: 12px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;
+padding:10px;
+margin: 24px;
+border-radius: 2px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-size: 14px;
+font-family: "Trebuchet MS", Helvetica, sans-serif;'>The latest SDCafiine has mocha built in, and i already replied with my tutorial which is up-to-date<br><div style='border: 6px outset #DDDDDD;
+outline: 1px solid #ffffff;
+outline-offset:-3px;padding:10px;
+border-radius: 2px;
+font-size: 14px;
+background: url(../../mariomods.net/img/layout/granimated/bg_character_invert.png);
+font-family: "Trebuchet MS", Helvetica, sans-serif;' id="linkchange">YouTube: <a href="https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ">https://www.youtube.com/channel/UCvb-SWK7kHhF1FdrM2r3_OQ</a><br />
+Twitter: <a href="https://www.twitter.com/granimated">https://www.twitter.com/granimated</a><br />
+Discord: GRAnimated ✓ᵛᵉʳᶦᶠᶦᵉᵈ#4979</div></div></div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_2158">
+									Posted on 11-10-17, 10:37 pm
+																	</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_2158">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="46-how-to-run-game-modifications-off-of-your-sd-card486b.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bGRAnimated)%2bin%2b__%26url%3dhttp_/localhost/post/2158/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#2158</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-striped" id="post2159">
+		<tr>
+			<td class="side" rowspan=2 style="width: 250px;">
+				<span class="card">
+					<img src="../data/avatars/23_1497550914.jpg" alt="" class="card-img-top" style="width:100%">					<div class="card-body">
+						<span class="card-title"><a href="../profile/23-dankmemeitthefrog.html" title=""><span  style="color: #7C60B0;" class="userlink" title="DankMemeitTheFrog (23) [Normal user]">FROG</span></a><img src="../img/offline.png" title="User is Offline" alt="User is Offline"></span>
+						<br><small class="card-subtitle">That one Bird Thing</small>					</div>
+					<ul class="list-group list-group-flush"><li class="list-group-item">Normal user</li></ul>
+					<div class="card-body">
+						Since: 05-21-17<br>
+						From: The city of OOF vile<br>											</div>
+					<div class="card-footer d-flex justify-content-between">
+													<a href="../profile/23-dankmemeitthefrog/posts-2.html" title="List DankMemeitTheFrog's posts"><i class="fa fa-copy"></i></a>
+													<a href="../profile/23-dankmemeitthefrog/threads.html" title="List DankMemeitTheFrog's threads"><i class="fa fa-list"></i></a>
+											</div>
+				</span>
+			</td>
+			<td class="post mainbar23" id="post_2159">
+				<style>.mainbar23 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/purple.png"); }
+.sidebar23 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/green.png"); border-right: dashed 2px blue; }
+.topbar23_1 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/green.png"); border-right: dashed 2px blue; border-bottom: solid 2px blue; text-align: center; }
+.topbar23_2 { background: url("../../www.dankmemeitthefrog.me/blargboard/layoutcrap/green.png"); border-bottom: dashed 2px blue; }
+.topbar23_1 .userlink, .topbar23_2 .userlink {  text-shadow: 1px 1px black; }
+.topbar23_2 .pipemenu a:link, .topbar23_2 .pipemenu a:visited { color: #8fa; }
+.topbar23_2 .pipemenu a:hover, .topbar23_2 .pipemenu a:active { color: ##fff; text-decoration: underline; }
+
+.mainbar23, .sidebar23, .topbar23_1, .topbar23_2 { color: white !important; }
+
+.sidebar23 { text-align: center; }
+
+.topbar23_2 .pipemenu/*, .sidebar23 .smallFonts*/{  visibility: hidden; opacity: 0; transition: visibility 0s 2s, opacity 1s linear; }
+table[class="custompost table23 margin"] { border-style: solid; border-width: 10px; border-color: grey; } 
+
+table[class="custompost table23 margin"]:hover .topbar23_2 .pipemenu{ visibility: visible !important; opacity: 1; transition: opacity 1s linear; }
+/*table[class="custompost table23 margin"]:hover .sidebar23 .smallFonts{ visibility: visible !important; opacity: 1; transition: opacity 1s linear; }*/
+
+div[id="post23"] { margin: 25px; background-color: rgba(59,26,81, 0.5); padding: 15px; border: 5px solid rgb(59, 26, 81); border-radius: 4px; }
+.mainbar23 a { color: orange; }
+.mainbar23 a:hover { color: #ca9ddd; } 
+.mainbar23 div.codeblock { background: black; border: 2px dashed rgb(59,26,81); border-radious: 2px; }
+.mainbar23 button.spoilerbutton { background: purple; text-align: center; border: 2px solid rgb(59,26,81); border-radius: 0px !important; }
+.mainbar23 div.spoiled { background: rgb(59,26,81) !important; border: 2px dashed purple !important; }
+.mainbar23 div.quote { background: rgb(59,26,81); border: 2px dashed purple; }
+</style><div id="post23"><div class="quote"> The latest SDCafiine has mocha built in, and i already replied with my tutorial which is up-to-date <div class="quote-footer"><a href="46-how-to-run-game-modifications-off-of-your-sd-card486b.html">Posted by GRAnimated</a></div></div><br />
+<br />
+well then either the wii u homebrew appstore is out of date or it didnt work<br />
+<br />
+as i got mine from there and it required mocha overall sd to even load the modifactions<br />
+<br />
+<br />
+edit: upon testing it myself again with mk8, the wii u homebrew appstore version sdcafiine indeed works without mocha overall sd, so im just stupid<br />
+<br />
+sorry about that<br></div><div  id="post23">Error 702: You provided Type C Meme gas when the Meme Machine&trade; required Type B Meme water<br />
+</div>
+			</td>
+		</tr>
+		<tr><td class="meta right">
+			<div style="float: left;" id="meta_2159">
+									Posted on 11-10-17, 10:38 pm
+										 (rev. 2 by <a href="../profile/23-dankmemeitthefrog.html" title=""><span  style="color: #7C60B0;" class="userlink" title="DankMemeitTheFrog (23) [Normal user]"><img src="../data/avatars/23_1497550914.jpg" alt="" class="minipic" /> FROG</span></a> on 11-10-17, 10:42 pm)							</div>
+			<div style="float: left; text-align:left; display: none;" id="dyna_2159">
+				blarg
+			</div>
+			<div class="btn-group btn-group-sm">
+															<a 	class="btn btn-primary"
+							role="button"
+														href="46-how-to-run-game-modifications-off-of-your-sd-card6daf.html"							title="Link this post"
+						>
+							<i class="fa fa-link"></i>													</a>
+											<a 	class="btn btn-primary"
+							role="button"
+														href="../http_/twitter.com/share_text%3dLook%2bat%2bthis%2bpost%2b(by%2bFROG)%2bin%2b__%26url%3dhttp_/localhost/post/2159/%26via%3dMarioMakingMods.html"							title="Share this post on Twitter"
+						>
+							<i class="fa fa-twitter"></i>													</a>
+																<button class="btn btn-primary"><span class="fa fa-star-o" onclick="alert('You need to sign in to star posts')"></span> 0</button>
+													<button class="btn btn-primary">#2159</button>							</div>
+		</td></tr>
+	</table>	<table class="table table-bordered" id="post2160">
+		<tr>
+			<td class="side userlink" id="2160">
+				<a href="../profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]">Buntendo</span></a>
+			</td>
+			<td class="smallFonts meta right">
+				<div style="float:left">
+					Posted on 11-10-17, 10:41 pm, deleted by <a href="../profile/109-buntendo.html" title=""><span  style="color: #FFEA95;" class="userlink" title="Buntendo (109) [Administrator]"><img src="../data/avatars/109_1572859516.png" alt="" class="minipic" /> Buntendo</span></a>				</div>
+															#2160
+								</td>
+		</tr>
+	</table>
+	
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="breadBarBottom">		<nav aria-label="breadcrumb" class="navbar navbar-expand-sm bg-light navbar-light" id="breadBar" style="margin-bottom: 0px; border-radius: 0px;">
+							<ol class="breadcrumb mr-auto navbar-nav d-none d-md-inline-flex">
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../index.html"><i class="fa fa-home"></i></a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum.html">Forums</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="../forum/9-general-modding.html">General Modding</a></li>
+															<li class="breadcrumb-item"><a class="breadcrumb-link" href="46-how-to-run-game-modifications-off-of-your-sd-card.html">How to run game modifications off of your SD Card</a></li>
+											</ol>
+										<ul class="ml-auto navbar-nav">
+																		<li	class="nav-item ">
+								<a href="40.html"									class="nav-link"
+									>
+									Previous thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="49.html"									class="nav-link"
+									>
+									Next thread
+								</a>
+							</li>
+													<li	class="nav-item ">
+								<a href="../http_/twitter.com/share_text%3dHow%2bto%2brun%2bgame%2bmodifications%2boff%2bof%2byour%2bSD%2bCard%26url%3dhttp_/localhost/thread/46/%26via%3dMarioMakingMods.html"									class="nav-link"
+									>
+									Tweet
+								</a>
+							</li>
+																				</ul>
+					</nav>
+	</div>
+<div class="footer container-fluid">
+	<div class="btnGroupLinks" style="text-align: center;">
+		<a href="../memberlist.html" class="btn btn-link">Member List</a>
+		<a href="../online.html" class="btn btn-link">Online Users</a>
+		<a href="../records.html" class="btn btn-link">Records</a>
+		<a href="../calendar.html" class="btn btn-link">Calendar</a>
+		<a href="../privacypolicy.html" class="btn btn-link">Privacy policy</a>
+			</div>
+</div>
+		<script src="../js/timeago.js"></script>
+		<script src="../../cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <script src="../js/mdb.min.js"></script>
+    </body>
+
+<!-- Mirrored from localhost/thread/46 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 30 Nov 2020 08:08:06 GMT -->
+</html>
